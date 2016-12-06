@@ -188,7 +188,8 @@
                         $id = $file->{'id'};
                         echo "<optgroup label='$type'>\n";
                         foreach ($file->{"$type"} as $key => $value) {
-                            echo "<option value='$id-$key'>$value</option>\n";
+                            $default = ($file->{'default'} == $key) ? " selected" : "" ;
+                            echo "<option value='$id-$key'$default>$value</option>\n";
                         };
                         echo "</optgroup>\n";
                     }
