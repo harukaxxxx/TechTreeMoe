@@ -1,0 +1,408 @@
+{
+    "58": {
+        "time": "2016/12/07",
+        "level": "IMPORTANT",
+        "event": [
+            "重寫源碼以更改網頁生成方式來增加維護方便性"
+        ]
+    },
+    "57": {
+        "time": "2016/12/06",
+        "level": "IMPORTANT",
+        "event": [
+            "新增儲存紀錄功能"
+        ]
+    },
+    "56": {
+        "time": "2016/12/06",
+        "level": "NEW",
+        "event": [
+            "新增【碧藍航線】Leander", "新增【碧藍航線】Yorck"
+        ]
+    },
+    "55": {
+        "time": "2016/12/06",
+        "level": "UPDATE",
+        "event": [
+            "新增【Victory Belles】Belfast", "新增【Victory Belles】Kirov", "新增【Victory Belles】北上", "新增【Victory Belles】Scharnhorst", "新增【Victory Belles】Pensacola", "新增【戰艦少女】Queen Elizabeth", "新增【碧藍航線】Arizona", "新增【碧藍航線】Atlanta", "新增【碧藍航線】Bismarck", "新增【碧藍航線】Bogue", "新增【碧藍航線】Fletcher", "新增【碧藍航線】Houston", "新增【碧藍航線】Independence", "新增【碧藍航線】Indianapolis", "新增【碧藍航線】Karlsruhe", "新增【碧藍航線】Konigsberg", "新增【碧藍航線】Langley", "新增【碧藍航線】Lexington", "新增【碧藍航線】Northampton", "新增【碧藍航線】Omaha", "新增【碧藍航線】Phoenix", "新增【碧藍航線】Portland", "新增【碧藍航線】Prinz Eugen", "新增【碧藍航線】Ranger", "新增【碧藍航線】Warspite", "新增【碧藍航線】Queen Elizabeth", "新增【碧藍航線】Saratoga", "新增【碧藍航線】Pennsylvania", "新增【碧藍航線】Z1", "新增【碧藍航線】利根", "新增【碧藍航線】古鷹", "新增【碧藍航線】妙高", "新增【碧藍航線】白露", "新增【碧藍航線】夕立", "新增【碧藍航線】築摩", "新增【碧藍航線】金剛", "新增【碧藍航線】長門", "新增【碧藍航線】陽炎", "新增【碧藍航線】蒼龍", "新增【碧藍航線】青葉", "新增【碧藍航線】飛龍", "新增【碧藍航線】龍驤", "新增【碧藍航線】翔鶴", "新增【碧藍航線】瑞鶴", "新增【碧藍航線】最上"
+        ]
+    },
+    "54": {
+        "time": "2016/12/05",
+        "level": "FIX",
+        "event": [
+            "全艦重新排序", "更新效果預覽圖"
+        ]
+    },
+    "53": {
+        "time": "2016/12/05",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Belfast"
+        ]
+    },
+    "52": {
+        "time": "2016/12/05",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】野分", "新增【艦隊收藏】嵐", "新增【艦隊收藏】萩風", "新增【艦隊收藏】舞風", "新增【戰艦少女】嵐"
+        ]
+    },
+    "51": {
+        "time": "2016/12/04",
+        "level": "FIX",
+        "event": [
+            "各艦變裝名稱更正"
+        ]
+    },
+    "50": {
+        "time": "2016/12/04",
+        "level": "UPDATE",
+        "event": [
+            "新增【konnyaku】秋月", "新增【konnyaku】照月", "新增【konnyaku】初月", "新增【konnyaku】アイマス秋月", "新增【konnyaku】アイマス照月", "新增【konnyaku】アイマス初月", "新增【艦隊收藏】五月雨", "新增【艦隊收藏】山風", "新增【艦隊收藏】時雨", "新增【艦隊收藏】時雨 改二", "新增【艦隊收藏】時雨 クリスマスVer.", "新增【艦隊收藏】時雨 バレンタインVer.", "新增【艦隊收藏】時雨 夏季限定Ver.", "新增【艦隊收藏】時雨 すき家コラボVer.", "新增【艦隊收藏】時雨 鎮守府秋の秋刀魚祭りVer.", "新增【艦隊收藏】夕立", "新增【艦隊收藏】夕立 改二", "新增【艦隊收藏】夕立 年末年始Ver.", "新增【艦隊收藏】夕立 夏季限定Ver.", "新增【艦隊收藏】夕立 梅雨限定Ver.", "新增【艦隊收藏】夕立 なか卯コラボVer.", "新增【艦隊收藏】江風", "新增【艦隊收藏】江風 改二", "新增【艦隊收藏】江風 秋季限定Ver.", "新增【艦隊收藏】江風 クリスマスVer.", "新增【艦隊收藏】夕雲 鎮守府秋の秋刀魚祭りmode"
+        ]
+    },
+    "49": {
+        "time": "2016/12/03",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Z24", "新增【戰艦少女】Z28", "新增【鋼鐵少女】Graf Spee", "新增【戰艦少女】Graf Spee", "新增【戰艦少女】Leipzig", "新增【戰艦少女】Missouri", "新增【艦隊收藏】Z3 zwei", "新增【艦隊收藏】泳裝 Z3", "新增【艦隊收藏】Z1 zwei", "新增【艦隊收藏】午茶 Z1", "新增【戰艦少女】Z1", "新增【戰艦少女】Z1改", "新增【Victory Belles】Graf Spee", "新增【Victory Belles】Nürnberg"
+        ]
+    },
+    "48": {
+        "time": "2016/12/03",
+        "level": "UPDATE",
+        "event": [
+            "新增【Victory Belles】吹雪", "新增【Victory Belles】飛龍", "新增【Victory Belles】Mahan", "新增【Victory Belles】Lexington", "新增【Victory Belles】New Orleans"
+        ]
+    },
+    "47": {
+        "time": "2016/12/02",
+        "level": "FIX",
+        "event": [
+            "日驅逐線修正與更新"
+        ]
+    },
+    "46": {
+        "time": "2016/12/02",
+        "level": "NEW",
+        "event": [
+            "新增【艦隊收藏】Saratoga"
+        ]
+    },
+    "45": {
+        "time": "2016/10/29",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】買い出し金剛", "新增【艦隊收藏】買い出し天城", "新增【艦隊收藏】秋刀魚扶桑"
+        ]
+    },
+    "44": {
+        "time": "2016/10/11",
+        "level": "NEW",
+        "event": [
+            "新增【蒼藍鋼鐵戰艦】タカオ", "新增【鋼鐵少女】Benson", "新增【戰艦少女】Quincy Sapphire", "新增【戰艦少女】Atlanta改"
+        ]
+    },
+    "43": {
+        "time": "2016/10/11",
+        "level": "FIX",
+        "event": [
+            "補齊新日驅階級", "為減輕伺服器負擔取消統計數據功能", "修復蒼藍鋼鐵戰艦部分背景問題"
+        ]
+    },
+    "42": {
+        "time": "2016/09/29",
+        "level": "NEW",
+        "event": [
+            "新增【艦隊收藏】弥生", "新增【艦隊收藏】綾波", "新增【艦隊收藏】暁", "新增【艦隊收藏】秋月", "新增【艦隊收藏】若葉", "新增【艦隊收藏】白露", "新增【艦隊收藏】野分", "新增【艦隊收藏】夕雲", "新增【艦隊收藏】天津風", "新增【戰艦少女】綾波", "新增【戰艦少女】暁", "新增【戰艦少女】秋月"
+        ]
+    },
+    "41": {
+        "time": "2016/09/10",
+        "level": "UPDATE",
+        "event": [
+            "新增【鋼鐵少女】Kirov、泳裝Kirov", "新增【鋼鐵少女】Prinz Eugen"
+        ]
+    },
+    "40": {
+        "time": "2016/09/09",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Edinburgh", "新增【戰艦少女】Emerald"
+        ]
+    },
+    "39": {
+        "time": "2016/09/01",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】秋祭り法被 吹雪", "新增【艦隊收藏】秋祭り法被 吹雪改二"
+        ]
+    },
+    "38": {
+        "time": "2016/08/25",
+        "level": "NEW",
+        "event": [
+            "新增【蒼藍鋼鐵戰艦】ナチ", "新增【艦隊收藏】Prinz Eugen", "從Hipper中移除【艦隊收藏】Prinz Eugen可選項"
+        ]
+    },
+    "37": {
+        "time": "2016/08/23",
+        "level": "IMPORTANT",
+        "event": [
+            "新增總下載次數與本月下載次數等統計資訊顯示", "統計資料每小時更新一次"
+        ]
+    },
+    "36": {
+        "time": "2016/08/21",
+        "level": "IMPORTANT",
+        "event": [
+            "開始記錄下載資料"
+        ]
+    },
+    "35": {
+        "time": "2016/08/17",
+        "level": "NEW",
+        "event": [
+            "新增【November】Mahan"
+        ]
+    },
+    "34": {
+        "time": "2016/08/17",
+        "level": "UPDATE",
+        "event": [
+            "新增【戰艦少女】Houston、Houston改至Cleveland", "新增【戰艦少女】Washington至NorthCarolina", "新增【戰艦少女】Salt Lake City至Pensacola", "新增【戰艦少女】Quincy、Quincy改至New Orleans", "新增【戰艦少女】Portland至Indianapolis"
+        ]
+    },
+    "33": {
+        "time": "2016/08/16",
+        "level": "FIX",
+        "event": [
+            "新增下拉選單分類排列", "修復warspite未出現在可替換分類問題"
+        ]
+    },
+    "32": {
+        "time": "2016/08/12",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】Warspite", "新增【戰艦少女】Gearing 海上漂流套装"
+        ]
+    },
+    "31": {
+        "time": "2016/08/07",
+        "level": "FIX",
+        "event": [
+            "Bismarck編號由PGSB001改至PGSB108"
+        ]
+    },
+    "30": {
+        "time": "2016/08/07",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】泳裝大和"
+        ]
+    },
+    "29": {
+        "time": "2016/07/30",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】Prinz Eugen至Hipper", "新增【戰艦少女】St.Louis"
+        ]
+    },
+    "28": {
+        "time": "2016/07/29",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Gneisenau", "新增【鋼鐵少女】Gneisenau"
+        ]
+    },
+    "27": {
+        "time": "2016/07/29",
+        "level": "UPDATE",
+        "event": [
+
+        ]
+    },
+    "26": {
+        "time": "2016/07/17",
+        "level": "FIX",
+        "event": [
+            "修正Marblehead L 與 神風 R 缺失問題"
+        ]
+    },
+    "25": {
+        "time": "2016/07/17",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Scharnhorst", "新增【鋼鐵少女】Scharnhorst"
+        ]
+    },
+    "24": {
+        "time": "2016/07/16",
+        "level": "NEW",
+        "event": [
+            "新增【蒼藍鋼鐵戰艦】アシガラ", "新增【安佐川】出雲"
+        ]
+    },
+    "23": {
+        "time": "2016/07/16",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】泳裝扶桑", "新增【November】Independence", "新增【November】Langley", "新增【November】Iowa", "新增【November】Lexington"
+        ]
+    },
+    "22": {
+        "time": "2016/07/12",
+        "level": "UPDATE",
+        "event": [
+            "新增【戰艦少女】日系校園泳裝青葉", "新增【戰艦少女】Strap bikini Lexington"
+        ]
+    },
+    "21": {
+        "time": "2016/06/30",
+        "level": "FIX",
+        "event": [
+            "修正Aurora誤植Z24立繪之問題"
+        ]
+    },
+    "20": {
+        "time": "2016/06/30",
+        "level": "UPDATE",
+        "event": [
+            "新增大量【鋼鐵少女】可選項"
+        ]
+    },
+    "19": {
+        "time": "2016/06/30",
+        "level": "UPDATE",
+        "event": [
+            "新增大量【戰艦少女】美、德系可選項"
+        ]
+    },
+    "18": {
+        "time": "2016/06/27",
+        "level": "UPDATE",
+        "event": [
+            "新增【November】Arizona"
+        ]
+    },
+    "17": {
+        "time": "2016/06/26",
+        "level": "UPDATE",
+        "event": [
+            "新增【司马闹腾】白龍"
+        ]
+    },
+    "16": {
+        "time": "2016/06/25",
+        "level": "FIX",
+        "event": [
+            "藏王更正為蔵王", "球摩更正為球磨"
+        ]
+    },
+    "15": {
+        "time": "2016/06/23",
+        "level": "FIX",
+        "event": [
+            "介面美化與更新", "新增船名、艦種與階級的顯示"
+        ]
+    },
+    "14": {
+        "time": "2016/06/23",
+        "level": "UPDATE",
+        "event": [
+            "新增大量【戰艦少女】日系可選項"
+        ]
+    },
+    "13": {
+        "time": "2016/06/22",
+        "level": "UPDATE",
+        "event": [
+            "新增【しずま】零之島風", "新增【しずま】大和"
+        ]
+    },
+    "12": {
+        "time": "2016/06/22",
+        "level": "UPDATE",
+        "event": [
+            "新增大量【艦隊收藏】可選項"
+        ]
+    },
+    "11": {
+        "time": "2016/06/21",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】利根改二", "新增【艦隊收藏】Bismarck drei"
+        ]
+    },
+    "10": {
+        "time": "2016/06/21",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】築摩改二", "新增【艦隊收藏】泳裝天龍"
+        ]
+    },
+    "9": {
+        "time": "2016/06/20",
+        "level": "IMPORTANT",
+        "event": [
+            "TechTreeMoe Beta網站上線"
+        ]
+    },
+    "8": {
+        "time": "2016/06/19",
+        "level": "NEW",
+        "event": [
+            "新增【鋼鐵少女】伊吹", "新增【November】蔵王"
+        ]
+    },
+    "7": {
+        "time": "2016/05/28",
+        "level": "IMPORTANT",
+        "event": [
+            "取消指揮官發佈"
+        ]
+    },
+    "6": {
+        "time": "2016/05/21",
+        "level": "NEW",
+        "event": [
+            "新增【鋼鐵少女】洛陽", "新增【艦隊收藏】利根"
+        ]
+    },
+    "5": {
+        "time": "2016/05/18",
+        "level": "NEW",
+        "event": [
+            "新增【November】St.Louis", "新增【紀奈】三笠"
+        ]
+    },
+    "4": {
+        "time": "2016/05/18",
+        "level": "FIX",
+        "event": [
+            "修復【戰艦少女】Mahan灰圖誤植"
+        ]
+    },
+    "3": {
+        "time": "2016/05/16",
+        "level": "NEW",
+        "event": [
+            "新增【戰艦少女】Indianapolis", "新增【鋼鐵少女】鞍山"
+        ]
+    },
+    "2": {
+        "time": "2016/05/05",
+        "level": "NEW",
+        "event": [
+            "新增【艦隊收藏】神風", "新增【戰艦少女】Warspite"
+        ]
+    },
+    "1": {
+        "time": "2016/05/05",
+        "level": "UPDATE",
+        "event": [
+            "更新【November】IOWA至【艦隊收藏】IOWA"
+        ]
+    }
+}
