@@ -1,0 +1,13 @@
+{
+    "id": "PASB012",
+    "name": "N. Carolina",
+    "tier": "Ⅷ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "2": "【戰艦少女】N. Carolina", "3": "【戰艦少女】Washington" },
+    "November": { "1": "【November】NewJersey" }
+}

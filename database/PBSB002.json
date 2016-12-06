@@ -1,0 +1,10 @@
+{"id": "PBSB002",
+"name": "Warspite",
+"tier": "Ⅵ",
+"nation": "uk",
+"type": "battleship",
+"default":5,
+"change":true,
+"premium":true,
+"arp":false,
+"艦隊收藏":{"3":"【艦隊收藏】Warspite"},"戰艦少女":{"1":"【戰艦少女】Warspite","4":"【戰艦少女】Queen Elizabeth"},"鋼鐵少女":{"2":"【鋼鐵少女】Warspite"},"碧藍航線":{"5":"【碧藍航線】Warspite","6":"【碧藍航線】Queen Elizabeth"}}

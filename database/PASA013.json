@@ -1,0 +1,12 @@
+{
+    "id": "PASA013",
+    "name": "Essex",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Essex" }
+}

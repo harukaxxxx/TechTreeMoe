@@ -1,0 +1,14 @@
+{
+    "id": "PJSD012",
+    "name": "島風",
+    "tier": "Ⅹ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】島風" },
+    "戰艦少女": { "3": "【戰艦少女】島風" },
+    "同人作品": { "2": "【しずま】零之島風" }
+}

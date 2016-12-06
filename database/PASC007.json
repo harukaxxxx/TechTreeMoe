@@ -1,0 +1,14 @@
+{
+    "id": "PASC007",
+    "name": "Cleveland",
+    "tier": "Ⅵ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Northampton" },
+    "戰艦少女": { "2": "【戰艦少女】Houston", "3": "【戰艦少女】Houston 改" },
+    "碧藍航線": { "4": "【碧藍航線】Northampton", "5": "【碧藍航線】Houston" }
+}

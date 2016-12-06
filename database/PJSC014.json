@@ -1,0 +1,14 @@
+{
+    "id": "PJSC014",
+    "name": "北上",
+    "tier": "Ⅷ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】北上", "2": "【艦隊收藏】北上 改二" },
+    "戰艦少女": { "3": "【戰艦少女】北上" },
+    "Victory Belles": { "4": "【Victory Belles】北上" }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "PASD027",
+    "name": "Wickes",
+    "tier": "Ⅲ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Maury" }
+}

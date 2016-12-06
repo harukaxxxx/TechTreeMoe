@@ -1,0 +1,14 @@
+{
+    "id": "PASA006",
+    "name": "Independence",
+    "tier": "Ⅵ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 4,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Independence", "2": "【戰艦少女】Independence 白色惡魔Ver." },
+    "November": { "3": "【November】Independence" },
+    "碧藍航線": { "4": "【碧藍航線】Independence" }
+}

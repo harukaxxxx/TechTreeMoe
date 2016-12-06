@@ -1,0 +1,16 @@
+{
+    "id": "PASA012",
+    "name": "Lexington",
+    "tier": "Ⅷ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 8,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "6": "【艦隊收藏】Saratoga", "8": "【艦隊收藏】Saratoga 改" },
+    "戰艦少女": { "1": "【戰艦少女】Lexington", "2": "【戰艦少女】Lexington 改", "3": "【戰艦少女】Lexington LoveBlueVer.", "4": "【戰艦少女】Lexington Strap bikiniVer." },
+    "November": { "5": "【November】Lexington" },
+    "Victory Belles": { "7": "【Victory Belles】Lexington" },
+    "碧藍航線": { "9": "【碧藍航線】Lexington", "10": "【碧藍航線】Saratoga" }
+}

@@ -1,0 +1,14 @@
+{
+    "id": "PASC507",
+    "name": "Indianapolis",
+    "tier": "Ⅶ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Indianapolis" },
+    "鋼鐵少女": { "2": "【鋼鐵少女】Indianapolis", "3": "【鋼鐵少女】Portland" },
+    "碧藍航線": { "4": "【碧藍航線】Indianapolis", "5": "【碧藍航線】Portland" }
+}

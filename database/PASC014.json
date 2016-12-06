@@ -1,0 +1,10 @@
+{"id": "PASC014",
+"name": "New Orleans",
+"tier": "Ⅷ",
+"nation": "usa",
+"type": "cruiser",
+"default":2,
+"change":true,
+"premium":false,
+"arp":false,
+"戰艦少女":{"1":"【戰艦少女】New Orleans","2":"【戰艦少女】New Orleans 改","4":"【戰艦少女】Quincy","5":"【戰艦少女】Quincy 改","6":"【戰艦少女】Quincy SapphireVer."},"鋼鐵少女":{"3":"【鋼鐵少女】New Orleans"},"Victory Belles":{"7":"【Victory Belles】New Orleans"}}

@@ -1,0 +1,12 @@
+{
+    "id": "PJSA002",
+    "name": "鳳翔",
+    "tier": "Ⅳ",
+    "nation": "japan",
+    "type": "aircarrier",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】鳳翔" }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "PASB008",
+    "name": "Colorado",
+    "tier": "Ⅶ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Colorado", "2": "【戰艦少女】Colorado 改" }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "PASB017",
+    "name": "Montana",
+    "tier": "Ⅹ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Louisiana" }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "PJSD002",
+    "name": "海風",
+    "tier": "Ⅱ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】海風", "2": "【艦隊收藏】五月雨", "3": "【艦隊收藏】山風" }
+}

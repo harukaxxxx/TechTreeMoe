@@ -1,0 +1,14 @@
+{
+    "id": "PJSB018",
+    "name": "大和",
+    "tier": "Ⅹ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】大和", "4": "【艦隊收藏】大和 夏季限定(2016)Ver." },
+    "鋼鐵少女": { "3": "【鋼鐵少女】大和" },
+    "同人作品": { "2": "【しずま】大和" }
+}

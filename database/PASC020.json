@@ -1,0 +1,12 @@
+{
+    "id": "PASC020",
+    "name": "Des Moines",
+    "tier": "Ⅹ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Helena" }
+}

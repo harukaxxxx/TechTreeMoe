@@ -1,0 +1,13 @@
+{
+    "id": "PASC024",
+    "name": "Phoenix",
+    "tier": "Ⅳ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Phoenix" },
+    "碧藍航線": { "2": "【碧藍航線】Phoenix" }
+}

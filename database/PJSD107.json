@@ -1,0 +1,13 @@
+{
+    "id": "PJSD107",
+    "name": "曉",
+    "tier": "Ⅶ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】曉", "2": "【艦隊收藏】曉 改二" },
+    "戰艦少女": { "3": "【戰艦少女】曉", "4": "【戰艦少女】曉 改" }
+}

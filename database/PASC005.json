@@ -1,0 +1,13 @@
+{
+    "id": "PASC005",
+    "name": "Omaha",
+    "tier": "Ⅴ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Omaha", "2": "【戰艦少女】Omaha 改" },
+    "碧藍航線": { "3": "【碧藍航線】Omaha" }
+}

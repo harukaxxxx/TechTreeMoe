@@ -203,10 +203,11 @@
                     $shipNation = $shipFile->{'nation'};
                     $shipType = $shipFile->{'type'};
                     $shipDefault = $shipFile->{'default'};
-                    $shipChange = ($shipFile->{'change'}) ? "change" : "";
-                    $shipPremium = ($shipFile->{'premium'}) ? "premium" : "";
+                    $shipChange = ($shipFile->{'change'}) ? " change" : "";
+                    $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
+                    $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
 
-                    echo "<div id='$shipId' class='mix $shipType $shipNation $shipChange'>\n
+                    echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP'>\n
                             <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
                                 <div class='img_container'>\n
                                     <div class='addon'><img src='images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
@@ -218,6 +219,7 @@
                     options($shipFile,'碧藍航線');
                     options($shipFile,'同人作品');
                     options($shipFile,'November');
+                    options($shipFile,'蒼藍鋼鐵戰艦');
                     options($shipFile,'Victory Belles');
                     echo"</select>\n</div>\n";
                 }

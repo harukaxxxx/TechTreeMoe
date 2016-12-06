@@ -1,0 +1,12 @@
+{
+    "id": "PJSB021",
+    "name": "出雲",
+    "tier": "Ⅸ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "同人作品": { "1": "【安佐川】出雲" }
+}

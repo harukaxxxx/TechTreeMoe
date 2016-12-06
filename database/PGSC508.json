@@ -1,0 +1,10 @@
+{"id": "PGSC508",
+"name": "Prinz Eugen",
+"tier": "Ⅵ",
+"nation": "germany",
+"type": "cruiser",
+"default":2,
+"change":true,
+"premium":true,
+"arp":false,
+"艦隊收藏":{"1":"【艦隊收藏】Prinz Eugen","2":"【艦隊收藏】Prinz Eugen 改"},"鋼鐵少女":{"3":"【鋼鐵少女】Prinz Eugen"},"碧藍航線":{"4":"【碧藍航線】Prinz Eugen"}}

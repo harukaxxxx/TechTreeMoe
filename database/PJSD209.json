@@ -1,0 +1,12 @@
+{
+    "id": "PJSD209",
+    "name": "夕雲",
+    "tier": "Ⅸ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】夕雲", "2": "【艦隊收藏】夕雲 年始(2016年)mode", "3": "【艦隊收藏】夕雲 春の花束mode", "4": "【艦隊收藏】夕雲 鎮守府秋の秋刀魚祭りmode" }
+}

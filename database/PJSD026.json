@@ -1,0 +1,12 @@
+{
+    "id": "PJSD026",
+    "name": "神風R",
+    "tier": "Ⅴ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 1,
+    "change": false,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】神風" }
+}

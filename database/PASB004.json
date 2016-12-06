@@ -1,0 +1,12 @@
+{
+    "id": "PASB004",
+    "name": "Wyoming",
+    "tier": "Ⅳ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Arizona" }
+}

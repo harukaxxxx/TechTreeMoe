@@ -1,0 +1,12 @@
+{
+    "id": "PASC002",
+    "name": "Chester",
+    "tier": "Ⅱ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Chester" }
+}

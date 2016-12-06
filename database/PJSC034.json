@@ -1,0 +1,12 @@
+{
+    "id": "PJSC034",
+    "name": "蔵王",
+    "tier": "Ⅹ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】蔵王" }
+}

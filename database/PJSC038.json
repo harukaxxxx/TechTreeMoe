@@ -1,0 +1,13 @@
+{
+    "id": "PJSC038",
+    "name": "愛宕",
+    "tier": "Ⅷ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】愛宕" },
+    "戰艦少女": { "2": "【戰艦少女】愛宕" }
+}

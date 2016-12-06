@@ -1,0 +1,13 @@
+{
+    "id": "PGSC108",
+    "name": "Hipper",
+    "tier": "Ⅷ",
+    "nation": "germany",
+    "type": "cruiser",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Hipper", "2": "【戰艦少女】Hipper 改" },
+    "鋼鐵少女": { "3": "【鋼鐵少女】Hipper" }
+}

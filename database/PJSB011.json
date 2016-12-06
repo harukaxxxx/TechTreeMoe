@@ -1,0 +1,12 @@
+{
+    "id": "PJSB011",
+    "name": "三笠",
+    "tier": "Ⅱ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": true,
+    "arp": false,
+    "同人作品": { "1": "【紀奈】三笠", "2": "【紀奈】三笠 浴衣Ver." }
+}

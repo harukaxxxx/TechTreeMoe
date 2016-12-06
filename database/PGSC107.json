@@ -1,0 +1,12 @@
+{
+    "id": "PGSC107",
+    "name": "Yorck",
+    "tier": "Ⅶ",
+    "nation": "germany",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "碧藍航線": { "1": "【碧藍航線】Yorck" }
+}

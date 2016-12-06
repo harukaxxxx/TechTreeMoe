@@ -1,0 +1,12 @@
+{
+    "id": "PJSC503",
+    "name": "香取",
+    "tier": "Ⅲ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】香取", "2": "【艦隊收藏】香取 新春の晴れ着mode", "3": "【艦隊收藏】鹿島", "4": "【艦隊收藏】鹿島 クリスマスVer.", "5": "【艦隊收藏】鹿島 バレンタインVer." }
+}

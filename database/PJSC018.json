@@ -1,0 +1,13 @@
+{
+    "id": "PJSC018",
+    "name": "利根",
+    "tier": "Ⅶ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】利根", "2": "【艦隊收藏】利根 改二" },
+    "碧藍航線": { "3": "【碧藍航線】利根" }
+}

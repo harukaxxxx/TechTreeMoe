@@ -1,0 +1,13 @@
+{
+    "id": "PRSC001",
+    "name": "Aurora",
+    "tier": "Ⅲ",
+    "nation": "ussr",
+    "type": "cruiser",
+    "default": 4,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Aurora", "2": "【戰艦少女】Aurora", "3": "【戰艦少女】Aurora 緋衣金帶Ver." },
+    "鋼鐵少女": { "4": "【鋼鐵少女】Aurora" }
+}

@@ -1,0 +1,12 @@
+{
+    "id": "PJSB013",
+    "name": "天城",
+    "tier": "Ⅷ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】天城", "2": "【艦隊收藏】天城 改", "3": "【艦隊收藏】天城 新春の晴れ着mode", "4": "【艦隊收藏】天城 なか卯コラボVer." }
+}

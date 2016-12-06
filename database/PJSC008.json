@@ -1,0 +1,13 @@
+{
+    "id": "PJSC008",
+    "name": "妙高",
+    "tier": "Ⅶ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】妙高", "2": "【艦隊收藏】妙高 改二" },
+    "碧藍航線": { "3": "【碧藍航線】妙高" }
+}

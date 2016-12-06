@@ -1,0 +1,12 @@
+{
+    "id": "PJSC708",
+    "name": "タカオ",
+    "tier": "Ⅷ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": true,
+    "蒼藍鋼鐵戰艦": { "1": "【蒼藍鋼鐵戰艦】タカオ" }
+}

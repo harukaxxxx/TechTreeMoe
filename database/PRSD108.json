@@ -1,0 +1,12 @@
+{
+    "id": "PRSD108",
+    "name": "Tashkent",
+    "tier": "Ⅷ",
+    "nation": "ussr",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": { "1": "【戰艦少女】Tashkent" }
+}

@@ -1,0 +1,14 @@
+{
+    "id": "PJSD108",
+    "name": "秋月",
+    "tier": "Ⅷ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 7,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】秋月", "2": "【艦隊收藏】秋月 鎮守府秋祭りVer." },
+    "戰艦少女": { "3": "【戰艦少女】秋月" },
+    "konnyaku": { "4": "【konnyaku】秋月", "5": "【konnyaku】照月", "6": "【konnyaku】初月", "7": "【konnyaku】秋月 アイマスVer.", "8": "【konnyaku】照月 アイマスVer.", "9": "【konnyaku】初月 アイマスVer." }
+}

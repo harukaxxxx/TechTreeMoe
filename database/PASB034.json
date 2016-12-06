@@ -1,0 +1,12 @@
+{
+    "id": "PASB034",
+    "name": "New Mexico",
+    "tier": "Ⅵ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": { "1": "【November】Wisconsin" }
+}
