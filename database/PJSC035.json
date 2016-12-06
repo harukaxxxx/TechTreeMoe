@@ -1,0 +1,17 @@
+{
+    "id": "PJSC035",
+    "name": "築摩",
+    "tier": "Ⅱ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】築摩",
+        "2": "【艦隊收藏】築摩 改二"
+    },
+    "碧藍航線": {
+        "3": "【碧藍航線】築摩"
+    }
+}
