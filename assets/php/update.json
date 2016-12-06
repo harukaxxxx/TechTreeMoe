@@ -3,7 +3,8 @@
         "time": "2016/12/07",
         "level": "IMPORTANT",
         "event": [
-            "重寫源碼以更改網頁生成方式來增加維護方便性"
+            "重寫源碼以更改網頁生成方式來增加維護方便性",
+            "源碼現已託管於<a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe'>Github</a>"
         ]
     },
     "57": {
