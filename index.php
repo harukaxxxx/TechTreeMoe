@@ -145,7 +145,6 @@
         </div>
     </div>
     <div class="mixitup">
-      <!--篩選器-->
         <div class="filter_group">
             <button type="button" class="filter am-btn am-btn-secondary" data-filter="all">全部顯示</button>
             <div class="am-btn-group">
@@ -238,250 +237,37 @@
                         <h4 class="about-color"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">
                             <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
-                                <dl class="am-accordion-item am-active">
-                                    <dt class="am-accordion-title">艦隊收藏作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse am-in">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>築摩 >>> 築摩/築摩改二</li>
-                                                <li>天龍 >>> 天龍/泳裝天龍</li>
-                                                <li>球磨 >>> 球磨/浴衣球磨</li>
-                                                <li>古鷹 >>> 古鷹/古鷹改二</li>
-                                                <li>青葉 >>> 青葉</li>
-                                                <li>妙高 >>> 妙高/妙高改二</li>
-                                                <li>最上 >>> 最上/雨季最上</li>
-                                                <li>香取 >>> 香取/和服香取/鹿島/聖誕鹿島/情人節鹿島</li>
-                                                <li>夕張 >>> 夕張/雨季夕張</li>
-                                                <li>北上 >>> 北上/北上改二</li>
-                                                <li>愛宕 >>> 愛宕</li>
-                                                <li>利根 >>> 利根/利根改二</li>
-                                                <li>海風 >>> 海風</li>
-                                                <li>磯風 >>> 磯風/秋刀魚磯風</li>
-                                                <li>睦月 >>> 睦月/睦月改二</li>
-                                                <li>初春 >>> 初春/初春改二</li>
-                                                <li>吹雪 >>> 吹雪/吹雪改二/秋祭り法被吹雪/秋祭り法被吹雪改二</li>
-                                                <li>陽炎 >>> 陽炎/野分/嵐/萩風/舞風</li>
-                                                <li>島風 >>> 島風</li>
-                                                <li>神風 >>> 神風</li>
-                                                <li>神風R >>> 神風</li>
-                                                <li>金剛 >>> 金剛/金剛改二/買い出し金剛</li>
-                                                <li>扶桑 >>> 扶桑/和服扶桑/泳裝扶桑/秋刀魚扶桑</li>
-                                                <li>長門 >>> 長門</li>
-                                                <li>天城 >>> 天城/天城改/買い出し天城</li>
-                                                <li>大和 >>> 大和/泳裝大和</li>
-                                                <li>鳳翔 >>> 鳳翔</li>
-                                                <li>瑞鳳 >>> 瑞鳳/瑞鳳改/和服瑞鳳</li>
-                                                <li>龍驤 >>> 龍驤/龍驤改/龍驤改二/聖誕龍驤/聖誕龍驤改二/牛丼龍驤</li>
-                                                <li>飛龍 >>> 飛龍/飛龍改二</li>
-                                                <li>翔鶴 >>> 翔鶴/翔鶴改二</li>
-                                                <li>大鳳 >>> 大鳳/大鳳改</li>
-                                                <li>Bismarck >>> Bismarck/Bismarck改/Bismarck zwei/Bismarck drei</li>
-                                                <li>Iowa >>> Iowa</li>
-                                                <li>Prinz Eugen >>> Prinz Eugen/Prinz Eugen改</li>
-                                                <li>Warspite >>> Warspite</li>
-                                                <li>暁 >>> 暁/暁改二</li>
-                                                <li>秋月 >>> 秋月/浴衣秋月</li>
-                                                <li>白露 >>> 白露/白露改/Android白露/夏季白露/浴衣白露</li>
-                                                <li>夕雲 >>> 夕雲/年始夕雲/春之花束夕雲</li>
-                                                <li>Lexington >>> Saratoga</li>
-                                                <li>Leberecht Maass >>> Z1</li>
-                                                <li>Ernst Gaede >>> Z3</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">戰艦少女作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>天龍 >>> 天龍/天龍改/女僕</li>
-                                                <li>古鷹 >>> 古鷹</li>
-                                                <li>青葉 >>> 青葉/紅白偶像/日系學校泳裝</li>
-                                                <li>最上 >>> 校服最上</li>
-                                                <li>夕張 >>> 夕張/夕張改</li>
-                                                <li>北上 >>> 北上</li>
-                                                <li>愛宕 >>> 愛宕</li>
-                                                <li>睦月 >>> 睦月</li>
-                                                <li>吹雪 >>> 吹雪/吹雪改</li>
-                                                <li>陽炎 >>> 陽炎/嵐</li>
-                                                <li>島風 >>> 島風</li>
-                                                <li>金剛 >>> 金剛</li>
-                                                <li>扶桑 >>> 扶桑</li>
-                                                <li>長門 >>> 長門</li>
-                                                <li>瑞鳳 >>> 瑞鳳</li>
-                                                <li>飛龍 >>> 飛龍</li>
-                                                <li>翔鶴 >>> 翔鶴</li>
-                                                <li>大鳳 >>> 大鳳</li>
-                                                <li>Kirov >>> Kirov</li>
-                                                <li>Tashkent >>> Tashkent</li>
-                                                <li>Aurora >>> Aurora</li>
-                                                <li>Karlsruhe >>> Karlsruhe/Karlsruhe改</li>
-                                                <li>Königsberg >>> Königsberg/Königsberg改</li>
-                                                <li>Hipper >>> Hipper</li>
-                                                <li>Emden >>> Emden/溫馨情人</li>
-                                                <li>Tirpitz >>> Tirpitz/Tirpitz/兒童節</li>
-                                                <li>Warspite >>> Warspite/Queen Elizabeth</li>
-                                                <li>Mahan >>> Mahan</li>
-                                                <li>Fletcher >>> Fletcher</li>
-                                                <li>Gearing >>> Gearing/Gearing改/海上漂流套装</li>
-                                                <li>Omaha >>> Omaha/Omaha改</li>
-                                                <li>Pensacola >>> Pensacola/Salt Lake City</li>
-                                                <li>New Orleans >>> New Orleans/New Orleans改/Quincy/Quincy改/Quincy Sapphire</li>
-                                                <li>Atlanta >>> Atlanta/Atlanta改</li>
-                                                <li>Indianapolis >>> Indianapolis/Portland</li>
-                                                <li>Colorado >>> Colorado/Colorado改</li>
-                                                <li>Langley >>> Langley</li>
-                                                <li>Bogue >>> Bogue</li>
-                                                <li>Independence >>> Independence/白色惡魔</li>
-                                                <li>Ranger >>> Ranger/Ranger改/HeartCatchRabbit</li>
-                                                <li>Lexington >>> Lexington/Lexington改/LoveBlue/Strap bikini</li>
-                                                <li>Essex >>> Essex</li>
-                                                <li>Scharnhorst >>> Scharnhorst/我到河北省來</li>
-                                                <li>NorthCarolina >>> NorthCarolina/Washington</li>
-                                                <li>Gneisenau >>> Gneisenau</li>
-                                                <li>St.Louis >>> St.Louis</li>
-                                                <li>Cleveland >>> Houston/Houston改</li>
-                                                <li>Edinburgh >>> Edinburgh</li>
-                                                <li>秋月 >>> 秋月</li>
-                                                <li>曉 >>> 曉/曉改</li>
-                                                <li>Graf Spee >>> Graf Spee</li>
-                                                <li>Z23 >>> Z24/Z28</li>
-                                                <li>Nürnberg >>> Leipzig</li>
-                                                <li>Missouri >>> Missouri</li>
-                                                <li>Leberecht Maass >>> Z1</li>
-                                                <li>Belfast >>> Belfast</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">鋼鐵少女作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>扶桑 >>> 扶桑</li>
-                                                <li>長門 >>> 長門</li>
-                                                <li>大和 >>> 大和</li>
-                                                <li>飛龍 >>> 飛龍</li>
-                                                <li>瑞鳳 >>> 瑞鳳</li>
-                                                <li>古鷹 >>> 古鷹</li>
-                                                <li>夕張 >>> 夕張</li>
-                                                <li>吹雪 >>> 吹雪</li>
-                                                <li>磯風 >>> 磯風</li>
-                                                <li>Karlsruhe >>> Karlsruhe</li>
-                                                <li>Königsberg >>> Königsberg</li>
-                                                <li>Hipper >>> Hipper</li>
-                                                <li>Fletcher >>> Fletcher</li>
-                                                <li>New Orleans >>> New Orleans</li>
-                                                <li>Indianapolis >>> Indianapolis</li>
-                                                <li>Ranger >>> Ranger</li>
-                                                <li>Aurora >>> Aurora</li>
-                                                <li>Warspite >>> Warspite</li>
-                                                <li>鞍山 >>> 鞍山</li>
-                                                <li>洛陽 >>> 洛陽</li>
-                                                <li>Scharnhorst >>> Scharnhorst</li>
-                                                <li>Gneisenau >>> Gneisenau</li>
-                                                <li>Kirov >>> Kirov、泳裝Kirov</li>
-                                                <li>Prinz Eugen >>> Prinz Eugen</li>
-                                                <li>Benson >>> Benson</li>
-                                                <li>Graf Spee >>> Graf Spee</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">November作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse ">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>Cleveland >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=47368234">Northampton</a></li>
-                                                <li>Clemson >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=51862167">Edsall</a></li>
-                                                <li>Wyoming >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50549606">Arizona</a></li>
-                                                <li>SouthCarolina >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50549606">Maryland</a></li>
-                                                <li>Sampson >>> Narwhal</li>
-                                                <li>NewYork >>> Pennsylvania</li>
-                                                <li>Wickes >>> Maury</li>
-                                                <li>Montana >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=43572843">Louisiana</a></li>
-                                                <li>NewMexico >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=45215476">Wisconsin</a></li>
-                                                <li>Des Moines >>> Helena</li>
-                                                <li>NorthCarolina >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=47811806">NewJersey</a></li>
-                                                <li>Arizona >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50549606">Arizona</a></li>
-                                                <li>Independence >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=43810751">Independence</a></li>
-                                                <li>Langley >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=51406297">Langley</a></li>
-                                                <li>Iowa >>> <a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=44085445">Iowa</a></li>
-                                                <li>Lexington >>> Lexington</li>
-                                                <li>Marblehead >>> Marblehead</li>
-                                                <li>Marblehead L >>> Marblehead</li>
-                                                <li>Mahan >>> Mahan</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">Victory Belles作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse ">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>Mahan >>> Mahan</li>
-                                                <li>Lexington >>> Lexington</li>
-                                                <li>Graf Spee >>> Graf Spee</li>
-                                                <li>New Orleans >>> New Orleans</li>
-                                                <li>吹雪 >>> 吹雪</li>
-                                                <li>飛龍 >>> 飛龍</li>
-                                                <li>Nürnberg >>> Nürnberg</li>
-                                                <li>Belfast >>> Belfast</li>
-                                                <li>Kirov >>> Kirov</li>
-                                                <li>北上 >>> 北上</li>
-                                                <li>Scharnhorst >>> Scharnhorst</li>
-                                                <li>Pensacola >>> Salt Lake City</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">碧藍航線作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse ">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>Arizona >>> Arizona</li>
-                                                <li>atlanta >>> atlanta</li>
-                                                <li>Bismarck >>> Bismarck</li>
-                                                <li>bogue >>> bogue</li>
-                                                <li>Fletcher >>> Fletcher</li>
-                                                <li>Independence >>> Independence</li>
-                                                <li>Indianapolis >>> Indianapolis/Portland</li>
-                                                <li>Karlsruhe >>> Karlsruhe</li>
-                                                <li>Konigsberg >>> Konigsberg</li>
-                                                <li>Langley >>> Langley</li>
-                                                <li>Leander >>> Leander</li>
-                                                <li>Lexington >>> Lexington/Saratoga</li>
-                                                <li>Cleveland >>> Northampton/Houston</li>
-                                                <li>Omaha >>> Omaha</li>
-                                                <li>phoenix >>> phoenix</li>
-                                                <li>Prinz Eugen >>> Prinz Eugen</li>
-                                                <li>ranger >>> ranger</li>
-                                                <li>warspite >>> warspite/Queen Elizabeth</li>
-                                                <li>Yorck >>> Yorck</li>
-                                                <li>Leberecht Maass >>> z1</li>
-                                                <li>New York >>> Pennsylvania</li>
-                                                <li>利根 >>> 利根</li>
-                                                <li>古鷹 >>> 古鷹</li>
-                                                <li>妙高 >>> 妙高</li>
-                                                <li>白露 >>> 白露/夕立</li>
-                                                <li>築摩 >>> 築摩</li>
-                                                <li>金剛 >>> 金剛</li>
-                                                <li>長門 >>> 長門</li>
-                                                <li>陽炎 >>> 陽炎</li>
-                                                <li>青葉 >>> 青葉</li>
-                                                <li>飛龍 >>> 飛龍/蒼龍</li>
-                                                <li>龍驤 >>> 龍驤</li>
-                                                <li>最上 >>> 最上</li>
-                                                <li>翔鶴 >>> 翔鶴/瑞鶴</li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
+                                <?php
+                                function detial($type,$shipList){
+                                    echo "<dl class='am-accordion-item'>
+                                                <dt class='am-accordion-title'>".$type."作品對照</dt>
+                                                    <dd class='am-accordion-bd am-collapse '>
+                                                        <div class='am-accordion-content'>
+                                                            <ul class='am-list am-list-static'>";
+                                    foreach ($shipList as $ship) {
+                                        $shipFile = json_decode(file_get_contents("./database/$ship.json"));
+                                        $shipname = $shipFile->{'name'};
+                                        $cNames = [];
+                                        if($shipFile->{"$type"}){
+                                            echo "<li>".$shipname." <span class='am-icon-arrow-right'></span> ";
+                                            foreach($shipFile->{"$type"} as $value){
+                                                $p = strpos($value,"】");
+                                                $customName = substr($value,$p+3);
+                                                array_push($cNames,$customName);
+                                            };
+                                            echo implode("/",$cNames)."</li>";
+                                        };
+                                    };                                    
+                                    echo "</ul>\n</div>\n</dd>\n</dl>";
+                                };
+                                detial('艦隊收藏',$shipList);
+                                detial('戰艦少女',$shipList);
+                                detial('鋼鐵少女',$shipList);
+                                detial('碧藍航線',$shipList);
+                                detial('November',$shipList);
+                                detial('蒼藍鋼鐵戰艦',$shipList);
+                                detial('Victory Belles',$shipList);
+                                ?>
                                 <dl class="am-accordion-item">
                                     <dt class="am-accordion-title">其他作品對照</dt>
                                     <dd class="am-accordion-bd am-collapse ">
