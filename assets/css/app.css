@@ -1,0 +1,342 @@
+/* top */
+
+.top {
+    background: #1E5B94 url(../../images/hero_bg.png) center center no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 30vh 0;
+}
+
+.top-title {
+    font-size: 200%;
+    border: 2px solid #fff;
+    padding: 20px;
+    display: inline-block;
+}
+
+.top-btn {
+    background: #fff;
+}
+
+
+/* slider */
+
+.am-slider-default {
+    background-color: transparent;
+    box-shadow: none;
+    margin-bottom: 3rem;
+}
+
+.am-nav-next,
+.am-nav-prev {
+    display: none;
+}
+
+
+/*intro*/
+
+.intro {
+    background: #fff url(../../images/intro_bg.jpg) no-repeat right bottom;
+    background-size: contain;
+}
+
+.intro-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+    color: #34495e;
+}
+
+.intro-h3 {
+    color: #34495e;
+}
+
+.intro-p {
+    color: #6e7c8a;
+}
+
+.intro-mb {
+    margin-bottom: 30px;
+    background: hsla(0, 0%, 100%, .8);
+}
+
+
+/*about*/
+
+.about {
+    background: #fff;
+    padding: 40px 0;
+    color: #6e7c8a;
+}
+
+.about-color {
+    color: #34495e;
+}
+
+.about-title {
+    font-size: 180%;
+    padding: 30px 0 50px 0;
+    text-align: center;
+}
+
+.about .am-list li p {
+    margin: 0;
+}
+
+.about .am-list li {
+    padding: 0.5rem;
+}
+
+.about .detail {
+    height: 370px;
+    resize: none;
+}
+
+.about .update {
+    height: 500px;
+}
+
+.about .update ul ul {
+    margin: 0;
+}
+
+.about .update ul ul li {
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+}
+
+.about .am-list li a {
+    display: inline;
+}
+
+.about .am-scrollable-vertical {
+    padding-right: 20px;
+}
+
+
+/*footer*/
+
+.footer p {
+    color: #fff;
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+    background: #2d3e50;
+}
+
+.footer a {
+    color: #fff;
+    border-bottom: 1px dotted;
+}
+
+
+/*mixitup*/
+
+.mixitup {
+    background: #fff;
+    padding: 50px 0;
+    background: url(../../images/overlay.png), url(../../images/bg.jpg) center center no-repeat;
+    background-size: auto, cover;
+    padding: 3rem;
+}
+
+.mixitup-img {
+    text-align: center;
+}
+
+.mixitup .am-table {
+    margin-bottom: 0;
+}
+
+.mixitup button span {
+    padding-right: 0.5rem;
+}
+
+.mixitup .mix {
+    display: none;
+    width: 214px;
+    margin: 1rem 0;
+    background: hsla(0, 0%, 100%, .7);
+    border: hsla(0, 0%, 100%, .8) solid 1px;
+    border-radius: 3px;
+}
+
+.mixitup .ship {
+    margin: 0.5rem 0 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.mixitup .ship .tier {
+    color: hsla(0, 0%, 0%, .6);
+    font-size: 14px;
+    padding-left: 0.2rem;
+    padding-right: 0.5rem;
+}
+
+.mixitup #Container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 90vh;
+}
+
+.mixitup .am-selected {
+    margin: 5px 0 5px 7px;
+    background: hsla(0, 0%, 100%, .3);
+}
+
+.mixitup .filter_group {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.am-selected-list {
+    max-height: 500px;
+    overflow-x: hidden;
+}
+
+.am-icon-premium {
+    padding: .5em 1em .35em 1em;
+}
+
+.am-icon-premium img {
+    height: 20px;
+}
+
+
+/*element background*/
+
+.mixitup .img_container {
+    margin-top: 0.5rem;
+}
+
+.mixitup .icon-cruiser:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../images/icons/cruiser.png) no-repeat;
+}
+
+.mixitup .icon-destroyer:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../images/icons/destroyer.png) no-repeat;
+}
+
+.mixitup .icon-battleship:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../images/icons/battleship.png) no-repeat;
+}
+
+.mixitup .icon-aircarrier:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../images/icons/aircarrier.png) no-repeat;
+}
+
+.mixitup .premium .addon {
+    background: url(../../images/icons/premium.png) no-repeat 95% 5%;
+}
+
+.mixitup .ARP .addon {
+    background: url(../../images/icons/arp.png) no-repeat 95% 5%;
+}
+
+.mixitup .japan .img_container {
+    background: url(../../images/nation/flag_Japan.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .usa .img_container {
+    background: url(../../images/nation/flag_USA.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .ussr .img_container {
+    background: url(../../images/nation/flag_Russia.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .germany .img_container {
+    background: url(../../images/nation/flag_Germany.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .uk .img_container {
+    background: url(../../images/nation/flag_United_Kingdom.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .pan_asia .img_container {
+    background: url(../../images/nation/flag_Pan_Asia.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSB705 .img_container {
+    background: url(../../images/nation/flag_PJSB705.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSB706 .img_container {
+    background: url(../../images/nation/flag_PJSB706.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSB707 .img_container {
+    background: url(../../images/nation/flag_PJSB707.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSB708 .img_container {
+    background: url(../../images/nation/flag_PJSB708.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSC705 .img_container {
+    background: url(../../images/nation/flag_PJSC705.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSC709 .img_container {
+    background: url(../../images/nation/flag_PJSC709.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSC737 .img_container {
+    background: url(../../images/nation/flag_PJSC737.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSC707 .img_container {
+    background: url(../../images/nation/flag_PJSC707.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup #PJSC708 .img_container {
+    background: url(../../images/nation/flag_PJSC708.png) no-repeat top left;
+    background-size: contain;
+}
+
+
+/*loading mask*/
+
+.loader_bg {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../../images/overlay_b.png);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
