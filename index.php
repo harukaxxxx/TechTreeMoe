@@ -294,7 +294,7 @@
                         <div class="am-scrollable-vertical update">
                             <ul class="am-list am-list-static am-list-border">
                                 <?php
-                                $logFile = json_decode(file_get_contents("./assets/php/update.json"));
+                                $logFile = json_decode(file_get_contents("./update.json"));
                                 foreach ($logFile as $value) {
                                     $time = $value->{'time'};
                                     $level = $value->{'level'};
