@@ -132,3 +132,17 @@ function mmm() {
         document.location = "./?mmm";
     }
 }
+
+//multilang
+var langs = ["zhTW", 'jp', 'en'];
+var langCode = 'zhTW';
+
+if ($.inArray(langCode, langs) >= 0) {
+    $.getJSON('langs/' + langCode + '.json', function(jsonData) {
+        $.each($("[tkey]"), function(jkey) {
+            var tkey = $("[tkey]").eq(jkey).attr('tkey');
+            var tval = jsonData[tkey];
+            $("[tkey]").eq(jkey).html(tval);
+        })
+    });
+}
