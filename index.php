@@ -205,7 +205,7 @@
                     $shipChange = ($shipFile->{'change'}) ? " change" : "";
                     $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
                     $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
-
+                    
                     echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP'>\n
                             <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
                                 <div class='img_container'>\n
@@ -251,8 +251,13 @@
                                         if($shipFile->{"$type"}){
                                             echo "<li>".$shipname." <span class='am-icon-arrow-right'></span> ";
                                             foreach($shipFile->{"$type"} as $value){
-                                                $p = strpos($value,"】");
-                                                $customName = substr($value,$p+3);
+                                                if ($type == "萌萌模式") {
+                                                    $p = strpos($value,"】");
+                                                    $customName = $value;
+                                                } else {
+                                                    $p = strpos($value,"】");
+                                                    $customName = substr($value,$p+3);
+                                                }
                                                 array_push($cNames,$customName);
                                             };
                                             echo implode("/",$cNames)."</li>";
@@ -267,6 +272,9 @@
                                 detial('November',$shipList);
                                 detial('蒼藍鋼鐵戰艦',$shipList);
                                 detial('Victory Belles',$shipList);
+                                if ( $_SERVER['QUERY_STRING'] == "mmm") {
+                                    detial('萌萌模式',$shipList);
+                                };
                                 ?>
                                 <dl class="am-accordion-item">
                                     <dt class="am-accordion-title">其他作品對照</dt>
