@@ -3,7 +3,7 @@ $('.mixitup select').on('change', function() {
     var ship = this.name
     var ship_img = this.value;
     $('#' + ship + ' img').fadeOut(400, function() {
-        $('#' + ship + ' img').attr("src", "images/ship_previews/" + ship_img + ".png");
+        $('#' + ship + ' img').attr("src", "images/ship_previews_web/" + ship_img + ".png");
     })
     $('#' + ship + ' img').fadeIn(400);
 });

@@ -291,7 +291,10 @@
                                                 <li>【<a href="https://twitter.com/kinona">紀奈</a>】<a href="http://seiga.nicovideo.jp/seiga/im4181804">三笠</a></li>
                                                 <li>【<a href="http://www.weibo.com/fatem380">月天翔</a>】魔改【<a href="http://www.pixiv.net/member.php?id=141206">しずま</a>】零之島風</li>
                                                 <li>【<a href="http://www.pixiv.net/member.php?id=141206">しずま</a>】大和</li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629">白龍</a></li>
+                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629">白龍 裝甲Ver.</a></li>
+                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584">藏王</a></li>
+                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800">白龍</a></li>
+                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800">白龍 無儀裝Ver.</a></li>
                                                 <li>【<a href="https://twitter.com/asaka142">安佐川</a>】出雲</li>
                                                 <li>【<a href="https://twitter.com/kinona">紀奈</a>】<a href="http://seiga.nicovideo.jp/seiga/im5177431">浴衣三笠</a></li>
                                                 <li>【<a href="http://www.pixiv.net/member.php?id=1391461">konnyaku</a>】秋月型</li>
@@ -309,7 +312,7 @@
                         <div class="am-scrollable-vertical update">
                             <ul class="am-list am-list-static am-list-border">
                                 <?php
-                                $logFile = json_decode(file_get_contents("./assets/php/update.json"));
+                                $logFile = json_decode(file_get_contents("./update.json"));
                                 foreach ($logFile as $value) {
                                     $time = $value->{'time'};
                                     $level = $value->{'level'};
