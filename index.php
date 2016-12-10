@@ -314,6 +314,14 @@
                                 <?php
                                 $logFile = json_decode(file_get_contents("./update.json"));
                                 foreach ($logFile as $value) {
+                                    if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
+                                        continue;
+                                    }
+                                    if ($value->{'moe'}) {
+                                        $moe = "<span class='am-icon-heart am-text-danger'></span>";
+                                    }else{
+                                        $moe = "";
+                                    }
                                     $time = $value->{'time'};
                                     $level = $value->{'level'};
                                     if($level == "IMPORTANT"){
@@ -325,7 +333,7 @@
                                     }else{
                                         $class = "warning";
                                     }
-                                    echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time</small>\n<ul>";
+                                    echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time $moe</small>\n<ul>";
                                     foreach($value->{"event"} as $value){
                                         echo "<li>$value</li>";
                                     }
