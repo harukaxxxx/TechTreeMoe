@@ -284,6 +284,7 @@
                                                 <li>【<a href="https://twitter.com/kinona">紀奈</a>】<a href="http://seiga.nicovideo.jp/seiga/im5177431">浴衣三笠</a></li>
                                                 <li>【<a href="http://www.pixiv.net/member.php?id=1391461">konnyaku</a>】秋月型</li>
                                                 <li>【<a href="http://www.pixiv.net/member.php?id=1391461">konnyaku</a>】アイマス秋月型</li>
+                                                <li>【<a href="http://www.weibo.com/u/2193276854">紫瑟</a>】<a href="http://www.weibo.com/2193276854/Dca0Yz2yY">Indianapolis 35號球員Ver.</a></li>
                                             </ul>
                                         </div>
                                     </dd>

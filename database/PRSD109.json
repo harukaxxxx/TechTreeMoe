@@ -1,0 +1,12 @@
+{
+    "id": "PRSD109",
+    "name": "Kiev",
+    "tier": "Ⅶ",
+    "nation": "ussr",
+    "type": "destroyer",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": { "1": "【艦隊收藏】Верный" }
+}
