@@ -317,7 +317,7 @@
                                     if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
                                         continue;
                                     }
-                                    if ($value->{'moe'}) {
+                                    if (property_exists($value, "moe")) {
                                         $moe = "<span class='am-icon-heart am-text-danger'></span>";
                                     }else{
                                         $moe = "";
@@ -332,6 +332,9 @@
                                         $class = "success";
                                     }else{
                                         $class = "warning";
+                                    }
+                                    if ($_SERVER['QUERY_STRING'] != "mmm" and property_exists($value, "moe")) {
+                                      continue;
                                     }
                                     echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time $moe</small>\n<ul>";
                                     foreach($value->{"event"} as $value){
