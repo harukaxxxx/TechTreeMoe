@@ -206,6 +206,10 @@
                     $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
                     $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
                     
+                    if ($_SERVER['QUERY_STRING'] != "mmm"
+                       and property_exists($shipFile, "moe")) {
+                      continue;
+                    }
                     echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP'>\n
                             <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
                                 <div class='img_container'>\n
@@ -220,6 +224,9 @@
                     options($shipFile,'November');
                     options($shipFile,'蒼藍鋼鐵戰艦');
                     options($shipFile,'Victory Belles');
+                    if ($_SERVER['QUERY_STRING'] == "mmm") {
+                        options($shipFile, '萌萌模式');
+                    };
                     echo"</select>\n</div>\n";
                 }
             ?>
