@@ -1,0 +1,13 @@
+{
+    "id": "PRSC506",
+    "name": "Molotov",
+    "tier": "Ⅵ",
+    "nation": "ussr",
+    "type": "cruiser",
+    "default": "m1",
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "moe": true,
+    "萌萌模式": { "m1": "【東方Project】琪露诺" }
+}

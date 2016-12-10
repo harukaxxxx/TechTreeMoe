@@ -1,10 +1,18 @@
 {
-    "65": {
+    "66": {
         "time": "2016/12/11",
         "level": "FIX",
         "event": [
             "重寫詳細資料的同人作品分類源碼"
         ]
+    },
+    "65": {
+        "time": "2016/12/11",
+        "level": "UPDATE",
+        "event": [
+            "新增 夕雲 <span class='am-icon-arrow-right'></span>【高校艦隊】岬明乃"
+        ],
+        "moe": true
     },
     "64": {
         "time": "2016/12/11",

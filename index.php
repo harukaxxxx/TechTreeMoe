@@ -206,7 +206,11 @@
                     $shipChange = ($shipFile->{'change'}) ? " change" : "";
                     $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
                     $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
-
+                    
+                    if ($_SERVER['QUERY_STRING'] != "mmm"
+                       and property_exists($shipFile, "moe")) {
+                      continue;
+                    }
                     echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP'>\n
                             <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
                                 <div class='img_container'>\n
@@ -221,6 +225,9 @@
                     options($shipFile,'November');
                     options($shipFile,'蒼藍鋼鐵戰艦');
                     options($shipFile,'Victory Belles');
+                    if ($_SERVER['QUERY_STRING'] == "mmm") {
+                        options($shipFile, '萌萌模式');
+                    };
                     echo"</select>\n</div>\n";
                 }
             ?>
@@ -257,11 +264,15 @@
                                                     $draw = ($value[3]) ? "<a href=".$value[3].">$value[2]</a>" : $value[2] ;
                                                     $customName = "【".$author."】".$draw;
                                                     array_push($cNames,$customName);
-                                                }else{
+                                                }else if ($type == "萌萌模式") {
+                                                    $p = strpos($value,"】");
+                                                    $customName = $value;
+                                                } else{
                                                     $p = strpos($value,"】");
                                                     $customName = substr($value,$p+3);
                                                     array_push($cNames,$customName);
                                                 }
+                                                array_push($cNames,$customName);
                                             };
                                             echo implode("/",$cNames)."</li>";
                                         };
@@ -276,6 +287,9 @@
                                 detial('蒼藍鋼鐵戰艦',$shipList);
                                 detial('Victory Belles',$shipList);
                                 detial('同人作品',$shipList);
+                                if ( $_SERVER['QUERY_STRING'] == "mmm") {
+                                    detial('萌萌模式',$shipList);
+                                };
                                 ?>
                             </section>
                         </div>
@@ -288,6 +302,14 @@
                                 <?php
                                 $logFile = json_decode(file_get_contents("./update.json"));
                                 foreach ($logFile as $value) {
+                                    if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
+                                        continue;
+                                    }
+                                    if ($value->{'moe'}) {
+                                        $moe = "<span class='am-icon-heart am-text-danger'></span>";
+                                    }else{
+                                        $moe = "";
+                                    }
                                     $time = $value->{'time'};
                                     $level = $value->{'level'};
                                     if($level == "IMPORTANT"){
@@ -299,7 +321,7 @@
                                     }else{
                                         $class = "warning";
                                     }
-                                    echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time</small>\n<ul>";
+                                    echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time $moe</small>\n<ul>";
                                     foreach($value->{"event"} as $value){
                                         echo "<li>$value</li>";
                                     }
