@@ -3,7 +3,7 @@
     "name": "Kirov",
     "tier": "Ⅴ",
     "nation": "ussr",
-    "type": "destroyer",
+    "type": "cruiser",
     "default": 2,
     "change": true,
     "premium": false,

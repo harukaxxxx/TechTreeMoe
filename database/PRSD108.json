@@ -3,7 +3,7 @@
     "name": "Tashkent",
     "tier": "Ⅷ",
     "nation": "ussr",
-    "type": "cruiser",
+    "type": "destroyer",
     "default": 1,
     "change": false,
     "premium": false,
