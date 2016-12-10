@@ -187,6 +187,7 @@
                         $id = $file->{'id'};
                         echo "<optgroup label='$type'>\n";
                         foreach ($file->{"$type"} as $key => $value) {
+                            $value = ($type != '同人作品') ? $value : "【$value[0]】$value[2]" ;
                             $default = ($file->{'default'} == $key) ? " selected" : "" ;
                             echo "<option value='$id-$key'$default>$value</option>\n";
                         };
@@ -251,9 +252,16 @@
                                         if($shipFile->{"$type"}){
                                             echo "<li>".$shipname." <span class='am-icon-arrow-right'></span> ";
                                             foreach($shipFile->{"$type"} as $value){
-                                                $p = strpos($value,"】");
-                                                $customName = substr($value,$p+3);
-                                                array_push($cNames,$customName);
+                                                if ($type == "同人作品") {
+                                                    $author = ($value[1]) ? "<a href=".$value[1].">$value[0]</a>" : $value[0] ;
+                                                    $draw = ($value[3]) ? "<a href=".$value[3].">$value[2]</a>" : $value[2] ;
+                                                    $customName = "【".$author."】".$draw;
+                                                    array_push($cNames,$customName);
+                                                }else{
+                                                    $p = strpos($value,"】");
+                                                    $customName = substr($value,$p+3);
+                                                    array_push($cNames,$customName);
+                                                }
                                             };
                                             echo implode("/",$cNames)."</li>";
                                         };
@@ -267,28 +275,8 @@
                                 detial('November',$shipList);
                                 detial('蒼藍鋼鐵戰艦',$shipList);
                                 detial('Victory Belles',$shipList);
+                                detial('同人作品',$shipList);
                                 ?>
-                                <dl class="am-accordion-item">
-                                    <dt class="am-accordion-title">其他作品對照</dt>
-                                    <dd class="am-accordion-bd am-collapse ">
-                                        <div class="am-accordion-content">
-                                            <ul class="am-list am-list-static">
-                                                <li>【<a href="https://twitter.com/kinona">紀奈</a>】<a href="http://seiga.nicovideo.jp/seiga/im4181804">三笠</a></li>
-                                                <li>【<a href="http://www.weibo.com/fatem380">月天翔</a>】魔改【<a href="http://www.pixiv.net/member.php?id=141206">しずま</a>】零之島風</li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=141206">しずま</a>】大和</li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629">白龍 裝甲Ver.</a></li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584">藏王</a></li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800">白龍</a></li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=7933104">司马闹腾</a>】<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800">白龍 無儀裝Ver.</a></li>
-                                                <li>【<a href="https://twitter.com/asaka142">安佐川</a>】出雲</li>
-                                                <li>【<a href="https://twitter.com/kinona">紀奈</a>】<a href="http://seiga.nicovideo.jp/seiga/im5177431">浴衣三笠</a></li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=1391461">konnyaku</a>】秋月型</li>
-                                                <li>【<a href="http://www.pixiv.net/member.php?id=1391461">konnyaku</a>】アイマス秋月型</li>
-                                                <li>【<a href="http://www.weibo.com/u/2193276854">紫瑟</a>】<a href="http://www.weibo.com/2193276854/Dca0Yz2yY">Indianapolis 35號球員Ver.</a></li>
-                                            </ul>
-                                        </div>
-                                    </dd>
-                                </dl>
                             </section>
                         </div>
                         <hr class="am-article-divider am-show-sm-only">

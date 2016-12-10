@@ -8,5 +8,8 @@
     "change": false,
     "premium": true,
     "arp": false,
-    "同人作品": { "1": "【紀奈】三笠", "2": "【紀奈】三笠 浴衣Ver." }
+    "同人作品": {
+        "1": ["紀奈", "https://twitter.com/kinona", "三笠", "http://seiga.nicovideo.jp/seiga/im4181804"],
+        "2": ["紀奈", "https://twitter.com/kinona", "三笠 浴衣Ver.", "http://seiga.nicovideo.jp/seiga/im5177431"]
+    }
 }

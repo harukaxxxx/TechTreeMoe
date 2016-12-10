@@ -8,5 +8,9 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "同人作品": { "1": "【司马闹腾】白龍 裝甲Ver.", "2": "【司马闹腾】白龍", "3": "【司马闹腾】白龍 無儀裝Ver." }
+    "同人作品": {
+        "1": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "白龍 裝甲Ver.", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629"],
+        "2": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "白龍", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"],
+        "3": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "白龍 無儀裝Ver.", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"]
+    }
 }

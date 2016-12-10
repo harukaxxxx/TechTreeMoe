@@ -8,5 +8,5 @@
     "change": false,
     "premium": false,
     "arp": false,
-    "同人作品": { "1": "【司马闹腾】蔵王" }
+    "同人作品": { "1": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "蔵王", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584"] }
 }
