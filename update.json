@@ -1,4 +1,20 @@
 {
+    "69": {
+        "time": "2016/12/11",
+        "level": "IMPORTANT",
+        "event": [
+            "新增【萌萌模式】收錄非艦娘主題之圖標，點擊下載旁的【萌萌模式】按鈕即可切換"
+        ],
+        "moe": true
+    },
+    "68": {
+        "time": "2016/12/11",
+        "level": "NEW",
+        "event": [
+            "新增 Molotov <span class='am-icon-arrow-right'></span>【東方Project】琪露诺"
+        ],
+        "moe": true
+    },
     "67": {
         "time": "2016/12/11",
         "level": "UPDATE",

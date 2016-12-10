@@ -33,6 +33,7 @@
             </h1>
             <div class="am-collapse am-topbar-collapse" id="collapse-head">
                 <div class="am-topbar-right">
+                    <button id="mmm" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="mmm();"><span class="am-icon-toggle-off"></span> 萌萌模式</button>
                     <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="submit();"><span class="am-icon-download"></span> 下載</button>
                 </div>
             </div>
@@ -305,7 +306,7 @@
                                     if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
                                         continue;
                                     }
-                                    if ($value->{'moe'}) {
+                                    if (property_exists($value, "moe")) {
                                         $moe = "<span class='am-icon-heart am-text-danger'></span>";
                                     }else{
                                         $moe = "";
@@ -320,6 +321,9 @@
                                         $class = "success";
                                     }else{
                                         $class = "warning";
+                                    }
+                                    if ($_SERVER['QUERY_STRING'] != "mmm" and property_exists($value, "moe")) {
+                                      continue;
                                     }
                                     echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time $moe</small>\n<ul>";
                                     foreach($value->{"event"} as $value){

@@ -113,3 +113,22 @@ function reset() {
         location.reload();
     }
 }
+
+//mmm
+$(function() {
+    if (Cookies.get("mmm") && document.location.search == "?mmm") {
+        $("#mmm").children().removeClass('am-icon-toggle-off').addClass('am-icon-toggle-on');
+    } else {
+        $("#mmm").children().removeClass('am-icon-toggle-on').addClass('am-icon-toggle-off');
+    }
+})
+
+function mmm() {
+    if (document.location.search == "?mmm") {
+        Cookies.set("mmm", false);
+        document.location = "./";
+    } else {
+        Cookies.set("mmm", true);
+        document.location = "./?mmm";
+    }
+}
