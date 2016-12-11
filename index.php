@@ -42,8 +42,8 @@
     <div class="top">
         <div class="am-g">
             <div class="am-u-lg-12">
-                <h1 class="top-title">TechTreeMoe - 戰艦世界科技樹萌化</h1>
-                <p>
+                <h1 class="top-title" tkey="tkey_site_title">TechTreeMoe - 戰艦世界科技樹萌化</h1>
+                <p tkey="tkey_site_description">
                     結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、Victory Belles以及同人作品，讓科技樹萌起來吧！
                 </p>
                 <button type="button" class="am-btn am-btn-primary" data-am-modal="{target: '#preview'}">效果預覽</button>

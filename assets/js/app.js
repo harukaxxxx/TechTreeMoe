@@ -134,15 +134,20 @@ function mmm() {
 }
 
 //multilang
-var langs = ["zhTW", 'jp', 'en'];
-var langCode = 'zhTW';
+var langCode = navigator.language;
+var langs = ["zh-TW", "zh-CN", "en-US", "ja"];
 
-if ($.inArray(langCode, langs) >= 0) {
+function lang(langCode) {
     $.getJSON('langs/' + langCode + '.json', function(jsonData) {
         $.each($("[tkey]"), function(jkey) {
             var tkey = $("[tkey]").eq(jkey).attr('tkey');
             var tval = jsonData[tkey];
             $("[tkey]").eq(jkey).html(tval);
+            console.log("Change " + tkey + " to '" + tval + "'");
         })
     });
+}
+// && langCode != "zh-TW"
+if ($.inArray(langCode, langs) >= 0) {
+    lang(langCode);
 }
