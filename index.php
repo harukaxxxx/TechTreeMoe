@@ -166,6 +166,11 @@
             <div class="am-btn-group">
                 <button class="filter am-btn am-btn-secondary" data-filter=".change"><span class="am-icon-paint-brush"></span>可更替</button>
                 <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium"><img src="./images/icons/premium_icon.png">加值艦</button>
+                <?php
+                    if ($_SERVER['QUERY_STRING'] == "mmm") {
+                        echo "<button class='filter am-btn am-btn-secondary' data-filter='.moe'><span class='am-icon-heart'></span>萌萌模式</button>";
+                    };
+                ?>
             </div>
             <button type="button" class="am-btn am-btn-secondary" onclick="reset();"><span class="am-icon-refresh"></span>回復預設</button>
         </div>
@@ -207,12 +212,12 @@
                     $shipChange = ($shipFile->{'change'}) ? " change" : "";
                     $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
                     $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
-                    
+                    $shipMoe = (property_exists($shipFile, "萌萌模式")) ? " moe" : "" ;
                     if ($_SERVER['QUERY_STRING'] != "mmm"
                        and property_exists($shipFile, "moe")) {
                       continue;
                     }
-                    echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP'>\n
+                    echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP$shipMoe'>\n
                             <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
                                 <div class='img_container'>\n
                                     <div class='addon'><img src='images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
