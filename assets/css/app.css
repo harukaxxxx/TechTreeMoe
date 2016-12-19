@@ -1,10 +1,16 @@
 /* top */
 
 .top {
-    background: #1E5B94 url(../../images/hero_bg.png) center center no-repeat;
+    background: center center no-repeat;
+    background-color: #1E5B94;
+    background-image: url(../../images/hero_bg.png);
     color: #fff;
     text-align: center;
     padding: 30vh 0;
+}
+
+.top .am-g {
+    padding: 20px 0;
 }
 
 .top-title {
