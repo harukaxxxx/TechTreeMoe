@@ -52,14 +52,14 @@
     </div>
     <div class="am-modal am-modal-alert" tabindex="-1" id="preview">
         <div class="am-modal-dialog">
-            <div class="am-modal-hd">效果預覽</div>
+            <div class="am-modal-hd" tkey="tkey_preview_button">效果預覽</div>
             <div class="am-modal-bd">
                 <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
                     <li>
                         <div class="am-gallery-item">
                             <a href="images/preview/japan.jpg" class="">
                                 <img src="images/preview/japan.jpg" alt="日本" />
-                                <h3 class="am-gallery-title">日本預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_japan">日本預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -67,7 +67,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/usa.jpg" class="">
                                 <img src="images/preview/usa.jpg" alt="美國" />
-                                <h3 class="am-gallery-title">美國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_usa">美國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -75,7 +75,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/germany.jpg" class="">
                                 <img src="images/preview/germany.jpg" alt="德國" />
-                                <h3 class="am-gallery-title">德國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_germany">德國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -83,7 +83,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/ussr.jpg" class="">
                                 <img src="images/preview/ussr.jpg" alt="蘇聯" />
-                                <h3 class="am-gallery-title">蘇聯預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_ussr">蘇聯預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -91,7 +91,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/uk.jpg" class="">
                                 <img src="images/preview/uk.jpg" alt="英國" />
-                                <h3 class="am-gallery-title">英國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_uk">英國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -99,7 +99,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/pan_asia.jpg" class="">
                                 <img src="images/preview/pan_asia.jpg" alt="泛亞" />
-                                <h3 class="am-gallery-title">泛亞預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -107,38 +107,38 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/arp.jpg" class="">
                                 <img src="images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
-                                <h3 class="am-gallery-title">蒼藍鋼鐵戰艦預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
                             </a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="am-modal-footer">
-                <span class="am-modal-btn">關閉</span>
+                <span class="am-modal-btn" tkey="tkey_close">關閉</span>
             </div>
         </div>
     </div>
     <div class="intro">
         <div class="am-g am-container">
             <div class="am-u-lg-12">
-                <h2 class="intro-h2">TechTreeMoe介紹與教學</h2>
+                <h2 class="intro-h2" tkey="tkey_intro_section">TechTreeMoe介紹與教學</h2>
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
-                        <h3 class="intro-h3"><i class="am-icon-info-circle"></i> 介紹</h3>
+                        <h3 class="intro-h3" tkey="tkey_intro_title"><i class="am-icon-info-circle"></i> 介紹</h3>
                         <ul class="intro-p">
-                            <li>艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
-                            <li>利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
-                            <li>按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用cookie儲存您的紀錄。</li>
-                            <li>此模組不包含背景國旗及艦型小圖標。</li>
+                            <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
+                            <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
+                            <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用cookie儲存您的紀錄。</li>
+                            <li tkey="tkey_intro_4">此模組不包含背景國旗及艦型小圖標。</li>
                         </ul>
                     </div>
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
-                        <h3 class="intro-h3"><i class="am-icon-book"></i> 教學</h3>
+                        <h3 class="intro-h3" tkey="tkey_tutorial_title"><i class="am-icon-book"></i> 教學</h3>
                         <ol class="intro-p">
-                            <li>艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
-                            <li>挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li> 
-                            <li>點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li> 
-                            <li>解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
+                            <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
+                            <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li> 
+                            <li tkey="tkey_tutorial_3">點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li> 
+                            <li tkey="tkey_tutorial_4">解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
                         </ol>
                     </div>
                 </div>

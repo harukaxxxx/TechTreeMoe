@@ -1,4 +1,24 @@
 {
     "tkey_site_title": "TechTreeMoe - 戰艦世界科技樹萌化",
-    "tkey_site_description": "結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、Victory Belles以及同人作品，讓科技樹萌起來吧！"
+    "tkey_site_description": "結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、Victory Belles以及同人作品，讓科技樹萌起來吧！",
+    "tkey_preview_button": "效果預覽",
+    "tkey_preview_japan": "日本預覽",
+    "tkey_preview_usa": "美國預覽",
+    "tkey_preview_germany": "德國預覽",
+    "tkey_preview_ussr": "蘇聯預覽",
+    "tkey_preview_uk": "英國預覽",
+    "tkey_preview_pan_asia": "泛亞預覽",
+    "tkey_preview_arp": "蒼藍鋼鐵戰艦預覽",
+    "tkey_close": "關閉",
+    "tkey_intro_section": "TechTreeMoe介紹與教學",
+    "tkey_intro_title": "<i class='am-icon-info-circle'></i> 介紹",
+    "tkey_intro_1": "艦娘圖標百百種，挑選中意的圖標來萌化科技樹。",
+    "tkey_intro_2": "利用<span class='am-icon-paint-brush am-text-primary'> 可更替</span> 按鈕可快速尋找可以替換的項目",
+    "tkey_intro_3": "按下<span class='am-icon-download am-text-primary'> 下載</span>時將使用cookie儲存您的紀錄。",
+    "tkey_intro_4": "此模組不包含背景國旗及艦型小圖標。",
+    "tkey_tutorial_title": "<i class='am-icon-book'></i> 教學",
+    "tkey_tutorial_1": "艦船圖片下的下拉選單可選取並預覽想使用的圖標。",
+    "tkey_tutorial_2": "挑選完畢後再點擊右上的<span class='am-icon-download am-text-primary'> 下載</span> 按鈕進行下載。",
+    "tkey_tutorial_3": "點擊右上的 <span class='am-icon-download am-text-primary'> 下載</span> 按鈕下載模組。",
+    "tkey_tutorial_4": "解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。"
 }
