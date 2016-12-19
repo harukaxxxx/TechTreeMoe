@@ -143,11 +143,18 @@ function lang(langCode) {
             var tkey = $("[tkey]").eq(jkey).attr('tkey');
             var tval = jsonData[tkey];
             $("[tkey]").eq(jkey).html(tval);
-            console.log("Change " + tkey + " to '" + tval + "'");
+            // console.log("Change " + tkey + " to '" + tval + "'");
         })
     });
 }
 // && langCode != "zh-TW"
 if ($.inArray(langCode, langs) >= 0) {
     lang(langCode);
+    console.log(langCode + " now.");
 }
+
+// auto code
+// var c = $("[tkey]").length;
+// for(var i = 0; i < c; i++){
+// console.log('"'+$("[tkey]").eq(i).attr('tkey')+'":"'+$("[tkey]").eq(i).html()+'",');
+// };

@@ -147,27 +147,27 @@
     </div>
     <div class="mixitup">
         <div class="filter_group">
-            <button type="button" class="filter am-btn am-btn-secondary" data-filter="all">全部顯示</button>
+            <button type="button" class="filter am-btn am-btn-secondary" data-filter="all" tkey="tkey_filter_all">全部顯示</button>
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".japan">日本</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".usa">美國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".ussr">蘇聯</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".germany">德國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".uk">英國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".japan" tkey="tkey_filter_japan">日本</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".usa" tkey="tkey_filter_usa">美國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".ussr" tkey="tkey_filter_ussr">蘇聯</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".germany" tkey="tkey_filter_germany">德國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".uk" tkey="tkey_filter_uk">英國</button>
                 <!--<button type="button" class="filter am-btn am-btn-secondary" data-filter=".poland">波蘭</button>-->
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".pan_asia">泛亞</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".pan_asia" tkey="tkey_filter_pan_asia">泛亞</button>
             </div>
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".destroyer"><span class="am-icon-paint-anchor">驅逐艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".cruiser"><span class="am-icon-paint-anchor">巡洋艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".battleship"><span class="am-icon-paint-anchor">戰艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".aircarrier"><span class="am-icon-paint-anchor">航空母艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".destroyer" tkey="tkey_filter_destroyer"><span class="am-icon-paint-anchor">驅逐艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".cruiser" tkey="tkey_filter_cruiser"><span class="am-icon-paint-anchor">巡洋艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".battleship" tkey="tkey_filter_battleship"><span class="am-icon-paint-anchor">戰艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".aircarrier" tkey="tkey_filter_aircarrier"><span class="am-icon-paint-anchor">航空母艦</button>
             </div>
             <div class="am-btn-group">
-                <button class="filter am-btn am-btn-secondary" data-filter=".change"><span class="am-icon-paint-brush"></span>可更替</button>
-                <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium"><img src="./images/icons/premium_icon.png">加值艦</button>
+                <button class="filter am-btn am-btn-secondary" data-filter=".change" tkey="tkey_filter_change"><span class="am-icon-paint-brush"></span>可更替</button>
+                <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium" tkey="tkey_filter_premium"><img src="./images/icons/premium_icon.png">加值艦</button>
             </div>
-            <button type="button" class="am-btn am-btn-secondary" onclick="reset();"><span class="am-icon-refresh"></span>回復預設</button>
+            <button type="button" class="am-btn am-btn-secondary" onclick="reset();" tkey="tkey_filter_reset"><span class="am-icon-refresh"></span>回復預設</button>
         </div>
         <div id="Container">
             <?php
@@ -237,13 +237,13 @@
     <div class="about">
         <div class="am-g am-container">
             <div class="am-u-lg-12">
-                <h2 class="about-title about-color">TechTreeMoe更新紀錄與詳細資訊</h2>
+                <h2 class="about-title about-color" tkey="tkey_about_section">TechTreeMoe更新紀錄與詳細資訊</h2>
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-                        <h4 class="about-color"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
-                        <p>若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
+                        <h4 class="about-color"tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
+                        <p>若您有任何建議歡迎來信 <span class="am-icon-envelope" tkey="tkey_about_content"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
                         </p>
-                        <h4 class="about-color"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
+                        <h4 class="about-color"tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">
                             <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
                                 <?php
@@ -297,7 +297,7 @@
                         <hr class="am-article-divider am-show-sm-only">
                     </div>
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-                        <h4 class="about-color"><i class="am-icon-list-ul"></i> 更新紀錄</h4>
+                        <h4 class="about-color" tkey="tkey_log_title"><i class="am-icon-list-ul"></i> 更新紀錄</h4>
                         <div class="am-scrollable-vertical update">
                             <ul class="am-list am-list-static am-list-border">
                                 <?php
