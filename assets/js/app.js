@@ -120,7 +120,7 @@ $(function() {
         $("#mmm").children().removeClass('am-icon-toggle-off').addClass('am-icon-toggle-on');
         var imageURL = "url(./images/mmm_bg" + Math.floor(Math.random() * 2 + 1) + ".jpg)";
         $('.top').css("background-image", imageURL).css("background-size", "cover");
-        $('.top .am-g').css("background-color", "hsla(0, 0%, 0%, 0.5)");
+        $('.top .am-g').css("background-color", "hsla(0, 0%, 0%, 0.2)");
     } else {
         $("#mmm").children().removeClass('am-icon-toggle-on').addClass('am-icon-toggle-off');
         $('.top').css("background-image", "url(./images/hero_bg.png)").css("background-size", "initial");
