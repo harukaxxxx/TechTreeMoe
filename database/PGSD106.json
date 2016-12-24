@@ -1,10 +1,18 @@
-{"id": "PGSD106",
-"name": "Ernst Gaede",
-"tier": "Ⅵ",
-"nation": "germany",
-"type": "destroyer",
-"default":1,
-"change":true,
-"premium":false,
-"arp":false,
-"艦隊收藏":{"1":"【艦隊收藏】Z3 zwei","2":"【艦隊收藏】Z3 夏季限定(2016)Ver."}}
+{
+    "id": "PGSD106",
+    "name": "Ernst Gaede",
+    "tier": "Ⅵ",
+    "nation": "germany",
+    "type": "destroyer",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】Z3 zwei",
+        "2": "【艦隊收藏】Z3 夏季限定(2016)Ver."
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Z3 改"
+    }
+}

@@ -8,6 +8,15 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "2": "【戰艦少女】N. Carolina", "3": "【戰艦少女】Washington" },
-    "November": { "1": "【November】NewJersey" }
+    "戰艦少女": {
+        "2": "【戰艦少女】N. Carolina",
+        "3": "【戰艦少女】Washington"
+    },
+    "November": {
+        "1": "【November】NewJersey"
+    },
+    "鋼鐵少女": {
+        "4": "【鋼鐵少女】Washington",
+        "5": "【鋼鐵少女】Washington 改"
+    }
 }

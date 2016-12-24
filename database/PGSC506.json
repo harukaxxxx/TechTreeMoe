@@ -8,7 +8,15 @@
     "change": true,
     "premium": true,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Graf Spee", "4": "【戰艦少女】Graf Spee 出遊禮裝Ver." },
-    "鋼鐵少女": { "2": "【鋼鐵少女】Graf Spee" },
-    "Victory Belles": { "3": "【Victory Belles】Graf Spee" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Graf Spee",
+        "4": "【戰艦少女】Graf Spee 出遊禮裝Ver."
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Graf Spee",
+        "5": "【鋼鐵少女】Graf Spee"
+    },
+    "Victory Belles": {
+        "3": "【Victory Belles】Graf Spee"
+    }
 }

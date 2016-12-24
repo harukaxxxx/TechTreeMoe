@@ -8,6 +8,11 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "November": { "1": "【November】Benson" },
-    "'鋼鐵少女": { "2": "【鋼鐵少女】Benson" }
+    "November": {
+        "1": "【November】Benson"
+    },
+    "'鋼鐵少女": {
+        "2": "【鋼鐵少女】Benson",
+        "3": "【鋼鐵少女】Benson 改"
+    }
 }

@@ -1,10 +1,18 @@
-{"id": "PGSD108",
-"name": "Z23",
-"tier": "Ⅷ",
-"nation": "germany",
-"type": "destroyer",
-"default":1,
-"change":true,
-"premium":false,
-"arp":false,
-"戰艦少女":{"1":"【戰艦少女】Z24","2":"【戰艦少女】Z28"}}
+{
+    "id": "PGSD108",
+    "name": "Z23",
+    "tier": "Ⅷ",
+    "nation": "germany",
+    "type": "destroyer",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Z24",
+        "2": "【戰艦少女】Z28"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Z25 改"
+    }
+}
