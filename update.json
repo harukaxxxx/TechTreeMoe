@@ -1,4 +1,20 @@
 {
+    "73": {
+        "time": "2016/12/27",
+        "level": "FIX",
+        "event": [
+            "Independence【戰艦少女】可選項暫時下架"
+        ]
+    },
+    "72": {
+        "time": "2016/12/27",
+        "level": "UPDATE",
+        "event": [
+            "新增【戰艦少女】Prinz Eugen",
+            "新增【戰艦少女】Prinz Eugen 改",
+            "新增【戰艦少女】Prinz Eugen 聖誕裝Ver."
+        ]
+    },
     "71": {
         "time": "2016/12/24",
         "level": "UPDATE",
