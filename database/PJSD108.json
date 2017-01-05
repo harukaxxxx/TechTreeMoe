@@ -8,8 +8,15 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "艦隊收藏": { "1": "【艦隊收藏】秋月", "2": "【艦隊收藏】秋月 鎮守府秋祭りVer." },
-    "戰艦少女": { "3": "【戰艦少女】秋月", "10": "【戰艦少女】秋月 改" },
+    "艦隊收藏": {
+        "1": "【艦隊收藏】秋月",
+        "2": "【艦隊收藏】秋月 鎮守府秋祭りVer."
+    },
+    "戰艦少女": {
+        "3": "【戰艦少女】秋月",
+        "10": "【戰艦少女】秋月 改",
+        "11": "【戰艦少女】秋月 新春祈願Ver."
+    },
     "同人作品": {
         "4": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "秋月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
         "5": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "照月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
