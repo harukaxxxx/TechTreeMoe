@@ -118,7 +118,7 @@ function reset() {
 $(function() {
     if (Cookies.get("mmm") && document.location.search == "?mmm") {
         $("#mmm").children().removeClass('am-icon-toggle-off').addClass('am-icon-toggle-on');
-        var imageURL = "url(./images/mmm_bg" + Math.floor(Math.random() * 2 + 1) + ".jpg)";
+        var imageURL = "url(./images/mmm_bg/mmm_bg" + Math.floor(Math.random() * 19 + 1) + ".jpg)";
         $('.top').css("background-image", imageURL).css("background-size", "cover");
         $('.top .am-g').css("background-color", "hsla(0, 0%, 0%, 0.2)");
     } else {
