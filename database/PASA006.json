@@ -8,6 +8,14 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "November": { "3": "【November】Independence" },
-    "碧藍航線": { "4": "【碧藍航線】Independence" }
+    "November": {
+        "1": "【November】Independence"
+    },
+    "戰艦少女": {
+        "2": "【戰艦少女】Princeton",
+        "3": "【戰艦少女】Princeton Bikino魔術師Ver."
+    },
+    "碧藍航線": {
+        "4": "【碧藍航線】Independence"
+    }
 }
