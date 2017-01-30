@@ -34,6 +34,7 @@
     "tkey_filter_aircarrier": "<span class='am-icon-paint-anchor'>航空母舰</span>",
     "tkey_filter_change": "<span class='am-icon-paint-brush'></span>可更替",
     "tkey_filter_premium": "<img src='./images/icons/premium_icon.png'>加值舰",
+    "tkey_filter_moe": "萌萌模式",
     "tkey_filter_reset": "<span class='am-icon-refresh'></span>回复预设",
     "tkey_about_section": "TechTreeMoe更新纪录与详细资讯",
     "tkey_contact_title": "<i class='am-icon-paper-plane'></i> 联络我们",

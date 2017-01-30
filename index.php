@@ -168,7 +168,7 @@
                 <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium" tkey="tkey_filter_premium"><img src="./images/icons/premium_icon.png">加值艦</button>
                 <?php
                     if ($_SERVER['QUERY_STRING'] == "mmm") {
-                        echo "<button class='filter am-btn am-btn-secondary' data-filter='.moe'><span class='am-icon-heart'></span>萌萌模式</button>";
+                        echo "<button class='filter am-btn am-btn-secondary' data-filter='.moe' tkey='tkey_filter_moe'><span class='am-icon-heart'></span>萌萌模式</button>";
                     };
                 ?>
             </div>
