@@ -241,7 +241,7 @@
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
                         <h4 class="about-color"tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
-                        <p>若您有任何建議歡迎來信 <span class="am-icon-envelope" tkey="tkey_about_content"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
+                        <p tkey="tkey_contact_content">若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
                         </p>
                         <h4 class="about-color"tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">
@@ -371,7 +371,13 @@ $files = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
     <footer class="footer">
         <p>Designed by © 2010 <a href="http://makinoworks.com" target="_blank">MakinoWorks</a>｜Powered by <a href="https://mixitup.kunkalabs.com/">MixItUp</a>&<a href="http://amazeui.org/"> AMAZE UI</a>｜
             <?php echo iterator_count($files) ?> caches cost
-            <?php echo human_filesize($totalsize) ?>
+            <?php echo human_filesize($totalsize) ?>｜
+            <select id="lang" data-am-selected="{dropUp: 1,btnWidth: '100px', btnSize: 'sm',btnStyle: 'link'}">
+                <option value="zh-TW">繁體中文</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="en-US">English</option>
+                <option value="ja">日本語</option>
+            </select>
         </p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>

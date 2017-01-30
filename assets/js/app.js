@@ -143,18 +143,26 @@ function lang(langCode) {
             var tkey = $("[tkey]").eq(jkey).attr('tkey');
             var tval = jsonData[tkey];
             $("[tkey]").eq(jkey).html(tval);
-            // console.log("Change " + tkey + " to '" + tval + "'");
         })
     });
 }
-// && langCode != "zh-TW"
-if ($.inArray(langCode, langs) >= 0) {
+
+// Int page lang
+if ($.inArray(langCode, langs) >= 0 && langCode != "zh-TW") {
     lang(langCode);
-    console.log(langCode + " now.");
+
+    for (var i = 0; i < 4; i++) {
+        var code = $('footer select').find('option').eq(i).val();;
+        if (code == langCode) {
+            $('footer select').find('option').eq(i).attr('selected', true);
+        } else {
+            $('footer select').find('option').eq(i).attr('selected', false);
+        }
+    }
 }
 
-// auto code
-// var c = $("[tkey]").length;
-// for(var i = 0; i < c; i++){
-// console.log('"'+$("[tkey]").eq(i).attr('tkey')+'":"'+$("[tkey]").eq(i).html()+'",');
-// };
+//change language
+$("footer select").change(function() {
+    var langCode = $("footer select").val();
+    lang(langCode);
+});

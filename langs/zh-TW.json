@@ -37,7 +37,7 @@
     "tkey_filter_reset": "<span class='am-icon-refresh'></span>回復預設",
     "tkey_about_section": "TechTreeMoe更新紀錄與詳細資訊",
     "tkey_contact_title": "<i class='am-icon-paper-plane'></i> 聯絡我們",
-    "tkey_about_content": " harukaxxxx@makinoworks.com",
+    "tkey_contact_content": "若您有任何建議歡迎來信 <span class='am-icon-envelope'> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我聯絡！",
     "tkey_detail-title": "<i class='am-icon-question-circle'></i> 詳細資訊",
     "tkey_log_title": "<i class='am-icon-list-ul'></i> 更新紀錄"
 }
