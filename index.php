@@ -42,8 +42,8 @@
     <div class="top">
         <div class="am-g">
             <div class="am-u-lg-12">
-                <h1 class="top-title">TechTreeMoe - 戰艦世界科技樹萌化</h1>
-                <p>
+                <h1 class="top-title" tkey="tkey_site_title">TechTreeMoe - 戰艦世界科技樹萌化</h1>
+                <p tkey="tkey_site_description">
                     結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、Victory Belles以及同人作品，讓科技樹萌起來吧！
                 </p>
                 <button type="button" class="am-btn am-btn-primary" data-am-modal="{target: '#preview'}">效果預覽</button>
@@ -52,14 +52,14 @@
     </div>
     <div class="am-modal am-modal-alert" tabindex="-1" id="preview">
         <div class="am-modal-dialog">
-            <div class="am-modal-hd">效果預覽</div>
+            <div class="am-modal-hd" tkey="tkey_preview_button">效果預覽</div>
             <div class="am-modal-bd">
                 <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
                     <li>
                         <div class="am-gallery-item">
                             <a href="images/preview/japan.jpg" class="">
                                 <img src="images/preview/japan.jpg" alt="日本" />
-                                <h3 class="am-gallery-title">日本預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_japan">日本預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -67,7 +67,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/usa.jpg" class="">
                                 <img src="images/preview/usa.jpg" alt="美國" />
-                                <h3 class="am-gallery-title">美國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_usa">美國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -75,7 +75,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/germany.jpg" class="">
                                 <img src="images/preview/germany.jpg" alt="德國" />
-                                <h3 class="am-gallery-title">德國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_germany">德國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -83,7 +83,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/ussr.jpg" class="">
                                 <img src="images/preview/ussr.jpg" alt="蘇聯" />
-                                <h3 class="am-gallery-title">蘇聯預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_ussr">蘇聯預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -91,7 +91,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/uk.jpg" class="">
                                 <img src="images/preview/uk.jpg" alt="英國" />
-                                <h3 class="am-gallery-title">英國預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_uk">英國預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -99,7 +99,7 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/pan_asia.jpg" class="">
                                 <img src="images/preview/pan_asia.jpg" alt="泛亞" />
-                                <h3 class="am-gallery-title">泛亞預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
                             </a>
                         </div>
                     </li>
@@ -107,38 +107,38 @@
                         <div class="am-gallery-item">
                             <a href="images/preview/arp.jpg" class="">
                                 <img src="images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
-                                <h3 class="am-gallery-title">蒼藍鋼鐵戰艦預覽</h3>
+                                <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
                             </a>
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="am-modal-footer">
-                <span class="am-modal-btn">關閉</span>
+                <span class="am-modal-btn" tkey="tkey_close">關閉</span>
             </div>
         </div>
     </div>
     <div class="intro">
         <div class="am-g am-container">
             <div class="am-u-lg-12">
-                <h2 class="intro-h2">TechTreeMoe介紹與教學</h2>
+                <h2 class="intro-h2" tkey="tkey_intro_section">TechTreeMoe介紹與教學</h2>
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
-                        <h3 class="intro-h3"><i class="am-icon-info-circle"></i> 介紹</h3>
+                        <h3 class="intro-h3" tkey="tkey_intro_title"><i class="am-icon-info-circle"></i> 介紹</h3>
                         <ul class="intro-p">
-                            <li>艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
-                            <li>利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
-                            <li>按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用cookie儲存您的紀錄。</li>
-                            <li>此模組不包含背景國旗及艦型小圖標。</li>
+                            <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
+                            <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
+                            <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用cookie儲存您的紀錄。</li>
+                            <li tkey="tkey_intro_4">此模組不包含背景國旗及艦型小圖標。</li>
                         </ul>
                     </div>
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
-                        <h3 class="intro-h3"><i class="am-icon-book"></i> 教學</h3>
+                        <h3 class="intro-h3" tkey="tkey_tutorial_title"><i class="am-icon-book"></i> 教學</h3>
                         <ol class="intro-p">
-                            <li>艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
-                            <li>挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li> 
-                            <li>點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li> 
-                            <li>解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
+                            <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
+                            <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li> 
+                            <li tkey="tkey_tutorial_3">點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li> 
+                            <li tkey="tkey_tutorial_4">解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
                         </ol>
                     </div>
                 </div>
@@ -147,32 +147,32 @@
     </div>
     <div class="mixitup">
         <div class="filter_group">
-            <button type="button" class="filter am-btn am-btn-secondary" data-filter="all">全部顯示</button>
+            <button type="button" class="filter am-btn am-btn-secondary" data-filter="all" tkey="tkey_filter_all">全部顯示</button>
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".japan">日本</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".usa">美國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".ussr">蘇聯</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".germany">德國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".uk">英國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".japan" tkey="tkey_filter_japan">日本</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".usa" tkey="tkey_filter_usa">美國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".ussr" tkey="tkey_filter_ussr">蘇聯</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".germany" tkey="tkey_filter_germany">德國</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".uk" tkey="tkey_filter_uk">英國</button>
                 <!--<button type="button" class="filter am-btn am-btn-secondary" data-filter=".poland">波蘭</button>-->
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".pan_asia">泛亞</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".pan_asia" tkey="tkey_filter_pan_asia">泛亞</button>
             </div>
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".destroyer"><span class="am-icon-paint-anchor">驅逐艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".cruiser"><span class="am-icon-paint-anchor">巡洋艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".battleship"><span class="am-icon-paint-anchor">戰艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".aircarrier"><span class="am-icon-paint-anchor">航空母艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".destroyer" tkey="tkey_filter_destroyer"><span class="am-icon-paint-anchor">驅逐艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".cruiser" tkey="tkey_filter_cruiser"><span class="am-icon-paint-anchor">巡洋艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".battleship" tkey="tkey_filter_battleship"><span class="am-icon-paint-anchor">戰艦</button>
+                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".aircarrier" tkey="tkey_filter_aircarrier"><span class="am-icon-paint-anchor">航空母艦</button>
             </div>
             <div class="am-btn-group">
-                <button class="filter am-btn am-btn-secondary" data-filter=".change"><span class="am-icon-paint-brush"></span>可更替</button>
-                <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium"><img src="./images/icons/premium_icon.png">加值艦</button>
+                <button class="filter am-btn am-btn-secondary" data-filter=".change" tkey="tkey_filter_change"><span class="am-icon-paint-brush"></span>可更替</button>
+                <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium" tkey="tkey_filter_premium"><img src="./images/icons/premium_icon.png">加值艦</button>
                 <?php
                     if ($_SERVER['QUERY_STRING'] == "mmm") {
                         echo "<button class='filter am-btn am-btn-secondary' data-filter='.moe'><span class='am-icon-heart'></span>萌萌模式</button>";
                     };
                 ?>
             </div>
-            <button type="button" class="am-btn am-btn-secondary" onclick="reset();"><span class="am-icon-refresh"></span>回復預設</button>
+            <button type="button" class="am-btn am-btn-secondary" onclick="reset();" tkey="tkey_filter_reset"><span class="am-icon-refresh"></span>回復預設</button>
         </div>
         <div id="Container">
             <?php
@@ -242,13 +242,13 @@
     <div class="about">
         <div class="am-g am-container">
             <div class="am-u-lg-12">
-                <h2 class="about-title about-color">TechTreeMoe更新紀錄與詳細資訊</h2>
+                <h2 class="about-title about-color" tkey="tkey_about_section">TechTreeMoe更新紀錄與詳細資訊</h2>
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-                        <h4 class="about-color"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
-                        <p>若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
+                        <h4 class="about-color"tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
+                        <p tkey="tkey_contact_content">若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
                         </p>
-                        <h4 class="about-color"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
+                        <h4 class="about-color"tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">
                             <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
                                 <?php
@@ -302,7 +302,7 @@
                         <hr class="am-article-divider am-show-sm-only">
                     </div>
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-                        <h4 class="about-color"><i class="am-icon-list-ul"></i> 更新紀錄</h4>
+                        <h4 class="about-color" tkey="tkey_log_title"><i class="am-icon-list-ul"></i> 更新紀錄</h4>
                         <div class="am-scrollable-vertical update">
                             <ul class="am-list am-list-static am-list-border">
                                 <?php
@@ -376,7 +376,13 @@ $files = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
     <footer class="footer">
         <p>Designed by © 2010 <a href="http://makinoworks.com" target="_blank">MakinoWorks</a>｜Powered by <a href="https://mixitup.kunkalabs.com/">MixItUp</a>&<a href="http://amazeui.org/"> AMAZE UI</a>｜
             <?php echo iterator_count($files) ?> caches cost
-            <?php echo human_filesize($totalsize) ?>
+            <?php echo human_filesize($totalsize) ?>｜
+            <select id="lang" data-am-selected="{dropUp: 1,btnWidth: '100px', btnSize: 'sm',btnStyle: 'link'}">
+                <option value="zh-TW">繁體中文</option>
+                <option value="zh-CN">简体中文</option>
+                <option value="en-US">English</option>
+                <option value="ja">日本語</option>
+            </select>
         </p>
     </footer>
     <script src="assets/js/jquery.min.js"></script>

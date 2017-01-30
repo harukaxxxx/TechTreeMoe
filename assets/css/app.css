@@ -135,6 +135,23 @@
     border-bottom: 1px dotted;
 }
 
+.footer .am-selected-text {
+    color: #2d3e50;
+}
+
+.footer .am-selected-status {
+    color: #fff;
+}
+
+.footer .am-selected-icon {
+    color: #fff;
+}
+
+.footer .am-btn-default {
+    border-color: #2d3e50;
+    background-color: #2d3e50;
+}
+
 
 /*mixitup*/
 

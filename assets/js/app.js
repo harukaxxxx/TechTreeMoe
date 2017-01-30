@@ -137,3 +137,37 @@ function mmm() {
         document.location = "./?mmm";
     }
 }
+
+//multilang
+var langCode = navigator.language;
+var langs = ["zh-TW", "zh-CN", "en-US", "ja"];
+
+function lang(langCode) {
+    $.getJSON('langs/' + langCode + '.json', function(jsonData) {
+        $.each($("[tkey]"), function(jkey) {
+            var tkey = $("[tkey]").eq(jkey).attr('tkey');
+            var tval = jsonData[tkey];
+            $("[tkey]").eq(jkey).html(tval);
+        })
+    });
+}
+
+// Int page lang
+if ($.inArray(langCode, langs) >= 0 && langCode != "zh-TW") {
+    lang(langCode);
+
+    for (var i = 0; i < 4; i++) {
+        var code = $('footer select').find('option').eq(i).val();;
+        if (code == langCode) {
+            $('footer select').find('option').eq(i).attr('selected', true);
+        } else {
+            $('footer select').find('option').eq(i).attr('selected', false);
+        }
+    }
+}
+
+//change language
+$("footer select").change(function() {
+    var langCode = $("footer select").val();
+    lang(langCode);
+});
