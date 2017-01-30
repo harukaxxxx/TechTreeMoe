@@ -1,10 +1,19 @@
-{"id": "PGSB002",
-"name": "Tirpitz",
-"tier": "Ⅷ",
-"nation": "germany",
-"type": "battleship",
-"default":2,
-"change":true,
-"premium":true,
-"arp":false,
-"戰艦少女":{"1":"【戰艦少女】Tirpitz","2":"【戰艦少女】Tirpitz 改","3":"【戰艦少女】Tirpitz 兒童節Ver."}}
+{
+    "id": "PGSB002",
+    "name": "Tirpitz",
+    "tier": "Ⅷ",
+    "nation": "germany",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Tirpitz",
+        "2": "【戰艦少女】Tirpitz 改",
+        "3": "【戰艦少女】Tirpitz 兒童節Ver."
+    },
+    "鋼鐵少女": {
+        "4": "【鋼鐵少女】Tirpitz"
+    }
+}
