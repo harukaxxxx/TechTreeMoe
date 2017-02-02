@@ -1,6 +1,14 @@
 {
     "78": {
         "time": "2017/02/02",
+        "level": "FIX",
+        "event": [
+            "修復Karlsruhe鋼鐵少女未分類錯誤",
+            "修復Ernst Gaede誤植艦隊收藏Z3大破圖錯誤"
+        ]
+    },
+    "78": {
+        "time": "2017/02/02",
         "level": "IMPORTANT",
         "event": [
             "更新Mixitup至v3。",

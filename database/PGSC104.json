@@ -8,6 +8,14 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Karlsruhe", "2": "【戰艦少女】Karlsruhe 改", "3": "【鋼鐵少女】Karlsruhe" },
-    "碧藍航線": { "4": "【碧藍航線】Karlsruhe" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Karlsruhe",
+        "2": "【戰艦少女】Karlsruhe 改"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Karlsruhe"
+    },
+    "碧藍航線": {
+        "4": "【碧藍航線】Karlsruhe"
+    }
 }
