@@ -14,7 +14,7 @@
     "tkey_intro_title": "<i class='am-icon-info-circle'></i> 紹介",
     "tkey_intro_1": "艦娘のアイコンはたくさんあります。好きの選んであなたの戦艦世界技術ツリーを萌えさせてよ！",
     "tkey_intro_2": "<span class='am-icon-paint-brush am-text-primary'> 置き換え</span>ボタンを利用して置き換えできるのアイテムがクイック検索ができます。",
-    "tkey_intro_3": "<span class='am-icon-download am-text-primary'>ダウンロード</span>ボタンをクリックした時にcookieがデータを保存します。",
+    "tkey_intro_3": "<span class='am-icon-download am-text-primary'>ダウンロード</span>ボタンをクリックした時にLocalStorageがデータを保存します。",
     "tkey_intro_4": "このMODは国旗と船タイプアイコンが含まれていません。",
     "tkey_tutorial_title": "<i class='am-icon-book'></i>チュートリアル",
     "tkey_tutorial_1": "船のアイコンの下にプルダウンメニューをクリックして、プレビューを見たいのアイコンが選んできます。",

@@ -8,6 +8,12 @@ $('.mixitup select').on('change', function() {
     $('#' + ship + ' img').fadeIn(400);
 });
 
+//local storage init
+var store = $.AMUI.store;
+if (!store.enabled) {
+    alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！');
+};
+
 //get selected
 var img_list = [];
 
@@ -30,9 +36,9 @@ function submit() {
             },
             function(data) {
                 if (document.location.search == "?mmm") {
-                    Cookies.set('mlist', img_list, { expires: 1095 });
+                    store.set('mlist', img_list);
                 } else {
-                    Cookies.set('list', img_list, { expires: 1095 });
+                    store.set('list', img_list);
                 }
                 $("body").append("<iframe src='./assets/php/zip.php?url=" + img_list + "' style='display: none;'></iframe>");
             })
@@ -67,10 +73,10 @@ $(function() {
                     var value = selectedList[i].value;
                     intList.push(value);
                 }
-                Cookies.set('intList', intList);
+                store.set('intList', intList);
                 //restore data
                 function restore(list) {
-                    var cookie = Cookies.getJSON(list);
+                    var cookie = store.get(list);
                     cookie.forEach(function(option) {
                         var id = option.substring(0, 7);
                         $("#" + id + " select").find(":selected").attr('selected', false);
@@ -84,9 +90,9 @@ $(function() {
                     }, this);
                     $('.mixitup select').trigger('changed.selected.amui');
                 }
-                if (document.location.search != "?mmm" && Cookies.get('list') != undefined) {
+                if (document.location.search != "?mmm" && store.get('list') != undefined) {
                     restore('list');
-                } else if (document.location.search == "?mmm" && Cookies.get('mlist') != undefined) {
+                } else if (document.location.search == "?mmm" && store.get('mlist') != undefined) {
                     restore('mlist');
                 };
                 $.AMUI.progress.done();
@@ -126,8 +132,7 @@ $(function() {
 //set default
 function reset() {
     if (confirm("這將清空你的儲存選擇並回復到預設！確定要回復嗎？")) {
-        Cookies.remove('list');
-        Cookies.remove('mlist');
+        store.clear()
         location.reload();
     }
 }

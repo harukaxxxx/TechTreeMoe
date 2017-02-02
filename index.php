@@ -128,7 +128,7 @@
                         <ul class="intro-p">
                             <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
                             <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
-                            <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用cookie儲存您的紀錄。</li>
+                            <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用LocalStorage儲存您的紀錄。</li>
                             <li tkey="tkey_intro_4">此模組不包含背景國旗及艦型小圖標。</li>
                         </ul>
                     </div>
@@ -387,7 +387,6 @@ $files = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
     <script src="assets/js/amazeui.min.js"></script>
     <script src="assets/js/jquery.mixitup.min.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="assets/js/js.cookie.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

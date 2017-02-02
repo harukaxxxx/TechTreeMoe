@@ -14,7 +14,7 @@
     "tkey_intro_title": "<i class='am-icon-info-circle'></i> 介紹",
     "tkey_intro_1": "艦娘圖標百百種，挑選中意的圖標來萌化科技樹。",
     "tkey_intro_2": "利用<span class='am-icon-paint-brush am-text-primary'> 可更替</span> 按鈕可快速尋找可以替換的項目",
-    "tkey_intro_3": "按下<span class='am-icon-download am-text-primary'> 下載</span>時將使用cookie儲存您的紀錄。",
+    "tkey_intro_3": "按下<span class='am-icon-download am-text-primary'> 下載</span>時將使用LocalStorage儲存您的紀錄。",
     "tkey_intro_4": "此模組不包含背景國旗及艦型小圖標。",
     "tkey_tutorial_title": "<i class='am-icon-book'></i> 教學",
     "tkey_tutorial_1": "艦船圖片下的下拉選單可選取並預覽想使用的圖標。",
