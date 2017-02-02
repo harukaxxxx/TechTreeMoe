@@ -34,7 +34,7 @@
             <div class="am-collapse am-topbar-collapse" id="collapse-head">
                 <div class="am-topbar-right">
                     <button id="mmm" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="mmm();"><span class="am-icon-toggle-off"></span> 萌萌模式</button>
-                    <button class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="submit();"><span class="am-icon-download"></span> 下載</button>
+                    <button id="submit" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="submit();" data-am-loading="{spinner: 'circle-o-notch', loadingText: '提交中...'}"><span class="am-icon-download"></span> 下載</button>
                 </div>
             </div>
         </div>
