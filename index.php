@@ -278,9 +278,8 @@
                                                     $customName = substr($value,$p+3);
                                                     array_push($cNames,$customName);
                                                 }
-                                                array_push($cNames,$customName);
                                             };
-                                            echo implode("/",$cNames)."</li>";
+                                            echo implode(" / ",$cNames)."</li>";
                                         };
                                     };                                    
                                     echo "</ul>\n</div>\n</dd>\n</dl>";
