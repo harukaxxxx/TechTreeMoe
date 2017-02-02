@@ -43,60 +43,65 @@ function submit() {
 }
 
 // mixItUp
-$(function() {
-    $('#Container').mixItUp({
-        callbacks: {
-            onMixBusy: function(state) {
-                $('.loader_bg').fadeIn(500);
-            },
-            onMixEnd: function(state) {
-                //default data
-                var intList = [];
-                var selectedList = $('.mixitup select');
-                var c = selectedList.length;
-                for (var i = 0; i < c; i++) {
-                    var value = selectedList[i].value;
-                    intList.push(value);
-                }
-                Cookies.set('intList', intList);
-                //restore data
-                function restore(list) {
-                    var cookie = Cookies.getJSON(list);
-                    cookie.forEach(function(option) {
-                        var id = option.substring(0, 7);
-                        $("#" + id + " select").find(":selected").attr('selected', false);
-                        var options = $("#" + id + " select").find('option');
-                        var oc = options.length
-                        for (var k = 0; k < oc; k++) {
-                            if (options.eq(k).val() == option) {
-                                options.eq(k).prop('selected', true);
-                            }
-                        }
-                    }, this);
-                    $('.mixitup select').trigger('changed.selected.amui');
-                }
-                if (document.location.search != "?mmm" && Cookies.get('list') != undefined) {
-                    restore('list');
-                } else if (document.location.search == "?mmm" && Cookies.get('mlist') != undefined) {
-                    restore('mlist');
-                };
-                $.AMUI.progress.done();
-                $('.loader_bg').fadeOut(500);
-            },
-            onMixStart: function(state, futureState) {
-                $.AMUI.progress.start();
+
+var mixer = mixitup('#Container', {
+    callbacks: {
+        onMixBusy: function(state) {
+            console.log('Mixer busy');
+            $('.loader_bg').fadeIn(500);
+        },
+        onMixEnd: function(state) {
+            console.log('Operation complete');
+            //default data
+            var intList = [];
+            var selectedList = $('.mixitup select');
+            var c = selectedList.length;
+            for (var i = 0; i < c; i++) {
+                var value = selectedList[i].value;
+                intList.push(value);
             }
+            Cookies.set('intList', intList);
+            //restore data
+            function restore(list) {
+                var cookie = Cookies.getJSON(list);
+                cookie.forEach(function(option) {
+                    var id = option.substring(0, 7);
+                    $("#" + id + " select").find(":selected").attr('selected', false);
+                    var options = $("#" + id + " select").find('option');
+                    var oc = options.length
+                    for (var k = 0; k < oc; k++) {
+                        if (options.eq(k).val() == option) {
+                            options.eq(k).prop('selected', true);
+                        }
+                    }
+                }, this);
+                $('.mixitup select').trigger('changed.selected.amui');
+            }
+            if (document.location.search != "?mmm" && Cookies.get('list') != undefined) {
+                restore('list');
+            } else if (document.location.search == "?mmm" && Cookies.get('mlist') != undefined) {
+                restore('mlist');
+            };
+            $.AMUI.progress.done();
+            $('.loader_bg').fadeOut(500);
         },
-        load: {
-            filter: 'all'
+        onMixStart: function(state, futureState) {
+            console.log('Starting operation...');
+            $.AMUI.progress.start();
         },
-        animation: {
-            duration: 400,
-            effects: 'fade translateZ(-360px) stagger(34ms)',
-            easing: 'ease'
+        onMixFail: function(state) {
+            console.log('No items could be found matching the requested filter');
         }
-    });
-})
+    },
+    load: {
+        filter: 'all'
+    },
+    animation: {
+        duration: 400,
+        effects: 'fade translateZ(-360px) stagger(34ms)',
+        easing: 'ease'
+    }
+});
 
 //custom scrollbar
 $(window).on("load", function() {

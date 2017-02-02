@@ -176,12 +176,12 @@
 }
 
 .mixitup .mix {
-    display: none;
     width: 214px;
-    margin: 1rem 0;
+    margin: 3px 0;
     background: hsla(0, 0%, 100%, .7);
     border: hsla(0, 0%, 100%, .8) solid 1px;
     border-radius: 3px;
+    display: inline-block;
 }
 
 .mixitup .ship {
