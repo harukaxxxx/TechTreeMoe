@@ -16,21 +16,24 @@ function submit() {
     $.AMUI.progress.start();
 
     //generate file name list
-    var selectedList = $('select');
+    var selectedList = $('.mixitup select');
     var c = selectedList.length;
     for (var i = 0; i < c; i++) {
         var value = selectedList[i].value;
         img_list.push(value);
 
     }
-    console.log("start download " + img_list.length + " items!");
 
     //request download
     $.post("", {
                 img_list
             },
             function(data) {
-                Cookies.set('list', img_list, { expires: 1095 });
+                if (document.location.search == "?mmm") {
+                    Cookies.set('mlist', img_list, { expires: 1095 });
+                } else {
+                    Cookies.set('list', img_list, { expires: 1095 });
+                }
                 $("body").append("<iframe src='./assets/php/zip.php?url=" + img_list + "' style='display: none;'></iframe>");
             })
         .done(function() {
@@ -49,7 +52,7 @@ $(function() {
             onMixEnd: function(state) {
                 //default data
                 var intList = [];
-                var selectedList = $('select');
+                var selectedList = $('.mixitup select');
                 var c = selectedList.length;
                 for (var i = 0; i < c; i++) {
                     var value = selectedList[i].value;
@@ -57,9 +60,8 @@ $(function() {
                 }
                 Cookies.set('intList', intList);
                 //restore data
-                if (Cookies.get('list') != undefined) {
-                    var cookie = Cookies.getJSON('list');
-                    console.log("save data exist");
+                function restore(list) {
+                    var cookie = Cookies.getJSON(list);
                     cookie.forEach(function(option) {
                         var id = option.substring(0, 7);
                         $("#" + id + " select").find(":selected").attr('selected', false);
@@ -67,10 +69,16 @@ $(function() {
                         var oc = options.length
                         for (var k = 0; k < oc; k++) {
                             if (options.eq(k).val() == option) {
-                                options.eq(k).attr('selected', true);
+                                options.eq(k).prop('selected', true);
                             }
                         }
                     }, this);
+                    $('.mixitup select').trigger('changed.selected.amui');
+                }
+                if (document.location.search != "?mmm" && Cookies.get('list') != undefined) {
+                    restore('list');
+                } else if (document.location.search == "?mmm" && Cookies.get('mlist') != undefined) {
+                    restore('mlist');
                 };
                 $.AMUI.progress.done();
                 $('.loader_bg').fadeOut(500);
@@ -110,13 +118,14 @@ $(function() {
 function reset() {
     if (confirm("這將清空你的儲存選擇並回復到預設！確定要回復嗎？")) {
         Cookies.remove('list');
+        Cookies.remove('mlist');
         location.reload();
     }
 }
 
 //mmm
 $(function() {
-    if (Cookies.get("mmm") && document.location.search == "?mmm") {
+    if (document.location.search == "?mmm") {
         $("#mmm").children().removeClass('am-icon-toggle-off').addClass('am-icon-toggle-on');
         var imageURL = "url(./images/mmm_bg/mmm_bg" + Math.floor(Math.random() * 19 + 1) + ".jpg)";
         $('.top').css("background-image", imageURL).css("background-size", "cover");
@@ -130,10 +139,8 @@ $(function() {
 
 function mmm() {
     if (document.location.search == "?mmm") {
-        Cookies.set("mmm", false);
         document.location = "./";
     } else {
-        Cookies.set("mmm", true);
         document.location = "./?mmm";
     }
 }

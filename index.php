@@ -271,8 +271,7 @@
                                                     $customName = "【".$author."】".$draw;
                                                     array_push($cNames,$customName);
                                                 }else if ($type == "萌萌模式") {
-                                                    $p = strpos($value,"】");
-                                                    $customName = $value;
+                                                    array_push($cNames,$value);
                                                 } else{
                                                     $p = strpos($value,"】");
                                                     $customName = substr($value,$p+3);
