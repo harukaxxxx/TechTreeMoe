@@ -58,60 +58,62 @@ $('#submit').click(function() {
 });
 
 // mixItUp
-$(function() {
-    $('#Container').mixItUp({
-        callbacks: {
-            onMixBusy: function(state) {
-                $('.loader_bg').fadeIn(500);
-            },
-            onMixEnd: function(state) {
-                //default data
-                var intList = [];
-                var selectedList = $('.mixitup select');
-                var c = selectedList.length;
-                for (var i = 0; i < c; i++) {
-                    var value = selectedList[i].value;
-                    intList.push(value);
-                }
-                store.set('intList', intList);
-                //restore data
-                function restore(list) {
-                    var cookie = store.get(list);
-                    cookie.forEach(function(option) {
-                        var id = option.substring(0, 7);
-                        $("#" + id + " select").find(":selected").attr('selected', false);
-                        var options = $("#" + id + " select").find('option');
-                        var oc = options.length
-                        for (var k = 0; k < oc; k++) {
-                            if (options.eq(k).val() == option) {
-                                options.eq(k).prop('selected', true);
-                            }
-                        }
-                    }, this);
-                    $('.mixitup select').trigger('changed.selected.amui');
-                }
-                if (document.location.search != "?mmm" && store.get('list') != undefined) {
-                    restore('list');
-                } else if (document.location.search == "?mmm" && store.get('mlist') != undefined) {
-                    restore('mlist');
-                };
-                $.AMUI.progress.done();
-                $('.loader_bg').fadeOut(500);
-            },
-            onMixStart: function(state, futureState) {
-                $.AMUI.progress.start();
-            }
+var mixer = mixitup('#Container', {
+    callbacks: {
+        onMixBusy: function(state) {
+            $('.loader_bg').fadeIn(500);
         },
-        load: {
-            filter: 'all'
+        onMixEnd: function(state) {
+            $.AMUI.progress.done();
+            $('.loader_bg').fadeOut(500);
         },
-        animation: {
-            duration: 400,
-            effects: 'fade translateZ(-360px) stagger(34ms)',
-            easing: 'ease'
+        onMixStart: function(state, futureState) {
+            $.AMUI.progress.start();
         }
+    },
+    load: {
+        filter: 'none'
+    },
+    animation: {
+        effects: 'fade scale stagger(50ms)',
+        duration: 400,
+        easing: 'ease'
+    }
+});
+
+mixer.show()
+    .then(function(state) {
+        //default data
+        var intList = [];
+        var selectedList = $('.mixitup select');
+        var c = selectedList.length;
+        for (var i = 0; i < c; i++) {
+            var value = selectedList[i].value;
+            intList.push(value);
+        }
+        store.set('intList', intList);
+
+        //restore data
+        function restore(list) {
+            var save = store.get(list);
+            save.forEach(function(option) {
+                var id = option.substring(0, 7);
+                $("#" + id + " select").find(":selected").attr('selected', false);
+                var options = $("#" + id + " select").find('option');
+                var oc = options.length
+                for (var k = 0; k < oc; k++) {
+                    if (options.eq(k).val() == option) {
+                        options.eq(k).prop('selected', true);
+                    }
+                }
+            }, this);
+        }
+        if (document.location.search != "?mmm" && store.get('list') != undefined) {
+            restore('list');
+        } else if (document.location.search == "?mmm" && store.get('mlist') != undefined) {
+            restore('mlist');
+        };
     });
-})
 
 //custom scrollbar
 $(window).on("load", function() {
