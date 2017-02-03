@@ -71,13 +71,10 @@ var mixer = mixitup('#Container', {
             $.AMUI.progress.start();
         }
     },
-    load: {
-        filter: 'none'
-    },
     animation: {
-        effects: 'fade scale stagger(50ms)',
-        duration: 400,
-        easing: 'ease'
+        "duration": 300,
+        "nudge": true,
+        "effects": "fade scale(0.5)"
     }
 });
 
