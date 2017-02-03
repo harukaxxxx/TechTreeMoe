@@ -276,7 +276,7 @@
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
                         <h4 class="about-color" tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
-                        <p tkey="tkey_contact_content">若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
+                        <p tkey="tkey_contact_content">若您發現任何問題請至<a href="https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues">Github</a>建立Issues回報！<br>（網站Bug、艦船缺漏、素材提供、功能建議等）
                         </p>
                         <h4 class="about-color" tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">

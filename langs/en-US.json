@@ -38,7 +38,7 @@
     "tkey_filter_reset": "<span class='am-icon-refresh'></span>Reset",
     "tkey_about_section": "TechTreeMoe Update logs and Details",
     "tkey_contact_title": "<i class='am-icon-paper-plane'></i> Contact",
-    "tkey_contact_content": "If you have any suggest, please contact me by  <span class='am-icon-envelope'> harukaxxxx@makinoworks.com</span><br> If you want to provide material also mail to me.",
+    "tkey_contact_content": "If you have any suggest, please open Issues in <a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>.<br> (Site bug, ship ,missing, material provide, function request etc.)",
     "tkey_detail-title": "<i class='am-icon-question-circle'></i> Details",
     "tkey_log_title": "<i class='am-icon-list-ul'></i> Update logs"
 }

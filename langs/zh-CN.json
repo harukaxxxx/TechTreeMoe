@@ -38,7 +38,7 @@
     "tkey_filter_reset": "<span class='am-icon-refresh'></span>回复预设",
     "tkey_about_section": "TechTreeMoe更新纪录与详细资讯",
     "tkey_contact_title": "<i class='am-icon-paper-plane'></i> 联络我们",
-    "tkey_contact_content": "若您有任何建议欢迎来信 <span class='am-icon-envelope'> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也欢迎与我联络！",
+    "tkey_contact_content": "若您发现任何问题请至<a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>建立Issues回报！ <br>（网站Bug、舰船缺漏、素材提供、功能建议等）",
     "tkey_detail-title": "<i class='am-icon-question-circle'></i> 详细资讯",
     "tkey_log_title": "<i class='am-icon-list-ul'></i> 更新纪录"
 }
