@@ -121,7 +121,6 @@ function filterReset() {
     mixer.filter('all');
     $('.filter-group label').removeClass('am-active');
 };
-
 $(function() {
     var $options = $('.filter-group .options');
     var $nation = $('[name="nation"]');
@@ -131,8 +130,9 @@ $(function() {
         var nation = $nation.filter(':checked').val();
         var type = $type.filter(':checked').val();
         var extra = $extra.filter(':checked').val();
+        var filter = '';
         if (nation != undefined) {
-            var filter = nation;
+            var filter = filter + nation;
         }
         if (type != undefined) {
             var filter = filter + type;
@@ -140,12 +140,7 @@ $(function() {
         if (extra != undefined) {
             var filter = filter + extra;
         }
-        console.log(filter);
-        mixer.filter(filter)
-            .then(function(state) {
-                console.log(state.totalShow); // true
-            });
-
+        mixer.filter(filter);
     });
 });
 
