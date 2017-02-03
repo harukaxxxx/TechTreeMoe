@@ -14,13 +14,20 @@
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
     <link rel="stylesheet" href="assets/css/app.css" />
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-42562282-2', 'auto');
-  ga('send', 'pageview');
+        ga('create', 'UA-42562282-2', 'auto');
+        ga('send', 'pageview');
     </script>
 </head>
 
@@ -126,8 +133,8 @@
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
                         <h3 class="intro-h3" tkey="tkey_intro_title"><i class="am-icon-info-circle"></i> 介紹</h3>
                         <ul class="intro-p">
-                            <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li> 
-                            <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li> 
+                            <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li>
+                            <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li>
                             <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用LocalStorage儲存您的紀錄。</li>
                             <li tkey="tkey_intro_4">此模組不包含背景國旗及艦型小圖標。</li>
                         </ul>
@@ -136,8 +143,8 @@
                         <h3 class="intro-h3" tkey="tkey_tutorial_title"><i class="am-icon-book"></i> 教學</h3>
                         <ol class="intro-p">
                             <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
-                            <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li> 
-                            <li tkey="tkey_tutorial_3">點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li> 
+                            <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li>
+                            <li tkey="tkey_tutorial_3">點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li>
                             <li tkey="tkey_tutorial_4">解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
                         </ol>
                     </div>
@@ -146,34 +153,57 @@
         </div>
     </div>
     <div class="mixitup">
-        <div class="filter_group">
-            <button type="button" class="filter am-btn am-btn-secondary" data-filter="all" tkey="tkey_filter_all">全部顯示</button>
+        <div class="filter-group">
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".japan" tkey="tkey_filter_japan">日本</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".usa" tkey="tkey_filter_usa">美國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".ussr" tkey="tkey_filter_ussr">蘇聯</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".germany" tkey="tkey_filter_germany">德國</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".uk" tkey="tkey_filter_uk">英國</button>
-                <!--<button type="button" class="filter am-btn am-btn-secondary" data-filter=".poland">波蘭</button>-->
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".pan_asia" tkey="tkey_filter_pan_asia">泛亞</button>
+                <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="filterReset();" tkey="tkey_filter_all">全部顯示</button>
+            </div>
+            <div class="am-btn-group" data-am-button>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".japan" tkey="tkey_filter_japan"> 日本
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".usa" tkey="tkey_filter_usa"> 美國
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".ussr" tkey="tkey_filter_ussr"> 蘇聯
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".germany" tkey="tkey_filter_germany"> 德國
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".uk" tkey="tkey_filter_uk"> 英國
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".pan_asia" tkey="tkey_filter_pan_asia"> 泛亞
+                </label>
+            </div>
+            <div class="am-btn-group" data-am-button>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="type" value=".destroyer" tkey="tkey_filter_destroyer"><span class="am-icon-paint-anchor"></span>驅逐艦
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="type" value=".cruiser" tkey="tkey_filter_cruiser"><span class="am-icon-paint-anchor"></span>巡洋艦
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="type" value=".battleship" tkey="tkey_filter_battleship"><span class="am-icon-paint-anchor"></span>戰艦
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="type" value=".aircarrier" tkey="tkey_filter_aircarrier"><span class="am-icon-paint-anchor"></span>航空母艦
+                </label>
+            </div>
+            <div class="am-btn-group" data-am-button>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="extra" value=".change" tkey="tkey_filter_change"><span class="am-icon-paint-brush"></span>可更替
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round am-icon-premium">
+                    <input type="radio" class="options" name="extra" value=".premium" tkey="tkey_filter_premium"><img src="./images/icons/premium_icon.png">加值艦
+                </label>
             </div>
             <div class="am-btn-group">
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".destroyer" tkey="tkey_filter_destroyer"><span class="am-icon-paint-anchor">驅逐艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".cruiser" tkey="tkey_filter_cruiser"><span class="am-icon-paint-anchor">巡洋艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".battleship" tkey="tkey_filter_battleship"><span class="am-icon-paint-anchor">戰艦</button>
-                <button type="button" class="filter am-btn am-btn-secondary" data-filter=".aircarrier" tkey="tkey_filter_aircarrier"><span class="am-icon-paint-anchor">航空母艦</button>
+                <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="reset();" tkey="tkey_filter_reset"><span class="am-icon-refresh"></span>回復預設</button>
             </div>
-            <div class="am-btn-group">
-                <button class="filter am-btn am-btn-secondary" data-filter=".change" tkey="tkey_filter_change"><span class="am-icon-paint-brush"></span>可更替</button>
-                <button class="filter am-btn am-btn-secondary am-icon-premium" data-filter=".premium" tkey="tkey_filter_premium"><img src="./images/icons/premium_icon.png">加值艦</button>
-                <?php
-                    if ($_SERVER['QUERY_STRING'] == "mmm") {
-                        echo "<button class='filter am-btn am-btn-secondary' data-filter='.moe' tkey='tkey_filter_moe'><span class='am-icon-heart'></span>萌萌模式</button>";
-                    };
-                ?>
-            </div>
-            <button type="button" class="am-btn am-btn-secondary" onclick="reset();" tkey="tkey_filter_reset"><span class="am-icon-refresh"></span>回復預設</button>
         </div>
+
         <div id="Container">
             <?php
                 // generate ship list
@@ -245,10 +275,10 @@
                 <h2 class="about-title about-color" tkey="tkey_about_section">TechTreeMoe更新紀錄與詳細資訊</h2>
                 <div class="am-g">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
-                        <h4 class="about-color"tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
+                        <h4 class="about-color" tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
                         <p tkey="tkey_contact_content">若您有任何建議歡迎來信 <span class="am-icon-envelope"> harukaxxxx@makinoworks.com</span><br> 若您有想要提供的素材，也歡迎與我們聯絡！
                         </p>
-                        <h4 class="about-color"tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
+                        <h4 class="about-color" tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 詳細資訊</h4>
                         <div class="am-scrollable-vertical detail">
                             <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
                                 <?php

@@ -115,6 +115,40 @@ mixer.show()
         };
     });
 
+// filter button
+function filterReset() {
+    console.log('filter reset');
+    mixer.filter('all');
+    $('.filter-group label').removeClass('am-active');
+};
+
+$(function() {
+    var $options = $('.filter-group .options');
+    var $nation = $('[name="nation"]');
+    var $type = $('[name="type"]');
+    var $extra = $('[name="extra"]');
+    $options.on('change', function() {
+        var nation = $nation.filter(':checked').val();
+        var type = $type.filter(':checked').val();
+        var extra = $extra.filter(':checked').val();
+        if (nation != undefined) {
+            var filter = nation;
+        }
+        if (type != undefined) {
+            var filter = filter + type;
+        }
+        if (extra != undefined) {
+            var filter = filter + extra;
+        }
+        console.log(filter);
+        mixer.filter(filter)
+            .then(function(state) {
+                console.log(state.totalShow); // true
+            });
+
+    });
+});
+
 //custom scrollbar
 $(window).on("load", function() {
     $(".am-scrollable-vertical").mCustomScrollbar({

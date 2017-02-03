@@ -209,9 +209,13 @@
     background: hsla(0, 0%, 100%, .3);
 }
 
-.mixitup .filter_group {
+.mixitup .filter-group {
     text-align: center;
     padding-bottom: 2rem;
+}
+
+.mixitup .am-btn-group {
+    padding-bottom: 1rem;
 }
 
 .am-selected-list {
@@ -220,7 +224,7 @@
 }
 
 .am-icon-premium {
-    padding: .5em 1em .35em 1em;
+    padding: 5px 15px 5px 10px;
 }
 
 .am-icon-premium img {
