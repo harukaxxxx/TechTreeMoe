@@ -75,6 +75,9 @@ var mixer = mixitup('#Container', {
         "duration": 300,
         "nudge": true,
         "effects": "fade scale(0.5)"
+    },
+    load: {
+        sort: 'order:asc'
     }
 });
 
