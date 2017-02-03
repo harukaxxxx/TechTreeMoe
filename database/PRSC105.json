@@ -8,7 +8,14 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Kirov" },
-    "鋼鐵少女": { "2": "【鋼鐵少女】Kirov", "3": "【鋼鐵少女】Kirov 泳裝Ver." },
-    "Victory Belles": { "4": "【Victory Belles】Kirov" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Kirov"
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Kirov",
+        "3": "【鋼鐵少女】Kirov 夏日泳裝Ver."
+    },
+    "Victory Belles": {
+        "4": "【Victory Belles】Kirov"
+    }
 }

@@ -1,6 +1,27 @@
 {
+    "79": {
+        "time": "2017/02/04",
+        "level": "UPDATE",
+        "event": [
+            "新增【鋼鐵少女】天城",
+            "新增【鋼鐵少女】白雪 聖誕老人Ver.",
+            "新增【鋼鐵少女】初雪 改",
+            "新增【鋼鐵少女】初雪 馴鹿小姐Ver.",
+            "新增【鋼鐵少女】Fletcher 改二",
+            "新增【鋼鐵少女】Fletcher 夏日泳裝Ver.",
+            "新增【鋼鐵少女】Cleveland 改",
+            "新增【鋼鐵少女】Scharnhorst 萬聖伯爵Ver.",
+            "新增【鋼鐵少女】Nürnberg",
+            "新增【鋼鐵少女】Nürnberg 改",
+            "新增【鋼鐵少女】Leipzig",
+            "新增【鋼鐵少女】Belfast",
+            "新增【鋼鐵少女】Belfast 改",
+            "新增【鋼鐵少女】Edinburgh",
+            "新增【鋼鐵少女】Edinburgh 改"
+        ]
+    },
     "78": {
-        "time": "2017/02/02",
+        "time": "2017/02/03",
         "level": "FIX",
         "event": [
             "修復Karlsruhe鋼鐵少女未分類錯誤",

@@ -4,9 +4,15 @@
     "tier": "Ⅷ",
     "nation": "uk",
     "type": "cruiser",
-    "default": 1,
-    "change": false,
+    "default": 3,
+    "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Edinburgh" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Edinburgh"
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Edinburgh",
+        "3": "【鋼鐵少女】Edinburgh 改"
+    }
 }
