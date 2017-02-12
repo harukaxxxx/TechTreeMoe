@@ -1,0 +1,18 @@
+{
+    "id": "PJSB506",
+    "name": "陸奧",
+    "tier": "Ⅵ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】陸奧",
+        "2": "【艦隊收藏】陸奧 鎮守府秋祭りVer."
+    },
+    "戰艦少女": {
+        "3": "【戰艦少女】陸奧"
+    }
+}

@@ -4,7 +4,7 @@
     "tier": "Ⅵ",
     "nation": "usa",
     "type": "cruiser",
-    "default": 3,
+    "default": 7,
     "change": true,
     "premium": false,
     "arp": false,
@@ -20,6 +20,7 @@
     },
     "碧藍航線": {
         "4": "【碧藍航線】Northampton",
-        "5": "【碧藍航線】Houston"
+        "5": "【碧藍航線】Houston",
+        "7": "【碧藍航線】Cleveland"
     }
 }

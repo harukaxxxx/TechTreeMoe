@@ -8,7 +8,14 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Langley" },
-    "November": { "2": "【November】Langley" },
-    "碧藍航線": { "3": "【碧藍航線】Langley" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Langley",
+        "4": "【戰艦少女】Langley 改"
+    },
+    "November": {
+        "2": "【November】Langley"
+    },
+    "碧藍航線": {
+        "3": "【碧藍航線】Langley"
+    }
 }
