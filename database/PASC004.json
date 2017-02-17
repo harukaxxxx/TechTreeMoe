@@ -4,10 +4,23 @@
     "tier": "Ⅲ",
     "nation": "usa",
     "type": "cruiser",
-    "default": 1,
+    "default": 2,
     "change": true,
     "premium": false,
     "arp": false,
-    "November": { "1": "【November】St. Louis" },
-    "戰艦少女": { "2": "【戰艦少女】St. Louis" }
+    "November": {
+        "1": "【November】St. Louis"
+    },
+    "戰艦少女": {
+        "2": "【戰艦少女】St. Louis",
+        "4": "【戰艦少女】Helena",
+        "5": "【戰艦少女】Helena 改",
+        "6": "【戰艦少女】Helena 暗影突襲",
+        "7": "【戰艦少女】Helena The Little Mermaid",
+        "8": "【戰艦少女】Brooklyn",
+        "9": "【戰艦少女】Brooklyn 改"
+    },
+    "碧藍航線": {
+        "3": "【碧藍航線】Helena"
+    }
 }

@@ -1,10 +1,25 @@
-{"id": "PGSC105",
-"name": "Königsberg",
-"tier": "Ⅴ",
-"nation": "germany",
-"type": "cruiser",
-"default":2,
-"change":true,
-"premium":false,
-"arp":false,
-"戰艦少女":{"1":"【戰艦少女】Königsberg","2":"【戰艦少女】Königsberg 改"},"鋼鐵少女":{"3":"【鋼鐵少女】Königsberg"},"碧藍航線":{"4":"【碧藍航線】Königsberg"}}
+{
+    "id": "PGSC105",
+    "name": "Königsberg",
+    "tier": "Ⅴ",
+    "nation": "germany",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Königsberg",
+        "2": "【戰艦少女】Königsberg 改",
+        "5": "【戰艦少女】Köln",
+        "6": "【戰艦少女】Köln 改"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Königsberg",
+        "7": "【鋼鐵少女】Köln",
+        "8": "【鋼鐵少女】Köln 改"
+    },
+    "碧藍航線": {
+        "4": "【碧藍航線】Königsberg"
+    }
+}
