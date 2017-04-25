@@ -28,6 +28,8 @@
     "tkey_filter_germany": "Germany",
     "tkey_filter_uk": "UK",
     "tkey_filter_pan_asia": "Pan Asia",
+    "tkey_filter_france": "France",
+    "tkey_filter_italia": "Italia",
     "tkey_filter_destroyer": "<span class='am-icon-paint-anchor'>Destroyer</span>",
     "tkey_filter_cruiser": "<span class='am-icon-paint-anchor'>Cruiser</span>",
     "tkey_filter_battleship": "<span class='am-icon-paint-anchor'>Battleship</span>",

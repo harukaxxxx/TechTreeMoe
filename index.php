@@ -176,6 +176,12 @@
                 <label class="am-btn am-btn-primary am-btn-sm am-round">
                     <input type="radio" class="options" name="nation" value=".pan_asia" tkey="tkey_filter_pan_asia"> 泛亞
                 </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".france" tkey="tkey_filter_france"> 法國
+                </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".italia" tkey="tkey_filter_italia"> 義大利
+                </label>
             </div>
             <div class="am-btn-group" data-am-button>
                 <label class="am-btn am-btn-primary am-btn-sm am-round">

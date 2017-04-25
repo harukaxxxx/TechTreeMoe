@@ -28,6 +28,8 @@
     "tkey_filter_germany": "德国",
     "tkey_filter_uk": "英国",
     "tkey_filter_pan_asia": "泛亚",
+    "tkey_filter_france": "法国",
+    "tkey_filter_italia": "义大利",
     "tkey_filter_destroyer": "<span class='am-icon-paint-anchor'>驱逐舰</span>",
     "tkey_filter_cruiser": "<span class='am-icon-paint-anchor'>巡洋舰</span>",
     "tkey_filter_battleship": "<span class='am-icon-paint-anchor'>战舰</span>",
