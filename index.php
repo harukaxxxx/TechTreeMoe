@@ -182,6 +182,9 @@
                 <label class="am-btn am-btn-primary am-btn-sm am-round">
                     <input type="radio" class="options" name="nation" value=".italia" tkey="tkey_filter_italia"> 義大利
                 </label>
+                <label class="am-btn am-btn-primary am-btn-sm am-round">
+                    <input type="radio" class="options" name="nation" value=".commonwealth" tkey="tkey_filter_commonwealth"> 聯邦
+                </label>
             </div>
             <div class="am-btn-group" data-am-button>
                 <label class="am-btn am-btn-primary am-btn-sm am-round">
