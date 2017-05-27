@@ -1,0 +1,15 @@
+{
+    "id": "PRSC507",
+    "name": "Leningrad",
+    "tier": "Ⅶ",
+    "nation": "ussr",
+    "type": "cruiser",
+    "default": "1",
+    "change": false,
+    "premium": true,
+    "arp": false,
+    "moe": false,
+    "Victory Belles": {
+        "1": "【Victory Belles】Leningrad"
+    }
+}

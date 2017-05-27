@@ -1,4 +1,21 @@
 {
+    "87": {
+        "time": "2017/05/27",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】長門 改二",
+            "新增【戰艦少女】Bismarck 奇貓博士Ver.",
+            "新增【戰艦少女】金剛 永恆誓約Ver.",
+            "新增【戰艦少女】Saratoga 清涼的夏日旅行Ver."
+        ]
+    },
+    "86": {
+        "time": "2017/05/27",
+        "level": "NEW",
+        "event": [
+            "新增【Victory Belles】Leningrad"
+        ]
+    },
     "85": {
         "time": "2017/04/25",
         "level": "FIX",

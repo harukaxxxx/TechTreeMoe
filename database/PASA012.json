@@ -19,11 +19,18 @@
         "4": "【戰艦少女】Lexington Strap bikini Ver.",
         "11": "【戰艦少女】Saratoga",
         "12": "【戰艦少女】Saratoga 改",
-        "13": "【戰艦少女】Saratoga Love Butterfly Ver."
+        "13": "【戰艦少女】Saratoga Love Butterfly Ver.",
+        "15": "【戰艦少女】Saratoga 清涼的夏日旅行Ver."
     },
-    "鋼鐵少女": { "14": "【鋼鐵少女】Lexington 改" },
-    "November": { "5": "【November】Lexington" },
-    "Victory Belles": { "7": "【Victory Belles】Lexington" },
+    "鋼鐵少女": {
+        "14": "【鋼鐵少女】Lexington 改"
+    },
+    "November": {
+        "5": "【November】Lexington"
+    },
+    "Victory Belles": {
+        "7": "【Victory Belles】Lexington"
+    },
     "碧藍航線": {
         "9": "【碧藍航線】Lexington",
         "10": "【碧藍航線】Saratoga"
