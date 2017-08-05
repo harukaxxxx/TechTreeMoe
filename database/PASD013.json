@@ -8,5 +8,12 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Gearing", "2": "【戰艦少女】Gearing 改", "3": "【戰艦少女】Gearing 海上漂流套装Ver." }
+    "戰艦少女": {
+        "1": "【戰艦少女】Gearing",
+        "2": "【戰艦少女】Gearing 改",
+        "3": "【戰艦少女】Gearing 海上漂流套装Ver."
+    },
+    "鋼鐵少女": {
+        "4": "【鋼鐵少女】德陽"
+    }
 }

@@ -1,0 +1,18 @@
+{
+    "id": "PASA508",
+    "name": "Enterprise",
+    "tier": "Ⅷ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 2,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】Enterprise"
+    },
+    "戰艦少女": {
+        "2": "【戰艦少女】Enterprise",
+        "3": "【戰艦少女】Enterprise 白色惡魔Ver."
+    }
+}

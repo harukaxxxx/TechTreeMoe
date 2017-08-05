@@ -1,5 +1,50 @@
 {
-    "88": {
+    "92": {
+        "time": "2017/08/05",
+        "level": "FIX",
+        "event": [
+            "修復【鋼鐵少女】Saratoga命名錯誤",
+            "移除Warspite中Queen Elizabeth可選項"
+        ]
+    },
+    "91": {
+        "time": "2017/08/05",
+        "level": "NEW",
+        "event": [
+            "新增峯風",
+            "新增Murmansk",
+            "新增Enterprise",
+            "新增Queen Elizabeth"
+        ]
+    },
+    "90": {
+        "time": "2017/08/05",
+        "level": "UPDATE",
+        "event": [
+            "新增【戰艦少女】扶桑 春之霓裳Ver.",
+            "新增【戰艦少女】島風 大正淑女Ver.",
+            "新增【戰艦少女】Tirpitz 小小的奇幻冒險Ver.",
+            "新增【戰艦少女】Warspite 皇家戰姿Ver.",
+            "新增【戰艦少女】Mahan 愚人節裝扮Ver.",
+            "新增【戰艦少女】Mahan 夏日出遊Ver.",
+            "新增【戰艦少女】Washington 兒童節Ver.",
+            "新增【戰艦少女】Murmansk",
+            "新增【戰艦少女】Enterprise",
+            "新增【戰艦少女】Enterprise 白色惡魔Ver.",
+            "新增【戰艦少女】Queen Elizabeth",
+            "新增【戰艦少女】Queen Elizabeth 街頭美食家Ver.",
+            "新增【戰艦少女】峯風",
+            "新增【鋼鐵少女】霧島",
+            "新增【鋼鐵少女】龍驤",
+            "新增【鋼鐵少女】德陽",
+            "新增【鋼鐵少女】丹陽",
+            "新增【鋼鐵少女】Lexington",
+            "新增【鋼鐵少女】Enterprise",
+            "新增【鋼鐵少女】Queen Elizabeth",
+            "新增【Victory Belles】Algérie"
+        ]
+    },
+    "89": {
         "time": "2017/07/30",
         "level": "UPDATE",
         "event": [
@@ -10,7 +55,7 @@
             "新增【トム猫】Scharnhorst"
         ]
     },
-    "87": {
+    "88": {
         "time": "2017/05/27",
         "level": "UPDATE",
         "event": [
@@ -20,7 +65,7 @@
             "新增【戰艦少女】Saratoga 清涼的夏日旅行Ver."
         ]
     },
-    "86": {
+    "87": {
         "time": "2017/05/27",
         "level": "NEW",
         "event": [
@@ -28,7 +73,7 @@
             "新增【鋼鐵少女】Perth"
         ]
     },
-    "85": {
+    "86": {
         "time": "2017/04/25",
         "level": "FIX",
         "event": [
@@ -36,7 +81,7 @@
             "Kiev由PRSD109改至PRSD308"
         ]
     },
-    "84": {
+    "85": {
         "time": "2017/04/25",
         "level": "NEW",
         "event": [
@@ -60,7 +105,7 @@
             "新增【鋼鐵少女】Montana"
         ]
     },
-    "83": {
+    "84": {
         "time": "2017/03/05",
         "level": "UPDATE",
         "event": [
@@ -68,7 +113,7 @@
             "新增【艦隊收藏】山風 桃の節句Ver."
         ]
     },
-    "82": {
+    "83": {
         "time": "2017/02/17",
         "level": "UPDATE",
         "event": [
@@ -173,7 +218,7 @@
             "新增【碧藍航線】野分"
         ]
     },
-    "81": {
+    "82": {
         "time": "2017/02/12",
         "level": "UPDATE",
         "event": [
@@ -185,14 +230,14 @@
             "新增【碧藍航線】Cleveland"
         ]
     },
-    "80": {
+    "81": {
         "time": "2017/02/10",
         "level": "UPDATE",
         "event": [
             "新增【November】Missouri"
         ]
     },
-    "79": {
+    "80": {
         "time": "2017/02/04",
         "level": "UPDATE",
         "event": [
@@ -213,7 +258,7 @@
             "新增【鋼鐵少女】Edinburgh 改"
         ]
     },
-    "78": {
+    "79": {
         "time": "2017/02/03",
         "level": "FIX",
         "event": [
