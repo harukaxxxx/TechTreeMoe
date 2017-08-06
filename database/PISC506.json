@@ -5,7 +5,7 @@
     "nation": "italia",
     "type": "cruiser",
     "default": 2,
-    "change": false,
+    "change": true,
     "premium": true,
     "arp": false,
     "鋼鐵少女": {

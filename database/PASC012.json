@@ -5,9 +5,14 @@
     "nation": "usa",
     "type": "cruiser",
     "default": 2,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Pensacola", "2": "【戰艦少女】Salt Lake City" },
-    "Victory Belles": { "3": "【Victory Belles】Salt Lake City" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Pensacola",
+        "2": "【戰艦少女】Salt Lake City"
+    },
+    "Victory Belles": {
+        "3": "【Victory Belles】Salt Lake City"
+    }
 }

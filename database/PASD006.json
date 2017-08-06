@@ -5,7 +5,7 @@
     "nation": "usa",
     "type": "destroyer",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
     "戰艦少女": {

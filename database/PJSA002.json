@@ -5,7 +5,7 @@
     "nation": "japan",
     "type": "aircarrier",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
     "艦隊收藏": {

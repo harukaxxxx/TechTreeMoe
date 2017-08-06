@@ -283,7 +283,7 @@
         <div class="am-g am-container">
             <div class="am-u-lg-12">
                 <h2 class="about-title about-color" tkey="tkey_about_section">TechTreeMoe更新紀錄與詳細資訊</h2>
-                <div class="am-g">
+                <div class="am-g about-box">
                     <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
                         <h4 class="about-color" tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
                         <p tkey="tkey_contact_content">若您發現任何問題請至<a href="https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues">Github</a>建立Issues回報！<br>（網站Bug、艦船缺漏、素材提供、功能建議等）

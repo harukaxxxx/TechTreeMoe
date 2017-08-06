@@ -73,6 +73,13 @@
     background: #fff;
     padding: 40px 0;
     color: #6e7c8a;
+    background: url(../../images/about_bg.jpg) no-repeat left bottom;
+    background-size: contain;
+}
+
+.about .about-box {
+    background: hsla(0, 0%, 100%, .8);
+    padding: 15px 0;
 }
 
 .about-color {
@@ -117,6 +124,10 @@
 
 .about .am-scrollable-vertical {
     padding-right: 20px;
+}
+
+.about .am-accordion {
+    background: #fff;
 }
 
 
@@ -220,7 +231,7 @@
 }
 
 .am-selected-list {
-    max-height: 500px;
+    max-height: 300px;
     overflow-x: hidden;
 }
 
@@ -271,6 +282,10 @@
     background: url(../../images/icons/aircarrier.png) no-repeat;
 }
 
+.mixitup .change .addon {
+    background: url(../../images/icons/change.png) no-repeat 95% 5%;
+}
+
 .mixitup .premium .addon {
     background: url(../../images/icons/premium.png) no-repeat 95% 5%;
 }
@@ -306,6 +321,16 @@
 
 .mixitup .pan_asia .img_container {
     background: url(../../images/nation/flag_Pan_Asia.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .commonwealth .img_container {
+    background: url(../../images/nation/flag_Commonwealth.png) no-repeat top left;
+    background-size: contain;
+}
+
+.mixitup .italia .img_container {
+    background: url(../../images/nation/flag_Italia.png) no-repeat top left;
     background-size: contain;
 }
 
