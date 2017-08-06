@@ -329,6 +329,11 @@
     background-size: contain;
 }
 
+.mixitup .france .img_container {
+    background: url(../../images/nation/flag_France.png) no-repeat top left;
+    background-size: contain;
+}
+
 .mixitup .pan_asia .img_container {
     background: url(../../images/nation/flag_Pan_Asia.png) no-repeat top left;
     background-size: contain;
