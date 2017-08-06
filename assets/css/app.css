@@ -82,6 +82,15 @@
     padding: 15px 0;
 }
 
+.about .about-box .am-u-lg-6 {
+    padding-bottom: 15px;
+}
+
+.about .thanks-btn {
+    background: hsla(0, 0%, 100%, .8);
+    color: #34495e;
+}
+
 .about-color {
     color: #34495e;
 }

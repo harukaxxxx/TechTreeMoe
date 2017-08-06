@@ -378,6 +378,24 @@
                             </ul>
                         </div>
                     </div>
+                    <button type="button" class="am-btn thanks-btn am-btn-block" data-am-modal="{target: '#thanks'}">特別感謝</button>
+                    <div class="am-popup" id="thanks">
+                        <div class="am-popup-inner">
+                            <div class="am-popup-hd">
+                            <h4 class="am-popup-title">特別感謝名單</h4>
+                            <span data-am-modal-close class="am-close">&times;</span>
+                            </div>
+                            <ul class="am-list am-list-static">
+                                <li><a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a> - 碧藍航線立繪提供</li>
+                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a> - 碧藍航線立繪提供</li>
+                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a> - 鋼鐵少女立繪提供</li>
+                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a> - 鋼鐵少女立繪提供</li>
+                                <li><a href="https://victorybelles.tumblr.com/">Victory Belles</a> - Victory Belles立繪提供</li>
+                                <li><a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a> - 艦隊收藏立繪提供</li>
+                                <li><a href="https://www.zjsnrwiki.com/wiki">艦R百科</a> - 戰艦少女立繪提供</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
