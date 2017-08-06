@@ -104,6 +104,30 @@
                     </li>
                     <li>
                         <div class="am-gallery-item">
+                            <a href="images/preview/france.jpg" class="">
+                                <img src="images/preview/france.jpg" alt="法國" />
+                                <h3 class="am-gallery-title" tkey="tkey_preview_france">法國預覽</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item">
+                            <a href="images/preview/italia.jpg" class="">
+                                <img src="images/preview/italia.jpg" alt="義大利" />
+                                <h3 class="am-gallery-title" tkey="tkey_preview_italia">義大利預覽</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item">
+                            <a href="images/preview/commonwealth.jpg" class="">
+                                <img src="images/preview/commonwealth.jpg" alt="聯邦" />
+                                <h3 class="am-gallery-title" tkey="tkey_preview_commonwealth">聯邦預覽</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item">
                             <a href="images/preview/pan_asia.jpg" class="">
                                 <img src="images/preview/pan_asia.jpg" alt="泛亞" />
                                 <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
@@ -112,9 +136,25 @@
                     </li>
                     <li>
                         <div class="am-gallery-item">
+                            <a href="images/preview/poland.jpg" class="">
+                                <img src="images/preview/poland.jpg" alt="波蘭" />
+                                <h3 class="am-gallery-title" tkey="tkey_preview_poland">波蘭預覽</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item">
                             <a href="images/preview/arp.jpg" class="">
                                 <img src="images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
                                 <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-gallery-item">
+                            <a href="images/preview/haifuri.jpg" class="">
+                                <img src="images/preview/haifuri.jpg" alt="高校艦隊" />
+                                <h3 class="am-gallery-title" tkey="tkey_preview_haifuri">高校艦隊預覽</h3>
                             </a>
                         </div>
                     </li>
