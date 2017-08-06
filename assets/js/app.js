@@ -168,6 +168,15 @@ function reset() {
     }
 }
 
+//random intro bg
+$(function() {
+    if (Math.random() >= 0.5) {
+        $('.intro').css("background-image", "url(./images/intro_bg/left/intro_bg" + Math.floor(Math.random() * 2 + 1) + ".jpg)").css("background-position", "left");
+    } else {
+        $('.intro').css("background-image", "url(./images/intro_bg/right/intro_bg" + Math.floor(Math.random() * 4 + 1) + ".jpg)").css("background-position", "right");
+    }
+})
+
 //mmm
 $(function() {
     if (document.location.search == "?mmm") {

@@ -43,7 +43,7 @@
 /*intro*/
 
 .intro {
-    background: #fff url(../../images/intro_bg.jpg) no-repeat right bottom;
+    background: #fff no-repeat bottom;
     background-size: contain;
 }
 
