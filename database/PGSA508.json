@@ -1,0 +1,21 @@
+{
+    "id": "PGSA508",
+    "name": "Graf Zeppelin",
+    "tier": "Ⅷ",
+    "nation": "germany",
+    "type": "aircarrier",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】Graf Zeppelin 改"
+    },
+    "戰艦少女": {
+        "2": "【戰艦少女】Graf Zeppelin"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Graf Zeppelin",
+        "4": "【鋼鐵少女】Graf Zeppelin 改"
+    }
+}

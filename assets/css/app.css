@@ -6,7 +6,8 @@
     background-image: url(../../images/hero_bg.png);
     color: #fff;
     text-align: center;
-    padding: 30vh 0;
+    padding: 35vh 0;
+    height: 100vh;
 }
 
 .top .am-g {

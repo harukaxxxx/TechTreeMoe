@@ -1,4 +1,22 @@
 {
+    "96": {
+        "time": "2017/08/07",
+        "level": "NEW",
+        "event": [
+            "新增Graf Zeppelin",
+            "新增特別感謝清單"
+        ]
+    },
+    "95": {
+        "time": "2017/08/07",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】Graf Zeppelin 改",
+            "新增【戰艦少女】Graf Zeppelin",
+            "新增【鋼鐵少女】Graf Zeppelin",
+            "新增【鋼鐵少女】Graf Zeppelin 改"
+        ]
+    },
     "94": {
         "time": "2017/08/06",
         "level": "FIX",

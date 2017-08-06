@@ -386,14 +386,15 @@
                             <span data-am-modal-close class="am-close">&times;</span>
                             </div>
                             <ul class="am-list am-list-static">
-                                <li><a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a> - 碧藍航線立繪提供</li>
-                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a> - 碧藍航線立繪提供</li>
-                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a> - 鋼鐵少女立繪提供</li>
-                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a> - 鋼鐵少女立繪提供</li>
-                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a> - 新船資訊提供</li>
-                                <li><a href="https://victorybelles.tumblr.com/">Victory Belles</a> - Victory Belles立繪提供</li>
-                                <li><a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a> - 艦隊收藏立繪提供</li>
-                                <li><a href="https://www.zjsnrwiki.com/wiki">艦R百科</a> - 戰艦少女立繪提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a>】 - 碧藍航線立繪提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>】 - 碧藍航線立繪提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a>】 - 鋼鐵少女立繪提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a>】 - 鋼鐵少女立繪提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a>】 - 新船資訊提供</li>
+                                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://srarithmetic.com/">Nacht</a>】 - 更新紀錄與詳細資訊背景圖提供<a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460"><i class="am-icon-external-link"></i></a></li>
+                                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://victorybelles.tumblr.com/">Victory Belles</a>】 - Victory Belles立繪提供</li>
+                                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a>】 - 艦隊收藏立繪提供</li>
+                                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://www.zjsnrwiki.com/wiki">艦R百科</a>】 - 戰艦少女立繪提供</li>
                             </ul>
                         </div>
                     </div>
