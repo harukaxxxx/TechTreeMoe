@@ -390,6 +390,7 @@
                                 <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a> - 碧藍航線立繪提供</li>
                                 <li><a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a> - 鋼鐵少女立繪提供</li>
                                 <li><a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a> - 鋼鐵少女立繪提供</li>
+                                <li><a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a> - 新船資訊提供</li>
                                 <li><a href="https://victorybelles.tumblr.com/">Victory Belles</a> - Victory Belles立繪提供</li>
                                 <li><a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a> - 艦隊收藏立繪提供</li>
                                 <li><a href="https://www.zjsnrwiki.com/wiki">艦R百科</a> - 戰艦少女立繪提供</li>
