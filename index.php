@@ -184,7 +184,7 @@
                         <ol class="intro-p">
                             <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
                             <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li>
-                            <li tkey="tkey_tutorial_3">點擊右上的 <span class="am-icon-download am-text-primary"> 下載</span> 按鈕下載模組。</li>
+                            <li tkey="tkey_tutorial_3">耐心等待下載完成。</li>
                             <li tkey="tkey_tutorial_4">解壓縮後將gui資料夾複製到<code>res_mods/x.x.x/</code>裡即可。</li>
                         </ol>
                     </div>

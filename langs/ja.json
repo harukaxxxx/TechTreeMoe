@@ -24,7 +24,7 @@
     "tkey_tutorial_title": "<i class='am-icon-book'></i>チュートリアル",
     "tkey_tutorial_1": "船のアイコンの下にプルダウンメニューをクリックして、プレビューを見たいのアイコンが選んできます。",
     "tkey_tutorial_2": "選んた後に右上の<span class='am-icon-download am-text-primary'>ダウンロード</span>ボタンをクリックしてダウンロードが始めます。",
-    "tkey_tutorial_3": "右上の <span class='am-icon-download am-text-primary'> ダウンロード</span> ボタンをクリックしで、MODのダウンロードが始めます。",
+    "tkey_tutorial_3": "ダウンロードをしばらくお待ちください。",
     "tkey_tutorial_4": "解凍後のguiフォルダをコピーして<code>res_mods/x.x.x/</code>にペーストしましょ！",
     "tkey_filter_all": "すべて",
     "tkey_filter_japan": "日本",
