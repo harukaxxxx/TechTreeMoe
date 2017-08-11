@@ -307,6 +307,7 @@
                     options($shipFile,'戰艦少女');
                     options($shipFile,'鋼鐵少女');
                     options($shipFile,'碧藍航線');
+                    options($shipFile,'高校艦隊');
                     options($shipFile,'同人作品');
                     options($shipFile,'November');
                     options($shipFile,'蒼藍鋼鐵戰艦');
@@ -371,6 +372,7 @@
                                 detial('蒼藍鋼鐵戰艦',$shipList);
                                 detial('Victory Belles',$shipList);
                                 detial('同人作品',$shipList);
+                                detial('高校艦隊',$shipList);
                                 if ( $_SERVER['QUERY_STRING'] == "mmm") {
                                     detial('萌萌模式',$shipList);
                                 };
