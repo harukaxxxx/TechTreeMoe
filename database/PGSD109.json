@@ -1,0 +1,14 @@
+{
+    "id": "PGSD109",
+    "name": "Z46",
+    "tier": "Ⅸ",
+    "nation": "germany",
+    "type": "destroyer",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "碧藍航線": {
+        "1": "【碧藍航線】Z46"
+    }
+}
