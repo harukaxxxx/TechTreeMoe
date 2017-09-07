@@ -4,14 +4,11 @@
     "tier": "Ⅶ",
     "nation": "germany",
     "type": "cruiser",
-    "default": 1,
+    "default": 2,
     "change": true,
     "premium": false,
     "arp": false,
     "戰艦少女": {
         "2": "【戰艦少女】M計畫"
-    },
-    "碧藍航線": {
-        "1": "【碧藍航線】Yorck"
     }
 }

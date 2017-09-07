@@ -5,9 +5,12 @@
     "nation": "germany",
     "type": "destroyer",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
+    "戰艦少女": {
+        "2": "【戰艦少女】Z46"
+    },
     "碧藍航線": {
         "1": "【碧藍航線】Z46"
     }

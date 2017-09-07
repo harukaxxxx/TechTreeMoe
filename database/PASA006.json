@@ -4,7 +4,7 @@
     "tier": "Ⅵ",
     "nation": "usa",
     "type": "aircarrier",
-    "default": 4,
+    "default": 1,
     "change": true,
     "premium": false,
     "arp": false,
@@ -14,8 +14,5 @@
     "戰艦少女": {
         "2": "【戰艦少女】Princeton",
         "3": "【戰艦少女】Princeton Bikino魔術師Ver."
-    },
-    "碧藍航線": {
-        "4": "【碧藍航線】Independence"
     }
 }

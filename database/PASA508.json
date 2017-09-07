@@ -4,7 +4,7 @@
     "tier": "Ⅷ",
     "nation": "usa",
     "type": "aircarrier",
-    "default": 2,
+    "default": 4,
     "change": true,
     "premium": false,
     "arp": false,
@@ -14,5 +14,8 @@
     "戰艦少女": {
         "2": "【戰艦少女】Enterprise",
         "3": "【戰艦少女】Enterprise 白色惡魔Ver."
+    },
+    "碧藍航線": {
+        "4": "【碧藍航線】Enterprise"
     }
 }

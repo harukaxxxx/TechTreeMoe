@@ -5,8 +5,14 @@
     "nation": "usa",
     "type": "battleship",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
-    "鋼鐵少女": { "1": "【鋼鐵少女】Alabama 改" }
+    "戰艦少女": {
+        "2": "【戰艦少女】South Dakota",
+        "3": "【戰艦少女】South Dakota 歸鄉的少女Ver."
+    },
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】Alabama 改"
+    }
 }
