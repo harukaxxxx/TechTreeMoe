@@ -270,6 +270,8 @@
                 function options($file,$type){
                     if ($file->{"$type"}) {
                         $id = $file->{'id'};
+                        $name = $file->{'name'};
+                        echo "<optgroup label='戰艦世界'>\n<option value='$id-0'>【戰艦世界】$name</option>\n</optgroup>\n";
                         echo "<optgroup label='$type'>\n";
                         foreach ($file->{"$type"} as $key => $value) {
                             $value = ($type != '同人作品') ? $value : "【$value[0]】$value[2]" ;

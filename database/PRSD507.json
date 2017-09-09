@@ -1,9 +1,9 @@
 {
-    "id": "PRSC507",
+    "id": "PRSD507",
     "name": "Leningrad",
     "tier": "Ⅶ",
     "nation": "ussr",
-    "type": "cruiser",
+    "type": "destroyer",
     "default": "1",
     "change": false,
     "premium": true,
