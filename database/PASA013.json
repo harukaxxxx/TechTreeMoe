@@ -5,8 +5,15 @@
     "nation": "usa",
     "type": "aircarrier",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Essex" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Essex"
+    },
+    "最終戰艦": {
+        "2": "【最終戰艦】Essex",
+        "3": "【最終戰艦】Essex 泳裝Ver.",
+        "4": "【最終戰艦】Essex 花嫁Ver."
+    }
 }

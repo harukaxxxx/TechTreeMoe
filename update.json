@@ -1,9 +1,69 @@
 {
+    "110": {
+        "time": "2017/09/19",
+        "level": "NEW",
+        "event": [
+            "Farragut",
+            "Dunkerque"
+        ]
+    },
+    "109": {
+        "time": "2017/09/19",
+        "level": "UPDATE",
+        "event": [
+            "新增【最終戰艦】Enterprise",
+            "新增【最終戰艦】Enterprise 泳裝Ver.",
+            "新增【最終戰艦】Enterprise 花嫁Ver.",
+            "新增【最終戰艦】Enterprise 警服Ver.",
+            "新增【最終戰艦】Missouri",
+            "新增【最終戰艦】Missouri 泳裝Ver.",
+            "新增【最終戰艦】Missouri 花嫁Ver.",
+            "新增【最終戰艦】Missouri 警服Ver.",
+            "新增【最終戰艦】Fletcher",
+            "新增【最終戰艦】Fletcher 泳裝Ver.",
+            "新增【最終戰艦】長門",
+            "新增【最終戰艦】長門 泳裝Ver.",
+            "新增【最終戰艦】瑞鶴",
+            "新增【最終戰艦】瑞鶴 泳裝Ver.",
+            "新增【最終戰艦】Z1",
+            "新增【最終戰艦】Z1 泳裝Ver.",
+            "新增【最終戰艦】高雄",
+            "新增【最終戰艦】高雄 泳裝Ver.",
+            "新增【最終戰艦】Farragut",
+            "新增【最終戰艦】Farragut 泳裝Ver.",
+            "新增【最終戰艦】Farragut 睡衣Ver.",
+            "新增【最終戰艦】Washington",
+            "新增【最終戰艦】Washington 泳裝Ver.",
+            "新增【最終戰艦】Lexington",
+            "新增【最終戰艦】Lexington 泳裝Ver.",
+            "新增【最終戰艦】King George V",
+            "新增【最終戰艦】King George V 泳裝Ver.",
+            "新增【最終戰艦】Graf Zeppelin",
+            "新增【最終戰艦】Graf Zeppelin 泳裝Ver.",
+            "新增【最終戰艦】Dunkerque",
+            "新增【最終戰艦】Dunkerque 泳裝Ver.",
+            "新增【最終戰艦】Augusta",
+            "新增【最終戰艦】Augusta 泳裝Ver.",
+            "新增【最終戰艦】吹雪",
+            "新增【最終戰艦】吹雪 泳裝Ver.",
+            "新增【最終戰艦】夕立",
+            "新增【最終戰艦】夕立 泳裝Ver.",
+            "新增【最終戰艦】Prinz Eugen",
+            "新增【最終戰艦】Prinz Eugen 泳裝Ver.",
+            "新增【最終戰艦】Prinz Eugen 花嫁Ver.",
+            "新增【最終戰艦】Prinz Eugen 和服Ver.",
+            "新增【最終戰艦】Essex",
+            "新增【最終戰艦】Essex 泳裝Ver.",
+            "新增【最終戰艦】Essex 花嫁Ver."
+        ]
+    },
     "108": {
         "time": "2017/09/19",
         "level": "FIX",
         "event": [
-            "修正原版可選項重複出現問題。"
+            "修正原版可選項重複出現問題。",
+            "從Montana移除【November】Louisiana。",
+            "從N. Carolina移除【November】NewJersey。"
         ]
     },
     "107": {

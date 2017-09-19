@@ -4,14 +4,11 @@
     "tier": "Ⅹ",
     "nation": "usa",
     "type": "battleship",
-    "default": 2,
+    "default": 1,
     "change": true,
     "premium": false,
     "arp": false,
     "鋼鐵少女": {
-        "2": "【鋼鐵少女】Montana"
-    },
-    "November": {
-        "1": "【November】Louisiana"
+        "1": "【鋼鐵少女】Montana"
     }
 }
