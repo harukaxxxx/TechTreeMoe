@@ -268,10 +268,9 @@
                 }
                 //generate options function
                 function options($file,$type){
+                    $id = $file->{'id'};
+                    $name = $file->{'name'};;
                     if ($file->{"$type"}) {
-                        $id = $file->{'id'};
-                        $name = $file->{'name'};
-                        echo "<optgroup label='戰艦世界'>\n<option value='$id-0'>【戰艦世界】$name</option>\n</optgroup>\n";
                         echo "<optgroup label='$type'>\n";
                         foreach ($file->{"$type"} as $key => $value) {
                             $value = ($type != '同人作品') ? $value : "【$value[0]】$value[2]" ;
@@ -305,6 +304,7 @@
                                     <div class='addon'><img src='images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
                                 </div>\n
                             <select name='$shipId' data-am-selected>\n";
+                    echo "<optgroup label='戰艦世界'>\n<option value='$shipId-0'>【戰艦世界】$shipName</option>\n</optgroup>\n";
                     options($shipFile,'艦隊收藏');
                     options($shipFile,'戰艦少女');
                     options($shipFile,'鋼鐵少女');
