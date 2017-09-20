@@ -1,6 +1,6 @@
 <?php
     $page = $_SERVER['QUERY_STRING'];
-    $valid_pages = array('caches', 'chart', 'ships', '...etc.');
+    $valid_pages = array('caches', 'chart', 'ships', 'form');
     switch ($page) {
         case 'caches':
             $title = "暫存列表";
@@ -10,6 +10,9 @@
             break;
         case 'ships':
             $title = "艦船列表";
+            break;
+        case 'form':
+            $title = "表單";
             break;
         default:
             $title = "總覽";
@@ -65,13 +68,12 @@
                         </ul>
                     </li>
                     <li><a href="./?chart"><span class="am-icon-line-chart"></span> 數據圖表</a></li>
-                    <!-- <li class="admin-parent">
-                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 表单 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                    <li class="admin-parent">
+                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 表單 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
                         <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
-                            <li><a href="php/form_basic.html" class="am-cf"> 基本表单</a></li>
-                            <li><a href="php/form_validate.html">表单验证</a></li>
+                            <li><a href="./?form"> 基本表單</a></li>
                         </ul>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
         </div>
