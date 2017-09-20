@@ -1,7 +1,7 @@
-.am-topbar{
-	border-top: 3px solid #71b6f9;
-	background: none;
-	border-bottom: none;
+.am-topbar {
+    border-top: 3px solid #71b6f9;
+    background: none;
+    border-bottom: none;
 }
 
 .am-topbar .am-topbar-left {
@@ -12,11 +12,11 @@
     position: relative;
     width: 290px;
     z-index: 1;
-   
+    border-right: 1px solid #cecece;
 }
 
-.am-navbar-left{
-	float: left;
+.am-navbar-left {
+    float: left;
 }
 
 .am-topbar .am-topbar-left .logo {
@@ -50,17 +50,18 @@
     padding-left: 10px;
 }
 
-.am-navbar-right{
-	float: right!important;
-	margin-right: 30px;
-	margin-top: 10px;
+.am-navbar-right {
+    float: right!important;
+    margin-right: 30px;
+    margin-top: 10px;
 }
 
-.am-navbar-right li{
-	float: left;
+.am-navbar-right li {
+    float: left;
 }
 
-.app-search .form-control, .app-search .form-control:focus {
+.app-search .form-control,
+.app-search .form-control:focus {
     border: 1px solid rgba(152, 166, 173, 0.15);
     font-size: 13px;
     height: 34px;
@@ -75,22 +76,22 @@
     width: 190px;
 }
 
-.inform{
-	line-height: 40px;
+.inform {
+    line-height: 40px;
 }
 
-.hidden-xs{
-	position: relative;
+.hidden-xs {
+    position: relative;
 }
 
-.app-search a{
-	position: absolute;
-	display: block;
-	width: 19px;
-	height: 21px;
-	top: 3px;
-  right: 20px;
-  color: rgba(152, 166, 173, 0.7);
+.app-search a {
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 21px;
+    top: 3px;
+    right: 20px;
+    color: rgba(152, 166, 173, 0.7);
 }
 
 .admin-menu {
@@ -100,23 +101,23 @@
     right: 20px;
 }
 
-.admin{
-	width: 100%;
+.admin {
+    width: 100%;
     /*position: relative;*/
     height: 100%;
-  
 }
 
-.admin .am-g{
-	padding-left: 0;
-	padding-right: 0;
+.admin .am-g {
+    padding-left: 0;
+    padding-right: 0;
 }
-
-
 
 
 /*--------Left Sidebar Start----------*/
+
+
 /*---user---*/
+
 .side-menu {
     top: 70px;
     width: 250px;
@@ -133,23 +134,25 @@
 
 .user-box {
     text-align: center;
-    padding: 30px 0px 20px 0px;
+    padding: 40px 0px 10px 0px;
     background: #fff;
 }
 
 .user-box .user-img {
     position: relative;
-    height: 88px;
-    width: 88px;
+    height: 120px;
+    width: 120px;
     margin: 0px auto;
 }
 
 .img-thumbnail {
     border: 1px solid #EBEFF2;
 }
+
 .img-circle {
     border-radius: 50%;
 }
+
 .img-thumbnail {
     display: inline-block;
     max-width: 100%;
@@ -176,6 +179,7 @@
 .user-box .user-status.offline i {
     color: #ff5b5b;
 }
+
 .user-box .user-status i {
     font-size: 15px;
 }
@@ -199,19 +203,24 @@
 .user-box h5 a {
     color: #98a6ad;
 }
+
 a:hover {
     outline: 0;
     text-decoration: none;
 }
 
 
-
 /*---Sidemenu---*/
+
 #sidebar-menu {
     padding-bottom: 30px;
     width: 100%;
 }
-#sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
+
+#sidebar-menu,
+#sidebar-menu ul,
+#sidebar-menu li,
+#sidebar-menu a {
     border: 0;
     font-weight: normal;
     line-height: 1;
@@ -222,8 +231,10 @@ a:hover {
     text-decoration: none;
 }
 
-
-#sidebar-menu, #sidebar-menu ul, #sidebar-menu li, #sidebar-menu a {
+#sidebar-menu,
+#sidebar-menu ul,
+#sidebar-menu li,
+#sidebar-menu a {
     border: 0;
     font-weight: normal;
     line-height: 1;
@@ -241,17 +252,18 @@ a:hover {
     cursor: default;
     font-size: 13px;
 }
+
 .text-muted {
     color: #98a6ad !important;
     font-size: 12px;
 }
 
-#sidebar-menu > ul > li > a.active {
+#sidebar-menu>ul>li>a.active {
     border-left: 3px solid #71b6f9;
     color: #71b6f9 !important;
 }
 
-#sidebar-menu > ul > li > a {
+#sidebar-menu>ul>li>a {
     color: #435966;
     display: block;
     padding: 12px 20px;
@@ -259,17 +271,18 @@ a:hover {
     background-color: #ffffff;
     border-left: 3px solid transparent;
 }
+
 #sidebar-menu a {
     line-height: 1.3;
 }
 
-.has_sub .fa-chevron-right{
-	position: absolute;
-	top: 13px;
-	right: 20px;
-	line-height: 18px;
-  font-size: 10px;
-  color: #435966;
+.has_sub .fa-chevron-right {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    line-height: 18px;
+    font-size: 10px;
+    color: #435966;
 }
 
 #sidebar-menu ul ul a {
@@ -284,21 +297,19 @@ a:hover {
     padding: 10px 20px 10px 65px;
 }
 
-.inform{
-	font-size: 25px;
+.inform {
+    font-size: 25px;
     line-height: 48px;
 }
 
 
-
-
 /*---right Content here---*/
+
 .content-page {
     overflow: auto;
     /*height: 700px;*/
     margin-top: 30px;
-  /*  padding-left: 260px;*/
- 
+    /*  padding-left: 260px;*/
 }
 
 .content-page .content {
@@ -306,38 +317,33 @@ a:hover {
     /*margin-top: 20px;*/
 }
 
-.am-g{
+.am-g {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-
-
-
-
-@media screen and (max-width: 641px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
-  .am-topbar{
-  	background: #fff;
-  }
-  .content-page{
-  	/*padding-left: 15px;*/
-  }
-  
-  .page-title{
-  	margin-left: 20px;
-  }
-  
+@media screen and (max-width: 641px) {
+    /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+    .am-topbar {
+        background: #fff;
+    }
+    .content-page {
+        /*padding-left: 15px;*/
+    }
+    .page-title {
+        margin-left: 20px;
+    }
 }
 
-
-.contain{
-	overflow: hidden;
+.contain {
+    overflow: hidden;
 }
 
 
 /*--navbar--*/
+
 .admin-menu {
     position: fixed;
     z-index: 10;
@@ -345,19 +351,18 @@ a:hover {
     right: 20px;
 }
 
-.admin{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	display: -webkit-flex;
+.admin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
 }
 
-.admin-sidebar{
-	float: left;
+.admin-sidebar {
+    float: left;
 }
 
-.content-page{
-	flex: 1;
-	-webkit-flex: 1;
+.content-page {
+    flex: 1;
+    -webkit-flex: 1;
 }
-

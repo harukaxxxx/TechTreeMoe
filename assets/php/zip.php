@@ -25,6 +25,14 @@ foreach ($fileList as $img_filename) {
 
 $zip->close();
 
+//record download
+$jfile = "../../dashboard/database/records.json";
+$json = json_decode(file_get_contents($jfile),TRUE);
+$json['daily'][date("Ymd",time())]++;
+$json['monthly'][date("Ym",time())]++;
+$json['overtime']++;
+file_put_contents($jfile, json_encode($json));
+
 //download as zip
 header("Content-type: application/zip"); 
 header("Content-Disposition: attachment; filename=res_mod.zip"); 

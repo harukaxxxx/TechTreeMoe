@@ -1,295 +1,109 @@
+      <!-- Begin page -->
+    <header class="am-topbar am-topbar-fixed-top">
+        <div class="am-topbar-left am-hide-sm-only">
+        <a href="./" class="logo">TechTreeMoe</a>
+        </div>
+
+        <div class="contain">
+            <ul class="am-nav am-navbar-nav am-navbar-left">
+
+                <li>
+                    <h4 class="page-title"><?php echo $title; ?></h4>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- end page -->
         <div class="content-page">
             <!-- Start content -->
+            <?php
+            $json = file_get_contents('./database/records.json');
+            $rdata = json_decode($json);
+            $today = date("Ymd",time());
+            $cmonth = date("Ym",time());
+            ?>
             <div class="content">
                 <div class="am-g">
-                    <!-- Row start -->
-                    <div class="am-u-md-3">
+                    <div class="am-u-md-4">
                         <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">总收入</h4>
-                            <div class="widget-chart-1 am-cf">
-                                <div id="widget-chart-box-1" style="height: 110px;width: 110px;float: left;">
-                                </div>
-
-                                <div class="widget-detail-1" style="float: right;">
-                                    <h2 class="p-t-10 m-b-0"> 256 </h2>
-                                    <p class="text-muted">今日收入</p>
-                                </div>
+                        <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月d日",time()); ?></span><h4 class="header-title">本日下載量</h4>
+                            <div class="widget-chart-1">
+                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->daily->$today."次"; ?> </h2>
                             </div>
                         </div>
                     </div>
                     <!-- col end -->
-                    <div class="am-u-md-3">
+                    <div class="am-u-md-4">
                         <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">销售分析</h4>
-                            <div class="widget-box-2">
-                                <div class="widget-detail-2">
-                                    <span class="badge  pull-left m-t-20  am-round" style="color: #fff; background: #0e90d2;">32% <i class="zmdi zmdi-trending-up"></i> </span>
-                                    <h2 class="m-b-0"> 8451 </h2>
-                                    <p class="text-muted m-b-25">Revenue today</p>
-                                </div>
-                                <div class="am-progress am-progress-xs am-margin-bottom-0">
-                                    <div class="am-progress-bar" style="width: 80%"></div>
-                                </div>
+                        <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月",time()); ?></span><h4 class="header-title">本月下載量</h4>
+                            <div class="widget-chart-1">
+                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->monthly->$cmonth."次"; ?> </h2>
                             </div>
                         </div>
                     </div>
                     <!-- col end -->
-                    <div class="am-u-md-3">
+                    <div class="am-u-md-4">
                         <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">总收入</h4>
-                            <div class="widget-chart-1 am-cf">
-                                <div id="widget-chart-box-2" style="height: 110px;width: 110px;float: left;">
-                                </div>
-
-                                <div class="widget-detail-1" style="float: right;">
-                                    <h2 class="p-t-10 m-b-0"> 256 </h2>
-                                    <p class="text-muted">今日收入</p>
-                                </div>
+                        <span class="text-muted am-fr am-margin-top-xs">2017年09月04日至今</span><h4 class="header-title">總下載量</h4>
+                            <div class="widget-chart-1">
+                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->overtime."次"; ?> </h2>
                             </div>
                         </div>
                     </div>
                     <!-- col end -->
-                    <div class="am-u-md-3">
-                        <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">销售分析</h4>
-                            <div class="widget-box-2">
-                                <div class="widget-detail-2">
-                                    <span class="badge  pull-left m-t-20  am-round progress-bar-pink" style="color: #fff;">32% <i class="zmdi zmdi-trending-up"></i> </span>
-                                    <h2 class="m-b-0"> 8451 </h2>
-                                    <p class="text-muted m-b-25">Revenue today</p>
-                                </div>
-                                <div class="am-progress am-progress-xs am-margin-bottom-0" style="background: rgba(255, 138, 204, 0.2);">
-                                    <div class="am-progress-bar progress-bar-pink" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Row end -->
                 </div>
-
                 <div class="am-g">
-                    <!-- Row start -->
-                    <div class="am-u-md-4">
+                    <div class="am-u-md-12">
                         <div class="card-box">
-                            <h4 class="header-title m-t-0">环形图</h4>
-                            <div id="index-pie-1" style="height: 345px;height: 300px;"></div>
-                        </div>
-                    </div>
+                            <h4 class="header-title">總體萌化進度</h4>
+                            
+                            <?php
+$dList = scandir('../images/ship_previews_origin');
+$dList = array_diff($dList, array('.', '..','.DS_Store'));
 
-                    <div class="am-u-md-4">
-                        <div class="card-box">
-                            <h4 class="header-title m-t-0">环形图</h4>
-                            <div id="index-bar-1" style="height: 345px;height: 300px;"></div>
-                        </div>
-                    </div>
+$dbList = scandir('./database/ships/'); 
+$dbList = array_diff($dbList, array('.', '..','.DS_Store'));
 
-                    <div class="am-u-md-4">
-                        <div class="card-box">
-                            <h4 class="header-title m-t-0">环形图</h4>
-                            <div id="index-line-1" style="height: 345px;height: 300px;"></div>
+$nExist = [];
+$allExist = 0;
+$allShips = 0;
+foreach ($dbList as $dbShip) {
+    $exist = 0;
+    $nAllShips=0;
+  $nation = substr($dbShip,0,strlen($dbShip)-5);
+
+  $json = file_get_contents("./database/ships/$dbShip");
+  $sdata = json_decode($json);
+  foreach ($sdata->$nation as $id => $value) {
+    $allShips++;
+    $nAllShips++;
+    if (in_array(strtoupper($id).'-0.png',$dList)) {
+        $exist++;
+        $allExist ++;
+    }
+  }
+  $nExist[$nation]=[$exist,$nAllShips];
+}
+$MainProgress = round($allExist/$allShips*100);
+echo "<div class='am-progress'><div class='am-progress-bar am-progress-bar-secondary' style='width:$MainProgress%'>$MainProgress%</div></div>";
+
+$jfile = "database/complete.json";
+$complete = json_decode(file_get_contents($jfile),TRUE);
+$complete = '';
+file_put_contents($jfile, json_encode($nExist));
+
+?>             
+
                         </div>
                     </div>
-                    <!-- Row end -->
                 </div>
-
                 <div class="am-g">
-                    <!-- Row start -->
-                    <div class="am-u-md-3">
-                        <div class="card-box widget-user">
-                            <div>
-                                <img src="assets/img/avatar-3.jpg" class="img-responsive img-circle" alt="user">
-                                <div class="wid-u-info">
-                                    <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
-                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                    <small class="text-warning"><b>管理员</b></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <div class="am-u-md-3">
-                        <div class="card-box widget-user">
-                            <div>
-                                <img src="assets/img/avatar-2.jpg" class="img-responsive img-circle" alt="user">
-                                <div class="wid-u-info">
-                                    <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
-                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                    <small class="text-custom"><b>网络组主管</b></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <div class="am-u-md-3">
-                        <div class="card-box widget-user">
-                            <div>
-                                <img src="assets/img/avatar-4.jpg" class="img-responsive img-circle" alt="user">
-                                <div class="wid-u-info">
-                                    <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
-                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                    <small class="text-success"><b>设计师</b></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <div class="am-u-md-3">
-                        <div class="card-box widget-user">
-                            <div>
-                                <img src="assets/img/avatar-10.jpg" class="img-responsive img-circle" alt="user">
-                                <div class="wid-u-info">
-                                    <h4 class="m-t-0 m-b-5 font-600">Chadengle</h4>
-                                    <p class="text-muted m-b-5 font-13">coderthemes@gmail.com</p>
-                                    <small class="text-info"><b>开发者</b></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <!-- Row end -->
-                </div>
-
-
-                <!-- Row start -->
-                <div class="am-g">
-                    <!-- col start -->
-                    <div class="am-u-md-4">
+                    <div class="am-u-md-12">
                         <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">收件箱</h4>
-                            <div class="inbox-widget nicescroll" style="height: 315px; overflow: hidden; outline: none;" tabindex="5000">
-                                <a href="#">
-                                    <div class="inbox-item">
-                                        <div class="inbox-item-img"><img src="assets/img/avatar-1.jpg" class="img-circle" alt=""></div>
-                                        <p class="inbox-item-author">Chadengle</p>
-                                        <p class="inbox-item-text">Hey! there I'm available...</p>
-                                        <p class="inbox-item-date">13:40 PM</p>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="inbox-item">
-                                        <div class="inbox-item-img"><img src="assets/img/avatar-2.jpg" class="img-circle" alt=""></div>
-                                        <p class="inbox-item-author">Shahedk</p>
-                                        <p class="inbox-item-text">Hey! there I'm available...</p>
-                                        <p class="inbox-item-date">10:15 AM</p>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="inbox-item">
-                                        <div class="inbox-item-img"><img src="assets/img/avatar-10.jpg" class="img-circle" alt=""></div>
-                                        <p class="inbox-item-author">Tomaslau</p>
-                                        <p class="inbox-item-text">I've finished it! See you so...</p>
-                                        <p class="inbox-item-date">13:34 PM</p>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="inbox-item">
-                                        <div class="inbox-item-img"><img src="assets/img/avatar-4.jpg" class="img-circle" alt=""></div>
-                                        <p class="inbox-item-author">Stillnotdavid</p>
-                                        <p class="inbox-item-text">This theme is awesome!</p>
-                                        <p class="inbox-item-date">13:17 PM</p>
-                                    </div>
-                                </a>
-                                <a href="#">
-                                    <div class="inbox-item">
-                                        <div class="inbox-item-img"><img src="assets/img/avatar-5.jpg" class="img-circle" alt=""></div>
-                                        <p class="inbox-item-author">Kurafire</p>
-                                        <p class="inbox-item-text">Nice to meet you</p>
-                                        <p class="inbox-item-date">12:20 PM</p>
-                                    </div>
-                                </a>
-                            </div>
+                        <h4 class="header-title">各國萌化進度</h4>
+                        <div  id="nationComplete" style="width: 100%;height: 400px;"></div>
                         </div>
                     </div>
-                    <!-- col end -->
-
-                    <!-- col start -->
-                    <div class="am-u-md-8">
-                        <div class="card-box">
-                            <h4 class="header-title m-t-0 m-b-30">最新项目</h4>
-                            <div class="am-scrollable-horizontal am-text-ms" style="font-family: '微软雅黑';">
-                                <table class="am-table   am-text-nowrap">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>项目名称</th>
-                                            <th>开始时间</th>
-                                            <th>结束时间</th>
-                                            <th>状态</th>
-                                            <th>责任人</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Adminto Admin v1</td>
-                                            <td>01/01/2016</td>
-                                            <td>26/04/2016</td>
-                                            <td><span class="label label-danger">已发布</span></td>
-                                            <td>Coderthemes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Adminto Frontend v1</td>
-                                            <td>01/01/2016</td>
-                                            <td>26/04/2016</td>
-                                            <td><span class="label label-success">已发布</span></td>
-                                            <td>Adminto admin</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Adminto Admin v1.1</td>
-                                            <td>01/05/2016</td>
-                                            <td>10/05/2016</td>
-                                            <td><span class="label label-pink">未开展</span></td>
-                                            <td>Coderthemes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Adminto Frontend v1.1</td>
-                                            <td>01/01/2016</td>
-                                            <td>31/05/2016</td>
-                                            <td><span class="label label-purple">进行中</span>
-                                            </td>
-                                            <td>Adminto admin</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Adminto Admin v1.3</td>
-                                            <td>01/01/2016</td>
-                                            <td>31/05/2016</td>
-                                            <td><span class="label label-warning">即将开始</span></td>
-                                            <td>Coderthemes</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Adminto Admin v1.3</td>
-                                            <td>01/01/2016</td>
-                                            <td>31/05/2016</td>
-                                            <td><span class="label label-primary">即将开始</span></td>
-                                            <td>Adminto admin</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Adminto Admin v1.3</td>
-                                            <td>01/01/2016</td>
-                                            <td>31/05/2016</td>
-                                            <td><span class="label label-primary">即将开始</span></td>
-                                            <td>Adminto admin</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
                 </div>
-                <!-- Row end -->
-
-
-
-
             </div>
         </div>
