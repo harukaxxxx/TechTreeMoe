@@ -1,4 +1,30 @@
 {
+    "113": {
+        "time": "2017/09/21",
+        "level": "FIX",
+        "event": [
+            "修復【November】Enterprise誤植至Independence問題。"
+        ]
+    },
+    "112": {
+        "time": "2017/09/21",
+        "level": "IMPORTANT",
+        "event": [
+            "Dashborad Beta版釋出，請點右邊圖標前往！<a href='./dashboard' target='blank'><i class='am-icon-external-link'></i></a>。"
+        ]
+    },
+    "111": {
+        "time": "2017/09/21",
+        "level": "UPDATE",
+        "event": [
+            "新增【碧藍航線】Ajax",
+            "新增【碧藍航線】Ajax 改",
+            "新增【戰艦少女】Ajax",
+            "新增【最終戰艦】Ajax",
+            "新增【最終戰艦】Ajax 泳裝Ver."
+
+        ]
+    },
     "110": {
         "time": "2017/09/19",
         "level": "NEW",
