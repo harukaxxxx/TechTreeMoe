@@ -21,6 +21,8 @@
             $rdata = json_decode($json);
             $today = date("Ymd",time());
             $cmonth = date("Ym",time());
+            $daily = ($rdata->daily->$today < 1) ? 0 : $rdata->daily->$today ;
+            $monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth ;
             ?>
             <div class="content">
                 <div class="am-g">
@@ -28,7 +30,7 @@
                         <div class="card-box">
                         <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月d日",time()); ?></span><h4 class="header-title">本日下載量</h4>
                             <div class="widget-chart-1">
-                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->daily->$today."次"; ?> </h2>
+                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $daily."次"; ?> </h2>
                             </div>
                         </div>
                     </div>
@@ -37,7 +39,7 @@
                         <div class="card-box">
                         <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月",time()); ?></span><h4 class="header-title">本月下載量</h4>
                             <div class="widget-chart-1">
-                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->monthly->$cmonth."次"; ?> </h2>
+                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $monthly."次"; ?> </h2>
                             </div>
                         </div>
                     </div>

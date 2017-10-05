@@ -1,7 +1,7 @@
 		<header class="am-topbar am-topbar-fixed-top">		
-			<div class="am-topbar-left am-hide-sm-only">
-                <a href="index.html" class="logo"><span>Admin<span>to</span></span><i class="zmdi zmdi-layers"></i></a>
-            </div>
+		<div class="am-topbar-left am-hide-sm-only">
+		<a href="./" class="logo">TechTreeMoe</a>
+		</div>
 	
 			<div class="contain">
 				<ul class="am-nav am-navbar-nav am-navbar-left">
