@@ -1,6 +1,9 @@
 <?php
+    session_start();
+    include('database/session.php');
     $page = $_SERVER['QUERY_STRING'];
-    $valid_pages = array('caches', 'chart', 'ships', 'form');
+    $open_pages = array('caches', 'chart', 'ships', 'form');
+    $admin_pages = array('database');
     switch ($page) {
         case 'caches':
             $title = "暫存列表";
@@ -13,6 +16,9 @@
             break;
         case 'form':
             $title = "表單";
+            break;
+        case 'database':
+            $title = "資料庫";
             break;
         default:
             $title = "總覽";
@@ -40,11 +46,25 @@
         <div class="admin-sidebar am-offcanvas  am-padding-0" id="admin-offcanvas">
             <div class="am-offcanvas-bar admin-offcanvas-bar">
                 <div class="user-box am-hide-sm-only">
-                    <div class="user-img">
+                    <?php
+                        if(!isset($_SESSION['logged_in']) OR $_SESSION['logged_in'] != TRUE){
+                            ?>
+                            <div class="user-img">
+                        <img src="assets/img/anonymous.png" alt="user-img" title="Makino Haruka" class="img-circle img-thumbnail img-responsive">
+                    </div>
+                    <h5>Anonymous</h5>
+                            <?php
+                        } else {
+                            ?>
+                        <div class="user-img">
                         <img src="assets/img/avatar.png" alt="user-img" title="Makino Haruka" class="img-circle img-thumbnail img-responsive">
                     </div>
-                    <h5>Makino Haruka</h5>
-                    <ul class="list-inline">
+                    <h5 class="m-b-0">Makino Haruka</h5>
+                    <small><a href="./php/logout.php">登出</a></small>
+                            <?php
+                        }
+                    ?>
+                    <!-- <ul class="list-inline">
                         <li>
                             <a href="#">
                                 <i class="fa fa-cog" aria-hidden="true"></i>
@@ -56,7 +76,7 @@
                                 <i class="fa fa-cog" aria-hidden="true"></i>
                             </a>
                         </li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <ul class="am-list admin-sidebar-list">
                     <li><a href="./"><span class="am-icon-home"></span> 首页</a></li>
@@ -69,20 +89,40 @@
                     </li>
                     <li><a href="./?chart"><span class="am-icon-line-chart"></span> 數據圖表</a></li>
                     <li class="admin-parent">
-                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav5'}"><span class="am-icon-file"></span> 表單 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav5">
+                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav2'}"><span class="am-icon-file"></span> 表單 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                        <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav2">
                             <li><a href="./?form"> 基本表單</a></li>
+                        </ul>
+                    </li>
+                    <li class="admin-parent">
+                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav3'}"><span class="am-icon-file"></span> 管理 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                        <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav3">
+                            <li><a href="./?database"> 資料庫 </a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
         <?php
-        if (in_array($page, $valid_pages)) {
-            include('php/' . $page . '.php');
+        if (isset($_GET['return'])){
+            $return = $_GET['return'];
+            if($_GET["username"]==$login_username && $_GET["password"]==$login_password){
+                $_SESSION['logged_in'] = TRUE;
+                    echo "<script>window.location.replace('./?$return');</script>";
+                }else{
+                    echo "<script>window.location.replace('./?$return');</script>";
+                }
+        } else if (in_array($page, $open_pages)) {
+            include("php/$page.php");
+        } else if(in_array($page, $admin_pages)){
+            if(!isset($_SESSION['logged_in']) OR $_SESSION['logged_in'] != TRUE){
+                include('php/login.php');
+            } else {
+                include("php/$page.php");
+            }
         } else if($page == ''){
             include('php/summary.php');
-        } else { 
+        } else {
             ?>
             <h2>Page not found</h2>
             <p>The page you requested was not found on this server.</p>
@@ -98,6 +138,7 @@
     <script type="text/javascript" src="assets/js/jquery-2.1.0.js"></script>
     <script type="text/javascript" src="assets/js/amazeui.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="../assets/js/mixitup.min.js"></script>
     <!-- <script type="text/javascript" src="assets/js/blockUI.js"></script> -->
     <script type="text/javascript" src="assets/js/echarts.min.js"></script>
     <script type="text/javascript" src="assets/js/scripts.js"></script>

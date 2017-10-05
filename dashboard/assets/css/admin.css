@@ -373,3 +373,75 @@ gallery.html css
     width: 200px;
     margin: 0 auto;
 }
+
+
+/*
+login css
+*/
+
+.login {
+    max-width: 400px;
+    margin-top: 80px;
+}
+
+
+/*
+database css
+*/
+
+.url {
+    background-color: #ffffff;
+    padding: 0;
+}
+
+.compare {
+    background-color: #ffffff;
+}
+
+.am-pre-scrollable {
+    max-height: 70vh;
+}
+
+.container .am-btn-group {
+    margin-left: 1.5rem;
+    padding-left: 5px;
+}
+
+.container .tier {
+    color: hsla(0, 0%, 0%, .6);
+    font-size: 14px;
+    padding-left: 0.2rem;
+    padding-right: 0.5rem;
+}
+
+.container .icon-cruiser:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../../images/icons/cruiser.png) no-repeat;
+}
+
+.container .icon-destroyer:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../../images/icons/destroyer.png) no-repeat;
+}
+
+.container .icon-battleship:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../../images/icons/battleship.png) no-repeat;
+}
+
+.container .icon-aircarrier:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../../../images/icons/aircarrier.png) no-repeat;
+}
