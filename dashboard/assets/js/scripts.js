@@ -136,7 +136,9 @@ switch (query) {
                     }
                     var result = optionList.toString();
                     var result = "{" + result + "}";
-                    json[optionBand] = rv;
+                    if (!$.isEmptyObject(rv)) {
+                        json[optionBand] = rv;
+                    }
                 }
             }, this);
 
