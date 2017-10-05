@@ -181,10 +181,7 @@ switch (query) {
             var id = $(id)[0].id;
             var jsonData = $('#json_edited_' + id).text();
             var jsonData = JSON.parse(jsonData);
-            $.post("php/writedata.php", jsonData)
-                .done(function(data) {
-                    console.log("Data Loaded: " + data);
-                });
+            $.post("php/writedata.php", jsonData);
         }
 
         break;
