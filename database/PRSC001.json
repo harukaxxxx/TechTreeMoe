@@ -4,10 +4,9 @@
     "tier": "Ⅲ",
     "nation": "ussr",
     "type": "cruiser",
-    "default": 4,
-    "change": true,
+    "default": 1,
+    "change": false,
     "premium": true,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Aurora", "2": "【戰艦少女】Aurora 改", "3": "【戰艦少女】Aurora 緋衣金帶Ver.", "5": "【戰艦少女】Aurora 前世今生Ver." },
-    "鋼鐵少女": { "4": "【鋼鐵少女】Aurora" }
+    "鋼鐵少女": { "1": "【鋼鐵少女】Aurora" }
 }
