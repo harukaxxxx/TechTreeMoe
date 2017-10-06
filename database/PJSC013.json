@@ -1,12 +1,1 @@
-{
-    "id": "PJSC013",
-    "name": "球磨",
-    "tier": "Ⅳ",
-    "nation": "japan",
-    "type": "cruiser",
-    "default": 3,
-    "change": true,
-    "premium": false,
-    "arp": false,
-    "艦隊收藏": { "1": "【艦隊收藏】球磨", "2": "【艦隊收藏】球磨 秋季限定Ver.", "3": "【艦隊收藏】球磨 クリスマスVer." }
-}
+{"id":"PJSC013","name":"球磨","tier":"Ⅳ","nation":"japan","type":"cruiser","default":3,"change":true,"premium":false,"arp":false,"艦隊收藏":{"1":"【艦隊收藏】球磨","2":"【艦隊收藏】球磨 秋季限定Ver.","3":"【艦隊收藏】球磨 クリスマスVer."},"鋼鐵少女":{"4":"【鋼鐵少女】多摩"}}

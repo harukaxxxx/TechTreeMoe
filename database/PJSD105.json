@@ -1,13 +1,1 @@
-{
-    "id": "PJSD105",
-    "name": "睦月",
-    "tier": "Ⅴ",
-    "nation": "japan",
-    "type": "destroyer",
-    "default": 2,
-    "change": true,
-    "premium": false,
-    "arp": false,
-    "艦隊收藏": { "1": "【艦隊收藏】睦月", "2": "【艦隊收藏】睦月 改二" },
-    "戰艦少女": { "3": "【戰艦少女】睦月" }
-}
+{"id":"PJSD105","name":"睦月","tier":"Ⅴ","nation":"japan","type":"destroyer","default":2,"change":true,"premium":false,"arp":false,"艦隊收藏":{"1":"【艦隊收藏】睦月","2":"【艦隊收藏】睦月 改二"},"戰艦少女":{"3":"【戰艦少女】睦月"},"鋼鐵少女":{"4":"【鋼鐵少女】睦月"}}

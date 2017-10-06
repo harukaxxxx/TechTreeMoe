@@ -1,10 +1,1 @@
-{"id": "PASC006",
-"name": "Atlanta",
-"tier": "Ⅶ",
-"nation": "usa",
-"type": "cruiser",
-"default":3,
-"change":true,
-"premium":true,
-"arp":false,
-"戰艦少女":{"1":"【戰艦少女】Atlanta","2":"【戰艦少女】Atlanta 改"},"碧藍航線":{"3":"【碧藍航線】Atlanta"}}
+{"id":"PASC006","name":"Atlanta","tier":"Ⅶ","nation":"usa","type":"cruiser","default":3,"change":true,"premium":true,"arp":false,"戰艦少女":{"1":"【戰艦少女】Atlanta","2":"【戰艦少女】Atlanta 改"},"鋼鐵少女":{"4":"【鋼鐵少女】Atlanta"},"碧藍航線":{"3":"【碧藍航線】Atlanta"}}
