@@ -1,8 +1,8 @@
 <?php
-if ($handle = opendir('../../assets/php/cache')) {
+if ($handle = opendir('cache')) {
     while (false !== ($entry = readdir($handle))) {
         if ($entry != "." && $entry != "..") {
-            unlink( "../../assets/php/cache/$entry");
+            unlink( "cache/$entry");
         }
     }
     closedir($handle);

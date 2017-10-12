@@ -1,111 +1,205 @@
-      <!-- Begin page -->
-    <header class="am-topbar am-topbar-fixed-top">
-        <div class="am-topbar-left am-hide-sm-only">
+
+<!-- Begin page -->
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-topbar-left am-hide-sm-only">
         <a href="./" class="logo">TechTreeMoe</a>
-        </div>
+    </div>
 
-        <div class="contain">
-            <ul class="am-nav am-navbar-nav am-navbar-left">
+    <div class="contain">
+        <ul class="am-nav am-navbar-nav am-navbar-left">
 
-                <li>
-                    <h4 class="page-title"><?php echo $title; ?></h4>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <!-- end page -->
-        <div class="content-page">
-            <!-- Start content -->
-            <?php
-            $json = file_get_contents('./database/records.json');
-            $rdata = json_decode($json);
-            $today = date("Ymd",time());
-            $cmonth = date("Ym",time());
-            $daily = ($rdata->daily->$today < 1) ? 0 : $rdata->daily->$today ;
-            $monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth ;
-            ?>
-            <div class="content">
-                <div class="am-g">
-                    <div class="am-u-md-4">
-                        <div class="card-box">
-                        <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月d日",time()); ?></span><h4 class="header-title">本日下載量</h4>
-                            <div class="widget-chart-1">
-                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $daily."次"; ?> </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <div class="am-u-md-4">
-                        <div class="card-box">
-                        <span class="text-muted am-fr am-margin-top-xs"><?php echo date("Y年m月",time()); ?></span><h4 class="header-title">本月下載量</h4>
-                            <div class="widget-chart-1">
-                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $monthly."次"; ?> </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
-                    <div class="am-u-md-4">
-                        <div class="card-box">
-                        <span class="text-muted am-fr am-margin-top-xs">2017年09月04日至今</span><h4 class="header-title">總下載量</h4>
-                            <div class="widget-chart-1">
-                                    <h2 style="text-align:center;font-size:40px;"> <?php echo $rdata->overtime."次"; ?> </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- col end -->
+            <li>
+                <h4 class="page-title">
+                    <?php echo $title; ?>
+                </h4>
+            </li>
+        </ul>
+        <ul class="am-nav am-navbar-nav am-navbar-right">
+            <li class="hidden-xs am-hide-sm-only">
+                <div class="am-btn-group am-btn-group-sm m-t-10">
+                    <button type="button" class="am-btn am-btn-primary am-round" onclick="$('.am-panel-collapse').collapse('open');">全部展開</button>
+                    <button type="button" class="am-btn am-btn-primary am-round" onclick="$('.am-panel-collapse').collapse('close');">全部收起</button>
                 </div>
-                <div class="am-g">
-                    <div class="am-u-md-12">
-                        <div class="card-box">
-                            <h4 class="header-title">總體萌化進度</h4>
+            </li>
+        </ul>
+        
+
+    </div>
+</header>
+<!-- end page -->
+<div class="content-page container">
+    <div class="am-btn-group am-btn-group-sm m-b-10">
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter="all">全顯示</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".japan">日本</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".usa">美國</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".ussr">蘇聯</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".germany">德國</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".uk">英國</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".pan_asia">泛亞</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".france">法國</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".italia">義大利</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".commonwealth">聯邦</button>
+    </div>
+    <!-- Start content -->
+    <div class="content">
+        
+        <div class="am-g">
+        <div class='am-u-md-12'>
+<?php
+$allFiles = scandir('../database'); 
+			$files = array_diff($allFiles, array('.', '..','.DS_Store'));
+			foreach ($files as $file) {
+                $simpleNation = substr($file,1,1);
+                        $json = file_get_contents("../database/$file");
+                        $data = json_decode($json);
+                        $collapseData = "'{parent: \"#$data->id\", target: \"#col$data->id\"}'";
+                        
+                        echo "
+                            <div class='card-box m-b-10 mix $data->nation $data->type'>
+                                <div class='am-panel-group am-margin-bottom-0' id='$data->id'>
+        
+        
+                                    <div class='am-panel am-panel-default'>
+                                        <div class='am-panel-hd'>
+                                        <h4 class='am-panel-title icon-$data->type' data-am-collapse=$collapseData><span class='tier'>$data->tier</span>$data->name</h4>
+                                        </div>
+                                        <div id='col$data->id' class='am-panel-collapse am-collapse'>
+                                            <div class='am-panel-bd'>
+                                                <div class='am-input-group am-input-group-sm m-b-5'>
+                                                    <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>艦名</span>
+                                                    <input type='text' class='am-form-field' name='name' value='$data->name'>
+                                                    <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>ID</span>
+                                                    <input type='text' class='am-form-field' name='id' value='$data->id'>
+                                                    <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>艦種</span>
+                                                    <input type='text' class='am-form-field' name='type' value='$data->type'>
+                                                    <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>國籍</span>
+                                                    <input type='text' class='am-form-field' name='nation' value='$data->nation'>
+                                                </div>
+                                                
+                                                <form class='am-form'>
+                                                <div class='am-form-group m-b-5'>
+                                                <label class='am-form-label'>階級：</label>
+                                                    ";
+                                                    $tiers = ['I','Ⅱ','Ⅲ','Ⅳ','Ⅴ','Ⅵ','Ⅶ','Ⅷ','Ⅸ','Ⅹ'];
+                                                    foreach ($tiers as $tier) {
+                                                        if ($data->tier == $tier) {
+                                                            echo "<label class='am-radio-inline'><input type='radio' name='tier' checked>$tier</label>";
+                                                        }else {
+                                                            echo "<label class='am-radio-inline'><input type='radio' name='tier'>$tier</label>";
+                                                        }
+                                                    }
+                                                    $change = ($data->change) ? ' checked' : '' ;
+                                                    $premium = ($data->premium) ? ' checked' : '' ;
+                                                    $arp = ($data->arp) ? ' checked' : '' ;
+                                                    echo "
+                                                    <label class='am-form-label m-l-15'>｜　設定：</label>
+                                                        <label class='am-checkbox-inline'><input type='checkbox' name='change'$change> change</label>
+                                                        <label class='am-checkbox-inline'><input type='checkbox' name='premium'$premium> premium</label>
+                                                        <label class='am-checkbox-inline'><input type='checkbox' name='arp'$arp> arp</label>
+                                                    </div>
+                                                    ";
+                                                    $bandArray = ['艦隊收藏','戰艦少女','鋼鐵少女','碧藍航線','November','蒼藍鋼鐵戰艦','Victory Belles','高校艦隊','最終戰艦','同人作品','萌萌模式'];
+                                                    echo $popover;
+                                                    foreach ($bandArray as $band) {
+                                                        echo "<div class='am-form-group m-b-5' name='$band'>
+                                                        <label name='band' band='$band'>$band</label>
+                                                        <a class='am-badge am-badge-secondary am-round' onclick='add($data->id,".'"'.$band.'"'.");'>+</a>";
+                                                        if (isset($data->$band)) {
+                                                        foreach ($data->$band as $key=>$option) {
+                                                            if ($band == '同人作品') {
+                                                                $urlAutor = $option[1];
+                                                                $urlWorks = $option[3];
+                                                                $optionAutor = $option[0];
+                                                                $optionWorks = $option[2];
+                                                                $optionInput = "
+                                                                <input type='text' class='am-form-field' value='$optionAutor'>
+                                                                <input type='text' class='am-form-field' value='$urlAutor'>
+                                                                <input type='text' class='am-form-field' value='$optionWorks'>
+                                                                <input type='text' class='am-form-field' value='$urlWorks'>
+                                                                
+                                                                <span class='am-input-group-label'>";
+                                                            }else{
+                                                                $optionInput = "<input type='text' class='am-form-field' value='$option'>
+                                                                <span class='am-input-group-btn'>";
+                                                            }
+                                                            $default = ($data->default == $key) ? ' checked' : '' ;
+                                                            $skey = str_pad($key,2,'0',STR_PAD_LEFT);
+                                                            echo  "
+                                                            <div class='am-input-group'>
+                                                            <span class='am-input-group-label'>
+                                                              <input type='radio' value='$key' name='default'$default>
+                                                              $skey
+                                                            </span>
+                                                            $optionInput
+                                                                <button class='am-btn am-btn-default' type='button' data-am-modal=\"{target: '#modal_$data->id-$key',closeViaDimmer: 1}\">預覽</button>
+                                                            </span>
+                                                            
+                                                            </div>
+                                                            <div class='am-modal am-modal-alert' tabindex='-1' id='modal_$data->id-$key'>
+                                                                <div class='am-modal-dialog'>
+                                                                    <div class='am-modal-hd'>$option</div>
+                                                                    <div class='am-modal-bd'>
+                                                                        <img class='am-img-thumbnail' src='../images/ship_previews_web/$data->id-$key.png'>
+                                                                    </div>
+                                                                    <div class='am-modal-footer'>
+                                                                        <span class='am-modal-btn'>關閉</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            ";
+                                                        }
+                                                    }
+                                                        echo "</div>";
+                                                    }
+                                                    echo "
+                                                </form>
+                                                <button type='button' class='am-btn am-btn-primary m-t-5' onclick='submit($data->id);'>驗證</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             
-                            <?php
-$dList = scandir('../images/ship_previews_origin');
-$dList = array_diff($dList, array('.', '..','.DS_Store'));
+                                <div class='am-modal-actions' id='compare_$data->id'>
+                                    
 
-$dbList = scandir('./database/ships/'); 
-$dbList = array_diff($dbList, array('.', '..','.DS_Store'));
+                                    <div class='am-modal-actions-group compare'>
+                                        
 
-$nExist = [];
-$allExist = 0;
-$allShips = 0;
-foreach ($dbList as $dbShip) {
-    $exist = 0;
-    $nAllShips=0;
-  $nation = substr($dbShip,0,strlen($dbShip)-5);
+                                    <div class='am-modal-hd'>資料驗證確認</div>
+                                    <hr class='am-margin-vertical-0'>
+                                    <div class='am-modal-bd'>
+                                        <div class='am-g'>
+                                            <div class='am-u-sm-6'>
+                                                <pre id='json_original_$data->id' class='am-pre-scrollable am-text-left'></pre>
+                                            </div>
+                                            <div class='am-u-sm-6'>
+                                                <pre id='json_edited_$data->id' class='am-pre-scrollable am-text-left'></pre>
+                                            </div>
+                                        </div>
+                                    </div>        
 
-  $json = file_get_contents("./database/ships/$dbShip");
-  $sdata = json_decode($json);
-  foreach ($sdata->$nation as $id => $value) {
-    $allShips++;
-    $nAllShips++;
-    if (in_array(strtoupper($id).'-0.png',$dList)) {
-        $exist++;
-        $allExist ++;
-    }
-  }
-  $nExist[$nation]=[$exist,$nAllShips];
-}
-$MainProgress = round($allExist/$allShips*100);
-echo "<div class='am-progress'><div class='am-progress-bar am-progress-bar-secondary' style='width:$MainProgress%'>$MainProgress%</div></div>";
 
-$jfile = "database/complete.json";
-$complete = json_decode(file_get_contents($jfile),TRUE);
-$complete = '';
-file_put_contents($jfile, json_encode($nExist));
 
-?>             
+                                    </div>
+                                    <div class='am-modal-actions-group'>
+                                        <button class='am-btn am-btn-secondary am-btn-block' data-am-modal-close onclick='confirm($data->id);'>確認</button>
+                                        <button class='am-btn am-btn-warning am-btn-block' data-am-modal-close>取消</button>
+                                    </div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="am-g">
-                    <div class="am-u-md-12">
-                        <div class="card-box">
-                        <h4 class="header-title">各國萌化進度</h4>
-                        <div  id="nationComplete" style="width: 100%;height: 400px;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+
+                                </div>
+                           
+                        ";
+                        
+			}
+?>
+</div>
+
+            <!-- col end -->
         </div>
+    </div>
+</div>
+
+
