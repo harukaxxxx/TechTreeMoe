@@ -39,7 +39,7 @@
 
 
               <?php
-            $dir    = './database/ships/';
+            $dir    = '../assets/datas/ships/';
             $allFiles = scandir($dir); 
             $files = array_diff($allFiles, array('.', '..','.DS_Store'));
             
@@ -47,7 +47,7 @@
             foreach ($files as $file) {
               $nation = substr($file,0,strlen($file)-5);
 
-              $json = file_get_contents("./database/ships/$file");
+              $json = file_get_contents("../assets/datas/ships/$file");
               $sdata = json_decode($json);
               $ncount = count((array)$sdata->$nation);
               foreach ($sdata->$nation as $id => $value) {

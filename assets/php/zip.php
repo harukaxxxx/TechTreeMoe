@@ -26,7 +26,7 @@ foreach ($fileList as $img_filename) {
 $zip->close();
 
 //record download
-$jfile = "../../dashboard/database/records.json";
+$jfile = "../../assets/datas/records.json";
 $json = json_decode(file_get_contents($jfile),TRUE);
 $json['daily'][date("Ymd",time())]++;
 $json['monthly'][date("Ym",time())]++;
