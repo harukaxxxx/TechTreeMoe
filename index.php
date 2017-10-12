@@ -191,7 +191,7 @@
     <div class="intro">
       <div class="am-g am-container">
         <div class="am-u-lg-12">
-          <h2 class="intro-h2" tkey="tkey_intro_section">TechTreeMoe介紹與教學
+          <h2 class="intro-h2" tkey="tkey_intro_section">介紹與教學
           </h2>
           <div class="am-g">
             <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
@@ -386,7 +386,7 @@ echo"</select>\n</div>\n";
     <div class="about">
       <div class="am-g am-container">
         <div class="am-u-lg-12">
-          <h2 class="about-title about-color" tkey="tkey_about_section">TechTreeMoe更新紀錄與詳細資訊
+          <h2 class="about-title about-color" tkey="tkey_about_section">更新紀錄與詳細資訊
           </h2>
           <div class="am-g about-box">
             <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
@@ -576,7 +576,7 @@ echo "</ul>\n</li>";
     <div class="charts">
       <div class="am-g am-container">
         <div class="am-u-lg-12">
-          <h2 class="charts-title" tkey="">TechTreeMoe統計數據與萌化進度
+          <h2 class="charts-title" tkey="">統計數據與萌化進度
           </h2>
           <?php
 $json = file_get_contents('assets/datas/records.json');
