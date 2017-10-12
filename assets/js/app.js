@@ -242,7 +242,7 @@ $("footer select").change(function() {
 });
 
 //charts
-$.getJSON("dashboard/database/complete.json", function(json) {
+$.getJSON("assets/datas/complete.json", function(json) {
     var nObj = Object.keys(json);
     var doneData = [];
     var nationData = [];
@@ -333,7 +333,7 @@ $.getJSON("dashboard/database/complete.json", function(json) {
 
 });
 
-$.getJSON("dashboard/database/records.json", function(json) {
+$.getJSON("assets/datas/records.json", function(json) {
     var data = json['daily'];
 
     var dateList = $.map(data, function(value, index) {

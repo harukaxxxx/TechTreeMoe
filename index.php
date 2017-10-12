@@ -579,7 +579,7 @@ echo "</ul>\n</li>";
           <h2 class="charts-title" tkey="">TechTreeMoe統計數據與萌化進度
           </h2>
           <?php
-$json = file_get_contents('dashboard/database/records.json');
+$json = file_get_contents('assets/datas/records.json');
 $rdata = json_decode($json);
 $today = date("Ymd",time());
 $cmonth = date("Ym",time());
@@ -640,7 +640,7 @@ $monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth ;
                 <?php
 $dList = scandir('images/ship_previews_origin');
 $dList = array_diff($dList, array('.', '..','.DS_Store'));
-$dbList = scandir('dashboard/database/ships/'); 
+$dbList = scandir('assets/datas/ships/'); 
 $dbList = array_diff($dbList, array('.', '..','.DS_Store'));
 $nExist = [];
 $allExist = 0;
@@ -649,7 +649,7 @@ foreach ($dbList as $dbShip) {
 $exist = 0;
 $nAllShips=0;
 $nation = substr($dbShip,0,strlen($dbShip)-5);
-$json = file_get_contents("dashboard/database/ships/$dbShip");
+$json = file_get_contents("assets/datas/ships/$dbShip");
 $sdata = json_decode($json);
 foreach ($sdata->$nation as $id => $value) {
 $allShips++;
@@ -663,7 +663,7 @@ $nExist[$nation]=[$exist,$nAllShips];
 }
 $MainProgress = round($allExist/$allShips*100);
 echo "<div class='am-progress am-progress-striped am-active'><div class='am-progress-bar am-progress-bar-success' style='width:$MainProgress%'>$MainProgress%</div></div>";
-$jfile = "dashboard/database/complete.json";
+$jfile = "assets/datas/complete.json";
 $complete = json_decode(file_get_contents($jfile),TRUE);
 $complete = '';
 file_put_contents($jfile, json_encode($nExist));
