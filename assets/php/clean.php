@@ -7,5 +7,5 @@ if ($handle = opendir('cache')) {
     }
     closedir($handle);
 }
-header("Location:./");
+header("Location:../../");
 ?>

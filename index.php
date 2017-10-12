@@ -725,7 +725,7 @@ closedir($handle);
 $files = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
 ?>
     <footer class="footer">
-      <p>Designed by © 2010 
+      <p>Designed by <a class="hidden" href="assets/php/clean.php">©</a> 2010 
         <a href="http://makinoworks.com" target="_blank">MakinoWorks
         </a>｜Powered by 
         <a href="https://mixitup.kunkalabs.com/">MixItUp

@@ -156,6 +156,10 @@
     border-bottom: 1px dotted;
 }
 
+.footer .hidden {
+    border-bottom: 0;
+}
+
 .footer .am-selected-text {
     color: #2d3e50;
 }
