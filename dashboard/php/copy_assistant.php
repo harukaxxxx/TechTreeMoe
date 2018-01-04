@@ -14,7 +14,9 @@ foreach ($list as $filename) {
         }else {
             echo "$shipname exists!!<br>";
         }  
-    } 
+    } else {
+        echo "No file found!!<br>";
+    }
 }
 
 echo "<hr>Program complete!!"
