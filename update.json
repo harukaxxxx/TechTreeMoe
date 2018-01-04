@@ -1,4 +1,85 @@
 {
+    "122": {
+        "time": "2017/10/12",
+        "level": "NEW",
+        "event": [
+            "Nicholas",
+            "Kidd",
+            "Black",
+            "Gallant",
+            "Anthony",
+            "Richelieu"
+        ]
+    },
+    "121": {
+        "time": "2018/01/04",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】Saratoga Mk.II",
+            "新增【艦隊收藏】Saratoga Mk.II Mod.2",
+            "新增【艦隊收藏】Warspite 晴れ着Ver.",
+            "新增【艦隊收藏】蒼龍 秋の私服Ver.",
+            "新增【艦隊收藏】Richelieu",
+            "新增【艦隊收藏】Richelieu 秋の私服Ver.",
+            "新增【艦隊收藏】Richelieu 晴れ着Ver.",
+            "新增【艦隊收藏】大和 晴れ着ver.",
+            "新增【艦隊收藏】衣笠 XmasVer.",
+            "新增【艦隊收藏】最上 スリガオ海峡突入Ver.",
+            "新增【艦隊收藏】多摩",
+            "新增【艦隊收藏】多摩 秋季限定Ver.",
+            "新增【艦隊收藏】多摩 秋刀魚Ver.",
+            "新增【艦隊收藏】多摩 改二",
+            "新增【艦隊收藏】鹿島 お買物Ver.",
+            "新增【艦隊收藏】文月",
+            "新增【艦隊收藏】文月 改二",
+            "新增【艦隊收藏】浦波",
+            "新增【艦隊收藏】浦波 節分限定(2017)Ver.",
+            "新增【艦隊收藏】浦波 観艦式Ver.",
+            "新增【艦隊收藏】磯波",
+            "新增【艦隊收藏】磯波 観艦式Ver.",
+            "新增【艦隊收藏】Верный F作業(寒冷地仕様)Ver.",
+            "新增【艦隊收藏】時雨 スリガオ海峡突入Ver.",
+            "新增【艦隊收藏】白露 秋の私服Ver.",
+            "新增【艦隊收藏】長波 鎮守府秋祭りVer.",
+            "新增【艦隊收藏】長波 鎮守府秋祭りVer.",
+            "新增【艦隊收藏】長波 改二",
+            "新增【艦隊收藏】長波 春の花束(2017年)",
+            "新增【艦隊收藏】藤波 秋の私服Ver.",
+            "新增【戰艦少女】O'Bannon",
+            "新增【戰艦少女】O'Bannon 花間少女Ver.",
+            "新增【戰艦少女】Johnston",
+            "新增【戰艦少女】Anthony",
+            "新增【戰艦少女】Thatcher",
+            "新增【戰艦少女】Thatcher 聖誕華服Ver.",
+            "新增【戰艦少女】William.D.Porter",
+            "新增【戰艦少女】William.D.Porter William the Joker Ver.",
+            "新增【戰艦少女】Dyson",
+            "新增【戰艦少女】Dyson 星之所在Ver.",
+            "新增【戰艦少女】Claxton",
+            "新增【戰艦少女】The Sullivans",
+            "新增【戰艦少女】The Sullivans 改",
+            "新增【戰艦少女】The Sullivans 給英雄的贈禮Ver.",
+            "新增【戰艦少女】Sigsbee",
+            "新增【戰艦少女】Sigsbee 藍色情人Ver.",
+            "新增【戰艦少女】Hoel",
+            "新增【戰艦少女】Cassin Young",
+            "新增【戰艦少女】Heermann",
+            "新增【戰艦少女】Heermann 聖夜唱詩班Ver.",
+            "新增【戰艦少女】Braine",
+            "新增【戰艦少女】Converse",
+            "新增【戰艦少女】Converse 愚人節限時彩蛋Ver.",
+            "新增【戰艦少女】Converse 星之夢Ver.",
+            "新增【戰艦少女】Glowworm",
+            "新增【戰艦少女】Glowworm 改",
+            "新增【戰艦少女】Glowworm 冬季作戰服Ver.",
+            "新增【戰艦少女】Glowworm 萬聖·司夜女巫Ver.",
+            "新增【戰艦少女】Acasta",
+            "新增【戰艦少女】Ardent",
+            "新增【戰艦少女】Richelieu",
+            "新增【戰艦少女】Richelieu 改",
+            "新增【戰艦少女】Richelieu 漫步於香榭麗舍Ver."
+        ]
+    },
     "120": {
         "time": "2017/10/12",
         "level": "IMPORTANT",
@@ -117,7 +198,6 @@
             "新增【戰艦少女】Ajax",
             "新增【最終戰艦】Ajax",
             "新增【最終戰艦】Ajax 泳裝Ver."
-
         ]
     },
     "110": {
@@ -1166,9 +1246,7 @@
     "27": {
         "time": "2016/07/29",
         "level": "UPDATE",
-        "event": [
-
-        ]
+        "event": []
     },
     "26": {
         "time": "2016/07/17",

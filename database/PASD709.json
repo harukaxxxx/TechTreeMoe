@@ -1,0 +1,20 @@
+{
+    "id": "PASD709",
+    "name": "Black",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 3,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Cassin Young",
+        "2": "【戰艦少女】Heermann",
+        "3": "【戰艦少女】Heermann 聖夜唱詩班Ver.",
+        "4": "【戰艦少女】Braine",
+        "5": "【戰艦少女】Converse",
+        "6": "【戰艦少女】Converse 愚人節限時彩蛋Ver.",
+        "7": "【戰艦少女】Converse 星之夢Ver."
+    }
+}

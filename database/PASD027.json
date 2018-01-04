@@ -5,8 +5,17 @@
     "nation": "usa",
     "type": "destroyer",
     "default": 1,
-    "change": false,
+    "change": true,
     "premium": false,
     "arp": false,
-    "November": { "1": "【November】Maury" }
+    "戰艦少女": {
+        "2": "【戰艦少女】William.D.Porter",
+        "3": "【戰艦少女】William.D.Porter William the Joker Ver.",
+        "4": "【戰艦少女】Dyson",
+        "5": "【戰艦少女】Dyson 星之所在Ver.",
+        "6": "【戰艦少女】Claxton"
+    },
+    "November": {
+        "1": "【November】Maury"
+    }
 }
