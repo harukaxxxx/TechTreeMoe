@@ -1,1 +1,26 @@
-{"id":"PASD008","name":"Benson","tier":"Ⅷ","nation":"usa","type":"destroyer","default":5,"change":true,"premium":false,"arp":false,"戰艦少女":{"4":"【戰艦少女】Laffey"},"鋼鐵少女":{"2":"【鋼鐵少女】Benson","3":"【鋼鐵少女】Benson 改"},"碧藍航線":{"5":"【碧藍航線】Benson","6":"【碧藍航線】Laffey","7":"【碧藍航線】Laffey 33娘Ver."},"November":{"1":"【November】Benson"}}
+{
+    "id": "PASD008",
+    "name": "Benson",
+    "tier": "Ⅷ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 5,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "4": "【戰艦少女】Laffey"
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Benson",
+        "3": "【鋼鐵少女】Benson 改"
+    },
+    "碧藍航線": {
+        "5": "【碧藍航線】Benson",
+        "6": "【碧藍航線】Laffey",
+        "7": "【碧藍航線】Laffey 33娘Ver."
+    },
+    "November": {
+        "1": "【November】Benson"
+    }
+}

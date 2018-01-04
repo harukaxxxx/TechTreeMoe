@@ -8,6 +8,11 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Hipper", "2": "【戰艦少女】Hipper 改" },
-    "鋼鐵少女": { "3": "【鋼鐵少女】Hipper" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Hipper",
+        "2": "【戰艦少女】Hipper 改"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Hipper"
+    }
 }

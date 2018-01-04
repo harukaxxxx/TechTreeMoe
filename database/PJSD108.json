@@ -18,11 +18,41 @@
         "11": "【戰艦少女】秋月 新春祈願Ver."
     },
     "同人作品": {
-        "4": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "秋月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
-        "5": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "照月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
-        "6": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "初月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
-        "7": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "秋月 アイマスVer.", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"],
-        "8": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "照月 アイマスVer.", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"],
-        "9": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "初月 アイマスVer.", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"]
+        "4": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "秋月",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
+        "5": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "照月",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
+        "6": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "初月",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
+        "7": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "秋月 アイマスVer.",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"
+        ],
+        "8": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "照月 アイマスVer.",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"
+        ],
+        "9": [
+            "konnyaku",
+            "http://www.pixiv.net/member.php?id=1391461",
+            "初月 アイマスVer.",
+            "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=60038322"
+        ]
     }
 }

@@ -9,7 +9,17 @@
     "premium": false,
     "arp": false,
     "同人作品": {
-        "1": ["安佐川", "https://twitter.com/asaka142", "出雲", ""],
-        "2": ["安佐川", "https://twitter.com/asaka142", "磐手", "https://twitter.com/asaka142/status/639032260058984448"]
+        "1": [
+            "安佐川",
+            "https://twitter.com/asaka142",
+            "出雲",
+            ""
+        ],
+        "2": [
+            "安佐川",
+            "https://twitter.com/asaka142",
+            "磐手",
+            "https://twitter.com/asaka142/status/639032260058984448"
+        ]
     }
 }

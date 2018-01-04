@@ -8,5 +8,7 @@
     "change": false,
     "premium": false,
     "arp": false,
-    "November": { "1": "【November】Maryland" }
+    "November": {
+        "1": "【November】Maryland"
+    }
 }

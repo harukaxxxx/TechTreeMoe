@@ -8,5 +8,7 @@
     "change": false,
     "premium": true,
     "arp": false,
-    "鋼鐵少女": { "1": "【鋼鐵少女】Aurora" }
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】Aurora"
+    }
 }

@@ -8,7 +8,15 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "戰艦少女": { "1": "【戰艦少女】Ranger", "2": "【戰艦少女】Ranger 改", "3": "【戰艦少女】Ranger HeartCatchRabbitVer." },
-    "鋼鐵少女": { "4": "【鋼鐵少女】Ranger" },
-    "碧藍航線": { "5": "【碧藍航線】Ranger" }
+    "戰艦少女": {
+        "1": "【戰艦少女】Ranger",
+        "2": "【戰艦少女】Ranger 改",
+        "3": "【戰艦少女】Ranger HeartCatchRabbitVer."
+    },
+    "鋼鐵少女": {
+        "4": "【鋼鐵少女】Ranger"
+    },
+    "碧藍航線": {
+        "5": "【碧藍航線】Ranger"
+    }
 }

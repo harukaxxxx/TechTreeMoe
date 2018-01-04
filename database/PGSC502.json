@@ -1,10 +1,15 @@
-{"id": "PGSC502",
-"name": "Emden",
-"tier": "Ⅱ",
-"nation": "germany",
-"type": "cruiser",
-"default":1,
-"change":true,
-"premium":true,
-"arp":false,
-"戰艦少女":{"1":"【戰艦少女】Emden","2":"【戰艦少女】Emden 溫馨情人Ver."}}
+{
+    "id": "PGSC502",
+    "name": "Emden",
+    "tier": "Ⅱ",
+    "nation": "germany",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Emden",
+        "2": "【戰艦少女】Emden 溫馨情人Ver."
+    }
+}

@@ -8,6 +8,10 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "November": { "1": "【November】Pennsylvania" },
-    "碧藍航線": { "2": "【碧藍航線】Pennsylvania" }
+    "November": {
+        "1": "【November】Pennsylvania"
+    },
+    "碧藍航線": {
+        "2": "【碧藍航線】Pennsylvania"
+    }
 }
