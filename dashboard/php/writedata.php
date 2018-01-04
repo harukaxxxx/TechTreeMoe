@@ -16,6 +16,6 @@ if ($_POST['arp'] === 'true') {
 }else{
     $_POST['arp'] = false;
 }
-$data = json_encode($_POST,JSON_UNESCAPED_UNICODE);
+$data = json_encode($_POST,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 file_put_contents("../../database/$id.json", $data);
 ?>
