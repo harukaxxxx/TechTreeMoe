@@ -5,6 +5,21 @@ switch (query) {
             valueNames: ['name', 'tier', 'id', 'type', 'nation']
         };
         new List('ships', options);
+
+        function newShip(id) {
+            var data = {};
+            data['id'] = id.toUpperCase();
+            data['name'] = $('#'+id+' td')[0].innerHTML;
+            data['tier'] = $('#'+id+' td')[1].innerHTML;
+            data['type'] = $('#'+id+' td')[3].innerHTML;
+            data['nation'] = $('#'+id+' td')[4].innerHTML;
+
+            $.post("php/create_data.php", data)
+                .done(function (data) {
+                    window.location.href = "./";
+                });
+        }
+
         break;
     default:
         var mixer = mixitup('.container');
@@ -116,6 +131,5 @@ switch (query) {
             var jsonData = JSON.parse(jsonData);
             $.post("php/writedata.php", jsonData);
         }
-
         break;
 }

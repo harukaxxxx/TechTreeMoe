@@ -33,6 +33,7 @@
                 <th class="table-author am-hide-sm-only"><a class="sort" data-sort="id">ID</a></th>
                 <th class="table-date am-hide-sm-only"><a class="sort" data-sort="type">艦種</a></th>
                 <th class="table-set"><a class="sort" data-sort="nation">國籍</a></th>
+                <th class="table-set">新增</th>
               </tr>
               </thead>
               <tbody class="list">
@@ -52,13 +53,20 @@
               $ncount = count((array)$sdata->$nation);
               foreach ($sdata->$nation as $id => $value) {
                 $i++;
-                echo "<tr>
+                echo "<tr id='$id'>
                 <td class='name'>$value->name</td>
                 <td class='tier'>$value->tier</td>
                 <td class='id'>$id</td>
                 <td class='type'>$value->type</td>
                 <td class='nation'>$nation</td>
                 ";
+
+                if (!file_exists("../database/$id.json")) {
+                  echo "<td class='new'><button type='button' class='am-btn am-btn-primary am-round am-btn-xs' onclick='newShip(".'"'.$id.'"'.");'>新增</button></td>";
+                }else {
+                  echo "<td class='new'><button type='button' class='am-btn am-btn-default am-round am-btn-xs' disabled>新增</button></td>";
+                }
+                
               }
               echo "</tr>";
             }
