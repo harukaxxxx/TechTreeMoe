@@ -1,4 +1,31 @@
 {
+    "124": {
+        "time": "2017/01/05",
+        "level": "NEW",
+        "event": [
+            "Roma",
+            "Vampire"
+        ]
+    },
+    "123": {
+        "time": "2018/01/05",
+        "level": "UPDATE",
+        "event": [
+            "新增【艦隊收藏】Roma 改",
+            "新增【艦隊收藏】Roma 秋季限定Ver.",
+            "新增【艦隊收藏】Roma なか卯コラボVer.",
+            "新增【艦隊收藏】Littorio",
+            "新增【艦隊收藏】Italia",
+            "新增【艦隊收藏】Italia 夏季限定Ver.",
+            "新增【艦隊收藏】Italia クリスマスVer.",
+            "新增【鋼鐵少女】多摩 夏日祭典Ver.",
+            "新增【碧藍航線】Aurora",
+            "新增【鋼鐵少女】Murmansk",
+            "新增【鋼鐵少女】Vampire",
+            "新增【碧藍航線】Vampire",
+            "新增【碧藍航線】Vampire 誓約Ver."
+        ]
+    },
     "122": {
         "time": "2017/01/04",
         "level": "NEW",
