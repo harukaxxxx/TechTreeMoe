@@ -187,22 +187,12 @@
             </ul>
           </div>
           <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
-            <h3 class="intro-h3" tkey="tkey_tutorial_title">
-              <i class="am-icon-book"></i> 教學
-            </h3>
+            <h3 class="intro-h3" tkey="tkey_tutorial_title"><i class="am-icon-book"></i> 教學</h3>
             <ol class="intro-p">
-              <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。
-              </li>
-              <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的
-                <span class="am-icon-download am-text-primary"> 下載
-                </span> 按鈕進行下載。
-              </li>
-              <li tkey="tkey_tutorial_3">耐心等待下載完成。
-              </li>
-              <li tkey="tkey_tutorial_4">解壓縮後將gui資料夾複製到
-                <code>res_mods/x.x.x/
-                  </code>裡即可。
-              </li>
+              <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
+              <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li>
+              <li tkey="tkey_tutorial_3">耐心等待下載完成並解壓縮。</li>
+              <li tkey="tkey_tutorial_4">將gui資料夾複製到<code>res_mods/__版本號__/</code>裡即可。</li>
             </ol>
           </div>
         </div>
@@ -285,9 +275,6 @@
       </div>
     </div>
     <div id="Container">
-
-      <ship-box></ship-box>
-
       <template id="shipBox">
         <div class="mix">
           <p class="ship">
@@ -304,79 +291,6 @@
           </select>
         </div>
       </template>
-
-
-      <!-- 
-      <?php
-// generate ship list
-$shipList = array();
-if ($handle = opendir('./database')) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-            $fileName = rtrim($entry, '.json');
-            array_push($shipList, $fileName);
-        }
-    }
-    closedir($handle);
-}
-//generate options function
-function options($file, $type)
-{
-    $id = $file->{'id'};
-    $name = $file->{'name'};
-    if ($file->{"$type"}) {
-        echo "<optgroup label='$type'>\n";
-        foreach ($file->{"$type"} as $key => $value) {
-            $value = ($type != '同人作品') ? $value : "【$value[0]】$value[2]";
-            $default = ($file->{'default'} == $key) ? " selected" : "";
-            echo "<option value='$id-$key'$default>$value</option>\n";
-        }
-        ;
-        echo "</optgroup>\n";
-    }
-}
-//echo result
-foreach ($shipList as $value) {
-    $shipFile = json_decode(file_get_contents("./database/$value.json"));
-    $shipId = $shipFile->{'id'};
-    $shipName = $shipFile->{'name'};
-    $shipTier = $shipFile->{'tier'};
-    $shipNation = $shipFile->{'nation'};
-    $shipType = $shipFile->{'type'};
-    $shipDefault = $shipFile->{'default'};
-    $shipChange = ($shipFile->{'change'}) ? " change" : "";
-    $shipPremium = ($shipFile->{'premium'}) ? " premium" : "";
-    $shipARP = ($shipFile->{'arp'}) ? " arp" : "";
-    $order = $shipId;
-    $shipMoe = (property_exists($shipFile, "萌萌模式")) ? " moe" : "";
-    if ($_SERVER['QUERY_STRING'] != "mmm"
-        and property_exists($shipFile, "moe")) {
-        continue;
-    }
-    echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP$shipMoe' data-order='$order'>\n
-<p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
-<div class='img_container'>\n
-<div class='addon'><img src='assets/images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
-</div>\n
-<select name='$shipId' data-am-selected>\n";
-    echo "<optgroup label='戰艦世界'>\n<option value='$shipId-0'>【戰艦世界】$shipName</option>\n</optgroup>\n";
-    options($shipFile, '艦隊收藏');
-    options($shipFile, '戰艦少女');
-    options($shipFile, '鋼鐵少女');
-    options($shipFile, '碧藍航線');
-    options($shipFile, '高校艦隊');
-    options($shipFile, '最終戰艦');
-    options($shipFile, '同人作品');
-    options($shipFile, 'November');
-    options($shipFile, '蒼藍鋼鐵戰艦');
-    options($shipFile, 'Victory Belles');
-    if ($_SERVER['QUERY_STRING'] == "mmm") {
-        options($shipFile, '萌萌模式');
-    }
-    ;
-    echo "</select>\n</div>\n";
-}
-?> -->
     </div>
   </div>
   <div id="about" class="about">
@@ -394,63 +308,19 @@ foreach ($shipList as $value) {
               </a>建立Issues回報！
               <br>（網站Bug、艦船缺漏、素材提供、功能建議等）
             </p>
-            <h4 class="about-color" tkey="tkey_detail-title">
-              <i class="am-icon-question-circle"></i> 詳細資訊
-            </h4>
-            <div class="am-scrollable-vertical detail">
-              <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
-                <!-- <?php
-function detial($type, $shipList)
-{
-    echo "<dl class='am-accordion-item'>
-<dt class='am-accordion-title'>" . $type . "作品對照</dt>
-<dd class='am-accordion-bd am-collapse '>
-<div class='am-accordion-content'>
-<ul class='am-list am-list-static'>";
-    foreach ($shipList as $ship) {
-        $shipFile = json_decode(file_get_contents("./database/$ship.json"));
-        $shipname = $shipFile->{'name'};
-        $cNames = [];
-        if ($shipFile->{"$type"}) {
-            echo "<li>" . $shipname . " <span class='am-icon-arrow-right'></span> ";
-            foreach ($shipFile->{"$type"} as $value) {
-                if ($type == "同人作品") {
-                    $author = ($value[1]) ? "<a href=" . $value[1] . ">$value[0]</a>" : $value[0];
-                    $draw = ($value[3]) ? "<a href=" . $value[3] . ">$value[2]</a>" : $value[2];
-                    $customName = "【" . $author . "】" . $draw;
-                    array_push($cNames, $customName);
-                } else if ($type == "萌萌模式") {
-                    array_push($cNames, $value);
-                } else {
-                    $p = strpos($value, "】");
-                    $customName = substr($value, $p + 3);
-                    array_push($cNames, $customName);
-                }
-            }
-            ;
-            echo implode(" / ", $cNames) . "</li>";
-        }
-        ;
-    }
-    ;
-    echo "</ul>\n</div>\n</dd>\n</dl>";
-};
-detial('艦隊收藏', $shipList);
-detial('戰艦少女', $shipList);
-detial('鋼鐵少女', $shipList);
-detial('碧藍航線', $shipList);
-detial('November', $shipList);
-detial('蒼藍鋼鐵戰艦', $shipList);
-detial('Victory Belles', $shipList);
-detial('高校艦隊', $shipList);
-detial('最終戰艦', $shipList);
-detial('同人作品', $shipList);
-if ($_SERVER['QUERY_STRING'] == "mmm") {
-    detial('萌萌模式', $shipList);
-}
-;
-?> -->
-              </section>
+            <h4 class="about-color" tkey="tkey_detail-title"><i class="am-icon-question-circle"></i> 特別感謝名單</h4>
+            <div class="am-scrollable-vertical">
+              <ul class="am-list am-list-static am-list-border">
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>】- 碧藍航線立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a>】- 碧藍航線立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a>】- 鋼鐵少女立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a>】- 鋼鐵少女立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a>】- 新船資訊提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://srarithmetic.com/">Nacht</a>】- 更新紀錄與詳細資訊背景圖提供 <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460"><i class="am-icon-external-link"></i></a></li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://victorybelles.tumblr.com/">Victory Belles</a>】- Victory Belles立繪提供</li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a>】- 艦隊收藏立繪提供</li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://www.zjsnrwiki.com/wiki">艦R百科</a>】- 戰艦少女立繪提供</li>
+              </ul>
             </div>
             <hr class="am-article-divider am-show-sm-only">
           </div>
@@ -461,111 +331,15 @@ if ($_SERVER['QUERY_STRING'] == "mmm") {
             </h4>
             <div class="am-scrollable-vertical update">
               <ul class="am-list am-list-static am-list-border">
-                <!-- <?php
-$logFile = json_decode(file_get_contents("./update.json"));
-foreach ($logFile as $value) {
-    if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
-        continue;
-    }
-    if (property_exists($value, "moe")) {
-        $moe = "<span class='am-icon-heart am-text-danger'></span>";
-    } else {
-        $moe = "";
-    }
-    $time = $value->{'time'};
-    $level = $value->{'level'};
-    if ($level == "IMPORTANT") {
-        $class = "danger";
-    } elseif ($level == "NEW") {
-        $class = "primary";
-    } elseif ($level == "UPDATE") {
-        $class = "success";
-    } else {
-        $class = "warning";
-    }
-    if ($_SERVER['QUERY_STRING'] != "mmm" and property_exists($value, "moe")) {
-        continue;
-    }
-    echo "<li>\n<span class='am-badge am-radius am-badge-$class'>$level</span><small class='am-text-$class'>$time $moe</small>\n<ul>";
-    foreach ($value->{"event"} as $value) {
-        echo "<li>$value</li>";
-    }
-    echo "</ul>\n</li>";
-}
-;
-?> -->
-              </ul>
-            </div>
-          </div>
-          <button type="button" class="am-btn thanks-btn am-btn-block" data-am-modal="{target: '#thanks'}">特別感謝
-          </button>
-          <div class="am-popup" id="thanks">
-            <div class="am-popup-inner">
-              <div class="am-popup-hd">
-                <h4 class="am-popup-title">特別感謝名單
-                </h4>
-                <span data-am-modal-close class="am-close">&times;
-                </span>
-              </div>
-              <ul class="am-list am-list-static">
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="http://blog.sina.com.cn/u/3027377595">bluekiller
-                  </a>】 - 碧藍航線立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪
-                  </a>】 - 碧藍航線立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽
-                  </a>】 - 鋼鐵少女立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter
-                  </a>】 - 鋼鐵少女立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist
-                  </a>】 - 新船資訊提供
-                </li>
-                <li>
-                  <i class="am-icon-user am-icon-fw">
-                  </i>【
-                  <a href="http://srarithmetic.com/">Nacht
-                  </a>】 - 更新紀錄與詳細資訊背景圖提供
-                  <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460">
-                    <i class="am-icon-external-link">
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <i class="am-icon-globe am-icon-fw">
-                  </i>【
-                  <a href="https://victorybelles.tumblr.com/">Victory Belles
-                  </a>】 - Victory Belles立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-globe am-icon-fw">
-                  </i>【
-                  <a href="http://fleet.diablohu.com/">是誰呼叫艦隊
-                  </a>】 - 艦隊收藏立繪提供
-                </li>
-                <li>
-                  <i class="am-icon-globe am-icon-fw">
-                  </i>【
-                  <a href="https://www.zjsnrwiki.com/wiki">艦R百科
-                  </a>】 - 戰艦少女立繪提供
-                </li>
+                <template id="updateLog">
+                  <li>
+                    <span>__LEVEL__</span>
+                    <small>__TIME__</small>
+                    <ul class="logs">
+                      <li>__LOG__</li>
+                    </ul>
+                  </li>
+                </template>
               </ul>
             </div>
           </div>
@@ -573,19 +347,17 @@ foreach ($logFile as $value) {
       </div>
     </div>
   </div>
+  <div id="disqus" class="disqus">
+    <div class="am-g am-container">
+      <div class="am-u-lg-12">
+
+      </div>
+    </div>
+  </div>
   <div id="charts" class="charts">
     <div class="am-g am-container">
       <div class="am-u-lg-12">
-        <h2 class="charts-title" tkey="">統計數據與萌化進度
-        </h2>
-        <!-- <?php
-$json = file_get_contents('assets/datas/records.json');
-$rdata = json_decode($json);
-$today = date("Ymd", time());
-$cmonth = date("Ym", time());
-$daily = ($rdata->daily->$today < 1) ? 0 : $rdata->daily->$today;
-$monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth;
-?> -->
+        <h2 class="charts-title" tkey="">統計數據與萌化進度</h2>
         <div class="am-g">
           <div class="am-u-md-4">
             <div class="card-box">
@@ -635,39 +407,7 @@ $monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth;
         <div class="am-g">
           <div class="am-u-md-12">
             <div class="card-box">
-              <h4 class="header-title">總體萌化進度
-              </h4>
-              <!-- <?php
-$dList = scandir('assets/images/ship_previews_origin');
-$dList = array_diff($dList, array('.', '..', '.DS_Store'));
-$dbList = scandir('assets/datas/ships/');
-$dbList = array_diff($dbList, array('.', '..', '.DS_Store'));
-$nExist = [];
-$allExist = 0;
-$allShips = 0;
-foreach ($dbList as $dbShip) {
-    $exist = 0;
-    $nAllShips = 0;
-    $nation = substr($dbShip, 0, strlen($dbShip) - 5);
-    $json = file_get_contents("assets/datas/ships/$dbShip");
-    $sdata = json_decode($json);
-    foreach ($sdata->$nation as $id => $value) {
-        $allShips++;
-        $nAllShips++;
-        if (in_array(strtoupper($id) . '-0.png', $dList)) {
-            $exist++;
-            $allExist++;
-        }
-    }
-    $nExist[$nation] = [$exist, $nAllShips];
-}
-$MainProgress = round($allExist / $allShips * 100);
-echo "<div class='am-progress am-progress-striped am-active'><div class='am-progress-bar am-progress-bar-success' style='width:$MainProgress%'>$MainProgress%</div></div>";
-$jfile = "assets/datas/complete.json";
-$complete = json_decode(file_get_contents($jfile), true);
-$complete = '';
-file_put_contents($jfile, json_encode($nExist));
-?> -->
+              <h4 class="header-title">總體萌化進度</h4>
             </div>
           </div>
         </div>
@@ -684,8 +424,7 @@ file_put_contents($jfile, json_encode($nExist));
         <div class="am-g">
           <div class="am-u-md-12">
             <div class="card-box">
-              <h4 class="header-title">每日下載量折線圖
-              </h4>
+              <h4 class="header-title">每日下載量折線圖</h4>
               <div id="daily">
               </div>
             </div>
@@ -695,8 +434,8 @@ file_put_contents($jfile, json_encode($nExist));
     </div>
   </div>
   <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
-    <a href="#top" title="回到顶部">
-      <span class="am-gotop-title">回到顶部
+    <a href="#top" title="回到頂部">
+      <span class="am-gotop-title">
       </span>
       <i class="am-gotop-icon am-icon-chevron-up">
       </i>
@@ -721,71 +460,11 @@ file_put_contents($jfile, json_encode($nExist));
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
-  <script>
-    const nationList = ["commonwealth", "france", "germany", "italy", "japan", "panasia", "poland", "uk", "usa", "ussr"];
-    nationList.forEach(nation => {
-      $.get('assets/database/nationShips/' + nation + '.json')
-        .then((response) => {
-          $.each(response, function (index) {
-            $.get('assets/database/shipJSON/' + index.toUpperCase() + '.json')
-              .done(function (shipData) {
-
-                //set box ID & data order
-                const content = document.querySelector('#shipBox').content;
-                content.querySelector('div').setAttribute('id', shipData['id'])
-                content.querySelector('div').setAttribute('data-order', shipData['id'])
-
-                //set box class
-                if (shipData['premium']) { var premium = 'premium' } else { var premium = '' }
-                if (shipData['change']) { var change = 'change' } else { var change = '' }
-                let boxClassList = ['mix', shipData['type'], shipData['nation'], premium, change]
-                content.querySelector('div').classList = boxClassList.join(' ')
-
-                //set box title & tier icon
-                content.querySelector('p').classList = 'ship icon-' + shipData['type']
-                content.querySelector('p').innerHTML = '<span class="tier">' + shipData['tier'] + '</span>' + shipData['name']
-
-                //set box image
-                content.querySelector('img').src = 'assets/images/ship_previews/' + shipData['id'].toUpperCase() + '-' + shipData['default'] + '.png'
-
-                //set box select
-                content.querySelector('select').setAttribute('name', shipData['id'])
-                content.querySelector('select').innerHTML = '<optgroup label="戰艦世界"><option value=' + shipData['id'] + '-0>【戰艦世界】' + shipData['name'] + '</option></optgroup>'
-
-                // set box select options
-                const bandList = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', '同人作品', 'November', '蒼藍鋼鐵戰艦', 'Victory Belles']
-                const defaultOption = shipData['default']
-                for (let bandIndex = 0; bandIndex < bandList.length; bandIndex++) {
-                  const band = bandList[bandIndex];
-                  if (shipData[band]) {
-                    let optgroup = ['<optgroup label="' + band + '">']
-                    $.each(shipData[band], function (optID, optName) {
-                      if (defaultOption == optID) { var selected = ' selected' } else { var selected = '' }
-                      optgroup.push('<option value=' + shipData['id'] + '-' + optID + selected + '>' + optName + '</option>')
-                    });
-                    optgroup.push('</optgroup>')
-                    content.querySelector('select').innerHTML += optgroup.join('')
-                  }
-                }
-
-                //append ship box
-                document.querySelector('#Container').appendChild(
-                  document.importNode(content, true)
-                );
-
-                // generate select 
-                $('#' + shipData['id'] + ' select').selected('enable')
-
-              })
-          })
-
-        })
-    })
-  </script>
+  <script src="assets/js/generator.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
   <script defer src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js">  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
   <script defer src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
   <script defer src="assets/js/app.js"></script>
 </body>
