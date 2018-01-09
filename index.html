@@ -2,6 +2,7 @@
 <html>
 
 <head lang="zh-TW">
+  <title>WOWS - TechTreeMoe</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,34 +10,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <title>WOWS - TechTreeMoe</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="assets/css/amazeui.min.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/css/amazeui.min.css" />
   <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
   <link rel="stylesheet" href="assets/css/app.css" />
-  <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }
-        , i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    }
-    )(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-42562282-2', 'auto');
-    ga('send', 'pageview');
-  </script>
 </head>
 
 <body>
-  <div class="loader_bg">
-  </div>
-  <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}" data-am-sticky>
+  <div class="loader_bg"></div>
+  <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}">
     <div class="am-container">
       <h1 class="am-topbar-brand">
         <a href="#top">TechTreeMoe</a>
@@ -57,11 +39,8 @@
           </li>
         </ul>
         <div class="am-topbar-right">
-          <button id="mmm" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="mmm();">
-            <span class="am-icon-toggle-off"></span> 萌萌模式
-          </button>
           <button id="submit" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="submit();" data-am-loading="{spinner: 'circle-o-notch', loadingText: '提交中...'}">
-            <span class="am-icon-download"></span> 下載
+            <span class="fas fa-cloud-download-alt"></span> 下載
           </button>
         </div>
       </div>
@@ -88,96 +67,96 @@
         <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/japan.jpg" class="">
-                <img src="images/preview/japan.jpg" alt="日本" />
+              <a href="assets/images/preview/japan.jpg" class="">
+                <img src="assets/images/preview/japan.jpg" alt="日本" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_japan">日本預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/usa.jpg" class="">
-                <img src="images/preview/usa.jpg" alt="美國" />
+              <a href="assets/images/preview/usa.jpg" class="">
+                <img src="assets/images/preview/usa.jpg" alt="美國" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_usa">美國預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/germany.jpg" class="">
-                <img src="images/preview/germany.jpg" alt="德國" />
+              <a href="assets/images/preview/germany.jpg" class="">
+                <img src="assets/images/preview/germany.jpg" alt="德國" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_germany">德國預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/ussr.jpg" class="">
-                <img src="images/preview/ussr.jpg" alt="蘇聯" />
+              <a href="assets/images/preview/ussr.jpg" class="">
+                <img src="assets/images/preview/ussr.jpg" alt="蘇聯" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_ussr">蘇聯預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/uk.jpg" class="">
-                <img src="images/preview/uk.jpg" alt="英國" />
+              <a href="assets/images/preview/uk.jpg" class="">
+                <img src="assets/images/preview/uk.jpg" alt="英國" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_uk">英國預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/france.jpg" class="">
-                <img src="images/preview/france.jpg" alt="法國" />
+              <a href="assets/images/preview/france.jpg" class="">
+                <img src="assets/images/preview/france.jpg" alt="法國" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_france">法國預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/italia.jpg" class="">
-                <img src="images/preview/italia.jpg" alt="義大利" />
+              <a href="assets/images/preview/italia.jpg" class="">
+                <img src="assets/images/preview/italia.jpg" alt="義大利" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_italia">義大利預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/commonwealth.jpg" class="">
-                <img src="images/preview/commonwealth.jpg" alt="聯邦" />
+              <a href="assets/images/preview/commonwealth.jpg" class="">
+                <img src="assets/images/preview/commonwealth.jpg" alt="聯邦" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_commonwealth">聯邦預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/pan_asia.jpg" class="">
-                <img src="images/preview/pan_asia.jpg" alt="泛亞" />
+              <a href="assets/images/preview/pan_asia.jpg" class="">
+                <img src="assets/images/preview/pan_asia.jpg" alt="泛亞" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/poland.jpg" class="">
-                <img src="images/preview/poland.jpg" alt="波蘭" />
+              <a href="assets/images/preview/poland.jpg" class="">
+                <img src="assets/images/preview/poland.jpg" alt="波蘭" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_poland">波蘭預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/arp.jpg" class="">
-                <img src="images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
+              <a href="assets/images/preview/arp.jpg" class="">
+                <img src="assets/images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
               </a>
             </div>
           </li>
           <li>
             <div class="am-gallery-item">
-              <a href="images/preview/haifuri.jpg" class="">
-                <img src="images/preview/haifuri.jpg" alt="高校艦隊" />
+              <a href="assets/images/preview/haifuri.jpg" class="">
+                <img src="assets/images/preview/haifuri.jpg" alt="高校艦隊" />
                 <h3 class="am-gallery-title" tkey="tkey_preview_haifuri">高校艦隊預覽</h3>
               </a>
             </div>
@@ -295,7 +274,7 @@
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round am-icon-premium">
           <input type="radio" class="options" name="extra" value=".premium" tkey="tkey_filter_premium">
-          <img src="./images/icons/premium_icon.png">加值艦
+          <img src="assets/images/icons/premium_icon.png">加值艦
         </label>
       </div>
       <div class="am-btn-group">
@@ -306,6 +285,28 @@
       </div>
     </div>
     <div id="Container">
+
+      <ship-box></ship-box>
+
+      <template id="shipBox">
+        <div class="mix">
+          <p class="ship">
+            <span class="tier">__TIER__</span>__NAME__</p>
+          <div class="img_container">
+            <div class="addon">
+              <img src="__SHIP_PREVIEWS__">
+            </div>
+          </div>
+          <select name="__ID__" data-am-selected>
+            <optgroup label="__BAND__">
+              <option value="__ID__-0">【__BAND__】__NAME__</option>
+            </optgroup>
+          </select>
+        </div>
+      </template>
+
+
+      <!-- 
       <?php
 // generate ship list
 $shipList = array();
@@ -355,7 +356,7 @@ foreach ($shipList as $value) {
     echo "<div id='$shipId' class='mix $shipType $shipNation$shipPremium$shipChange$shipARP$shipMoe' data-order='$order'>\n
 <p class='ship icon-$shipType'><span class='tier'>$shipTier</span>$shipName</p>\n
 <div class='img_container'>\n
-<div class='addon'><img src='images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
+<div class='addon'><img src='assets/images/ship_previews_web/$shipId-$shipDefault.png'></div>\n
 </div>\n
 <select name='$shipId' data-am-selected>\n";
     echo "<optgroup label='戰艦世界'>\n<option value='$shipId-0'>【戰艦世界】$shipName</option>\n</optgroup>\n";
@@ -375,7 +376,7 @@ foreach ($shipList as $value) {
     ;
     echo "</select>\n</div>\n";
 }
-?>
+?> -->
     </div>
   </div>
   <div id="about" class="about">
@@ -398,7 +399,7 @@ foreach ($shipList as $value) {
             </h4>
             <div class="am-scrollable-vertical detail">
               <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }'>
-                <?php
+                <!-- <?php
 function detial($type, $shipList)
 {
     echo "<dl class='am-accordion-item'>
@@ -448,7 +449,7 @@ if ($_SERVER['QUERY_STRING'] == "mmm") {
     detial('萌萌模式', $shipList);
 }
 ;
-?>
+?> -->
               </section>
             </div>
             <hr class="am-article-divider am-show-sm-only">
@@ -460,7 +461,7 @@ if ($_SERVER['QUERY_STRING'] == "mmm") {
             </h4>
             <div class="am-scrollable-vertical update">
               <ul class="am-list am-list-static am-list-border">
-                <?php
+                <!-- <?php
 $logFile = json_decode(file_get_contents("./update.json"));
 foreach ($logFile as $value) {
     if ($value->{'moe'} and $_SERVER['QUERY_STRING'] != "mmm") {
@@ -492,7 +493,7 @@ foreach ($logFile as $value) {
     echo "</ul>\n</li>";
 }
 ;
-?>
+?> -->
               </ul>
             </div>
           </div>
@@ -577,67 +578,67 @@ foreach ($logFile as $value) {
       <div class="am-u-lg-12">
         <h2 class="charts-title" tkey="">統計數據與萌化進度
         </h2>
-        <?php
+        <!-- <?php
 $json = file_get_contents('assets/datas/records.json');
 $rdata = json_decode($json);
 $today = date("Ymd", time());
 $cmonth = date("Ym", time());
 $daily = ($rdata->daily->$today < 1) ? 0 : $rdata->daily->$today;
 $monthly = ($rdata->monthly->$cmonth < 1) ? 0 : $rdata->monthly->$cmonth;
-?>
-          <div class="am-g">
-            <div class="am-u-md-4">
-              <div class="card-box">
-                <span class="text-muted am-fr">
-                  <?php echo date("Y年m月d日", time()); ?>
-                </span>
-                <h4 class="header-title">本日下載量
-                </h4>
-                <div class="widget-chart">
-                  <h2>
-                    <?php echo $daily . "次"; ?>
-                  </h2>
-                </div>
+?> -->
+        <div class="am-g">
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr">
+                <!-- <?php echo date("Y年m月d日", time()); ?> -->
+              </span>
+              <h4 class="header-title">本日下載量
+              </h4>
+              <div class="widget-chart">
+                <h2>
+                  <!-- <?php echo $daily . "次"; ?> -->
+                </h2>
               </div>
             </div>
-            <!-- col end -->
-            <div class="am-u-md-4">
-              <div class="card-box">
-                <span class="text-muted am-fr">
-                  <?php echo date("Y年m月", time()); ?>
-                </span>
-                <h4 class="header-title">本月下載量
-                </h4>
-                <div class="widget-chart">
-                  <h2>
-                    <?php echo $monthly . "次"; ?>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <!-- col end -->
-            <div class="am-u-md-4">
-              <div class="card-box">
-                <span class="text-muted am-fr">2017年09月04日至今
-                </span>
-                <h4 class="header-title">總下載量
-                </h4>
-                <div class="widget-chart">
-                  <h2>
-                    <?php echo $rdata->overtime . "次"; ?>
-                  </h2>
-                </div>
-              </div>
-            </div>
-            <!-- col end -->
           </div>
-          <div class="am-g">
-            <div class="am-u-md-12">
-              <div class="card-box">
-                <h4 class="header-title">總體萌化進度
-                </h4>
-                <?php
-$dList = scandir('images/ship_previews_origin');
+          <!-- col end -->
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr">
+                <!-- <?php echo date("Y年m月", time()); ?> -->
+              </span>
+              <h4 class="header-title">本月下載量
+              </h4>
+              <div class="widget-chart">
+                <h2>
+                  <!-- <?php echo $monthly . "次"; ?> -->
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr">2017年09月04日至今
+              </span>
+              <h4 class="header-title">總下載量
+              </h4>
+              <div class="widget-chart">
+                <h2>
+                  <!-- <?php echo $rdata->overtime . "次"; ?> -->
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title">總體萌化進度
+              </h4>
+              <!-- <?php
+$dList = scandir('assets/images/ship_previews_origin');
 $dList = array_diff($dList, array('.', '..', '.DS_Store'));
 $dbList = scandir('assets/datas/ships/');
 $dbList = array_diff($dbList, array('.', '..', '.DS_Store'));
@@ -666,30 +667,30 @@ $jfile = "assets/datas/complete.json";
 $complete = json_decode(file_get_contents($jfile), true);
 $complete = '';
 file_put_contents($jfile, json_encode($nExist));
-?>
+?> -->
+            </div>
+          </div>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title">各國萌化進度
+              </h4>
+              <div id="nationComplete" style="width: 100%;height: 400px;">
               </div>
             </div>
           </div>
-          <div class="am-g">
-            <div class="am-u-md-12">
-              <div class="card-box">
-                <h4 class="header-title">各國萌化進度
-                </h4>
-                <div id="nationComplete" style="width: 100%;height: 400px;">
-                </div>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title">每日下載量折線圖
+              </h4>
+              <div id="daily">
               </div>
             </div>
           </div>
-          <div class="am-g">
-            <div class="am-u-md-12">
-              <div class="card-box">
-                <h4 class="header-title">每日下載量折線圖
-                </h4>
-                <div id="daily">
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -701,64 +702,90 @@ file_put_contents($jfile, json_encode($nExist));
       </i>
     </a>
   </div>
-  <?php
-$path = './assets/php/cache';
-//file size formatter
-function human_filesize($bytes, $decimals = 2)
-{
-    $sz = 'BKMGTP';
-    $factor = floor((strlen($bytes) - 1) / 3);
-    return sprintf("%.{$decimals}f", $bytes / pow(1024, $factor)) . @$sz[$factor];
-}
-//sizeCount
-$totalsize = 0;
-if ($handle = opendir($path)) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-            $filebytes = filesize("$path/$entry");
-            $totalsize = $totalsize + $filebytes;
-        }
-    }
-    closedir($handle);
-}
-//files count
-$files = new FilesystemIterator($path, FilesystemIterator::SKIP_DOTS);
-?>
-    <footer class="footer">
-      <p>Designed by
-        <a class="hidden" href="assets/php/clean.php">©</a> 2010
-        <a href="http://makinoworks.com" target="_blank">MakinoWorks
-        </a>｜Powered by
-        <a href="https://mixitup.kunkalabs.com/">MixItUp
-        </a>&
-        <a href="http://amazeui.org/"> AMAZE UI
-        </a>｜
-        <?php echo iterator_count($files) ?> caches cost
-        <?php echo human_filesize($totalsize) ?>｜
-        <select id="lang" data-am-selected="{dropUp: 1,btnWidth: '100px', btnSize: 'sm',btnStyle: 'link'}">
-          <option value="zh-TW">繁體中文
-          </option>
-          <option value="zh-CN">简体中文
-          </option>
-          <option value="en-US">English
-          </option>
-          <option value="ja">日本語
-          </option>
-        </select>
-      </p>
-    </footer>
-    <script src="assets/js/jquery.min.js">
-    </script>
-    <script src="assets/js/amazeui.min.js">
-    </script>
-    <script src="assets/js/mixitup.min.js">
-    </script>
-    <script src="assets/js/echarts.min.js">
-    </script>
-    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js">
-    </script>
-    <script src="assets/js/app.js">
-    </script>
+  <footer class="footer">
+    <p>
+      Designed by © 2010
+      <a href="http://makinoworks.com" target="_blank">MakinoWorks</a>｜
+      <!-- Powered by
+      <a href="https://mixitup.kunkalabs.com/">MixItUp</a>&
+      <a href="http://amazeui.org/"> AMAZE UI</a>｜ -->
+      <select id="lang" data-am-selected="{dropUp: 1,btnWidth: '100px', btnSize: 'sm',btnStyle: 'link'}">
+        <option value="zh-TW">繁體中文</option>
+        <option value="zh-CN">简体中文</option>
+        <option value="en-US">English</option>
+        <option value="ja">日本語</option>
+      </select>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
+  <script>
+    const nationList = ["commonwealth", "france", "germany", "italy", "japan", "panasia", "poland", "uk", "usa", "ussr"];
+    nationList.forEach(nation => {
+      $.get('assets/database/nationShips/' + nation + '.json')
+        .then((response) => {
+          $.each(response, function (index) {
+            $.get('assets/database/shipJSON/' + index.toUpperCase() + '.json')
+              .done(function (shipData) {
+
+                //set box ID & data order
+                const content = document.querySelector('#shipBox').content;
+                content.querySelector('div').setAttribute('id', shipData['id'])
+                content.querySelector('div').setAttribute('data-order', shipData['id'])
+
+                //set box class
+                if (shipData['premium']) { var premium = 'premium' } else { var premium = '' }
+                if (shipData['change']) { var change = 'change' } else { var change = '' }
+                let boxClassList = ['mix', shipData['type'], shipData['nation'], premium, change]
+                content.querySelector('div').classList = boxClassList.join(' ')
+
+                //set box title & tier icon
+                content.querySelector('p').classList = 'ship icon-' + shipData['type']
+                content.querySelector('p').innerHTML = '<span class="tier">' + shipData['tier'] + '</span>' + shipData['name']
+
+                //set box image
+                content.querySelector('img').src = 'assets/images/ship_previews/' + shipData['id'].toUpperCase() + '-' + shipData['default'] + '.png'
+
+                //set box select
+                content.querySelector('select').setAttribute('name', shipData['id'])
+                content.querySelector('select').innerHTML = '<optgroup label="戰艦世界"><option value=' + shipData['id'] + '-0>【戰艦世界】' + shipData['name'] + '</option></optgroup>'
+
+                // set box select options
+                const bandList = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', '同人作品', 'November', '蒼藍鋼鐵戰艦', 'Victory Belles']
+                const defaultOption = shipData['default']
+                for (let bandIndex = 0; bandIndex < bandList.length; bandIndex++) {
+                  const band = bandList[bandIndex];
+                  if (shipData[band]) {
+                    let optgroup = ['<optgroup label="' + band + '">']
+                    $.each(shipData[band], function (optID, optName) {
+                      if (defaultOption == optID) { var selected = ' selected' } else { var selected = '' }
+                      optgroup.push('<option value=' + shipData['id'] + '-' + optID + selected + '>' + optName + '</option>')
+                    });
+                    optgroup.push('</optgroup>')
+                    content.querySelector('select').innerHTML += optgroup.join('')
+                  }
+                }
+
+                //append ship box
+                document.querySelector('#Container').appendChild(
+                  document.importNode(content, true)
+                );
+
+                // generate select 
+                $('#' + shipData['id'] + ' select').selected('enable')
+
+              })
+          })
+
+        })
+    })
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
+  <script defer src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script defer src="assets/js/app.js"></script>
 </body>
 
 </html>
