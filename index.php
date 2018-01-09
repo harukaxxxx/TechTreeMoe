@@ -36,7 +36,7 @@
 <body>
   <div class="loader_bg">
   </div>
-  <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}" data-am-sticky>
+  <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}">
     <div class="am-container">
       <h1 class="am-topbar-brand">
         <a href="#top">TechTreeMoe</a>
