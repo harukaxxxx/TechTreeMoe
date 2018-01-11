@@ -50,16 +50,15 @@ function submit() {
   }
 
   // download zip
-  zip
-    .generateAsync({
+  zip.generateAsync({
       type: 'blob'
     })
     .then(function(content) {
-      saveAs(content, 'res_mod.zip');
+      saveAs(content, 'res_mod.zip')
 
       //progress done
       $.AMUI.progress.done();
-      $('#submit').button('reset');
+      $('#submit').button('reset')
     });
 }
 
@@ -261,9 +260,7 @@ $.getJSON('assets/update.json', function(updateData) {
         '<li>' + updateData['event'][i] + '</li>';
     }
 
-    document
-      .querySelector('.update .am-list')
-      .prepend(document.importNode(content, true));
+    document.querySelector('.update .am-list').prepend(document.importNode(content, true));
   });
 });
 
