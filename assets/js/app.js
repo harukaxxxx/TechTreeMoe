@@ -8,24 +8,24 @@ $('.mixitup select').on('change', function() {
     var origin = 'web'
   }
   $('#' + ship + ' img').fadeOut(400, function() {
-    $('#' + ship + ' img').attr(
-      'src',
-      'assets/images/ship_previews_' + origin + '/' + ship_img + '.png'
-    )
+    $('#' + ship + ' img').attr('src', 'assets/images/ship_previews_' + origin + '/' + ship_img + '.png')
   })
   $('#' + ship + ' img').fadeIn(400)
 })
 
-//local storage init
-var store = $.AMUI.store
-if (!store.enabled) {
-  alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
+//random intro bg
+if (Math.random() >= 0.5) {
+  $('.intro').css('background-image', 'url(assets/images/intro_bg/left/intro_bg' + Math.floor(Math.random() * 2 + 1) + '.jpg)').css('background-position', 'left')
+} else {
+  $('.intro').css('background-image', 'url(assets/images/intro_bg/right/intro_bg' + Math.floor(Math.random() * 4 + 1) + '.jpg)').css('background-position', 'right')
 }
+
 
 /**
  * Download function
  */
 function submit() {
+
   //progress start
   $.AMUI.progress.start()
   $('#submit').button('loading')
@@ -62,6 +62,7 @@ function submit() {
     })
 }
 
+
 /**
  * Mix it up
  */
@@ -70,12 +71,12 @@ var mixer = mixitup('#Container', {
     onMixBusy: function(state) {
       $('.loader_bg').fadeIn(500)
     },
+    onMixStart: function(state, futureState) {
+      $.AMUI.progress.start()
+    },
     onMixEnd: function(state) {
       $.AMUI.progress.done()
       $('.loader_bg').fadeOut(500)
-    },
-    onMixStart: function(state, futureState) {
-      $.AMUI.progress.start()
     }
   },
   animation: {
@@ -87,6 +88,15 @@ var mixer = mixitup('#Container', {
     sort: 'order:asc'
   }
 })
+
+
+/*
+ * local storage
+ */
+var store = $.AMUI.store
+if (!store.enabled) {
+  alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
+}
 
 mixer.show().then(function(state) {
   //default data
@@ -118,12 +128,11 @@ mixer.show().then(function(state) {
   }
 })
 
-// filter button
-function filterReset() {
-  mixer.filter('all')
-  $('.filter-group label').removeClass('am-active')
-}
-$(function() {
+
+/*
+ * filter button
+ */
+$(window).on('load', function() {
   var $options = $('.filter-group .options')
   var $nation = $('[name="nation"]')
   var $type = $('[name="type"]')
@@ -142,16 +151,18 @@ $(function() {
     if (extra != undefined) {
       var filter = filter + extra
     }
+    console.log(filter)
     mixer.filter(filter)
   })
 })
 
-//custom scrollbar
-$(window).on('load', function() {
-  $('.am-scrollable-vertical').mCustomScrollbar({
-    theme: 'minimal-dark'
-  })
-})
+//filter all
+function filterReset() {
+  $('.filter-group .options').filter(':checked').val('')
+  mixer.filter('')
+  mixer.filter('all')
+  $('.filter-group label').removeClass('am-active')
+}
 
 //set default
 function reset() {
@@ -161,27 +172,23 @@ function reset() {
   }
 }
 
-//random intro bg
-if (Math.random() >= 0.5) {
-  $('.intro').css('background-image', 'url(assets/images/intro_bg/left/intro_bg' + Math.floor(Math.random() * 2 + 1) + '.jpg)').css('background-position', 'left')
-} else {
-  $('.intro').css('background-image', 'url(assets/images/intro_bg/right/intro_bg' + Math.floor(Math.random() * 4 + 1) + '.jpg)').css('background-position', 'right')
-}
 
-//multilang
+/*
+ * multi language
+ */
 var langCode = navigator.language
 var langs = ['zh-TW', 'zh-CN', 'en-US', 'ja']
 
 function lang(langCode) {
-  $.getJSON('langs/' + langCode + '.json', function(jsonData) {
+  $.getJSON('assets/langs/' + langCode + '.json', function(jsonData) {
     $.each($('[tkey]'), function(jkey) {
-      var tkey = $('[tkey]')
-        .eq(jkey)
-        .attr('tkey')
+      var tkey = $('[tkey]').eq(jkey).attr('tkey')
       var tval = jsonData[tkey]
-      $('[tkey]')
-        .eq(jkey)
-        .html(tval)
+      $('[tkey]').eq(jkey).html(tval)
+      if (tval == undefined) {
+        console.error($('[tkey]').eq(jkey).text() + ' don\'t have translate content!!\n' + tval);
+      }
+      console.debug('Translate ' + $('[tkey]').eq(jkey).text() + ' to ' + tval)
     })
   })
 }
@@ -190,21 +197,13 @@ function lang(langCode) {
 if ($.inArray(langCode, langs) >= 0 && langCode != 'zh-TW') {
   lang(langCode)
 
+  // language button changeing
   for (var i = 0; i < 4; i++) {
-    var code = $('footer select')
-      .find('option')
-      .eq(i)
-      .val()
+    var code = $('footer select').find('option').eq(i).val()
     if (code == langCode) {
-      $('footer select')
-        .find('option')
-        .eq(i)
-        .attr('selected', true)
+      $('footer select').find('option').eq(i).attr('selected', true)
     } else {
-      $('footer select')
-        .find('option')
-        .eq(i)
-        .attr('selected', false)
+      $('footer select').find('option').eq(i).attr('selected', false)
     }
   }
 }
@@ -214,6 +213,7 @@ $('footer select').change(function() {
   var langCode = $('footer select').val()
   lang(langCode)
 })
+
 
 /**
  * Update log
@@ -257,6 +257,13 @@ $.getJSON('assets/update.json', function(updateData) {
     }
 
     document.querySelector('.update .am-list').prepend(document.importNode(content, true))
+  })
+})
+
+//custom scrollbar
+$(window).on('load', function() {
+  $('.am-scrollable-vertical').mCustomScrollbar({
+    theme: 'minimal-dark'
   })
 })
 
@@ -496,6 +503,7 @@ function completeBar() {
   $('.am-progress-bar').text(completePercent + '%')
 }
 
+
 /**
  * complete chart
  */
@@ -512,34 +520,34 @@ function completeChart() {
 
     switch (nation) {
       case 'commonwealth':
-        nation = '聯邦'
+        nation = '聯邦(Commonwealth)'
         break;
       case 'france':
-        nation = '法國'
+        nation = '法國(France)'
         break;
       case 'germany':
-        nation = '德國'
+        nation = '德國(Germany)'
         break;
       case 'italy':
-        nation = '義大利'
+        nation = '義大利(Italia)'
         break;
       case 'japan':
-        nation = '日本'
+        nation = '日本(Japan)'
         break;
       case 'panasia':
-        nation = '泛亞'
+        nation = '泛亞(Pan-Asia)'
         break;
       case 'poland':
-        nation = '波蘭'
+        nation = '波蘭(Poland)'
         break;
       case 'uk':
-        nation = '英國'
+        nation = '英國(Great Britain)'
         break;
       case 'usa':
-        nation = '美國'
+        nation = '美國(USA)'
         break;
       case 'ussr':
-        nation = '蘇聯'
+        nation = '蘇聯(USSR)'
         break;
     }
     nationData.push(nation)
