@@ -1,0 +1,392 @@
+{
+    "pjsd001": {
+        "name": "Tachibana",
+        "tier": "II",
+        "type": "destroyer"
+    },
+    "pjsd014": {
+        "name": "Tachibana L",
+        "tier": "II",
+        "type": "destroyer"
+    },
+    "pjsd002": {
+        "name": "Umikaze",
+        "tier": "II",
+        "type": "destroyer"
+    },
+    "pjsd024": {
+        "name": "Wakatake",
+        "tier": "III",
+        "type": "destroyer"
+    },
+    "pjsd003": {
+        "name": "Isokaze",
+        "tier": "IV",
+        "type": "destroyer"
+    },
+    "pjsd017": {
+        "name": "Fūjin",
+        "tier": "V",
+        "type": "destroyer"
+    },
+    "pjsd025": {
+        "name": "Kamikaze",
+        "tier": "V",
+        "type": "destroyer"
+    },
+    "pjsd026": {
+        "name": "Kamikaze R",
+        "tier": "V",
+        "type": "destroyer"
+    },
+    "pjsd004": {
+        "name": "Minekaze",
+        "tier": "V",
+        "type": "destroyer"
+    },
+    "pjsd105": {
+        "name": "Mutsuki",
+        "tier": "V",
+        "type": "destroyer"
+    },
+    "pjsd106": {
+        "name": "Fubuki",
+        "tier": "VI",
+        "type": "destroyer"
+    },
+    "pjsd206": {
+        "name": "Hatsuharu",
+        "tier": "VI",
+        "type": "destroyer"
+    },
+    "pjsd005": {
+        "name": "Mutsuki (old)",
+        "tier": "VI",
+        "type": "destroyer"
+    },
+    "pjsd706": {
+        "name": "Shinonome",
+        "tier": "VI",
+        "type": "destroyer"
+    },
+    "pjsd107": {
+        "name": "Akatsuki",
+        "tier": "VII",
+        "type": "destroyer"
+    },
+    "pjsd006": {
+        "name": "Hatsuharu (old)",
+        "tier": "VII",
+        "type": "destroyer"
+    },
+    "pjsd207": {
+        "name": "Shiratsuyu",
+        "tier": "VII",
+        "type": "destroyer"
+    },
+    "pjsd108": {
+        "name": "Akizuki",
+        "tier": "VIII",
+        "type": "destroyer"
+    },
+    "pjsd007": {
+        "name": "Fubuki (old)",
+        "tier": "VIII",
+        "type": "destroyer"
+    },
+    "pjsd708": {
+        "name": "HSF Harekaze",
+        "tier": "VIII",
+        "type": "destroyer"
+    },
+    "pjsd208": {
+        "name": "Kagero",
+        "tier": "VIII",
+        "type": "destroyer"
+    },
+    "pjsd010": {
+        "name": "Kagero (old)",
+        "tier": "IX",
+        "type": "destroyer"
+    },
+    "pjsd209": {
+        "name": "Yūgumo",
+        "tier": "IX",
+        "type": "destroyer"
+    },
+    "pjsd012": {
+        "name": "Shimakaze",
+        "tier": "X",
+        "type": "destroyer"
+    },
+    "pjsd912": {
+        "name": "[Shimakaze]",
+        "tier": "X",
+        "type": "destroyer"
+    },
+    "pjsc037": {
+        "name": "Hashidate",
+        "tier": "I",
+        "type": "cruiser"
+    },
+    "pjsc035": {
+        "name": "Chikuma",
+        "tier": "II",
+        "type": "cruiser"
+    },
+    "pjsc503": {
+        "name": "Katori",
+        "tier": "III",
+        "type": "cruiser"
+    },
+    "pjsc015": {
+        "name": "Tenryu",
+        "tier": "III",
+        "type": "cruiser"
+    },
+    "pjsc026": {
+        "name": "Iwaki A",
+        "tier": "IV",
+        "type": "cruiser"
+    },
+    "pjsc013": {
+        "name": "Kuma",
+        "tier": "IV",
+        "type": "cruiser"
+    },
+    "pjsc004": {
+        "name": "Yūbari",
+        "tier": "IV",
+        "type": "cruiser"
+    },
+    "pjsc005": {
+        "name": "Furutaka",
+        "tier": "V",
+        "type": "cruiser"
+    },
+    "pjsc007": {
+        "name": "Aoba",
+        "tier": "VI",
+        "type": "cruiser"
+    },
+    "pjsc707": {
+        "name": "ARP Ashigara",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc709": {
+        "name": "ARP Haguro",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc705": {
+        "name": "ARP Myoko",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc737": {
+        "name": "ARP Nachi",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc727": {
+        "name": "E. Dragon",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc008": {
+        "name": "Myoko",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc717": {
+        "name": "S. Dragon",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc018": {
+        "name": "Tone",
+        "tier": "VII",
+        "type": "cruiser"
+    },
+    "pjsc708": {
+        "name": "ARP Takao",
+        "tier": "VIII",
+        "type": "cruiser"
+    },
+    "pjsc038": {
+        "name": "Atago",
+        "tier": "VIII",
+        "type": "cruiser"
+    },
+    "pjsc014": {
+        "name": "Kitakami",
+        "tier": "VIII",
+        "type": "cruiser"
+    },
+    "pjsc009": {
+        "name": "Mogami",
+        "tier": "VIII",
+        "type": "cruiser"
+    },
+    "pjsc012": {
+        "name": "Ibuki",
+        "tier": "IX",
+        "type": "cruiser"
+    },
+    "pjsc034": {
+        "name": "Zao",
+        "tier": "X",
+        "type": "cruiser"
+    },
+    "pjsc934": {
+        "name": "[Zao]",
+        "tier": "X",
+        "type": "cruiser"
+    },
+    "pjsb011": {
+        "name": "Mikasa",
+        "tier": "II",
+        "type": "battleship"
+    },
+    "pjsb001": {
+        "name": "Kawachi",
+        "tier": "III",
+        "type": "battleship"
+    },
+    "pjsb008": {
+        "name": "Ishizuchi",
+        "tier": "IV",
+        "type": "battleship"
+    },
+    "pjsb003": {
+        "name": "Myogi",
+        "tier": "IV",
+        "type": "battleship"
+    },
+    "pjsb707": {
+        "name": "ARP Haruna",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb708": {
+        "name": "ARP Hiei",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb706": {
+        "name": "ARP Kirishima",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb799": {
+        "name": "ARP Kirishima",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb705": {
+        "name": "ARP Kongō",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb007": {
+        "name": "Kongo",
+        "tier": "V",
+        "type": "battleship"
+    },
+    "pjsb006": {
+        "name": "Fuso",
+        "tier": "VI",
+        "type": "battleship"
+    },
+    "pjsb506": {
+        "name": "Mutsu",
+        "tier": "VI",
+        "type": "battleship"
+    },
+    "pjsb507": {
+        "name": "Ashitaka",
+        "tier": "VII",
+        "type": "battleship"
+    },
+    "pjsb010": {
+        "name": "Nagato",
+        "tier": "VII",
+        "type": "battleship"
+    },
+    "pjsb013": {
+        "name": "Amagi",
+        "tier": "VIII",
+        "type": "battleship"
+    },
+    "pjsb508": {
+        "name": "Kii",
+        "tier": "VIII",
+        "type": "battleship"
+    },
+    "pjsb021": {
+        "name": "Izumo",
+        "tier": "IX",
+        "type": "battleship"
+    },
+    "pjsb509": {
+        "name": "Musashi",
+        "tier": "IX",
+        "type": "battleship"
+    },
+    "pjsb018": {
+        "name": "Yamato",
+        "tier": "X",
+        "type": "battleship"
+    },
+    "pjsb918": {
+        "name": "[Yamato]",
+        "tier": "X",
+        "type": "battleship"
+    },
+    "pjsa002": {
+        "name": "Hosho",
+        "tier": "IV",
+        "type": "aircarrier"
+    },
+    "pjsa006": {
+        "name": "Zuiho",
+        "tier": "V",
+        "type": "aircarrier"
+    },
+    "pjsa009": {
+        "name": "Ryujo",
+        "tier": "VI",
+        "type": "aircarrier"
+    },
+    "pjsa011": {
+        "name": "Hiryu",
+        "tier": "VII",
+        "type": "aircarrier"
+    },
+    "pjsa507": {
+        "name": "Kaga",
+        "tier": "VII",
+        "type": "aircarrier"
+    },
+    "pjsa012": {
+        "name": "Shokaku",
+        "tier": "VIII",
+        "type": "aircarrier"
+    },
+    "pjsa015": {
+        "name": "Taiho",
+        "tier": "IX",
+        "type": "aircarrier"
+    },
+    "pjsa017": {
+        "name": "Hakuryu",
+        "tier": "X",
+        "type": "aircarrier"
+    },
+    "pjsa917": {
+        "name": "[Hakuryu]",
+        "tier": "X",
+        "type": "aircarrier"
+    }
+}

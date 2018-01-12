@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-TW">
+  <title>WOWS - TechTreeMoe</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/css/amazeui.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NGBD6X2');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBD6X2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="loader_bg"></div>
+  <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}">
+    <div class="am-container">
+      <h1 class="am-topbar-brand"><a href="#top">TechTreeMoe</a></h1>
+      <div class="am-collapse am-topbar-collapse" id="collapse-head">
+        <ul class="am-nav am-nav-pills am-topbar-nav">
+          <li><a href="#intro">介紹與教學</a></li>
+          <li><a href="#mixitup">客製化</a></li>
+          <li><a href="#about">更新紀錄與詳細資訊</a></li>
+          <li><a href="#charts">統計數據與萌化進度</a></li>
+        </ul>
+        <div class="am-topbar-right">
+          <button id="submit" class="am-btn am-btn-primary am-topbar-btn am-btn-sm" onclick="submit();" data-am-loading="{spinner: 'circle-o-notch', loadingText: '提交中...'}">
+            <span class="fas fa-cloud-download-alt"></span> 下載
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="top" class="top">
+    <div class="am-g">
+      <div class="am-u-lg-12">
+        <h1 class="top-title" tkey="tkey_site_title">TechTreeMoe - 戰艦世界科技樹萌化</h1>
+        <p tkey="tkey_site_description">結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、最終戰艦、Victory Belles以及同人作品，讓科技樹萌起來吧！</p>
+        <button type="button" class="am-btn am-btn-primary" data-am-modal="{target: '#preview'}">效果預覽</button>
+      </div>
+    </div>
+  </div>
+  <div class="am-modal am-modal-alert" tabindex="-1" id="preview">
+    <div class="am-modal-dialog">
+      <div class="am-modal-hd" tkey="tkey_preview_button">效果預覽</div>
+      <div class="am-modal-bd">
+        <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/japan.jpg" class="">
+                <img src="assets/images/preview/japan.jpg" alt="日本" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_japan">日本預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/usa.jpg" class="">
+                <img src="assets/images/preview/usa.jpg" alt="美國" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_usa">美國預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/germany.jpg" class="">
+                <img src="assets/images/preview/germany.jpg" alt="德國" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_germany">德國預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/ussr.jpg" class="">
+                <img src="assets/images/preview/ussr.jpg" alt="蘇聯" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_ussr">蘇聯預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/uk.jpg" class="">
+                <img src="assets/images/preview/uk.jpg" alt="英國" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_uk">英國預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/france.jpg" class="">
+                <img src="assets/images/preview/france.jpg" alt="法國" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_france">法國預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/italia.jpg" class="">
+                <img src="assets/images/preview/italia.jpg" alt="義大利" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_italia">義大利預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/commonwealth.jpg" class="">
+                <img src="assets/images/preview/commonwealth.jpg" alt="聯邦" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_commonwealth">聯邦預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/pan_asia.jpg" class="">
+                <img src="assets/images/preview/pan_asia.jpg" alt="泛亞" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/poland.jpg" class="">
+                <img src="assets/images/preview/poland.jpg" alt="波蘭" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_poland">波蘭預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/arp.jpg" class="">
+                <img src="assets/images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="am-gallery-item">
+              <a href="assets/images/preview/haifuri.jpg" class="">
+                <img src="assets/images/preview/haifuri.jpg" alt="高校艦隊" />
+                <h3 class="am-gallery-title" tkey="tkey_preview_haifuri">高校艦隊預覽</h3>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="am-modal-footer">
+        <span class="am-modal-btn" tkey="tkey_close">關閉</span>
+      </div>
+    </div>
+  </div>
+  <div id="intro" class="intro">
+    <div class="am-g am-container">
+      <div class="am-u-lg-12">
+        <h2 class="intro-h2" tkey="tkey_intro_section">介紹與教學</h2>
+        <div class="am-g">
+          <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
+            <h3 class="intro-h3" tkey="tkey_intro_title">
+              <i class="am-icon-info-circle"></i> 介紹</h3>
+            <ul class="intro-p">
+              <li tkey="tkey_intro_1">艦娘圖標百百種，挑選中意的圖標來萌化科技樹。</li>
+              <li tkey="tkey_intro_2">利用<span class="am-icon-paint-brush am-text-primary"> 可更替</span> 按鈕可快速尋找可以替換的項目</li>
+              <li tkey="tkey_intro_3">按下<span class="am-icon-download am-text-primary"> 下載</span>時將使用LocalStorage儲存您的紀錄。</li>
+              <li tkey="tkey_intro_4">此模組不包含背景國旗及艦型小圖標。</li>
+            </ul>
+          </div>
+          <div class="am-u-lg-6 am-u-md-6 am-u-sm-12 intro-mb">
+            <h3 class="intro-h3" tkey="tkey_tutorial_title"><i class="am-icon-book"></i> 教學</h3>
+            <ol class="intro-p">
+              <li tkey="tkey_tutorial_1">艦船圖片下的下拉選單可選取並預覽想使用的圖標。</li>
+              <li tkey="tkey_tutorial_2">挑選完畢後再點擊右上的<span class="am-icon-download am-text-primary"> 下載</span> 按鈕進行下載。</li>
+              <li tkey="tkey_tutorial_3">耐心等待下載完成並解壓縮。</li>
+              <li tkey="tkey_tutorial_4">將gui資料夾複製到<code>res_mods/__版本號__/</code>裡即可。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mixitup" class="mixitup">
+    <div class="filter-group">
+      <div class="am-btn-group">
+        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="filterReset();" tkey="tkey_filter_all">全部顯示</button>
+      </div>
+      <div class="am-btn-group" data-am-button>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".japan" tkey="tkey_filter_japan">日本
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".usa" tkey="tkey_filter_usa">美國
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".ussr" tkey="tkey_filter_ussr">蘇聯
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".germany" tkey="tkey_filter_germany">德國
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".uk" tkey="tkey_filter_uk">英國
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".pan_asia" tkey="tkey_filter_pan_asia">泛亞
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".france" tkey="tkey_filter_france">法國
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".italia" tkey="tkey_filter_italia">義大利
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="nation" value=".commonwealth" tkey="tkey_filter_commonwealth">聯邦
+        </label>
+      </div>
+      <div class="am-btn-group" data-am-button>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="type" value=".destroyer" tkey="tkey_filter_destroyer">驅逐艦
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="type" value=".cruiser" tkey="tkey_filter_cruiser">巡洋艦
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="type" value=".battleship" tkey="tkey_filter_battleship">戰艦
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="type" value=".aircarrier" tkey="tkey_filter_aircarrier">航空母艦
+        </label>
+      </div>
+      <div class="am-btn-group" data-am-button>
+        <label class="am-btn am-btn-primary am-btn-sm am-round">
+          <input type="radio" class="options" name="extra" value=".change" tkey="tkey_filter_change">
+          <span class="am-icon-paint-brush"></span>可更替
+        </label>
+        <label class="am-btn am-btn-primary am-btn-sm am-round am-icon-premium">
+          <input type="radio" class="options" name="extra" value=".premium" tkey="tkey_filter_premium">
+          <img src="assets/images/icons/premium_icon.png">加值艦
+        </label>
+      </div>
+      <div class="am-btn-group">
+        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="reset();" tkey="tkey_filter_reset">
+          <span class="am-icon-refresh"></span>回復預設
+        </button>
+      </div>
+    </div>
+    <div id="Container">
+      <template id="shipBox">
+        <div class="mix">
+          <p class="ship">
+            <span class="tier">__TIER__</span>__NAME__</p>
+          <div class="img_container">
+            <div class="addon">
+              <img src="__SHIP_PREVIEWS__">
+            </div>
+          </div>
+          <select name="__ID__" data-am-selected>
+            <optgroup label="__BAND__">
+              <option value="__ID__-0">【__BAND__】__NAME__</option>
+            </optgroup>
+          </select>
+        </div>
+      </template>
+    </div>
+  </div>
+  <div id="about" class="about">
+    <div class="am-g am-container">
+      <div class="am-u-lg-12">
+        <h2 class="about-title about-color" tkey="tkey_about_section">更新紀錄與詳細資訊</h2>
+        <div class="am-g about-box">
+          <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
+            <h4 class="about-color" tkey="tkey_contact_title"><i class="am-icon-paper-plane"></i> 聯絡我們</h4>
+            <p tkey="tkey_contact_content">
+              若您發現任何問題請至<a href="https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues">Github</a>建立Issues回報！<br>（網站Bug、艦船缺漏、素材提供、功能建議等）
+            </p>
+            <h4 class="about-color" tkey="tkey_special_thanks"><i class="am-icon-question-circle"></i> 特別感謝</h4>
+            <div class="am-scrollable-vertical">
+              <ul class="am-list am-list-static am-list-border">
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>】- 碧藍航線立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a>】- 碧藍航線立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a>】- 鋼鐵少女立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a>】- 鋼鐵少女立繪提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a>】- 新船資訊提供</li>
+                <li><i class="am-icon-user am-icon-fw"></i>【<a href="http://srarithmetic.com/">Nacht</a>】- 更新紀錄與詳細資訊背景圖提供 <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460"><i class="am-icon-external-link"></i></a></li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://victorybelles.tumblr.com/">Victory Belles</a>】- Victory Belles立繪提供</li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a>】- 艦隊收藏立繪提供</li>
+                <li><i class="am-icon-globe am-icon-fw"></i>【<a href="https://www.zjsnrwiki.com/wiki">艦R百科</a>】- 戰艦少女立繪提供</li>
+              </ul>
+            </div>
+            <hr class="am-article-divider am-show-sm-only">
+          </div>
+          <div class="am-u-lg-6 am-u-md-6 am-u-sm-12">
+            <h4 class="about-color" tkey="tkey_log_title"><i class="am-icon-list-ul"></i> 更新紀錄</h4>
+            <div class="am-scrollable-vertical update">
+              <ul class="am-list am-list-static am-list-border">
+                <template id="updateLog">
+                  <li>
+                    <span>__LEVEL__</span>
+                    <small>__TIME__</small>
+                    <ul class="logs">
+                      <li>__LOG__</li>
+                    </ul>
+                  </li>
+                </template>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="charts" class="charts">
+    <div class="am-g am-container">
+      <div class="am-u-lg-12">
+        <h2 class="charts-title" tkey="tkey_statistics">統計數據與萌化進度</h2>
+        <div class="am-g">
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr yesterday"></span>
+              <h4 class="header-title" tkey="tkey_statistics_yesterday">昨日下載量</h4>
+              <div class="widget-chart">
+                <h2 id="yesterdayDownload"></h2>
+              </div>
+            </div>
+          </div>
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr month"></span>
+              <h4 class="header-title" tkey="tkey_statistics_month">本月下載量</h4>
+              <div class="widget-chart">
+                <h2 id="monthDownload"></h2>
+              </div>
+            </div>
+          </div>
+          <div class="am-u-md-4">
+            <div class="card-box">
+              <span class="text-muted am-fr" tkey="tkey_statistics_start_date">2017年09月04日至今</span>
+              <h4 class="header-title" tkey="tkey_statistics_total">總下載量</h4>
+              <div class="widget-chart">
+                <h2 id="totalDownload"></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title" tkey="tkey_statistics_complete">總體萌化進度</h4>
+              <div class="am-progress am-progress-striped am-active">
+                <div class="am-progress-bar am-progress-bar-success"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title" tkey="tkey_statistics_nation_complete">各國萌化進度</h4>
+              <div id="nationComplete" style="width: 100%;height: 400px;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="am-g">
+          <div class="am-u-md-12">
+            <div class="card-box">
+              <h4 class="header-title" tkey="tkey_statistics_line_chart">每日下載量折線圖</h4>
+              <div id="daily"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div data-am-widget="gotop" class="am-gotop am-gotop-fixed">
+    <a href="#top">
+      <span class="am-gotop-title"></span><i class="am-gotop-icon am-icon-chevron-up"></i>
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>Designed by © 2010 <a href="http://makinoworks.com" target="_blank">MakinoWorks</a>｜<i class="fas fa-globe"></i>
+      <select id="lang" data-am-selected="{dropUp: 1,btnWidth: '100px', btnSize: 'sm',btnStyle: 'link'}">
+        <option value="zh-TW">繁體中文</option>
+      <option value="zh-CN">简体中文</option>
+      <option value="en-US">English</option>
+      <option value="ja">日本語</option>
+      </select>
+    </p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
+  <script src="assets/js/generator.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
+  <script defer src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+  <script defer src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+  <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/ga.js"></script>
+</body>
+
+</html>
