@@ -1,4 +1,17 @@
 const nationList = ["commonwealth", "france", "germany", "italy", "japan", "panasia", "poland", "uk", "usa", "ussr"]
+var completeData = {
+  "commonwealth": [0, 0],
+  "france": [0, 0],
+  "germany": [0, 0],
+  "italy": [0, 0],
+  "japan": [0, 0],
+  "panasia": [0, 0],
+  "poland": [0, 0],
+  "uk": [0, 0],
+  "usa": [0, 0],
+  "ussr": [0, 0]
+}
+
 nationList.forEach(nation => {
   $.get('assets/database/nationShips/' + nation + '.json')
     .then((response) => {
@@ -7,7 +20,7 @@ nationList.forEach(nation => {
           .done(function(shipData) {
 
             //set box ID & data order
-            const content = document.querySelector('#shipBox').content;
+            const content = document.querySelector('#shipBox').content
             content.querySelector('div').setAttribute('id', shipData['id'])
             content.querySelector('div').setAttribute('data-order', shipData['id'])
 
@@ -42,7 +55,7 @@ nationList.forEach(nation => {
             for (let bandIndex = 0; bandIndex < bandList.length; bandIndex++) {
 
               //set box select options
-              const band = bandList[bandIndex];
+              const band = bandList[bandIndex]
               if (shipData[band]) {
                 let optgroup = ['<optgroup label="' + band + '">']
                 $.each(shipData[band], function(optID, optName) {
@@ -52,7 +65,7 @@ nationList.forEach(nation => {
                     var selected = ''
                   }
                   optgroup.push('<option value=' + shipData['id'] + '-' + optID + selected + '>' + optName + '</option>')
-                });
+                })
                 optgroup.push('</optgroup>')
                 content.querySelector('select').innerHTML += optgroup.join('')
               }
@@ -61,10 +74,18 @@ nationList.forEach(nation => {
             //append ship box
             document.querySelector('#Container').appendChild(
               document.importNode(content, true)
-            );
+            )
 
             // generate select
             $('#' + shipData['id'] + ' select').selected('enable')
+
+            // complete done data
+            completeData[nation][0] += 1
+          })
+          .always(function() {
+
+            // complete all data
+            completeData[nation][1] += 1
           })
       })
 

@@ -344,10 +344,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="am-g">
           <div class="am-u-md-4">
             <div class="card-box">
-              <span class="text-muted am-fr today"></span>
-              <h4 class="header-title">本日下載量</h4>
+              <span class="text-muted am-fr yesterday"></span>
+              <h4 class="header-title">昨日下載量</h4>
               <div class="widget-chart">
-                <h2>?次</h2>
+                <h2 id="yesterdayDownload"></h2>
               </div>
             </div>
           </div>
@@ -356,7 +356,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="text-muted am-fr month"></span>
               <h4 class="header-title">本月下載量</h4>
               <div class="widget-chart">
-                <h2>?次</h2>
+                <h2 id="monthDownload"></h2>
               </div>
             </div>
           </div>
@@ -365,7 +365,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="text-muted am-fr">2017年09月04日至今</span>
               <h4 class="header-title">總下載量</h4>
               <div class="widget-chart">
-                <h2>?次</h2>
+                <h2 id="totalDownload"></h2>
               </div>
             </div>
           </div>
@@ -375,7 +375,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="card-box">
               <h4 class="header-title">總體萌化進度</h4>
               <div class="am-progress am-progress-striped am-active">
-                <div class="am-progress-bar am-progress-bar-success" style="width:51%">51%</div>
+                <div class="am-progress-bar am-progress-bar-success"></div>
               </div>
             </div>
           </div>
@@ -426,6 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
   <script defer src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
   <script defer src="assets/js/app.js"></script>
+  <script defer src="assets/js/ga.js"></script>
 </body>
 
 </html>
