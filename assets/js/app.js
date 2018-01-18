@@ -24,6 +24,26 @@ if (Math.random() >= 0.5) {
 /**
  * Download function
  */
+function getBase64FromImageUrl(url, callback) {
+  var img = new Image()
+
+  img.setAttribute('crossOrigin', 'anonymous')
+
+  img.onload = function() {
+    var canvas = document.createElement("canvas")
+    canvas.width = this.width
+    canvas.height = this.height
+
+    var ctx = canvas.getContext("2d")
+    ctx.drawImage(this, 0, 0)
+
+    var dataURL = canvas.toDataURL("image/png").replace(/^data:image\/(png|jpg);base64,/, "")
+    callback(dataURL)
+  }
+
+  img.src = url;
+}
+
 function submit() {
 
   //progress start
@@ -40,15 +60,26 @@ function submit() {
   for (let i = 0; i < selectedList.length; i++) {
     const imageID = selectedList[i].value
     if (imageID.substring(8) != 0) {
+
+      // getBase64FromImageUrl('assets/images/ship_previews/' + imageID + '.png', function(res) {
+      //   ship_previews.file(imageID.substring(0, 7) + '.png', res, {
+      //     base64: true
+      //   })
+      // })
+      // getBase64FromImageUrl('assets/images/ship_previews_ds/' + imageID + '.png', function(res) {
+      //   ship_previews_ds.file(imageID.substring(0, 7) + '.png', res, {
+      //     base64: true
+      //   })
+      // })
+
       let imageFile = $.get('assets/images/ship_previews/' + imageID + '.png')
       ship_previews.file(imageID.substring(0, 7) + '.png', imageFile)
-      let imageFileDS = $.get(
-        'assets/images/ship_previews/' + imageID + '.png'
-      )
+      let imageFileDS = $.get('assets/images/ship_previews_ds/' + imageID + '.png')
       ship_previews_ds.file(imageID.substring(0, 7) + '.png', imageFileDS)
     }
   }
 
+  console.log(zip);
   // download zip
   zip.generateAsync({
       type: 'blob'
