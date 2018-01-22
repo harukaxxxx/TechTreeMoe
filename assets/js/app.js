@@ -24,26 +24,6 @@ if (Math.random() >= 0.5) {
 /**
  * Download function
  */
-function getBase64FromImageUrl(url, callback) {
-  var img = new Image()
-
-  img.setAttribute('crossOrigin', 'anonymous')
-
-  img.onload = function() {
-    var canvas = document.createElement("canvas")
-    canvas.width = this.width
-    canvas.height = this.height
-
-    var ctx = canvas.getContext("2d")
-    ctx.drawImage(this, 0, 0)
-
-    var dataURL = canvas.toDataURL("image/png").replace(/^data:image\/(png|jpg);base64,/, "")
-    callback(dataURL)
-  }
-
-  img.src = url;
-}
-
 function submit() {
 
   //progress start
@@ -55,42 +35,68 @@ function submit() {
   let ship_previews = zip.folder('gui/ship_previews')
   let ship_previews_ds = zip.folder('gui/ship_previews_ds')
 
-  // packing files to zip
+  // generate image list
+  let previewImages = []
+  let previewImages_ds = []
   let selectedList = $('.mixitup select')
   for (let i = 0; i < selectedList.length; i++) {
-    const imageID = selectedList[i].value
-    if (imageID.substring(8) != 0) {
-
-      // getBase64FromImageUrl('assets/images/ship_previews/' + imageID + '.png', function(res) {
-      //   ship_previews.file(imageID.substring(0, 7) + '.png', res, {
-      //     base64: true
-      //   })
-      // })
-      // getBase64FromImageUrl('assets/images/ship_previews_ds/' + imageID + '.png', function(res) {
-      //   ship_previews_ds.file(imageID.substring(0, 7) + '.png', res, {
-      //     base64: true
-      //   })
-      // })
-
-      let imageFile = $.get('assets/images/ship_previews/' + imageID + '.png')
-      ship_previews.file(imageID.substring(0, 7) + '.png', imageFile)
-      let imageFileDS = $.get('assets/images/ship_previews_ds/' + imageID + '.png')
-      ship_previews_ds.file(imageID.substring(0, 7) + '.png', imageFileDS)
-    }
+    previewImages.push('assets/images/ship_previews/' + $('.mixitup select')[i].value + '.png')
+    previewImages_ds.push('assets/images/ship_previews_ds/' + $('.mixitup select')[i].value + '.png')
   }
 
-  console.log(zip);
-  // download zip
-  zip.generateAsync({
-      type: 'blob'
-    })
-    .then(function(content) {
-      saveAs(content, 'res_mod.zip')
+  // for loader loop
+  var index = 0
+  var index_ds = 0
 
-      //progress done
-      $.AMUI.progress.done()
-      $('#submit').button('reset')
-    })
+  // loader
+  function loadAsArrayBuffer(url, callback) {
+    var xhr = new XMLHttpRequest()
+    xhr.open("GET", url)
+    xhr.responseType = "arraybuffer"
+    xhr.onerror = function() {
+      console.debug('xhr ERROR!!')
+    }
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        callback(xhr.response, url)
+      } else {
+        console.debug('xhr load ERROR!!')
+      }
+    }
+    xhr.send()
+  }
+
+  // looping buff and download
+  (function load() {
+    if (index < previewImages.length) {
+      loadAsArrayBuffer(previewImages[index++], function(buffer, url) {
+        var filename = getFilename(url)
+        ship_previews.file(filename, buffer)
+        load()
+      })
+    } else if (index_ds < previewImages_ds.length) {
+      loadAsArrayBuffer(previewImages_ds[index_ds++], function(buffer, url) {
+        var filename = getFilename(url)
+        ship_previews_ds.file(filename, buffer)
+        load()
+      })
+    } else {
+      zip.generateAsync({
+        type: "blob"
+      }).then(function(content) {
+        saveAs(content, 'res_mod.zip')
+
+        //progress done
+        $.AMUI.progress.done()
+        $('#submit').button('reset')
+      })
+    }
+  })()
+
+  // setting file name
+  function getFilename(url) {
+    return url.substr(url.lastIndexOf("/") + 1, 7) + '.png'
+  }
 }
 
 
