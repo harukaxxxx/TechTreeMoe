@@ -24,11 +24,7 @@ switch ($page) {
         <link rel="stylesheet" href="assets/css/amazeui.css" />
         <link rel="stylesheet" href="assets/css/core.css" />
         <link rel="stylesheet" href="assets/css/menu.css" />
-        <link rel="stylesheet" href="assets/css/index.css" />
         <link rel="stylesheet" href="assets/css/admin.css" />
-        <link rel="stylesheet" href="assets/css/page/typography.css" />
-        <link rel="stylesheet" href="assets/css/page/form.css" />
-        <link rel="stylesheet" href="assets/css/component.css" />
     </head>
 
     <body>
