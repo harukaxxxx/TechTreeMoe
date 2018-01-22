@@ -8,19 +8,20 @@
     "change": true,
     "premium": false,
     "arp": false,
-    "November": {
-        "1": "【November】Northampton"
+    "戰艦少女": {
+        "2": "【戰艦少女】Houston",
+        "3": "【戰艦少女】Houston 改",
+        "8": "【戰艦少女】Cleveland"
     },
     "鋼鐵少女": {
         "6": "【鋼鐵少女】Cleveland 改"
-    },
-    "戰艦少女": {
-        "2": "【戰艦少女】Houston",
-        "3": "【戰艦少女】Houston 改"
     },
     "碧藍航線": {
         "4": "【碧藍航線】Northampton",
         "5": "【碧藍航線】Houston",
         "7": "【碧藍航線】Cleveland"
+    },
+    "November": {
+        "1": "【November】Northampton"
     }
 }

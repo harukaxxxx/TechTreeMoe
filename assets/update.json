@@ -1,20 +1,55 @@
 {
+  "129": {
+    "time": "2018/01/22",
+    "level": "FIX",
+    "event": [
+      "從Des Moines移除【November】Helena"
+    ]
+  },
+  "128": {
+    "time": "2018/01/22",
+    "level": "NEW",
+    "event": [
+      "Duke of York",
+      "Gremyashchy",
+      "De Grasse"
+    ]
+  },
+  "127": {
+    "time": "2018/01/22",
+    "level": "UPDATE",
+    "event": [
+      "新增【戰艦少女】Enterprise 甜蜜聖誕Ver.",
+      "新增【戰艦少女】West Virginia 改",
+      "新增【戰艦少女】Maryland 試驗型改良艦裝Ver.",
+      "新增【戰艦少女】Cleveland",
+      "新增【戰艦少女】Pensacola 改",
+      "新增【戰艦少女】Des Moines",
+      "新增【戰艦少女】古鷹 改",
+      "新增【戰艦少女】加古 改",
+      "新增【戰艦少女】香取 改"
+      "新增【戰艦少女】Duke of York",
+      "新增【戰艦少女】Duke of York 騎士之禮Ver.",
+      "新增【戰艦少女】De Grasse",
+      "新增【戰艦少女】Gremyashchy"
+    ]
+  },
   "126": {
-    "time": "2017/01/22",
+    "time": "2018/01/22",
     "level": "IMPORTANT",
     "event": [
       "下載功能已修復完畢！！<br />感謝大家耐心的等待！！"
     ]
   },
   "125": {
-    "time": "2017/01/09",
+    "time": "2018/01/09",
     "level": "IMPORTANT",
     "event": [
       "下載功能短時間內無法修復，暫時關閉下載功能！<br />造成不便還請見諒！！"
     ]
   },
   "124": {
-    "time": "2017/01/05",
+    "time": "2018/01/05",
     "level": "NEW",
     "event": [
       "Roma",

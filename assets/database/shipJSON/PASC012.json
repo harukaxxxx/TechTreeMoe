@@ -10,9 +10,10 @@
     "arp": false,
     "戰艦少女": {
         "1": "【戰艦少女】Pensacola",
-        "2": "【戰艦少女】Salt Lake City"
+        "2": "【戰艦少女】Salt Lake City",
+        "4": "【戰艦少女】Pensacola 改"
     },
-    "Victory Belles": {
+    "Victory_Belles": {
         "3": "【Victory Belles】Salt Lake City"
     }
 }
