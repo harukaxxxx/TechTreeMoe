@@ -1,1 +1,22 @@
-{"pisc506":{"name":"Duca d'Aosta","tier":"VI","type":"cruiser"},"pisc507":{"name":"Abruzzi","tier":"VII","type":"cruiser"},"pisb505":{"name":"Giulio Cesare","tier":"V","type":"battleship"},"pisb508":{"name":"Roma","tier":"VIII","type":"battleship"}}
+{
+  "pisc506": {
+    "name": "Duca d'Aosta",
+    "tier": "VI",
+    "type": "cruiser"
+  },
+  "pisc507": {
+    "name": "Abruzzi",
+    "tier": "VII",
+    "type": "cruiser"
+  },
+  "pisb505": {
+    "name": "Giulio Cesare",
+    "tier": "V",
+    "type": "battleship"
+  },
+  "pisb508": {
+    "name": "Roma",
+    "tier": "VIII",
+    "type": "battleship"
+  }
+}

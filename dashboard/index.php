@@ -75,11 +75,10 @@ if (in_array($page, $open_pages)) {
             <i class="fa fa-bars" aria-hidden="true"></i>
         </a>
 
-        <script type="text/javascript" src="assets/js/jquery-2.1.0.js"></script>
-        <script type="text/javascript" src="assets/js/amazeui.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-        <script src="../assets/js/mixitup.min.js"></script>
-        <script type="text/javascript" src="assets/js/echarts.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
         <script type="text/javascript" src="assets/js/scripts.js"></script>
     </body>
 

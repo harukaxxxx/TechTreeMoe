@@ -1,1 +1,7 @@
-{"pwsd501":{"name":"Błyskawica","tier":"VII","type":"destroyer"}}
+{
+  "pwsd501": {
+    "name": "Błyskawica",
+    "tier": "VII",
+    "type": "destroyer"
+  }
+}

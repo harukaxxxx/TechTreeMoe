@@ -38,4 +38,4 @@ switch ($_POST['nation']) {
         break;
 }
 $data = json_encode($_POST, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-file_put_contents("../../database/$name.json", $data);
+file_put_contents("../../assets/database/shipJSON/$name.json", $data);

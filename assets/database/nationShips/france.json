@@ -1,117 +1,117 @@
 {
-    "pfsd605": {
-        "name": "Cyclone",
-        "tier": "V",
-        "type": "destroyer"
-    },
-    "pfsd506": {
-        "name": "Aigle",
-        "tier": "VI",
-        "type": "destroyer"
-    },
-    "pfsc101": {
-        "name": "Bougainville",
-        "tier": "I",
-        "type": "cruiser"
-    },
-    "pfsc102": {
-        "name": "Jurien",
-        "tier": "II",
-        "type": "cruiser"
-    },
-    "pfsc103": {
-        "name": "Friant",
-        "tier": "III",
-        "type": "cruiser"
-    },
-    "pfsc104": {
-        "name": "Duguay-Trouin",
-        "tier": "IV",
-        "type": "cruiser"
-    },
-    "pfsc105": {
-        "name": "Émile Bertin",
-        "tier": "V",
-        "type": "cruiser"
-    },
-    "pfsc506": {
-        "name": "De Grasse",
-        "tier": "VI",
-        "type": "cruiser"
-    },
-    "pfsc106": {
-        "name": "La Galissonnière",
-        "tier": "VI",
-        "type": "cruiser"
-    },
-    "pfsc107": {
-        "name": "Algérie",
-        "tier": "VII",
-        "type": "cruiser"
-    },
-    "pfsc108": {
-        "name": "Charles Martel",
-        "tier": "VIII",
-        "type": "cruiser"
-    },
-    "pfsc109": {
-        "name": "Saint-Louis",
-        "tier": "IX",
-        "type": "cruiser"
-    },
-    "pfsc110": {
-        "name": "Henri IV",
-        "tier": "X",
-        "type": "cruiser"
-    },
-    "pfsb103": {
-        "name": "Turenne",
-        "tier": "III",
-        "type": "battleship"
-    },
-    "pfsb104": {
-        "name": "Courbet",
-        "tier": "IV",
-        "type": "battleship"
-    },
-    "pfsb105": {
-        "name": "Bretagne",
-        "tier": "V",
-        "type": "battleship"
-    },
-    "pfsb506": {
-        "name": "Dunkerque",
-        "tier": "VI",
-        "type": "battleship"
-    },
-    "pfsb106": {
-        "name": "Normandie",
-        "tier": "VI",
-        "type": "battleship"
-    },
-    "pfsb107": {
-        "name": "Lyon",
-        "tier": "VII",
-        "type": "battleship"
-    },
-    "pfsb508": {
-        "name": "Gascogne",
-        "tier": "VIII",
-        "type": "battleship"
-    },
-    "pfsb108": {
-        "name": "Richelieu",
-        "tier": "VIII",
-        "type": "battleship"
-    },
-    "pfsb109": {
-        "name": "Alsace",
-        "tier": "IX",
-        "type": "battleship"
-    },
-    "pfsb110": {
-        "name": "France",
-        "tier": "X",
-        "type": "battleship"
-    }
+  "pfsd605": {
+    "name": "Cyclone",
+    "tier": "V",
+    "type": "destroyer"
+  },
+  "pfsd506": {
+    "name": "Aigle",
+    "tier": "VI",
+    "type": "destroyer"
+  },
+  "pfsc101": {
+    "name": "Bougainville",
+    "tier": "I",
+    "type": "cruiser"
+  },
+  "pfsc102": {
+    "name": "Jurien",
+    "tier": "II",
+    "type": "cruiser"
+  },
+  "pfsc103": {
+    "name": "Friant",
+    "tier": "III",
+    "type": "cruiser"
+  },
+  "pfsc104": {
+    "name": "Duguay-Trouin",
+    "tier": "IV",
+    "type": "cruiser"
+  },
+  "pfsc105": {
+    "name": "Émile Bertin",
+    "tier": "V",
+    "type": "cruiser"
+  },
+  "pfsc506": {
+    "name": "De Grasse",
+    "tier": "VI",
+    "type": "cruiser"
+  },
+  "pfsc106": {
+    "name": "La Galissonnière",
+    "tier": "VI",
+    "type": "cruiser"
+  },
+  "pfsc107": {
+    "name": "Algérie",
+    "tier": "VII",
+    "type": "cruiser"
+  },
+  "pfsc108": {
+    "name": "Charles Martel",
+    "tier": "VIII",
+    "type": "cruiser"
+  },
+  "pfsc109": {
+    "name": "Saint-Louis",
+    "tier": "IX",
+    "type": "cruiser"
+  },
+  "pfsc110": {
+    "name": "Henri IV",
+    "tier": "X",
+    "type": "cruiser"
+  },
+  "pfsb103": {
+    "name": "Turenne",
+    "tier": "III",
+    "type": "battleship"
+  },
+  "pfsb104": {
+    "name": "Courbet",
+    "tier": "IV",
+    "type": "battleship"
+  },
+  "pfsb105": {
+    "name": "Bretagne",
+    "tier": "V",
+    "type": "battleship"
+  },
+  "pfsb506": {
+    "name": "Dunkerque",
+    "tier": "VI",
+    "type": "battleship"
+  },
+  "pfsb106": {
+    "name": "Normandie",
+    "tier": "VI",
+    "type": "battleship"
+  },
+  "pfsb107": {
+    "name": "Lyon",
+    "tier": "VII",
+    "type": "battleship"
+  },
+  "pfsb508": {
+    "name": "Gascogne",
+    "tier": "VIII",
+    "type": "battleship"
+  },
+  "pfsb108": {
+    "name": "Richelieu",
+    "tier": "VIII",
+    "type": "battleship"
+  },
+  "pfsb109": {
+    "name": "Alsace",
+    "tier": "IX",
+    "type": "battleship"
+  },
+  "pfsb110": {
+    "name": "France",
+    "tier": "X",
+    "type": "battleship"
+  }
 }

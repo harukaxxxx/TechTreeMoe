@@ -46,11 +46,11 @@
         <div class="am-g">
         <div class='am-u-md-12'>
 <?php
-$allFiles = scandir('../database');
+$allFiles = scandir('../assets/database/shipJSON');
 $files = array_diff($allFiles, array('.', '..', '.DS_Store'));
 foreach ($files as $file) {
     $simpleNation = substr($file, 1, 1);
-    $json = file_get_contents("../database/$file");
+    $json = file_get_contents("../assets/database/shipJSON/$file");
     $data = json_decode($json);
     $collapseData = "'{parent: \"#$data->id\", target: \"#col$data->id\"}'";
 
@@ -139,7 +139,7 @@ foreach ($files as $file) {
                                                                 <div class='am-modal-dialog'>
                                                                     <div class='am-modal-hd'>$option</div>
                                                                     <div class='am-modal-bd'>
-                                                                        <img class='am-img-thumbnail' src='../images/ship_previews_web/$data->id-$key.png'>
+                                                                        <img class='am-img-thumbnail' src='../assets/images/ship_previews_web/$data->id-$key.png'>
                                                                     </div>
                                                                     <div class='am-modal-footer'>
                                                                         <span class='am-modal-btn'>關閉</span>
@@ -201,5 +201,3 @@ foreach ($files as $file) {
         </div>
     </div>
 </div>
-
-

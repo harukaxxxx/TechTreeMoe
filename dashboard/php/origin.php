@@ -1,5 +1,5 @@
 <?php
-$dirJSON = '../../database';
+$dirJSON = '../../assets/database/shipJSON';
 $dirOrigin = '../../resource/Material/ship_previews';
 $dirTarget = '../../images/ship_previews_origin';
 $List = scandir($dirJSON);

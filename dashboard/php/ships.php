@@ -40,18 +40,16 @@
 
 
               <?php
-            $dir    = '../assets/datas/ships/';
-            $allFiles = scandir($dir); 
+            $dir    = '../assets/database/nationShips/';
+            $allFiles = scandir($dir);
             $files = array_diff($allFiles, array('.', '..','.DS_Store'));
-            
+
             $i =0;
             foreach ($files as $file) {
               $nation = substr($file,0,strlen($file)-5);
-
-              $json = file_get_contents("../assets/datas/ships/$file");
+              $json = file_get_contents("../assets/database/nationShips/$file");
               $sdata = json_decode($json);
-              $ncount = count((array)$sdata->$nation);
-              foreach ($sdata->$nation as $id => $value) {
+              foreach ($sdata as $id => $value) {
                 $i++;
                 echo "<tr id='$id'>
                 <td class='name'>$value->name</td>
@@ -61,12 +59,12 @@
                 <td class='nation'>$nation</td>
                 ";
 
-                if (!file_exists("../database/$id.json")) {
+                if (!file_exists("../assets/database/shipJSON/$id.json")) {
                   echo "<td class='new'><button type='button' class='am-btn am-btn-primary am-round am-btn-xs' onclick='newShip(".'"'.$id.'"'.");'>新增</button></td>";
                 }else {
                   echo "<td class='new'><button type='button' class='am-btn am-btn-default am-round am-btn-xs' disabled>新增</button></td>";
                 }
-                
+
               }
               echo "</tr>";
             }

@@ -17,5 +17,5 @@ if ($_POST['arp'] === 'true') {
     $_POST['arp'] = false;
 }
 $data = json_encode($_POST,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-file_put_contents("../../database/$id.json", $data);
+file_put_contents("../../assets/database/shipJSON/$id.json", $data);
 ?>

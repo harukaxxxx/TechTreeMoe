@@ -1,1 +1,67 @@
-{"pzsd102":{"name":"Long Jiang","tier":"II","type":"destroyer"},"pzsd103":{"name":"Phra Ruang","tier":"III","type":"destroyer"},"pzsd104":{"name":"Shen Yang","tier":"IV","type":"destroyer"},"pzsd105":{"name":"Jian Wei","tier":"V","type":"destroyer"},"pzsd506":{"name":"Anshan","tier":"VI","type":"destroyer"},"pzsd106":{"name":"Fu Shun","tier":"VI","type":"destroyer"},"pzsd107":{"name":"Gadjah Mada","tier":"VII","type":"destroyer"},"pzsd108":{"name":"Hsien Yang","tier":"VIII","type":"destroyer"},"pzsd508":{"name":"Lo Yang","tier":"VIII","type":"destroyer"},"pzsd109":{"name":"Chung Mu","tier":"IX","type":"destroyer"},"pzsd110":{"name":"Hsiang Yang","tier":"X","type":"destroyer"},"pzsc101":{"name":"Cheng An","tier":"I","type":"cruiser"},"pzsc506":{"name":"Huanghe","tier":"VI","type":"cruiser"}}
+{
+  "pzsd102": {
+    "name": "Longjiang",
+    "tier": "II",
+    "type": "destroyer"
+  },
+  "pzsd103": {
+    "name": "Phra Ruang",
+    "tier": "III",
+    "type": "destroyer"
+  },
+  "pzsd104": {
+    "name": "Shenyang",
+    "tier": "IV",
+    "type": "destroyer"
+  },
+  "pzsd105": {
+    "name": "Jianwei",
+    "tier": "V",
+    "type": "destroyer"
+  },
+  "pzsd506": {
+    "name": "Anshan",
+    "tier": "VI",
+    "type": "destroyer"
+  },
+  "pzsd106": {
+    "name": "Fushun",
+    "tier": "VI",
+    "type": "destroyer"
+  },
+  "pzsd107": {
+    "name": "Gadjah Mada",
+    "tier": "VII",
+    "type": "destroyer"
+  },
+  "pzsd108": {
+    "name": "Hsienyang",
+    "tier": "VIII",
+    "type": "destroyer"
+  },
+  "pzsd508": {
+    "name": "Loyang",
+    "tier": "VIII",
+    "type": "destroyer"
+  },
+  "pzsd109": {
+    "name": "Chung Mu",
+    "tier": "IX",
+    "type": "destroyer"
+  },
+  "pzsd110": {
+    "name": "Yueyang",
+    "tier": "X",
+    "type": "destroyer"
+  },
+  "pzsc101": {
+    "name": "Chengan",
+    "tier": "I",
+    "type": "cruiser"
+  },
+  "pzsc506": {
+    "name": "Huanghe",
+    "tier": "VI",
+    "type": "cruiser"
+  }
+}
