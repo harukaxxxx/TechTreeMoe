@@ -136,6 +136,10 @@
   border-bottom: 1px dotted;
 }
 
+.footer .icon {
+  border: 0;
+}
+
 .footer .hidden {
   border-bottom: 0;
 }

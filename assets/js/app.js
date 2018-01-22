@@ -50,6 +50,7 @@ function submit() {
 
   // loader
   function loadAsArrayBuffer(url, callback) {
+    $.AMUI.progress.inc(0.01);
     var xhr = new XMLHttpRequest()
     xhr.open("GET", url)
     xhr.responseType = "arraybuffer"
