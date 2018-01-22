@@ -51,12 +51,12 @@ switch ($page) {
                                 <span class="am-icon-table"></span> 艦船列表</a>
                         </li>
                         <li>
-                            <a href="php/copy_assistant.php">
-                                <span class="am-icon-terminal"></span> 原圖複製輔助</a>
+                            <a href="php/copy_assistant.php" target="_blank">
+                                <span class="am-icon-terminal"></span> 作業複製輔助</a>
                         </li>
                         <li>
-                            <a href="php/origin.php">
-                                <span class="am-icon-terminal"></span> 作業複製輔助</a>
+                            <a href="php/origin.php" target="_blank">
+                                <span class="am-icon-terminal"></span> 原圖複製輔助</a>
                         </li>
                     </ul>
                 </div>

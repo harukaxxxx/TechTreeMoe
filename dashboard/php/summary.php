@@ -36,6 +36,7 @@
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".germany">德國</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".uk">英國</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".pan_asia">泛亞</button>
+        <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".poland">波蘭</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".france">法國</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".italia">義大利</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".commonwealth">聯邦</button>

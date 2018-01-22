@@ -1,7 +1,7 @@
 <?php
 $dirJSON = '../../assets/database/shipJSON';
 $dirOrigin = '../../resource/Material/ship_previews';
-$dirTarget = '../../images/ship_previews_origin';
+$dirTarget = '../../assets/images/ship_previews_origin';
 $List = scandir($dirJSON);
 
 foreach($List as $ship){
