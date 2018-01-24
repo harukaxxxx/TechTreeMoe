@@ -4,7 +4,7 @@
     "tier": "Ⅶ",
     "nation": "usa",
     "type": "cruiser",
-    "default": 2,
+    "default": 4,
     "change": true,
     "premium": false,
     "arp": false,

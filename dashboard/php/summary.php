@@ -99,7 +99,7 @@ foreach ($files as $file) {
                                                         <label class='am-checkbox-inline'><input type='checkbox' name='arp'$arp> arp</label>
                                                     </div>
                                                     ";
-    $bandArray = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', 'November', '蒼藍鋼鐵戰艦', 'Victory Belles', '高校艦隊', '最終戰艦', '同人作品', '萌萌模式'];
+    $bandArray = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '高校艦隊', '最終戰艦', '同人作品', '萌萌模式'];
     echo $popover;
     foreach ($bandArray as $band) {
         echo "<div class='am-form-group m-b-5' name='$band'>

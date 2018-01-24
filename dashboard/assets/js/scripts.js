@@ -58,7 +58,7 @@ switch (query) {
         "premium": premium,
         "arp": arp
       };
-      var band = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', 'November', '蒼藍鋼鐵戰艦', 'Victory Belles', '高校艦隊', '最終戰艦', '萌萌模式', '同人作品'];
+      var band = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '高校艦隊', '最終戰艦', '萌萌模式', '同人作品'];
       band.forEach(function(band) {
         var optionBand = $(select + " [name='" + band + "'] [name='band']").text();
         if (optionBand) {
