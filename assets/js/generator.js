@@ -43,7 +43,7 @@ nationList.forEach(nation => {
             content.querySelector('p').innerHTML = '<span class="tier">' + shipData['tier'] + '</span>' + shipData['name']
 
             //set box image
-            content.querySelector('img').src = 'assets/images/ship_previews/' + shipData['id'].toUpperCase() + '-' + shipData['default'] + '.png'
+            content.querySelector('img').src = 'assets/images/ship_previews_web/' + shipData['id'].toUpperCase() + '-' + shipData['default'] + '.png'
 
             //set box select
             content.querySelector('select').setAttribute('name', shipData['id'])
