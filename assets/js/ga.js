@@ -1,6 +1,6 @@
 const GA_client_id = '84771301340-kj0vn6hmsg1sskovhnk5homgfntrhhbi.apps.googleusercontent.com'
 const GA_client_secret = 'j2W1KNkIw5U2gmc5mBp7FKep'
-const GA_refresh_token = '1/JCj_71ffI2DEMDao0NZKm2G7ShBlbejHbVLPusxZITYVUzNfANkwQCX0ahNxrLkd'
+const GA_refresh_token = '1/dqri0rIzW4I3MS7-5iGTWV0ckP-8gSGnslB8O8S3_YA'
 let GA_access_token = ''
 
 function getAccessToken() {
