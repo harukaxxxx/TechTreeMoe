@@ -566,13 +566,13 @@ function completeChart() {
       case 'germany':
         nation = '德國(Germany)'
         break;
-      case 'italy':
+      case 'italia':
         nation = '義大利(Italia)'
         break;
       case 'japan':
         nation = '日本(Japan)'
         break;
-      case 'panasia':
+      case 'pan_asia':
         nation = '泛亞(Pan-Asia)'
         break;
       case 'poland':
