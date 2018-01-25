@@ -54,6 +54,10 @@ switch ($page) {
                             <a href="php/origin.php" target="_blank">
                                 <span class="am-icon-terminal"></span> 原圖複製輔助</a>
                         </li>
+                        <li>
+                            <a href="php/regen.php" target="_blank">
+                                <span class="am-icon-terminal"></span> JSON列表更新</a>
+                        </li>
                     </ul>
                 </div>
             </div>
