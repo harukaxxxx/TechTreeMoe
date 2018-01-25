@@ -38,7 +38,7 @@ $.get('assets/database/allJSON.json')
   .then((response) => {
 
     // create container for items
-    var itemContainer = document.createElement('div');
+    var itemContainer =document.querySelector('#Container')
 
     // looping to generate items
     $.each(response, function (i) {
