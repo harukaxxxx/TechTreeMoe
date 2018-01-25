@@ -1,6 +1,6 @@
 <?php
-$dirOrigin = '../../resource/Material/ship_previews';
-$dirTarget = '../../resource/Material/padding';
+$dirOrigin = '../../resource/ship_previews';
+$dirTarget = '../../resource/padding';
 $list = scandir($dirTarget);
 
 foreach ($list as $filename) {
