@@ -34,10 +34,13 @@ nationList.forEach(nation => {
 /*
 * generating items
 */
-$.get('assets/database/allJSON.json').then((response) => {
-})
 $.get('assets/database/allJSON.json')
   .then((response) => {
+
+    // create container for items
+    var itemContainer = document.createElement('div');
+
+    // looping to generate items
     $.each(response, function (i) {
       $.get('assets/database/shipJSON/' + response[i])
         .done(function (shipData) {
@@ -95,11 +98,9 @@ $.get('assets/database/allJSON.json')
             }
           }
 
-          //append ship box
-          document.querySelector('#Container').appendChild(
-            document.importNode(content, true)
-          )
-
+          // collect items into container
+          itemContainer.appendChild(document.importNode(content, true));
+          
           // generate select
           $('#' + shipData['id'] + ' select').selected('enable')
 
@@ -107,4 +108,7 @@ $.get('assets/database/allJSON.json')
           completeData[nation][0] += 1
         })
     })
+
+    // append content into document
+    document.querySelector('#Container').appendChild(itemContainer)
   })
