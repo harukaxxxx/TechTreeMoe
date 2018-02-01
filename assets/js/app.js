@@ -1,5 +1,5 @@
 //change img when option changed
-$('.mixitup select').on('change', function() {
+$(document).on('change', '.mixitup select', function () {
   var ship = this.name
   var ship_img = this.value
   if (ship_img.substring(8) == 0) {
@@ -7,7 +7,7 @@ $('.mixitup select').on('change', function() {
   } else {
     var origin = 'web'
   }
-  $('#' + ship + ' img').fadeOut(400, function() {
+  $('#' + ship + ' img').fadeOut(400, function () {
     $('#' + ship + ' img').attr('src', 'assets/images/ship_previews_' + origin + '/' + ship_img + '.png')
   })
   $('#' + ship + ' img').fadeIn(400)
@@ -20,6 +20,66 @@ if (Math.random() >= 0.5) {
   $('.intro').css('background-image', 'url(assets/images/intro_bg/right/intro_bg' + Math.floor(Math.random() * 4 + 1) + '.jpg)').css('background-position', 'right')
 }
 
+function alertBar(message) {
+  $('.am-alert').css('display', 'none')
+  $('.am-alert p').text(message)
+  $('.am-alert').fadeIn(function () {
+    $(this).delay(3000).fadeOut()
+  })
+}
+
+/*
+ * local storage
+ */
+
+//compatibility check
+if (!store.enabled) {
+  alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
+}
+
+//save
+function dataSave() {
+  let save = []
+  let selectedList = $('.mixitup select')
+  for (let i = 0; i < selectedList.length; i++) {
+    save.push($('.mixitup select')[i].value)
+  }
+  store.set('save', save)
+
+  //alert
+  alertBar('已經將可選項儲存至您的瀏覽器！')
+}
+
+//load
+function restore() {
+  var save = store.get('save')
+  if (save != undefined) {
+    save.forEach(function (saveData) {
+      var id = saveData.substring(0, 7)
+      $('#' + id + ' select').find(':selected').attr('selected', false)
+      var options = $('#' + id + ' select').find('option')
+      var oc = options.length
+      for (var k = 0; k < oc; k++) {
+        if (options.eq(k).val() == saveData) {
+          options.eq(k).prop('selected', true)
+          $('#' + id + ' select').trigger('changed.selected.amui')
+        }
+      }
+    }, this)
+  }
+
+  //alert
+  alertBar('已經回復您的可選項！')
+}
+
+//reset
+function reset() {
+  if (confirm('這將清空你的儲存選擇並回復到預設！確定要回復嗎？')) {
+    store.clear()
+    location.reload()
+  }
+}
+
 
 /**
  * Download function
@@ -29,6 +89,9 @@ function submit() {
   //progress start
   $.AMUI.progress.start()
   $('#submit').button('loading')
+
+  //save data
+  dataSave()
 
   //generate zip structure
   let zip = new JSZip()
@@ -54,10 +117,10 @@ function submit() {
     var xhr = new XMLHttpRequest()
     xhr.open("GET", url)
     xhr.responseType = "arraybuffer"
-    xhr.onerror = function() {
+    xhr.onerror = function () {
       console.debug('xhr ERROR!!')
     }
-    xhr.onload = function() {
+    xhr.onload = function () {
       if (xhr.status === 200) {
         callback(xhr.response, url)
       } else {
@@ -70,13 +133,13 @@ function submit() {
   // looping buff and download
   (function load() {
     if (index < previewImages.length) {
-      loadAsArrayBuffer(previewImages[index++], function(buffer, url) {
+      loadAsArrayBuffer(previewImages[index++], function (buffer, url) {
         var filename = getFilename(url)
         ship_previews.file(filename, buffer)
         load()
       })
     } else if (index_ds < previewImages_ds.length) {
-      loadAsArrayBuffer(previewImages_ds[index_ds++], function(buffer, url) {
+      loadAsArrayBuffer(previewImages_ds[index_ds++], function (buffer, url) {
         var filename = getFilename(url)
         ship_previews_ds.file(filename, buffer)
         load()
@@ -84,7 +147,7 @@ function submit() {
     } else {
       zip.generateAsync({
         type: "blob"
-      }).then(function(content) {
+      }).then(function (content) {
         saveAs(content, 'res_mod.zip')
 
         //progress done
@@ -106,13 +169,13 @@ function submit() {
  */
 var mixer = mixitup('#Container', {
   callbacks: {
-    onMixBusy: function(state) {
+    onMixBusy: function (state) {
       $('.loader_bg').fadeIn(500)
     },
-    onMixStart: function(state, futureState) {
+    onMixStart: function (state, futureState) {
       $.AMUI.progress.start()
     },
-    onMixEnd: function(state) {
+    onMixEnd: function (state) {
       $.AMUI.progress.done()
       $('.loader_bg').fadeOut(500)
     }
@@ -127,55 +190,19 @@ var mixer = mixitup('#Container', {
   }
 })
 
-
-/*
- * local storage
- */
-var store = $.AMUI.store
-if (!store.enabled) {
-  alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
-}
-
-mixer.show().then(function(state) {
-  //default data
-  var intList = []
-  var selectedList = $('.mixitup select')
-  var c = selectedList.length
-  for (var i = 0; i < c; i++) {
-    var value = selectedList[i].value
-    intList.push(value)
-  }
-  store.set('intList', intList)
-
-  //restore data
-  function restore(list) {
-    var save = store.get(list)
-    save.forEach(function(option) {
-      var id = option.substring(0, 7)
-      $('#' + id + ' select')
-        .find(':selected')
-        .attr('selected', false)
-      var options = $('#' + id + ' select').find('option')
-      var oc = options.length
-      for (var k = 0; k < oc; k++) {
-        if (options.eq(k).val() == option) {
-          options.eq(k).prop('selected', true)
-        }
-      }
-    }, this)
-  }
-})
+//run mixer
+mixer.show()
 
 
 /*
  * filter button
  */
-$(window).on('load', function() {
+$(document).on('load', function () {
   var $options = $('.filter-group .options')
   var $nation = $('[name="nation"]')
   var $type = $('[name="type"]')
   var $extra = $('[name="extra"]')
-  $options.on('change', function() {
+  $options.on('change', function () {
     var nation = $nation.filter(':checked').val()
     var type = $type.filter(':checked').val()
     var extra = $extra.filter(':checked').val()
@@ -202,14 +229,6 @@ function filterReset() {
   $('.filter-group label').removeClass('am-active')
 }
 
-//set default
-function reset() {
-  if (confirm('這將清空你的儲存選擇並回復到預設！確定要回復嗎？')) {
-    store.clear()
-    location.reload()
-  }
-}
-
 
 /*
  * multi language
@@ -218,8 +237,8 @@ var langCode = navigator.language
 var langs = ['zh-TW', 'zh-CN', 'en-US', 'ja']
 
 function lang(langCode) {
-  $.getJSON('assets/langs/' + langCode + '.json', function(jsonData) {
-    $.each($('[tkey]'), function(jkey) {
+  $.getJSON('assets/langs/' + langCode + '.json', function (jsonData) {
+    $.each($('[tkey]'), function (jkey) {
       var tkey = $('[tkey]').eq(jkey).attr('tkey')
       var tval = jsonData[tkey]
       $('[tkey]').eq(jkey).html(tval)
@@ -247,7 +266,7 @@ if ($.inArray(langCode, langs) >= 0 && langCode != 'zh-TW') {
 }
 
 //change language
-$('footer select').change(function() {
+$('footer select').change(function () {
   var langCode = $('footer select').val()
   lang(langCode)
 })
@@ -257,8 +276,8 @@ $('footer select').change(function() {
  * Update log
  */
 const content = document.querySelector('#updateLog').content
-$.getJSON('assets/update.json', function(updateData) {
-  $.each(updateData, function(key, updateData) {
+$.getJSON('assets/update.json', function (updateData) {
+  $.each(updateData, function (key, updateData) {
 
     // set time & level
     switch (updateData['level']) {
@@ -299,7 +318,7 @@ $.getJSON('assets/update.json', function(updateData) {
 })
 
 //custom scrollbar
-$(window).on('load', function() {
+$(window).on('load', function () {
   $('.am-scrollable-vertical').mCustomScrollbar({
     theme: 'minimal-dark'
   })
@@ -530,7 +549,7 @@ function completeBar() {
   var doneComplete = 0
 
   //data compute
-  $.each(completeData, function(key, value) {
+  $.each(completeData, function (key, value) {
     doneComplete += value[0]
     totalComplete += value[1]
   })

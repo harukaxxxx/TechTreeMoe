@@ -121,6 +121,19 @@
   background: #fff;
 }
 
+/*alert*/
+
+.am-alert {
+  position: fixed;
+  top: 51px;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 3px;
+  text-align: center;
+  display: none;
+}
+
 /*footer*/
 
 .footer p {

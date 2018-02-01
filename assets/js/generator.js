@@ -12,6 +12,10 @@ var completeData = {
   "ussr": [0, 0]
 }
 
+//init storage
+let store = $.AMUI.store
+store.set('intList',[])
+
 // complete bar all data
 nationList.forEach(nation => {
   $.get('assets/database/nationShips/' + nation + '.json')
@@ -32,13 +36,13 @@ nationList.forEach(nation => {
 })
 
 /*
-* generating items
-*/
+ * generating items
+ */
 $.get('assets/database/allJSON.json')
   .then((response) => {
 
     // create container for items
-    var itemContainer =document.querySelector('#Container')
+    var itemContainer = document.querySelector('#Container')
 
     // looping to generate items
     $.each(response, function (i) {
@@ -88,6 +92,13 @@ $.get('assets/database/allJSON.json')
               $.each(shipData[band], function (optID, optName) {
                 if (defaultOption == optID) {
                   var selected = ' selected'
+
+                  // set storage intList
+                  if (store.enabled) {
+                    let intList = store.get('intList')
+                    intList.push(shipData['id'] + '-' + optID)
+                    store.set('intList', intList)
+                  }
                 } else {
                   var selected = ''
                 }
@@ -100,7 +111,7 @@ $.get('assets/database/allJSON.json')
 
           // collect items into container
           itemContainer.appendChild(document.importNode(content, true));
-          
+
           // generate select
           $('#' + shipData['id'] + ' select').selected('enable')
 
