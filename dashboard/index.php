@@ -21,9 +21,7 @@ switch ($page) {
         <title>
             <?php echo $title; ?>
         </title>
-        <link rel="stylesheet" href="assets/css/amazeui.css" />
-        <link rel="stylesheet" href="assets/css/core.css" />
-        <link rel="stylesheet" href="assets/css/menu.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/css/amazeui.min.css" />
         <link rel="stylesheet" href="assets/css/admin.css" />
     </head>
 

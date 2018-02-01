@@ -1,9 +1,7 @@
 
 <!-- Begin page -->
 <header class="am-topbar am-topbar-fixed-top">
-    <div class="am-topbar-left am-hide-sm-only">
-        <a href="./" class="logo">TechTreeMoe</a>
-    </div>
+    <div class="am-topbar-left am-hide-sm-only logo">TechTreeMoe</div>
 
     <div class="contain">
         <ul class="am-nav am-navbar-nav am-navbar-left">
@@ -16,7 +14,7 @@
         </ul>
         <ul class="am-nav am-navbar-nav am-navbar-right">
             <li class="hidden-xs am-hide-sm-only">
-                <div class="am-btn-group am-btn-group-sm m-t-10">
+                <div class="am-btn-group am-btn-group-sm">
                     <button type="button" class="am-btn am-btn-primary am-round" onclick="$('.am-panel-collapse').collapse('open');">全部展開</button>
                     <button type="button" class="am-btn am-btn-primary am-round" onclick="$('.am-panel-collapse').collapse('close');">全部收起</button>
                 </div>
@@ -28,7 +26,7 @@
 </header>
 <!-- end page -->
 <div class="content-page container">
-    <div class="am-btn-group am-btn-group-sm m-b-10">
+    <div class="am-btn-group am-btn-group-sm">
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter="all">全顯示</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".japan">日本</button>
         <button type="button" class="am-btn am-btn-primary am-radius" data-filter=".usa">美國</button>
@@ -56,7 +54,7 @@ foreach ($files as $file) {
     $collapseData = "'{parent: \"#$data->id\", target: \"#col$data->id\"}'";
 
     echo "
-                            <div class='card-box m-b-10 mix $data->nation $data->type'>
+                            <div class='card-box mix $data->nation $data->type'>
                                 <div class='am-panel-group am-margin-bottom-0' id='$data->id'>
 
 
@@ -66,7 +64,7 @@ foreach ($files as $file) {
                                         </div>
                                         <div id='col$data->id' class='am-panel-collapse am-collapse'>
                                             <div class='am-panel-bd'>
-                                                <div class='am-input-group am-input-group-sm m-b-5'>
+                                                <div class='am-input-group am-input-group-sm'>
                                                     <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>艦名</span>
                                                     <input type='text' class='am-form-field' name='name' value='$data->name'>
                                                     <span class='am-input-group-label'><i class='am-icon-user am-icon-fw'></i>ID</span>
@@ -78,7 +76,7 @@ foreach ($files as $file) {
                                                 </div>
 
                                                 <form class='am-form'>
-                                                <div class='am-form-group m-b-5'>
+                                                <div class='am-form-group'>
                                                 <label class='am-form-label'>階級：</label>
                                                     ";
     $tiers = ['I', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ', 'Ⅵ', 'Ⅶ', 'Ⅷ', 'Ⅸ', 'Ⅹ'];
@@ -93,7 +91,7 @@ foreach ($files as $file) {
     $premium = ($data->premium) ? ' checked' : '';
     $arp = ($data->arp) ? ' checked' : '';
     echo "
-                                                    <label class='am-form-label m-l-15'>｜　設定：</label>
+                                                    <label class='am-form-label'>｜　設定：</label>
                                                         <label class='am-checkbox-inline'><input type='checkbox' name='change'$change> change</label>
                                                         <label class='am-checkbox-inline'><input type='checkbox' name='premium'$premium> premium</label>
                                                         <label class='am-checkbox-inline'><input type='checkbox' name='arp'$arp> arp</label>
@@ -102,7 +100,7 @@ foreach ($files as $file) {
     $bandArray = ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '高校艦隊', '最終戰艦', '同人作品', '萌萌模式'];
     echo $popover;
     foreach ($bandArray as $band) {
-        echo "<div class='am-form-group m-b-5' name='$band'>
+        echo "<div class='am-form-group' name='$band'>
                                                         <label name='band' band='$band'>$band</label>
                                                         <a class='am-badge am-badge-secondary am-round' onclick='add($data->id," . '"' . $band . '"' . ");'>+</a>";
         if (isset($data->$band)) {
@@ -154,7 +152,7 @@ foreach ($files as $file) {
     }
     echo "
                                                 </form>
-                                                <button type='button' class='am-btn am-btn-primary m-t-5' onclick='submit($data->id);'>驗證</button>
+                                                <button type='button' class='am-btn am-btn-primary' onclick='submit($data->id);'>驗證</button>
                                             </div>
                                         </div>
                                     </div>
