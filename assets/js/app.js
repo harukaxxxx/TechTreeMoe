@@ -20,11 +20,13 @@ if (Math.random() >= 0.5) {
   $('.intro').css('background-image', 'url(assets/images/intro_bg/right/intro_bg' + Math.floor(Math.random() * 4 + 1) + '.jpg)').css('background-position', 'right')
 }
 
-function alertBar(message) {
+function alertBar(message, time) {
   $('.am-alert').css('display', 'none')
-  $('.am-alert p').text(message)
+  $('.am-alert p')[0].innerHTML = message
   $('.am-alert').fadeIn(function () {
-    $(this).delay(3000).fadeOut()
+    if (time) {
+      $(this).delay(time).fadeOut()
+    }
   })
 }
 
@@ -35,6 +37,10 @@ function alertBar(message) {
 //compatibility check
 if (!store.enabled) {
   alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
+} else {
+  if (store.get('save')) {
+    alertBar('發現可選項存擋！是否回復？<a type="button" onclick="restore()"><span class="am-badge am-badge-success am-round am-text-sm">回復</span></a>')
+  }
 }
 
 //save
@@ -47,7 +53,7 @@ function dataSave() {
   store.set('save', save)
 
   //alert
-  alertBar('已經將可選項儲存至您的瀏覽器！')
+  alertBar('已經將可選項儲存至您的瀏覽器！', 3000)
 }
 
 //load
@@ -69,7 +75,7 @@ function restore() {
   }
 
   //alert
-  alertBar('已經回復您的可選項！')
+  alertBar('已經回復您的可選項！', 3000)
 }
 
 //reset
