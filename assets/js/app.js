@@ -7,10 +7,11 @@ $(document).on('change', '.mixitup select', function () {
   } else {
     origin = 'web'
   }
-  $(`#${ship}img`).fadeOut(400, function () {
-    $(`#${ship}img`).attr('src', `assets/images/ship_previews_${origin}/${shipImg}.png`)
+
+  $(`#${ship} img`).fadeOut(400, function () {
+    $(`#${ship} img`).attr('src', `assets/images/ship_previews_${origin}/${shipImg}.png`)
   })
-  $(`#${ship}img`).fadeIn(400)
+  $(`#${ship} img`).fadeIn(400)
 })
 
 // random intro bg
