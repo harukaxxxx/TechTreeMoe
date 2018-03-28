@@ -1,30 +1,30 @@
-//change img when option changed
+// change img when option changed
 $(document).on('change', '.mixitup select', function () {
-  var ship = this.name
-  var ship_img = this.value
-  if (ship_img.substring(8) == 0) {
+  let ship = this.name
+  let shipImg = this.value
+  if (shipImg.substring(8) === '0') {
     var origin = 'origin'
   } else {
-    var origin = 'web'
+    origin = 'web'
   }
-  $('#' + ship + ' img').fadeOut(400, function () {
-    $('#' + ship + ' img').attr('src', 'assets/images/ship_previews_' + origin + '/' + ship_img + '.png')
+  $(`#${ship}img`).fadeOut(400, function () {
+    $(`#${ship}img`).attr('src', `assets/images/ship_previews_${origin}/${shipImg}.png`)
   })
-  $('#' + ship + ' img').fadeIn(400)
+  $(`#${ship}img`).fadeIn(400)
 })
 
-//random intro bg
+// random intro bg
 if (Math.random() >= 0.5) {
   $('.intro').css('background-image', 'url(assets/images/intro_bg/left/intro_bg' + Math.floor(Math.random() * 2 + 1) + '.jpg)').css('background-position', 'left')
 } else {
   $('.intro').css('background-image', 'url(assets/images/intro_bg/right/intro_bg' + Math.floor(Math.random() * 4 + 1) + '.jpg)').css('background-position', 'right')
 }
 
-function alertBar(message, time) {
-  $('.am-alert').css('display', 'none')
+// alert bar
+function alertBar (message, time = 1000) {
   $('.am-alert p')[0].innerHTML = message
-  $('.am-alert').fadeIn(function () {
-    if (time) {
+  $('.am-alert').css('display', 'none').fadeIn(function () {
+    if (time !== 0) {
       $(this).delay(time).fadeOut()
     }
   })
@@ -34,17 +34,17 @@ function alertBar(message, time) {
  * local storage
  */
 
-//compatibility check
+// compatibility check
 if (!store.enabled) {
-  alert('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！')
+  alertBar('您的瀏覽器不支援本地儲存功能，儲存紀錄功能將不可用！', 0)
 } else {
   if (store.get('save')) {
-    alertBar('發現可選項存擋！是否回復？<a type="button" onclick="restore()"><span class="am-badge am-badge-success am-round am-text-sm">回復</span></a>')
+    alertBar('發現可選項存擋！是否回復？<a type="button" onclick="restore()"><span class="am-badge am-badge-success am-round am-text-sm">回復</span></a>', 10000)
   }
 }
 
-//save
-function dataSave() {
+// save
+function dataSave () {
   let save = []
   let selectedList = $('.mixitup select')
   for (let i = 0; i < selectedList.length; i++) {
@@ -52,21 +52,21 @@ function dataSave() {
   }
   store.set('save', save)
 
-  //alert
+  // alert
   alertBar('已經將可選項儲存至您的瀏覽器！', 3000)
 }
 
-//load
-function restore() {
+// load
+function restore () { // eslint-disable-line no-unused-vars
   var save = store.get('save')
-  if (save != undefined) {
+  if (save !== undefined) {
     save.forEach(function (saveData) {
       var id = saveData.substring(0, 7)
       $('#' + id + ' select').find(':selected').attr('selected', false)
       var options = $('#' + id + ' select').find('option')
       var oc = options.length
       for (var k = 0; k < oc; k++) {
-        if (options.eq(k).val() == saveData) {
+        if (options.eq(k).val() === saveData) {
           options.eq(k).prop('selected', true)
           $('#' + id + ' select').trigger('changed.selected.amui')
         }
@@ -74,55 +74,53 @@ function restore() {
     }, this)
   }
 
-  //alert
+  // alert
   alertBar('已經回復您的可選項！', 3000)
 }
 
-//reset
-function reset() {
-  if (confirm('這將清空你的儲存選擇並回復到預設！確定要回復嗎？')) {
+// reset
+function reset () { // eslint-disable-line no-unused-vars
+  if (window.confirm('這將清空你的儲存選擇並回復到預設！確定要回復嗎？')) {
     store.clear()
-    location.reload()
+    window.location.reload()
   }
 }
-
 
 /**
  * Download function
  */
-function submit() {
-
-  //progress start
+function submit () { // eslint-disable-line no-unused-vars
+  // progress start
   $.AMUI.progress.start()
   $('#submit').button('loading')
 
-  //save data
+  // save data
   dataSave()
 
-  //generate zip structure
+  // generate zip structure
   let zip = new JSZip()
-  let ship_previews = zip.folder('gui/ship_previews')
-  let ship_previews_ds = zip.folder('gui/ship_previews_ds')
+  let shipPreviews = zip.folder('gui/ship_previews')
+  let shipPreviewsDs = zip.folder('gui/ship_previews_ds')
 
   // generate image list
   let previewImages = []
-  let previewImages_ds = []
+  let previewImagesDs = []
   let selectedList = $('.mixitup select')
   for (let i = 0; i < selectedList.length; i++) {
     previewImages.push('assets/images/ship_previews/' + $('.mixitup select')[i].value + '.png')
-    previewImages_ds.push('assets/images/ship_previews_ds/' + $('.mixitup select')[i].value + '.png')
+    previewImagesDs.push('assets/images/ship_previews_ds/' + $('.mixitup select')[i].value + '.png')
   }
 
   // for loader loop
   var index = 0
-  var index_ds = 0
+  var indexDs = 0
 
   // loader
-  function loadAsArrayBuffer(url, callback) {
-    $.AMUI.progress.inc(0.01);
+  function loadAsArrayBuffer (url, callback) {
+    $.AMUI.progress.inc(0.01)
     var xhr = new XMLHttpRequest()
-    xhr.open("GET", url)
-    xhr.responseType = "arraybuffer"
+    xhr.open('GET', url)
+    xhr.responseType = 'arraybuffer'
     xhr.onerror = function () {
       console.debug('xhr ERROR!!')
     }
@@ -137,26 +135,26 @@ function submit() {
   }
 
   // looping buff and download
-  (function load() {
+  (function load () {
     if (index < previewImages.length) {
       loadAsArrayBuffer(previewImages[index++], function (buffer, url) {
         var filename = getFilename(url)
-        ship_previews.file(filename, buffer)
+        shipPreviews.file(filename, buffer)
         load()
       })
-    } else if (index_ds < previewImages_ds.length) {
-      loadAsArrayBuffer(previewImages_ds[index_ds++], function (buffer, url) {
+    } else if (indexDs < previewImagesDs.length) {
+      loadAsArrayBuffer(previewImagesDs[indexDs++], function (buffer, url) {
         var filename = getFilename(url)
-        ship_previews_ds.file(filename, buffer)
+        shipPreviewsDs.file(filename, buffer)
         load()
       })
     } else {
       zip.generateAsync({
-        type: "blob"
+        type: 'blob'
       }).then(function (content) {
         saveAs(content, 'res_mod.zip')
 
-        //progress done
+        // progress done
         $.AMUI.progress.done()
         $('#submit').button('reset')
       })
@@ -164,16 +162,15 @@ function submit() {
   })()
 
   // setting file name
-  function getFilename(url) {
-    return url.substr(url.lastIndexOf("/") + 1, 7) + '.png'
+  function getFilename (url) {
+    return url.substr(url.lastIndexOf('/') + 1, 7) + '.png'
   }
 }
-
 
 /**
  * Mix it up
  */
-var mixer = mixitup('#Container', {
+var mixer = mixitup('#Container', { // eslint-disable-line no-undef
   callbacks: {
     onMixBusy: function (state) {
       $('.loader_bg').fadeIn(500)
@@ -196,9 +193,8 @@ var mixer = mixitup('#Container', {
   }
 })
 
-//run mixer
+// run mixer
 mixer.show()
-
 
 /*
  * filter button
@@ -213,28 +209,27 @@ $(document).on('load', function () {
     var type = $type.filter(':checked').val()
     var extra = $extra.filter(':checked').val()
     var filter = ''
-    if (nation != undefined) {
-      var filter = filter + nation
+    if (nation !== undefined) {
+      filter = filter + nation
     }
-    if (type != undefined) {
-      var filter = filter + type
+    if (type !== undefined) {
+      filter = filter + type
     }
-    if (extra != undefined) {
-      var filter = filter + extra
+    if (extra !== undefined) {
+      filter = filter + extra
     }
     console.log(filter)
     mixer.filter(filter)
   })
 })
 
-//filter all
-function filterReset() {
+// filter all
+function filterReset () { // eslint-disable-line no-unused-vars
   $('.filter-group .options').filter(':checked').val('')
   mixer.filter('')
   mixer.filter('all')
   $('.filter-group label').removeClass('am-active')
 }
-
 
 /*
  * multi language
@@ -242,28 +237,36 @@ function filterReset() {
 var langCode = navigator.language
 var langs = ['zh-TW', 'zh-CN', 'en-US', 'ja']
 
-function lang(langCode) {
-  $.getJSON('assets/langs/' + langCode + '.json', function (jsonData) {
-    $.each($('[tkey]'), function (jkey) {
-      var tkey = $('[tkey]').eq(jkey).attr('tkey')
-      var tval = jsonData[tkey]
-      $('[tkey]').eq(jkey).html(tval)
-      if (tval == undefined) {
-        console.error($('[tkey]').eq(jkey).text() + ' don\'t have translate content!!\n' + tval);
-      }
-      console.debug('Translate ' + $('[tkey]').eq(jkey).text() + ' to ' + tval)
-    })
+function lang (langCode) {
+  $.ajax({
+    cache: false,
+    url: 'assets/langs/' + langCode + '.json',
+    dataType: 'json',
+    success: function (jsonData) {
+      let debugString = ''
+      $.each($('[tkey]'), function (jkey) {
+        var tkey = $('[tkey]').eq(jkey).attr('tkey')
+        var tval = jsonData[tkey]
+        $('[tkey]').eq(jkey).html(tval)
+        if (tval === undefined) {
+          console.error($('[tkey]').eq(jkey).text() + ' don\'t have translate content!!\n' + tval)
+        }
+        debugString += `Translate ${$('[tkey]').eq(jkey).text()} to ${tval}\n`
+      })
+      console.debug(debugString)
+    }
   })
+  $('html').scrollTop(0)
 }
 
 // Int page lang
-if ($.inArray(langCode, langs) >= 0 && langCode != 'zh-TW') {
+if ($.inArray(langCode, langs) >= 0 && langCode !== 'zh-TW') {
   lang(langCode)
 
-  // language button changeing
+  // language button changing
   for (var i = 0; i < 4; i++) {
     var code = $('footer select').find('option').eq(i).val()
-    if (code == langCode) {
+    if (code === langCode) {
       $('footer select').find('option').eq(i).attr('selected', true)
     } else {
       $('footer select').find('option').eq(i).attr('selected', false)
@@ -271,12 +274,11 @@ if ($.inArray(langCode, langs) >= 0 && langCode != 'zh-TW') {
   }
 }
 
-//change language
+// change language
 $('footer select').change(function () {
   var langCode = $('footer select').val()
   lang(langCode)
 })
-
 
 /**
  * Update log
@@ -284,7 +286,6 @@ $('footer select').change(function () {
 const content = document.querySelector('#updateLog').content
 $.getJSON('assets/update.json', function (updateData) {
   $.each(updateData, function (key, updateData) {
-
     // set time & level
     switch (updateData['level']) {
       case 'IMPORTANT':
@@ -292,25 +293,25 @@ $.getJSON('assets/update.json', function (updateData) {
         content.querySelector('span').innerHTML = 'IMPORTANT'
         content.querySelector('small').innerHTML = updateData['time']
         content.querySelector('small').classList = 'am-text-danger'
-        break;
+        break
       case 'NEW':
         content.querySelector('span').classList += 'am-badge am-radius am-badge-primary'
         content.querySelector('span').innerHTML = 'NEW'
         content.querySelector('small').innerHTML = updateData['time']
         content.querySelector('small').classList = 'am-text-primary'
-        break;
+        break
       case 'UPDATE':
         content.querySelector('span').classList += 'am-badge am-radius am-badge-success'
         content.querySelector('span').innerHTML = 'UPDATE'
         content.querySelector('small').innerHTML = updateData['time']
         content.querySelector('small').classList = 'am-text-success'
-        break;
+        break
       case 'FIX':
         content.querySelector('span').classList += 'am-badge am-radius am-badge-warning'
         content.querySelector('span').innerHTML = 'FIX'
         content.querySelector('small').innerHTML = updateData['time']
         content.querySelector('small').classList = 'am-text-warning'
-        break;
+        break
     }
 
     content.querySelector('.logs').innerHTML = ''
@@ -323,13 +324,12 @@ $.getJSON('assets/update.json', function (updateData) {
   })
 })
 
-//custom scrollbar
+// custom scrollbar
 $(window).on('load', function () {
   $('.am-scrollable-vertical').mCustomScrollbar({
     theme: 'minimal-dark'
   })
 })
-
 
 /*
  * line chart & statistics
@@ -337,122 +337,122 @@ $(window).on('load', function () {
  * hide when 2020 10 06
  */
 const pastData = [
-  ["20170904", 1],
-  ["20170905", 10],
-  ["20170907", 5],
-  ["20170908", 13],
-  ["20170909", 3],
-  ["20170910", 24],
-  ["20170911", 5],
-  ["20170912", 3],
-  ["20170913", 3],
-  ["20170914", 9],
-  ["20170915", 7],
-  ["20170916", 3],
-  ["20170917", 4],
-  ["20170918", 2],
-  ["20170919", 8],
-  ["20170920", 12],
-  ["20170921", 20],
-  ["20170922", 10],
-  ["20170923", 19],
-  ["20170924", 6],
-  ["20170925", 4],
-  ["20170926", 7],
-  ["20170927", 1],
-  ["20170928", 10],
-  ["20170929", 2],
-  ["20170930", 6],
-  ["20171001", 8],
-  ["20171002", 9],
-  ["20171003", 1],
-  ["20171004", 10],
-  ["20171005", 11],
-  ["20171006", 8],
-  ["20171007", 25],
-  ["20171008", 5],
-  ["20171009", 8],
-  ["20171010", 7],
-  ["20171011", 5],
-  ["20171012", 6],
-  ["20171013", 13],
-  ["20171014", 8],
-  ["20171015", 18],
-  ["20171016", 6],
-  ["20171017", 6],
-  ["20171018", 13],
-  ["20171019", 13],
-  ["20171020", 10],
-  ["20171022", 4],
-  ["20171024", 1],
-  ["20171026", 7],
-  ["20171027", 9],
-  ["20171028", 9],
-  ["20171029", 1],
-  ["20171031", 1],
-  ["20171101", 2],
-  ["20171102", 2],
-  ["20171103", 5],
-  ["20171104", 4],
-  ["20171105", 3],
-  ["20171106", 1],
-  ["20171107", 6],
-  ["20171108", 2],
-  ["20171109", 9],
-  ["20171110", 11],
-  ["20171111", 11],
-  ["20171112", 4],
-  ["20171113", 3],
-  ["20171114", 4],
-  ["20171116", 3],
-  ["20171117", 4],
-  ["20171118", 5],
-  ["20171119", 3],
-  ["20171120", 4],
-  ["20171121", 2],
-  ["20171122", 6],
-  ["20171123", 4],
-  ["20171124", 8],
-  ["20171125", 9],
-  ["20171127", 6],
-  ["20171128", 10],
-  ["20171129", 6],
-  ["20171130", 10],
-  ["20171201", 10],
-  ["20171202", 14],
-  ["20171203", 7],
-  ["20171204", 4],
-  ["20171205", 6],
-  ["20171206", 6],
-  ["20171207", 7],
-  ["20171209", 26],
-  ["20171210", 4],
-  ["20171212", 15],
-  ["20171213", 3],
-  ["20171214", 9],
-  ["20171215", 6],
-  ["20171216", 10],
-  ["20171217", 4],
-  ["20171218", 3],
-  ["20171219", 4],
-  ["20171220", 3],
-  ["20171221", 5],
-  ["20171222", 7],
-  ["20171223", 6],
-  ["20171224", 16],
-  ["20171227", 1],
-  ["20171228", 5],
-  ["20171229", 2],
-  ["20171230", 2],
-  ["20171231", 12],
-  ["20180101", 2],
-  ["20180102", 8],
-  ["20180104", 12],
-  ["20180105", 7],
-  ["20180106", 13],
-  ["20180107", 11],
-  ["20180108", 3],
-  ["20180109", 8]
+  ['20170904', 1],
+  ['20170905', 10],
+  ['20170907', 5],
+  ['20170908', 13],
+  ['20170909', 3],
+  ['20170910', 24],
+  ['20170911', 5],
+  ['20170912', 3],
+  ['20170913', 3],
+  ['20170914', 9],
+  ['20170915', 7],
+  ['20170916', 3],
+  ['20170917', 4],
+  ['20170918', 2],
+  ['20170919', 8],
+  ['20170920', 12],
+  ['20170921', 20],
+  ['20170922', 10],
+  ['20170923', 19],
+  ['20170924', 6],
+  ['20170925', 4],
+  ['20170926', 7],
+  ['20170927', 1],
+  ['20170928', 10],
+  ['20170929', 2],
+  ['20170930', 6],
+  ['20171001', 8],
+  ['20171002', 9],
+  ['20171003', 1],
+  ['20171004', 10],
+  ['20171005', 11],
+  ['20171006', 8],
+  ['20171007', 25],
+  ['20171008', 5],
+  ['20171009', 8],
+  ['20171010', 7],
+  ['20171011', 5],
+  ['20171012', 6],
+  ['20171013', 13],
+  ['20171014', 8],
+  ['20171015', 18],
+  ['20171016', 6],
+  ['20171017', 6],
+  ['20171018', 13],
+  ['20171019', 13],
+  ['20171020', 10],
+  ['20171022', 4],
+  ['20171024', 1],
+  ['20171026', 7],
+  ['20171027', 9],
+  ['20171028', 9],
+  ['20171029', 1],
+  ['20171031', 1],
+  ['20171101', 2],
+  ['20171102', 2],
+  ['20171103', 5],
+  ['20171104', 4],
+  ['20171105', 3],
+  ['20171106', 1],
+  ['20171107', 6],
+  ['20171108', 2],
+  ['20171109', 9],
+  ['20171110', 11],
+  ['20171111', 11],
+  ['20171112', 4],
+  ['20171113', 3],
+  ['20171114', 4],
+  ['20171116', 3],
+  ['20171117', 4],
+  ['20171118', 5],
+  ['20171119', 3],
+  ['20171120', 4],
+  ['20171121', 2],
+  ['20171122', 6],
+  ['20171123', 4],
+  ['20171124', 8],
+  ['20171125', 9],
+  ['20171127', 6],
+  ['20171128', 10],
+  ['20171129', 6],
+  ['20171130', 10],
+  ['20171201', 10],
+  ['20171202', 14],
+  ['20171203', 7],
+  ['20171204', 4],
+  ['20171205', 6],
+  ['20171206', 6],
+  ['20171207', 7],
+  ['20171209', 26],
+  ['20171210', 4],
+  ['20171212', 15],
+  ['20171213', 3],
+  ['20171214', 9],
+  ['20171215', 6],
+  ['20171216', 10],
+  ['20171217', 4],
+  ['20171218', 3],
+  ['20171219', 4],
+  ['20171220', 3],
+  ['20171221', 5],
+  ['20171222', 7],
+  ['20171223', 6],
+  ['20171224', 16],
+  ['20171227', 1],
+  ['20171228', 5],
+  ['20171229', 2],
+  ['20171230', 2],
+  ['20171231', 12],
+  ['20180101', 2],
+  ['20180102', 8],
+  ['20180104', 12],
+  ['20180105', 7],
+  ['20180106', 13],
+  ['20180107', 11],
+  ['20180108', 3],
+  ['20180109', 8]
 ]
 
 // date init
@@ -461,7 +461,7 @@ var dd = ('0' + today.getDate()).substr(-2)
 var mm = ('0' + today.getMonth() + 1).substr(-2)
 var yyyy = today.getFullYear()
 
-function charts(gaData) {
+function charts (gaData) { // eslint-disable-line no-unused-vars
   var totalDownload = 0
   var monthDownload = 0
   var yesterdayDownload = 0
@@ -470,7 +470,6 @@ function charts(gaData) {
   let dateList = []
   let valueList = []
   for (let i = 0; i < dateData.length; i++) {
-
     // line chart datas
     let y = dateData[i][0].substring(0, 4)
     let m = dateData[i][0].substring(6, 4)
@@ -479,17 +478,17 @@ function charts(gaData) {
     valueList.push(dateData[i][1])
 
     // yesterday data
-    if (dateData[i][0] == yyyy + mm + (dd - 1)) {
-      var yesterdayDownload = yesterdayDownload + Number(dateData[i][1])
+    if (dateData[i][0] === yyyy + mm + (dd - 1)) {
+      yesterdayDownload = yesterdayDownload + Number(dateData[i][1])
     }
 
     // this month data
-    if (dateData[i][0].substring(0, 6) == yyyy + mm) {
-      var monthDownload = monthDownload + Number(dateData[i][1])
+    if (dateData[i][0].substring(0, 6) === yyyy + mm) {
+      monthDownload = monthDownload + Number(dateData[i][1])
     }
 
     // total download data
-    var totalDownload = totalDownload + Number(dateData[i][1])
+    totalDownload = totalDownload + Number(dateData[i][1])
   }
 
   // month download generate
@@ -507,7 +506,7 @@ function charts(gaData) {
   const dailyDownloadChart = echarts.init(document.getElementById('daily'))
   const maxValue = Math.max.apply(Math, valueList)
 
-  option = {
+  let option = {
     // gradient line
     visualMap: {
       show: false,
@@ -528,12 +527,10 @@ function charts(gaData) {
       }
     },
     dataZoom: [{
-        startValue: '2017/09/04'
-      },
-      {
-        type: 'inside'
-      }
-    ],
+      startValue: '2017/09/04'
+    }, {
+      type: 'inside'
+    }],
     series: {
       name: '下載數',
       type: 'line',
@@ -542,76 +539,74 @@ function charts(gaData) {
     }
   }
 
-  //line chart generate
+  // line chart generate
   dailyDownloadChart.setOption(option)
 }
-
 
 /*
  * complete percent bar
  */
-function completeBar() {
+function completeBar () { // eslint-disable-line no-unused-vars
   var totalComplete = 0
   var doneComplete = 0
 
-  //data compute
-  $.each(completeData, function (key, value) {
+  // data compute
+  $.each(completeData, function (key, value) { // eslint-disable-line no-undef
     doneComplete += value[0]
     totalComplete += value[1]
   })
   var completePercent = Math.round(doneComplete / totalComplete * 100)
 
-  //complete bar generate
+  // complete bar generate
   $('.am-progress-bar').attr('style', 'width:' + completePercent + '%')
   $('.am-progress-bar').text(completePercent + '%')
 }
 
-
 /**
  * complete chart
  */
-function completeChart() {
-  var nObj = Object.keys(completeData)
+function completeChart () { // eslint-disable-line no-unused-vars
+  var nObj = Object.keys(completeData) // eslint-disable-line no-undef
   var doneData = []
   var nationData = []
 
   for (var i = 0; i < nObj.length; i++) {
     var nation = nObj[i]
-    var data = completeData[nation]
+    var data = completeData[nation] // eslint-disable-line no-undef
     var percent = Math.round(data[0] / data[1] * 100)
     doneData.push(percent)
 
     switch (nation) {
       case 'commonwealth':
         nation = '聯邦(Commonwealth)'
-        break;
+        break
       case 'france':
         nation = '法國(France)'
-        break;
+        break
       case 'germany':
         nation = '德國(Germany)'
-        break;
+        break
       case 'italia':
         nation = '義大利(Italia)'
-        break;
+        break
       case 'japan':
         nation = '日本(Japan)'
-        break;
+        break
       case 'pan_asia':
         nation = '泛亞(Pan-Asia)'
-        break;
+        break
       case 'poland':
         nation = '波蘭(Poland)'
-        break;
+        break
       case 'uk':
         nation = '英國(Great Britain)'
-        break;
+        break
       case 'usa':
         nation = '美國(USA)'
-        break;
+        break
       case 'ussr':
         nation = '蘇聯(USSR)'
-        break;
+        break
     }
     nationData.push(nation)
   }
@@ -620,7 +615,7 @@ function completeChart() {
     document.getElementById('nationComplete')
   )
 
-  option = {
+  let option = {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
