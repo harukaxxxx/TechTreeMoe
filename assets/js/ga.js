@@ -12,7 +12,7 @@ function getAccessToken () {
   }, function (data, status) {
     if (status === 'success') {
       gaAccessToken = data.access_token
-      console.debug('Access token : ' + gaAccessToken)
+      console.debug(`Access token : ${gaAccessToken}`)
       checkValidity()
     } else {
       console.debug(status)
