@@ -456,10 +456,12 @@ const pastData = [
 ]
 
 // date init
-var today = new Date()
-var dd = ('0' + today.getDate()).substr(-2)
-var mm = ('0' + today.getMonth() + 1).substr(-2)
-var yyyy = today.getFullYear()
+const today = new Date()
+const d = today.getDate()
+const dd = (d < 10 ? `0${d}` : d)
+const m = today.getMonth() + 1
+const mm = (m < 10 ? `0${m}` : m)
+const yyyy = today.getFullYear()
 
 function charts (gaData) { // eslint-disable-line no-unused-vars
   var totalDownload = 0
