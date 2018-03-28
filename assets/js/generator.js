@@ -65,7 +65,12 @@ $.get('assets/database/allJSON.json')
           } else {
             change = ''
           }
-          let boxClassList = ['mix', shipData['type'], shipData['nation'], premium, change]
+          if (shipData['arp']) {
+            var arp = 'arp'
+          } else {
+            arp = ''
+          }
+          let boxClassList = ['mix', shipData['type'], shipData['nation'], premium, change, arp]
           content.querySelector('div').classList = boxClassList.join(' ')
 
           // set box title & tier icon
