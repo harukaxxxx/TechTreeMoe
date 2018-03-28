@@ -1,0 +1,319 @@
+/* 
+*variables
+*/
+
+$colorDeepBlue:#34495e;
+$colorBlue:#1E5B94;
+$colorGrayBlue:#6e7c8a;
+$shipTypes:('cruiser', 'destroyer', 'battleship', 'aircarrier');
+$addons :('change', 'premium', 'arp');
+$nations :('japan', 'usa', 'ussr', 'germany', 'uk', 'france', 'pan_asia', 'commonwealth', 'italia');
+$flags:('PJSB705', 'PJSB706', 'PJSB707', 'PJSB708', 'PJSC705', 'PJSC709', 'PJSC737', 'PJSC707', 'PJSC708');
+/*
+* loading mask
+*/
+
+.loader_bg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url(../images/overlay_b.png);
+  z-index: 2;
+  top: 0;
+  left: 0;
+  opacity: .7;
+}
+
+/*
+* alert
+*/
+
+.am-alert {
+  position: fixed;
+  top: 51px;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 3px;
+  text-align: center;
+  display: none;
+}
+
+/* 
+*top
+*/
+
+.top {
+  background: center center no-repeat;
+  background-color: $colorBlue;
+  background-image: url(../images/hero_bg.png);
+  color: #fff;
+  text-align: center;
+  padding: 35vh 0;
+  height: 100vh;
+  .am-g {
+    padding: 20px 0;
+    .top-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+  }
+}
+
+/*
+* intro
+*/
+
+.intro {
+  background: #fff no-repeat bottom;
+  background-size: contain;
+  .intro-h2 {
+    text-align: center;
+    font-size: 150%;
+    margin: 40px 0;
+    color: $colorDeepBlue;
+  }
+  .intro-mb {
+    margin-bottom: 30px;
+    background: hsla(0, 0%, 100%, .8);
+    .intro-h3 {
+      color: $colorDeepBlue;
+    }
+    .intro-p {
+      color: $colorGrayBlue;
+    }
+  }
+}
+
+/*
+* mixitup
+*/
+
+//filter
+.mixitup .filter-group {
+  text-align: center;
+  padding-bottom: 2rem;
+  .am-btn-group {
+    padding-bottom: 1rem;
+    button span {
+      padding-right: 0.5rem;
+    }
+    .am-icon-premium {
+      padding: 5px 15px 5px 10px;
+      img {
+        height: 20px;
+      }
+    }
+  }
+}
+
+//mixs
+.mixitup {
+  background: #fff;
+  padding: 50px 0;
+  background: url(../images/overlay.png), url(../images/bg.jpg) center center no-repeat;
+  background-size: auto, cover;
+  padding: 3rem;
+  #Container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 90vh;
+    text-align: center;
+    .mix {
+      width: 214px;
+      margin: 3px 0;
+      background: hsla(0, 0%, 100%, .7);
+      border: hsla(0, 0%, 100%, .8) solid 1px;
+      border-radius: 3px;
+      display: inline-block;
+      .ship {
+        margin: 0.5rem 0 0 0;
+        text-align: center;
+        font-weight: bold;
+        .tier {
+          color: hsla(0, 0%, 0%, .6);
+          font-size: 14px;
+          padding-left: 0.2rem;
+          padding-right: 0.5rem;
+        }
+      }
+      .img_container {
+        margin-top: 0.5rem;
+      }
+      .am-selected {
+        margin: 5px 0 5px 7px;
+        background: hsla(0, 0%, 100%, .3);
+        .am-selected-list {
+          max-height: 300px;
+          overflow-x: hidden;
+        }
+      }
+    }
+  }
+}
+
+//mixs background
+@each $shipType in $shipTypes {
+  .mixitup .icon-#{$shipType}:before {
+    content: '';
+    display: inline-block;
+    height: 11px;
+    width: 20px;
+    background: url(../images/icons/#{$shipType}.png) no-repeat;
+  }
+}
+
+@each $addon in $addons {
+  .mixitup .#{$addon} .addon {
+    background: url(../images/icons/#{$addon}.png) no-repeat 95% 5%;
+  }
+}
+
+@each $nation in $nations {
+  .mixitup .#{$nation} .img_container {
+    background: url(../images/nation/flag_#{$nation}.png) no-repeat top left;
+    background-size: contain;
+  }
+}
+
+@each $flag in $flags {
+  .mixitup ##{$flag} .img_container {
+    background: url(../images/nation/flag_#{$flag}.png) no-repeat top left;
+    background-size: contain;
+  }
+}
+
+/*
+* about
+*/
+
+.about {
+  background: #fff;
+  padding: 40px 0;
+  color: $colorGrayBlue;
+  background: url(../images/about_bg.jpg) no-repeat left bottom;
+  background-size: contain;
+  .about-color {
+    color: $colorDeepBlue;
+  }
+  .about-title {
+    font-size: 180%;
+    padding: 0 0 10px 0;
+    text-align: center;
+  }
+  .about-box {
+    background: hsla(0, 0%, 100%, .8);
+    padding: 15px 0;
+    .am-u-lg-6 {
+      padding-bottom: 15px;
+      .am-list li {
+        padding: 0.5rem;
+        p {
+          margin: 0;
+        }
+        a {
+          display: inline;
+          padding: 0;
+        }
+      }
+      .update {
+        height: 500px;
+        ul ul {
+          margin: 0;
+          li {
+            font-size: 1.4rem;
+            padding: 0 0.5rem;
+          }
+        }
+      }
+      .am-scrollable-vertical {
+        padding-right: 20px;
+        min-height: 370px;
+      }
+    }
+  }
+}
+
+/* charts */
+
+.charts {
+  background: $colorBlue url(../images/overlay.png);
+  padding: 40px 0;
+  .charts-title {
+    font-size: 180%;
+    padding: 0 0 10px 0;
+    text-align: center;
+    color: #ffffff;
+  }
+  .card-box {
+    padding: 20px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0px 0 rgba(0, 0, 0, 0.02);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: $colorDeepBlue;
+    .text-muted {
+      color: $colorGrayBlue !important;
+      font-size: 12px;
+    }
+    .header-title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    .am-progress {
+      margin-top: 16px;
+      margin-bottom: 0;
+    }
+    .widget-chart {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    #daily {
+      width: 100%;
+      height: 300px;
+    }
+  }
+}
+
+/*
+* footer
+*/
+
+.footer p {
+  color: #fff;
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+  background: $colorDeepBlue;
+  a {
+    color: #fff;
+    border-bottom: 1px dotted;
+  }
+  .icon {
+    border: 0;
+  }
+  .am-selected-text {
+    color: $colorDeepBlue;
+  }
+  .am-selected-status {
+    color: #fff;
+  }
+  .am-selected-icon {
+    color: #fff;
+  }
+  .am-btn-link {
+    border-color: $colorDeepBlue;
+    background-color: $colorDeepBlue;
+  }
+}
