@@ -325,7 +325,9 @@
   min-height: 370px;
 }
 
-/* charts */
+/*
+* charts
+*/
 .charts {
   background: #1E5B94 url(../images/overlay.png);
   padding: 40px 0;
