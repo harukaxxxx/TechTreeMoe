@@ -30,7 +30,6 @@
         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
       f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-NGBD6X2');
-
   </script>
   <!-- End Google Tag Manager -->
 </head>
@@ -41,7 +40,6 @@
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGBD6X2" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
   <!-- End Google Tag Manager (noscript) -->
-
   <div class="loader_bg"></div>
   <header class="am-topbar am-topbar-fixed-top scrollspy-nav" data-am-scrollspynav="{offsetTop: 50}">
     <div class="am-container">
@@ -88,104 +86,19 @@
     <div class="am-modal-dialog">
       <div class="am-modal-hd" tkey="tkey_preview_button">效果預覽</div>
       <div class="am-modal-bd">
-        <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2am-avg-md-3 am-avg-lg-4 am-gallery-default" data-am-gallery="{ pureview: true }">
-          <li>
+        <!-- vue previewModal start -->
+        <ul id="previewModal" data-am-widget="gallery" class="am-gallery am-avg-sm-2 am-avg-md-3 am-avg-lg-4 am-gallery-default"
+          data-am-gallery="{ pureview: true }">
+          <li v-for="nation in nations">
             <div class="am-gallery-item">
-              <a href="assets/images/preview/japan.jpg" class="">
-                <img src="assets/images/preview/japan.jpg" alt="日本" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_japan">日本預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/usa.jpg" class="">
-                <img src="assets/images/preview/usa.jpg" alt="美國" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_usa">美國預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/germany.jpg" class="">
-                <img src="assets/images/preview/germany.jpg" alt="德國" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_germany">德國預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/ussr.jpg" class="">
-                <img src="assets/images/preview/ussr.jpg" alt="蘇聯" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_ussr">蘇聯預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/uk.jpg" class="">
-                <img src="assets/images/preview/uk.jpg" alt="英國" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_uk">英國預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/france.jpg" class="">
-                <img src="assets/images/preview/france.jpg" alt="法國" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_france">法國預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/italia.jpg" class="">
-                <img src="assets/images/preview/italia.jpg" alt="義大利" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_italia">義大利預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/commonwealth.jpg" class="">
-                <img src="assets/images/preview/commonwealth.jpg" alt="聯邦" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_commonwealth">聯邦預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/pan_asia.jpg" class="">
-                <img src="assets/images/preview/pan_asia.jpg" alt="泛亞" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_pan_asia">泛亞預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/poland.jpg" class="">
-                <img src="assets/images/preview/poland.jpg" alt="波蘭" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_poland">波蘭預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/arp.jpg" class="">
-                <img src="assets/images/preview/arp.jpg" alt="蒼藍鋼鐵戰艦" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_arp">蒼藍鋼鐵戰艦預覽</h3>
-              </a>
-            </div>
-          </li>
-          <li>
-            <div class="am-gallery-item">
-              <a href="assets/images/preview/haifuri.jpg" class="">
-                <img src="assets/images/preview/haifuri.jpg" alt="高校艦隊" />
-                <h3 class="am-gallery-title" tkey="tkey_preview_haifuri">高校艦隊預覽</h3>
+              <a :href="'assets/images/preview/'+nation.code+'.jpg'">
+                <img :src="'assets/images/preview/'+nation.code+'.jpg'" :alt="nation.local" />
+                <h3 class="am-gallery-title" :tkey="'tkey_preview_'+nation.code">{{nation.local}}預覽</h3>
               </a>
             </div>
           </li>
         </ul>
+        <!-- vue previewModal end -->
       </div>
       <div class="am-modal-footer">
         <span class="am-modal-btn" tkey="tkey_close">關閉</span>
@@ -228,57 +141,73 @@
   <div id="mixitup" class="mixitup">
     <div class="filter-group">
       <div class="am-btn-group">
-        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="filterReset();" tkey="tkey_filter_all"><span class="am-icon-tags"></span>全部顯示</button>
+        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="filterReset();" tkey="tkey_filter_all">
+          <span class="am-icon-tags"></span>全部顯示</button>
       </div>
       <div class="am-btn-group" data-am-button>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_japan">
-          <input type="radio" class="options" name="nation" value=".japan"><span class="am-icon-flag"></span>日本
+          <input type="radio" class="options" name="nation" value=".japan">
+          <span class="am-icon-flag"></span>日本
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_usa">
-          <input type="radio" class="options" name="nation" value=".usa"><span class="am-icon-flag"></span>美國
+          <input type="radio" class="options" name="nation" value=".usa">
+          <span class="am-icon-flag"></span>美國
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_ussr">
-          <input type="radio" class="options" name="nation" value=".ussr"><span class="am-icon-flag"></span>蘇聯
+          <input type="radio" class="options" name="nation" value=".ussr">
+          <span class="am-icon-flag"></span>蘇聯
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_germany">
-          <input type="radio" class="options" name="nation" value=".germany"><span class="am-icon-flag"></span>德國
+          <input type="radio" class="options" name="nation" value=".germany">
+          <span class="am-icon-flag"></span>德國
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_uk">
-          <input type="radio" class="options" name="nation" value=".uk"><span class="am-icon-flag"></span>英國
+          <input type="radio" class="options" name="nation" value=".uk">
+          <span class="am-icon-flag"></span>英國
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_pan_asia">
-          <input type="radio" class="options" name="nation" value=".pan_asia"><span class="am-icon-flag"></span>泛亞
+          <input type="radio" class="options" name="nation" value=".pan_asia">
+          <span class="am-icon-flag"></span>泛亞
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_france">
-          <input type="radio" class="options" name="nation" value=".france"><span class="am-icon-flag"></span>法國
+          <input type="radio" class="options" name="nation" value=".france">
+          <span class="am-icon-flag"></span>法國
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_italia">
-          <input type="radio" class="options" name="nation" value=".italia"><span class="am-icon-flag"></span>義大利
+          <input type="radio" class="options" name="nation" value=".italia">
+          <span class="am-icon-flag"></span>義大利
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_commonwealth">
-          <input type="radio" class="options" name="nation" value=".commonwealth"><span class="am-icon-flag"></span>聯邦
+          <input type="radio" class="options" name="nation" value=".commonwealth">
+          <span class="am-icon-flag"></span>聯邦
         </label>
       </div>
       <div class="am-btn-group" data-am-button>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_destroyer">
-          <input type="radio" class="options" name="type" value=".destroyer"><span class="am-icon-anchor"></span> 驅逐艦
+          <input type="radio" class="options" name="type" value=".destroyer">
+          <span class="am-icon-anchor"></span> 驅逐艦
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_cruiser">
-          <input type="radio" class="options" name="type" value=".cruiser"><span class="am-icon-anchor"></span> 巡洋艦
+          <input type="radio" class="options" name="type" value=".cruiser">
+          <span class="am-icon-anchor"></span> 巡洋艦
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_battleship">
-          <input type="radio" class="options" name="type" value=".battleship"><span class="am-icon-anchor"></span> 戰艦
+          <input type="radio" class="options" name="type" value=".battleship">
+          <span class="am-icon-anchor"></span> 戰艦
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_aircarrier">
-          <input type="radio" class="options" name="type" value=".aircarrier"><span class="am-icon-anchor"></span> 航空母艦
+          <input type="radio" class="options" name="type" value=".aircarrier">
+          <span class="am-icon-anchor"></span> 航空母艦
         </label>
       </div>
       <div class="am-btn-group" data-am-button>
         <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_change">
-          <input type="radio" class="options" name="extra" value=".change"><span class="am-icon-paint-brush"></span> 可更替
+          <input type="radio" class="options" name="extra" value=".change">
+          <span class="am-icon-paint-brush"></span> 可更替
         </label>
         <label class="am-btn am-btn-primary am-btn-sm am-round am-icon-premium" tkey="tkey_filter_premium">
-          <input type="radio" class="options" name="extra" value=".premium"><img src="assets/images/icons/premium_icon.png"> 加值艦
+          <input type="radio" class="options" name="extra" value=".premium">
+          <img src="assets/images/icons/premium_icon.png"> 加值艦
         </label>
       </div>
       <div class="am-btn-group">
@@ -488,6 +417,8 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/amazeui/2.7.2/js/amazeui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.2.2/mixitup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer src="assets/js/main.js"></script>
   <script src="assets/js/generator.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.8.5/echarts.min.js"></script>
