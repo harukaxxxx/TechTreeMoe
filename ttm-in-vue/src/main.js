@@ -2,17 +2,19 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import ElementUI from 'element-ui';
-// import 'element-ui/lib/theme-chalk/index.css';
+import 'element-ui/lib/theme-chalk/index.css';
+import './assets/global.scss';
 Vue.use(VueRouter);
 Vue.use(ElementUI);
 
 //引入index.vue和hello.vue组件
 import App from './App.vue';
-import navbar from './components/navbar.vue';
+import appHeader from './components/navbar.vue';
 import intro from './components/intro.vue';
 import custom from './components/custom.vue';
 import about from './components/about.vue';
 import charts from './components/charts.vue';
+import appFooter from './components/footer.vue';
 
 //定义路由
 const routes = [{
@@ -43,5 +45,9 @@ const router = new VueRouter({
 //创建和挂载根实例。通过 router 配置参数注入路由，从而让整个应用都有路由功能
 new Vue({
   el: "#app",
-  router
+  router,
+  components: {
+    appHeader,
+    appFooter
+  }
 });

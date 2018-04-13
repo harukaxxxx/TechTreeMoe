@@ -65,6 +65,9 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      }, {
+        test: /\.(eot|woff|ttf)$/,
+        loader: 'file-loader'
       }
     ]
   },

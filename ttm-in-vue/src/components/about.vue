@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="main">
         <h2>Index</h2>
         <hr>
         <p>{{sContent}}</p>
