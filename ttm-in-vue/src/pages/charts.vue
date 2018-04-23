@@ -111,7 +111,7 @@ export default {
       chartSettings: {
         area: true,
         labelMap: {
-          value: '下載量'
+          value: this.$t('charts.lineChartLabel')
         },
         label: {
           normal: {
