@@ -1,0 +1,32 @@
+{
+  "global": {
+    "commonwealth": "联邦",
+    "france": "法国",
+    "germany": "德国",
+    "italia": "义大利",
+    "japan": "日本",
+    "pan_asia": "泛亚",
+    "poland": "波兰",
+    "uk": "英国",
+    "usa": "美国",
+    "ussr": "苏联"
+  },
+  "about": {
+    "contact": "联络我们",
+    "contactContent":
+      "若您发现任何问题请至<a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>建立Issues回报！<br>（网站Bug、舰船缺漏、素材提供、功能建议等）",
+    "update": "更新纪录"
+  },
+  "charts": {
+    "yesterdayDownloaded": "昨日下载量",
+    "monthDownloaded": "本月下载量",
+    "totalDownloaded": "总下载量",
+    "downloadUnit": "次",
+    "totalProgress": "总体萌化进度",
+    "nationProgress": "各国萌化进度",
+    "yesterdayDownloadedTime": "{year}年{month}月{day}日",
+    "monthDownloadedTime": "{year}年{month}月",
+    "totalDownloadedTime": "2017年01月10日至今",
+    "lineChart": "每日下载量折线图"
+  }
+}

@@ -1,5 +1,32 @@
 {
+  "global": {
+    "commonwealth": "Commonwealth",
+    "france": "France",
+    "germany": "Germany",
+    "italia": "Italia",
+    "japan": "Japan",
+    "pan_asia": "Pan Asia",
+    "poland": "Poland",
+    "uk": "UK",
+    "usa": "USA",
+    "ussr": "USSR"
+  },
+  "about": {
+    "contact": "Contact",
+    "contactContent":
+      "If you have any suggest, please open Issues in <a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>.<br>(Site bug, ship ,missing, material provide, function request etc.)",
+    "update": "Update logs"
+  },
   "charts": {
-    "title": "統計數據與萌化進度EN"
+    "yesterdayDownloaded": "Download yesterday",
+    "monthDownloaded": "Download this month",
+    "totalDownloaded": "Total downloads",
+    "downloadUnit": "times",
+    "totalProgress": "Overall progress",
+    "nationProgress": "Progress of countries",
+    "yesterdayDownloadedTime": "{year}/{month}/{day}",
+    "monthDownloadedTime": "{year}/{month}",
+    "totalDownloadedTime": "From 2017/01/10",
+    "lineChart": "Daily downloads linechart"
   }
 }

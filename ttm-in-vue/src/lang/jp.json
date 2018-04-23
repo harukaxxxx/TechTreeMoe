@@ -1,0 +1,32 @@
+{
+  "global": {
+    "commonwealth": "連邦",
+    "france": "フランス",
+    "germany": "ドイツ",
+    "italia": "イタリア",
+    "japan": "日本",
+    "pan_asia": "パンアジア",
+    "poland": "ポーランド",
+    "uk": "イギリス",
+    "usa": "アメリカ",
+    "ussr": "ソ連"
+  },
+  "about": {
+    "contact": "聯絡我們",
+    "contactContent":
+      "何か問題が見つかった場合は、問題を確立するために、<a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>にレポートしてください！<br>（サイトバグ、船のミス、素材提供、機能提案などなど）",
+    "update": "更新紀錄"
+  },
+  "charts": {
+    "yesterdayDownloaded": "昨日のダウンロード",
+    "monthDownloaded": "今月のダウンロード",
+    "totalDownloaded": "ダウンロード総数",
+    "downloadUnit": "回",
+    "totalProgress": "全体進捗状況",
+    "nationProgress": "各国の進捗状況",
+    "yesterdayDownloadedTime": "{year}年{month}月{day}日",
+    "monthDownloadedTime": "{year}年{month}月",
+    "totalDownloadedTime": "2017年01月10日から",
+    "lineChart": "毎日ダウンロード線図"
+  }
+}

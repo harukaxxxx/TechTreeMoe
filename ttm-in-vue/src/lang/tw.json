@@ -27,7 +27,6 @@
     "yesterdayDownloadedTime": "{year}年{month}月{day}日",
     "monthDownloadedTime": "{year}年{month}月",
     "totalDownloadedTime": "2017年01月10日至今",
-    "lineChart": "每日下載量折線圖",
-    "lineChartLabel": "下載量"
+    "lineChart": "每日下載量折線圖"
   }
 }

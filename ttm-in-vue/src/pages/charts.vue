@@ -111,7 +111,7 @@ export default {
       chartSettings: {
         area: true,
         labelMap: {
-          value: this.$t('charts.lineChartLabel')
+          value: 'Downloaded'
         },
         label: {
           normal: {
