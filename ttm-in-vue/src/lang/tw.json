@@ -1,0 +1,26 @@
+{
+  "global": {
+    "commonwealth": "聯邦",
+    "france": "法國",
+    "germany": "德國",
+    "italia": "義大利",
+    "japan": "日本",
+    "pan_asia": "泛亞",
+    "poland": "波蘭",
+    "uk": "英國",
+    "usa": "美國",
+    "ussr": "蘇聯"
+  },
+  "charts": {
+    "yesterdayDownloaded": "昨日下載量",
+    "monthDownloaded": "本月下載量",
+    "totalDownloaded": "總下載量",
+    "downloadUnit": "次",
+    "totalProgress": "總體萌化進度",
+    "nationProgress": "各國萌化進度",
+    "yesterdayDownloadedTime": "{year}年{month}月{day}日",
+    "monthDownloadedTime": "{year}年{month}月",
+    "totalDownloadedTime": "2017年01月10日至今",
+    "lineChart": "每日下載量折線圖"
+  }
+}

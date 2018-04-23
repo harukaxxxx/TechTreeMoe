@@ -1,0 +1,24 @@
+{
+    "id": "PBSB107",
+    "name": "King George V",
+    "tier": "Ⅶ",
+    "nation": "uk",
+    "type": "battleship",
+    "default": 4,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Prince of Wales",
+        "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝",
+        "3": "【戰艦少女】Duke of York"
+    },
+    "鋼鐵少女": {
+        "4": "【鋼鐵少女】King George V",
+        "5": "【鋼鐵少女】Prince of Wales"
+    },
+    "最終戰艦": {
+        "6": "【最終戰艦】King George V",
+        "7": "【最終戰艦】King George V 泳裝Ver."
+    }
+}

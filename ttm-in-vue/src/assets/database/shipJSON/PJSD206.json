@@ -1,0 +1,15 @@
+{
+    "id": "PJSD206",
+    "name": "初春",
+    "tier": "Ⅵ",
+    "nation": "japan",
+    "type": "destroyer",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】初春",
+        "2": "【艦隊收藏】初春 改二"
+    }
+}

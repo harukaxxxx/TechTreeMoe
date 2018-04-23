@@ -1,0 +1,23 @@
+{
+    "id": "PASA013",
+    "name": "Essex",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Essex"
+    },
+    "鋼鐵少女": {
+        "5": "【鋼鐵少女】Bunker Hill",
+        "6": "【鋼鐵少女】Bunker Hill 改"
+    },
+    "最終戰艦": {
+        "2": "【最終戰艦】Essex",
+        "3": "【最終戰艦】Essex 泳裝Ver.",
+        "4": "【最終戰艦】Essex 花嫁Ver."
+    }
+}

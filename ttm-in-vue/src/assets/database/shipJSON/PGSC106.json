@@ -1,0 +1,23 @@
+{
+    "id": "PGSC106",
+    "name": "Nürnberg",
+    "tier": "Ⅵ",
+    "nation": "germany",
+    "type": "cruiser",
+    "default": 5,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Leipzig",
+        "6": "【戰艦少女】Nürnberg"
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Nürnberg",
+        "4": "【鋼鐵少女】Nürnberg 改",
+        "5": "【鋼鐵少女】Leipzig"
+    },
+    "Victory_Belles": {
+        "2": "【Victory Belles】Nürnberg"
+    }
+}

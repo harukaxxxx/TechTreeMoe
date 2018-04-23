@@ -1,0 +1,14 @@
+{
+    "id": "PASC017",
+    "name": "Baltimore",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Baltimore"
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "id": "PASA006",
+    "name": "Independence",
+    "tier": "Ⅵ",
+    "nation": "usa",
+    "type": "aircarrier",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Princeton",
+        "2": "【戰艦少女】Princeton Bikino魔術師Ver."
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Belleau Wood",
+        "4": "【鋼鐵少女】Cabot",
+        "5": "【鋼鐵少女】Cabot 改"
+    }
+}

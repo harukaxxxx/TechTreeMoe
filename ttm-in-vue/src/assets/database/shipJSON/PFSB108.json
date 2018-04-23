@@ -1,0 +1,21 @@
+{
+    "id": "PFSB108",
+    "name": "Richelieu",
+    "tier": "Ⅷ",
+    "nation": "france",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】Richelieu",
+        "2": "【艦隊收藏】Richelieu 秋の私服Ver.",
+        "3": "【艦隊收藏】Richelieu 晴れ着Ver."
+    },
+    "戰艦少女": {
+        "4": "【戰艦少女】Richelieu",
+        "5": "【戰艦少女】Richelieu 改",
+        "6": "【戰艦少女】Richelieu 漫步於香榭麗舍Ver."
+    }
+}

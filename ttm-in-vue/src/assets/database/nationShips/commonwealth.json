@@ -1,0 +1,12 @@
+{
+  "pusd503": {
+    "name": "Vampire",
+    "tier": "III",
+    "type": "destroyer"
+  },
+  "pusc506": {
+    "name": "Perth",
+    "tier": "VI",
+    "type": "cruiser"
+  }
+}

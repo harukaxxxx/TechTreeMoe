@@ -1,0 +1,30 @@
+{
+    "id": "PASB509",
+    "name": "Missouri",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Missouri",
+        "4": "【戰艦少女】Missouri 正宗京味ㄦVer.",
+        "6": "【戰艦少女】Missouri 私人訂製Ver.",
+        "7": "【戰艦少女】Missouri 輕鬆一夏Ver."
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Missouri",
+        "3": "【鋼鐵少女】Missouri 改"
+    },
+    "November": {
+        "5": "【November】Missouri"
+    },
+    "最終戰艦": {
+        "8": "【最終戰艦】Missouri",
+        "9": "【最終戰艦】Missouri 泳裝Ver.",
+        "10": "【最終戰艦】Missouri 花嫁Ver.",
+        "11": "【最終戰艦】Missouri 兔女郎Ver."
+    }
+}
