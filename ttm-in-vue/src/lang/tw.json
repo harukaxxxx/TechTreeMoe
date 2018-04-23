@@ -11,6 +11,12 @@
     "usa": "美國",
     "ussr": "蘇聯"
   },
+  "about": {
+    "contact": "聯絡我們",
+    "contactContent":
+      "若您發現任何問題請至<a href='https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues'>Github</a>建立Issues回報！<br>（網站Bug、艦船缺漏、素材提供、功能建議等）",
+    "update": "更新紀錄"
+  },
   "charts": {
     "yesterdayDownloaded": "昨日下載量",
     "monthDownloaded": "本月下載量",

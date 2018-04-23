@@ -53,16 +53,13 @@
       <Col class="update" span="12" offset="12">
       <Card>
         <p slot="title">
-          <Icon type="social-github"></Icon> 聯絡我們
+          <Icon type="social-github"></Icon> {{$t('about.contact')}}
         </p>
-        <p>若您發現任何問題請至
-          <a href="https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues">Github</a>建立Issues回報！
-          <br>（網站Bug、艦船缺漏、素材提供、功能建議等）
-        </p>
+        <p v-html="$t('about.contactContent')"></p>
       </Card>
       <Card>
         <p slot="title">
-          <Icon type="ios-list"></Icon> 更新紀錄
+          <Icon type="ios-list"></Icon> {{$t('about.update')}}
         </p>
         <Timeline :style="{ height:logHeight + 'px' }">
           <TimelineItem v-for="update in updates" :key="update.index" :name="update.index" :color="updateLevel(update.level)">
