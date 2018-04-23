@@ -53,7 +53,7 @@
       <Col class="update" span="12" offset="12">
       <Card>
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>聯絡我們
+          <Icon type="social-github"></Icon> 聯絡我們
         </p>
         <p>若您發現任何問題請至
           <a href="https://github.com/harukaxxxx/WOWS-TechTreeMoe/issues">Github</a>建立Issues回報！
@@ -61,7 +61,9 @@
         </p>
       </Card>
       <Card>
-        <p slot="title">更新紀錄</p>
+        <p slot="title">
+          <Icon type="ios-list"></Icon> 更新紀錄
+        </p>
         <Timeline :style="{ height:logHeight + 'px' }">
           <TimelineItem v-for="update in updates" :key="update.index" :name="update.index" :color="updateLevel(update.level)">
             <p class="time">{{update.time}}</p>
@@ -76,9 +78,16 @@
 <script>
 export default {
   name: 'about',
+  data() {
+    return {
+      updates: Array,
+      logHeight: Number
+    }
+  },
   beforeMount() {
     this.updateData(this)
-
+  },
+  mounted() {
     let headerHeight = document.querySelector('header').offsetHeight
     let footerHeight = document.querySelector('footer').offsetHeight
     let contactHeight = document.querySelector('.update div:nth-child(1)').offsetHeight + 40
@@ -86,9 +95,6 @@ export default {
     this.logHeight = window.innerHeight - (headerHeight + footerHeight + contactHeight + updateTitleHeight)
   },
   methods: {
-    handleChange(val) {
-      console.log(val)
-    },
     updateLevel(level) {
       switch (level) {
         case 'IMPORTANT':
@@ -101,10 +107,10 @@ export default {
           return 'green'
           break
         case 'NEW':
-          return 'black'
+          return 'blue'
           break
         default:
-          return 'blue'
+          return 'black'
           break
       }
     },
@@ -117,13 +123,6 @@ export default {
         .catch(error => {
           console.error(error)
         })
-    }
-  },
-  data() {
-    return {
-      activeNames: ['1'],
-      updates: [],
-      updateTitle: 'date'
     }
   }
 }
