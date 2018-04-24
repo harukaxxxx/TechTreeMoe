@@ -15,7 +15,7 @@
     "element-ui": "^2.3.3",
     "expose-loader": "^0.7.5",
     "isotope-layout": "^3.0.6",
-    "iview": "^2.13.0",
+    "iview": "^2.13.1",
     "qs": "^6.5.1",
     "three": "^0.91.0",
     "v-charts": "^1.16.10",
