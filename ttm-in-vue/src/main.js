@@ -83,10 +83,14 @@ Vue.use(VueI18n)
 //i18n setting
 import en from './lang/en.json'
 import tw from './lang/tw.json'
+import cn from './lang/cn.json'
+import jp from './lang/jp.json'
 
 const locales = {
   en: en,
-  tw: tw
+  tw: tw,
+  jp: jp,
+  cn: cn
 }
 
 const i18n = new VueI18n({
