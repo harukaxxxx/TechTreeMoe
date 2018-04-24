@@ -118,7 +118,7 @@ export default {
           data.updates = response.data
         })
         .catch(error => {
-          console.error(error)
+          console.error(error.message)
         })
     }
   }
@@ -135,6 +135,7 @@ export default {
   }
   .ivu-card {
     margin: 20px;
+    background: #ffffffe6;
   }
   .update ul {
     overflow-y: scroll;
