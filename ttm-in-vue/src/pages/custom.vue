@@ -84,69 +84,38 @@
       </div>
     </div> -->
 
-    <Card v-for="data in shipData" :key="data.id" :padding="0" :bordered="false">
-      <div class="shipImage" :style="`background-image:url(../src/assets/images/nation_flag/flag_${data.nation}.png)`">
-        <img :src="`../src/assets/images/ship_previews/${data.id}-${optionSelect[data.id]}.png`" :alt="data.name + ' image'">
-      </div>
-      <p class="shipName">
-        <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
-      </p>
-      <!-- v-model="optionSelect" -->
-
-      <Select v-model="optionSelect[data.id]" placeholder="Select..." not-found-text="Data not found" :element-id="data.id">
-        <OptionGroup v-if="data[options]" v-for="(options, groupIndex) in optionArray" :key="groupIndex" :label="options">
-          <Option v-for="(option, optionKey, optionIndex) in data[options]" :value="optionKey" :key="optionIndex" :label="option">
-            <span>{{option.substring(option.search('】') + 1)}}</span>
-            <span style="float:right;color:#ccc">{{data.id}}-{{optionKey}}</span>
-          </Option>
-        </OptionGroup>
-      </Select>
-      {{optionSelect[data.id]}}
-    </Card>
-
     <!-- <isotope :options="option" :list="shipData"> -->
-    <!-- <shipBox v-for="data in shipData" :key="data.id" :data="data" /> -->
+    <shipBox v-for="data in shipData" :key="data.id" :data="data" />
     <!-- </isotope> -->
+    <Modal :title="modalData.name" v-model="modal" class-name="vertical-center-modal" width="80">
+      <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
+        <h1>{{options}}</h1>
+        <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" padding="0" class="option-box">
+          <p slot="title">{{option.substring(option.search('】')+1)}}</p>
+          <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
+        </Card>
+      </div>
+    </Modal>
   </div>
 </template>
 <script>
 import shipBox from '../components/shipbox.vue'
-import isotope from 'vueisotope'
 export default {
   data() {
     return {
       name: 'custom',
       shipData: [],
-      option: {
-        getSortData: {
-          id: 'id',
-          name: function(itemElem) {
-            return itemElem.name.toLowerCase()
-          }
-        },
-        getFilterData: {
-          isEven: function(itemElem) {
-            return itemElem.id % 2 === 0
-          },
-          isOdd: function(itemElem) {
-            return itemElem.id % 2 !== 0
-          },
-          filterByText: function(itemElem) {
-            return itemElem.name.toLowerCase().includes(this.filterText.toLowerCase())
-          }
-        }
-      },
-      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */,
-      optionSelect: {}
+      modal: false,
+      modalData: Object,
+      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */
     }
   },
   components: {
-    isotope
+    shipBox
   },
   beforeMount() {
-    let optionSelect = this.optionSelect
     axios
-      .get('../src/assets/database/shipDataSlim.json')
+      .get('../src/assets/database/shipData.json')
       .then(res => {
         let shipObject = res.data
         Object.keys(shipObject).map((nationKey, nationIndex) => {
@@ -154,40 +123,12 @@ export default {
           nationShips.forEach(ship => {
             this.shipData.push(ship)
             let id = ship.id
-            optionSelect[id] = ship.default.toString()
           })
-          Object.keys(shipObject[nationKey]).map((shipKey, shipIndex) => {})
         })
       })
       .catch(error => {
         console.log(error.message)
       })
-  },
-  mounted() {},
-  components: {
-    shipBox
-  },
-  created() {
-    // this.$bus.on('usa', () => console.log(this.$bus.usa, 'add usa'))
-    // this.$bus.once('once', () => console.log('这个监听器只会触发一次'))
-  },
-  mounted() {
-    // console.log(this.$parent.$parent)
-    // this.$bus.emit('add-todo', { text: 'this.newTodoText2' })
-    // this.$bus.emit('once')
-  },
-  methods: {
-    /* addTodo(newTodo) {
-      this.todos = newTodo
-    } */
-    setValue: function(id, key) {
-      console.log(typeof this.optionSelect[id])
-
-      // this.optionSelect[id] = key
-    }
-  },
-  beforeDestroy() {
-    // this.$bus.off('add-todo')
   }
 }
 </script>
@@ -200,79 +141,36 @@ export default {
     position: center;
     size: cover;
   }
-  .ivu-card {
-    margin: 20px;
-    width: 214px;
-    background: #ffffff99;
-    display: inline-block;
-    .shipName {
-      text-align: center;
-      font-family: 'Segoe UI', sans-serif;
-      font-weight: 700;
-      color: #00000099;
-      position: absolute;
-      top: 104px;
-      background: #ffffffcc;
-      border-top: 1px solid #fff9;
-      width: 100%;
+}
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal {
+    top: 0;
+  }
+}
+.ivu-modal {
+  top: 0;
+  text-align: center;
+  .ivu-modal-body {
+    height: calc(100vh - 120px);
+    overflow-y: auto;
+    h1 {
+      border-bottom: 1px solid #00000066;
     }
-    .shipImage {
-      height: 126px;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: contain;
-      border-bottom: 1px solid #fff9;
+    .option-box {
+      margin: 10px;
+      display: inline-block;
+      .ivu-card-head {
+        padding: 5px 0;
+      }
+      .ivu-card-body {
+        width: 214px;
+        height: 126px;
+      }
     }
-  }
-
-  .icon-destroyer {
-    width: 15px;
-    height: 11px;
-    background: url('../assets/images/icons.png') -33px -43px;
-    display: inline-block;
-  }
-  .icon-cruiser {
-    width: 20px;
-    height: 11px;
-    background: url('../assets/images/icons.png') -62px -36px;
-    display: inline-block;
-  }
-  .icon-battleship {
-    width: 20px;
-    height: 11px;
-    background: url('../assets/images/icons.png') -62px -25px;
-    display: inline-block;
-  }
-
-  .icon-aircarrier {
-    width: 20px;
-    height: 11px;
-    background: url('../assets/images/icons.png') -33px -32px;
-    display: inline-block;
-  }
-
-  .icon-arp {
-    width: 32px;
-    height: 32px;
-    background: url('../assets/images/icons.png') 0 0;
-  }
-
-  .icon-change {
-    width: 30px;
-    height: 30px;
-    background: url('../assets/images/icons.png') -32px 0;
-  }
-
-  .icon-premium {
-    width: 33px;
-    height: 25px;
-    background: url('../assets/images/icons.png') 0 -32px;
-  }
-
-  .icon-premium_icon {
-    width: 33px;
-    height: 25px;
-    background: url('../assets/images/icons.png') -62px 0;
   }
 }
 </style>

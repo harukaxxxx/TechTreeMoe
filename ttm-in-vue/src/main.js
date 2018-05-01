@@ -52,13 +52,6 @@ import '../src/assets/style/index.less'
 Vue.use(iView)
 
 /*
-* font awesome
-*/
-import 'vue-awesome/icons'
-import Icon from 'vue-awesome/components/Icon'
-Vue.component('icon', Icon)
-
-/*
 * google analytics
 */
 const isProd = process.env.NODE_ENV === 'production'
@@ -116,19 +109,6 @@ Vue.component(VeLine.name, VeLine)
 import axios from 'axios'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 window.axios = axios
-
-/*
-* Vuebus
-*/
-import VueBus from 'vue-bus'
-Vue.use(VueBus)
-
-/* var eventBus = {
-  install(Vue, options) {
-    Vue.prototype.$bus = Vue
-  }
-}
-Vue.use(eventBus) */
 
 /*
 * pages
