@@ -1,6 +1,12 @@
 import Vue from 'vue'
 
 /*
+* vuex
+*/
+import Vuex from 'vuex'
+Vue.use(Vuex)
+
+/*
 * vue-router
 */
 import VueRouter from 'vue-router'
@@ -55,9 +61,7 @@ Vue.component('icon', Icon)
 /*
 * google analytics
 */
-
 const isProd = process.env.NODE_ENV === 'production'
-
 import VueAnalytics from 'vue-analytics'
 Vue.use(VueAnalytics, {
   id: 'UA-42562282-2',
@@ -106,32 +110,50 @@ import 'echarts/lib/component/dataZoom'
 import 'echarts/lib/component/visualMap'
 Vue.component(VeLine.name, VeLine)
 
-// import axios
+/*
+* axios
+*/
 import axios from 'axios'
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 window.axios = axios
 
-// imort isotope
-import isotope from 'isotope-layout'
-// Vue.use(isotope);
-// window.isotope = isotope;
+/*
+* Vuebus
+*/
+import VueBus from 'vue-bus'
+Vue.use(VueBus)
 
-//import pages
+/* var eventBus = {
+  install(Vue, options) {
+    Vue.prototype.$bus = Vue
+  }
+}
+Vue.use(eventBus) */
+
+/*
+* pages
+*/
 import App from './App.vue'
 import intro from './pages/intro.vue'
 import custom from './pages/custom.vue'
 import about from './pages/about.vue'
 import charts from './pages/charts.vue'
 
-//import components
+/*
+* components
+*/
 import appHeader from './components/navbar.vue'
 import preview from './components/preview.vue'
 import appFooter from './components/footer.vue'
 
-// import global scss
+/*
+* styles
+*/
 import './assets/style/global.scss'
 
-// new vue and componets
+/*
+* new vue
+*/
 new Vue({
   el: '#app',
   router,

@@ -22,11 +22,14 @@
     "vue": "^2.5.11",
     "vue-analytics": "^5.10.2",
     "vue-awesome": "^3.0.0",
+    "vue-bus": "^1.1.0",
     "vue-echarts": "^3.0.7",
     "vue-i18n": "^7.6.0",
     "vue-router": "^3.0.1",
     "vue-schart": "^0.1.4",
-    "vue-threejs": "0.0.4"
+    "vue-threejs": "0.0.4",
+    "vueisotope": "^3.1.2",
+    "vuex": "^3.0.1"
   },
   "browserslist": [
     "> 1%",

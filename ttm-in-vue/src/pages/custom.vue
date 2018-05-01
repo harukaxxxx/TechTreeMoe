@@ -84,66 +84,110 @@
       </div>
     </div> -->
 
-    <div class="button-group filter-button-group">
-      <button data-filter="*">show all</button>
-      <button data-filter=".metal">metal</button>
-      <button data-filter=".transition">transition</button>
-      <button data-filter=".alkali, .alkaline-earth">alkali & alkaline-earth</button>
-      <button data-filter=":not(.transition)">not transition</button>
-      <button data-filter=".metal:not(.transition)">metal but not transition</button>
-    </div>
+    <Card v-for="data in shipData" :key="data.id" :padding="0" :bordered="false">
+      <div class="shipImage" :style="`background-image:url(../src/assets/images/nation_flag/flag_${data.nation}.png)`">
+        <img :src="`../src/assets/images/ship_previews/${data.id}-${optionSelect[data.id]}.png`" :alt="data.name + ' image'">
+      </div>
+      <p class="shipName">
+        <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
+      </p>
+      <!-- v-model="optionSelect" -->
 
-    <div class="grid">
-      <div class="grid-item transition metal">...</div>
-      <div class="grid-item post-transition metal">...</div>
-      <div class="grid-item alkali metal">...</div>
-      <div class="grid-item transition metal">...</div>
-      <div class="grid-item lanthanoid metal inner-transition">...</div>
-      <div class="grid-item halogen nonmetal">...</div>
-      <div class="grid-item alkaline-earth metal">...</div>
-    </div>
+      <Select v-model="optionSelect[data.id]" placeholder="Select..." not-found-text="Data not found" :element-id="data.id">
+        <OptionGroup v-if="data[options]" v-for="(options, groupIndex) in optionArray" :key="groupIndex" :label="options">
+          <Option v-for="(option, optionKey, optionIndex) in data[options]" :value="optionKey" :key="optionIndex" :label="option">
+            <span>{{option.substring(option.search('】') + 1)}}</span>
+            <span style="float:right;color:#ccc">{{data.id}}-{{optionKey}}</span>
+          </Option>
+        </OptionGroup>
+      </Select>
+      {{optionSelect[data.id]}}
+    </Card>
 
-    <!-- <div id="Container">
-      <template id="shipBox">
-        <div class="mix">
-          <p class="ship">
-            <span class="tier">__TIER__</span>__NAME__</p>
-          <div class="img_container">
-            <div class="addon">
-              <img src="__SHIP_PREVIEWS__">
-            </div>
-          </div>
-          <select name="__ID__" data-am-selected>
-            <optgroup label="__BAND__">
-              <option value="__ID__-0">【__BAND__】__NAME__</option>
-            </optgroup>
-          </select>
-        </div>
-      </template>
-    </div> -->
-
+    <!-- <isotope :options="option" :list="shipData"> -->
+    <!-- <shipBox v-for="data in shipData" :key="data.id" :data="data" /> -->
+    <!-- </isotope> -->
   </div>
 </template>
 <script>
+import shipBox from '../components/shipbox.vue'
+import isotope from 'vueisotope'
 export default {
-  beforeMount() {
-    var elem = document.querySelector('.grid')
-    var iso = new Isotope(elem, {
-      // options
-      itemSelector: '.grid-item',
-      layoutMode: 'fitRows'
-    })
-
-    var isotopeFilter = document.querySelector('.filter-button-group')
-    isotopeFilter.on('click', 'button', function() {
-      var filterValue = $(this).attr('data-filter')
-      $grid.isotope({ filter: filterValue })
-    })
-  },
   data() {
     return {
-      sContent: 'This is custom components'
+      name: 'custom',
+      shipData: [],
+      option: {
+        getSortData: {
+          id: 'id',
+          name: function(itemElem) {
+            return itemElem.name.toLowerCase()
+          }
+        },
+        getFilterData: {
+          isEven: function(itemElem) {
+            return itemElem.id % 2 === 0
+          },
+          isOdd: function(itemElem) {
+            return itemElem.id % 2 !== 0
+          },
+          filterByText: function(itemElem) {
+            return itemElem.name.toLowerCase().includes(this.filterText.toLowerCase())
+          }
+        }
+      },
+      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */,
+      optionSelect: {}
     }
+  },
+  components: {
+    isotope
+  },
+  beforeMount() {
+    let optionSelect = this.optionSelect
+    axios
+      .get('../src/assets/database/shipDataSlim.json')
+      .then(res => {
+        let shipObject = res.data
+        Object.keys(shipObject).map((nationKey, nationIndex) => {
+          let nationShips = Object.values(shipObject[nationKey])
+          nationShips.forEach(ship => {
+            this.shipData.push(ship)
+            let id = ship.id
+            optionSelect[id] = ship.default.toString()
+          })
+          Object.keys(shipObject[nationKey]).map((shipKey, shipIndex) => {})
+        })
+      })
+      .catch(error => {
+        console.log(error.message)
+      })
+  },
+  mounted() {},
+  components: {
+    shipBox
+  },
+  created() {
+    // this.$bus.on('usa', () => console.log(this.$bus.usa, 'add usa'))
+    // this.$bus.once('once', () => console.log('这个监听器只会触发一次'))
+  },
+  mounted() {
+    // console.log(this.$parent.$parent)
+    // this.$bus.emit('add-todo', { text: 'this.newTodoText2' })
+    // this.$bus.emit('once')
+  },
+  methods: {
+    /* addTodo(newTodo) {
+      this.todos = newTodo
+    } */
+    setValue: function(id, key) {
+      console.log(typeof this.optionSelect[id])
+
+      // this.optionSelect[id] = key
+    }
+  },
+  beforeDestroy() {
+    // this.$bus.off('add-todo')
   }
 }
 </script>
@@ -155,6 +199,80 @@ export default {
     repeat: no-repeat;
     position: center;
     size: cover;
+  }
+  .ivu-card {
+    margin: 20px;
+    width: 214px;
+    background: #ffffff99;
+    display: inline-block;
+    .shipName {
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+      font-weight: 700;
+      color: #00000099;
+      position: absolute;
+      top: 104px;
+      background: #ffffffcc;
+      border-top: 1px solid #fff9;
+      width: 100%;
+    }
+    .shipImage {
+      height: 126px;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
+      border-bottom: 1px solid #fff9;
+    }
+  }
+
+  .icon-destroyer {
+    width: 15px;
+    height: 11px;
+    background: url('../assets/images/icons.png') -33px -43px;
+    display: inline-block;
+  }
+  .icon-cruiser {
+    width: 20px;
+    height: 11px;
+    background: url('../assets/images/icons.png') -62px -36px;
+    display: inline-block;
+  }
+  .icon-battleship {
+    width: 20px;
+    height: 11px;
+    background: url('../assets/images/icons.png') -62px -25px;
+    display: inline-block;
+  }
+
+  .icon-aircarrier {
+    width: 20px;
+    height: 11px;
+    background: url('../assets/images/icons.png') -33px -32px;
+    display: inline-block;
+  }
+
+  .icon-arp {
+    width: 32px;
+    height: 32px;
+    background: url('../assets/images/icons.png') 0 0;
+  }
+
+  .icon-change {
+    width: 30px;
+    height: 30px;
+    background: url('../assets/images/icons.png') -32px 0;
+  }
+
+  .icon-premium {
+    width: 33px;
+    height: 25px;
+    background: url('../assets/images/icons.png') 0 -32px;
+  }
+
+  .icon-premium_icon {
+    width: 33px;
+    height: 25px;
+    background: url('../assets/images/icons.png') -62px 0;
   }
 }
 </style>
