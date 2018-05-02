@@ -9,7 +9,19 @@
     "poland": "波蘭",
     "uk": "英國",
     "usa": "美國",
-    "ussr": "蘇聯"
+    "ussr": "蘇聯",
+    "destroyer": "驅逐艦",
+    "cruiser": "巡洋艦",
+    "battleship": "戰艦",
+    "aircarrier": "航空母艦"
+  },
+  "custom": {
+    "all": "全部顯示",
+    "change": "可更替",
+    "premium": "加值艦",
+    "save": "儲存",
+    "load": "載入",
+    "reset": "回復預設"
   },
   "about": {
     "contact": "聯絡我們",

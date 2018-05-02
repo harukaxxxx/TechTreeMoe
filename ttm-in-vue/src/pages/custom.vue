@@ -1,92 +1,22 @@
 <template>
   <div id="custom" class="main">
-    <!-- <div class="filter-group">
-      <div class="am-btn-group">
-        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="filterReset();" tkey="tkey_filter_all">
-          <span class="am-icon-tags"></span>全部顯示</button>
-      </div>
-      <div class="am-btn-group" data-am-button>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_japan">
-          <input type="radio" class="options" name="nation" value=".japan">
-          <span class="am-icon-flag"></span>日本
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_usa">
-          <input type="radio" class="options" name="nation" value=".usa">
-          <span class="am-icon-flag"></span>美國
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_ussr">
-          <input type="radio" class="options" name="nation" value=".ussr">
-          <span class="am-icon-flag"></span>蘇聯
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_germany">
-          <input type="radio" class="options" name="nation" value=".germany">
-          <span class="am-icon-flag"></span>德國
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_uk">
-          <input type="radio" class="options" name="nation" value=".uk">
-          <span class="am-icon-flag"></span>英國
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_pan_asia">
-          <input type="radio" class="options" name="nation" value=".pan_asia">
-          <span class="am-icon-flag"></span>泛亞
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_france">
-          <input type="radio" class="options" name="nation" value=".france">
-          <span class="am-icon-flag"></span>法國
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_italia">
-          <input type="radio" class="options" name="nation" value=".italia">
-          <span class="am-icon-flag"></span>義大利
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_commonwealth">
-          <input type="radio" class="options" name="nation" value=".commonwealth">
-          <span class="am-icon-flag"></span>聯邦
-        </label>
-      </div>
-      <div class="am-btn-group" data-am-button>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_destroyer">
-          <input type="radio" class="options" name="type" value=".destroyer">
-          <span class="am-icon-anchor"></span> 驅逐艦
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_cruiser">
-          <input type="radio" class="options" name="type" value=".cruiser">
-          <span class="am-icon-anchor"></span> 巡洋艦
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_battleship">
-          <input type="radio" class="options" name="type" value=".battleship">
-          <span class="am-icon-anchor"></span> 戰艦
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_aircarrier">
-          <input type="radio" class="options" name="type" value=".aircarrier">
-          <span class="am-icon-anchor"></span> 航空母艦
-        </label>
-      </div>
-      <div class="am-btn-group" data-am-button>
-        <label class="am-btn am-btn-primary am-btn-sm am-round" tkey="tkey_filter_change">
-          <input type="radio" class="options" name="extra" value=".change">
-          <span class="am-icon-paint-brush"></span> 可更替
-        </label>
-        <label class="am-btn am-btn-primary am-btn-sm am-round am-icon-premium" tkey="tkey_filter_premium">
-          <input type="radio" class="options" name="extra" value=".premium">
-          <img src="assets/images/icons/premium_icon.png"> 加值艦
-        </label>
-      </div>
-      <div class="am-btn-group">
-        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="dataSave()" tkey="tkey_filter_save">
-          <span class="am-icon-folder"></span>儲存
-        </button>
-        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="restore()" tkey="tkey_filter_load">
-          <span class="am-icon-folder-open"></span>載入
-        </button>
-        <button type="button" class="am-btn am-btn-primary am-btn-sm am-round" onclick="reset()" tkey="tkey_filter_reset">
-          <span class="am-icon-refresh"></span>回復預設
-        </button>
-      </div>
-    </div> -->
-
-    <!-- <isotope :options="option" :list="shipData"> -->
-    <shipBox v-for="data in shipData" :key="data.id" :data="data" />
-    <!-- </isotope> -->
+    <div class="filter-container">
+      <Button @click="filter('all')">{{$t("custom.all")}}</Button>
+      <ButtonGroup>
+        <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" @click="filter(shipNation)">{{$t("global." + shipNation)}}</Button>
+      </ButtonGroup>
+      <ButtonGroup>
+        <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" @click="filter(shipType)">{{$t("global." + shipType)}}</Button>
+      </ButtonGroup>
+      <ButtonGroup>
+        <Button>{{$t("custom.save")}}</Button>
+        <Button>{{$t("custom.load")}}</Button>
+        <Button>{{$t("custom.reset")}}</Button>
+      </ButtonGroup>
+    </div>
+    <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
+      <shipBox v-for="data in shipData" :key="data.id" :data="data" />
+    </isotope>
     <Modal :title="modalData.name" v-model="modal" class-name="vertical-center-modal" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
@@ -101,6 +31,8 @@
   </div>
 </template>
 <script>
+// import isotope from 'isotope-layout'
+import isotope from 'vueisotope'
 import shipBox from '../components/shipbox.vue'
 export default {
   data() {
@@ -109,10 +41,68 @@ export default {
       shipData: [],
       modal: false,
       modalData: Object,
-      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */
+      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */,
+      nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
+      typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
+      isotopeOption: {
+        layoutMode: 'masonry',
+        getFilterData: {
+          all: function() {
+            return true
+          },
+          japan: function(ship) {
+            return ship.nation === 'japan'
+          },
+          usa: function(ship) {
+            return ship.nation === 'usa'
+          },
+          ussr: function(ship) {
+            return ship.nation === 'ussr'
+          },
+          germany: function(ship) {
+            return ship.nation === 'germany'
+          },
+          uk: function(ship) {
+            return ship.nation === 'uk'
+          },
+          pan_asia: function(ship) {
+            return ship.nation === 'pan_asia'
+          },
+          france: function(ship) {
+            return ship.nation === 'france'
+          },
+          italia: function(ship) {
+            return ship.nation === 'italia'
+          },
+          commonwealth: function(ship) {
+            return ship.nation === 'commonwealth'
+          },
+          destroyer: function(ship) {
+            return ship.type === 'destroyer'
+          },
+          cruiser: function(ship) {
+            return ship.type === 'cruiser'
+          },
+          battleship: function(ship) {
+            return ship.type === 'battleship'
+          },
+          aircarrier: function(ship) {
+            return ship.type === 'aircarrier'
+          }
+        },
+        hiddenStyle: {
+          opacity: 0,
+          transform: 'scale(0.5)'
+        },
+        visibleStyle: {
+          opacity: 1,
+          transform: 'scale(1)'
+        }
+      }
     }
   },
   components: {
+    isotope,
     shipBox
   },
   beforeMount() {
@@ -131,6 +121,11 @@ export default {
       .catch(error => {
         console.log(error.message)
       })
+  },
+  methods: {
+    filter: function(filterKey) {
+      this.$refs.isotope.filter(filterKey)
+    }
   }
 }
 </script>
@@ -143,6 +138,14 @@ export default {
     position: center;
     size: cover;
   }
+}
+.filter-container {
+  text-align: center;
+  margin: 20px 0;
+}
+.isotope-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .vertical-center-modal {
   display: flex;

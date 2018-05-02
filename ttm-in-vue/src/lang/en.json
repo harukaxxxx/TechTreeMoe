@@ -9,7 +9,19 @@
     "poland": "Poland",
     "uk": "UK",
     "usa": "USA",
-    "ussr": "USSR"
+    "ussr": "USSR",
+    "destroyer": "Destroyer",
+    "cruiser": "Cruiser",
+    "battleship": "Battleship",
+    "aircarrier": "Aircraft Carrier"
+  },
+  "custom": {
+    "all": "All",
+    "change": "Changeable",
+    "premium": "Premium",
+    "save": "Save",
+    "load": "Load",
+    "reset": "Reset"
   },
   "about": {
     "contact": "Contact",

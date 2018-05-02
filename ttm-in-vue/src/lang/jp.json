@@ -9,7 +9,19 @@
     "poland": "ポーランド",
     "uk": "イギリス",
     "usa": "アメリカ",
-    "ussr": "ソ連"
+    "ussr": "ソ連",
+    "destroyer": "駆逐艦",
+    "cruiser": "巡洋艦",
+    "battleship": "戦艦",
+    "aircarrier": "航空母艦"
+  },
+  "custom": {
+    "all": "すべて",
+    "change": "置き換える",
+    "premium": "プレミアム",
+    "save": "セーブ",
+    "load": "ロード",
+    "reset": "リセット"
   },
   "about": {
     "contact": "聯絡我們",
