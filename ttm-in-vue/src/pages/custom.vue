@@ -90,9 +90,11 @@
     <Modal :title="modalData.name" v-model="modal" class-name="vertical-center-modal" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
-        <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" padding="0" class="option-box">
-          <p slot="title">{{option.substring(option.search('】')+1)}}</p>
-          <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
+        <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
+          <div>
+            <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
+            <p>{{option.substring(option.search('】')+1)}}</p>
+          </div>
         </Card>
       </div>
     </Modal>
@@ -159,6 +161,7 @@ export default {
     overflow-y: auto;
     h1 {
       border-bottom: 1px solid #00000066;
+      margin-bottom: 20px;
     }
     .option-box {
       margin: 10px;
@@ -169,6 +172,16 @@ export default {
       .ivu-card-body {
         width: 214px;
         height: 126px;
+      }
+      img {
+        border-radius: 4px;
+      }
+      p {
+        position: relative;
+        bottom: 27px;
+        background: #fffc;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
       }
     }
   }
