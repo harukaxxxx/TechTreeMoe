@@ -23,8 +23,8 @@ export default {
   computed: {},
   methods: {
     openModal: function() {
-      this.$parent.$parentz.modal = true
-      this.$parent.$parentz.modalData = this.data
+      this.$parent.$parent.modal = true
+      this.$parent.$parent.modalData = this.data
     }
   },
   data() {

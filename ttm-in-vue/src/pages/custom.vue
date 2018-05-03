@@ -23,7 +23,11 @@
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
           <div>
             <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
-            <p>{{option.substring(option.search('】')+1)}}</p>
+            <p v-if="typeof option === 'object'">
+              <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'">【{{option[0]}}】</a>
+              <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'">{{option[2]}}</a>
+            </p>
+            <p v-else="">{{option.substring(option.search('】')+1)}}</p>
           </div>
         </Card>
       </div>
@@ -41,7 +45,7 @@ export default {
       shipData: [],
       modal: false,
       modalData: Object,
-      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles'] /* '同人作品' */,
+      optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
       nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
       isotopeOption: {
@@ -185,6 +189,9 @@ export default {
         background: #fffc;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
+        a {
+          color: #000;
+        }
       }
     }
   }
