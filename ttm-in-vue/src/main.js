@@ -51,6 +51,15 @@ import 'iview/dist/styles/iview.css'
 import '../src/assets/style/index.less'
 Vue.use(iView)
 
+// page loading bar
+router.beforeEach((to, from, next) => {
+  iView.LoadingBar.start()
+  next()
+})
+router.afterEach(route => {
+  iView.LoadingBar.finish()
+})
+
 /*
 * google analytics
 */
@@ -65,6 +74,12 @@ Vue.use(VueAnalytics, {
     page: isProd
   }
 })
+
+/*
+* vue bus
+*/
+import VueBus from 'vue-bus'
+Vue.use(VueBus)
 
 //import vue-localforage
 // import VueLocalForage from 'vue-localforage'

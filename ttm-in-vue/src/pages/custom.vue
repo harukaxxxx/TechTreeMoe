@@ -17,18 +17,21 @@
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
       <shipBox v-for="data in shipData" :key="data.id" :data="data" />
     </isotope>
-    <Modal :title="modalData.name" v-model="modal" class-name="vertical-center-modal" width="80">
+    <Modal :title="modalData.name" v-model="modal" @on-ok="optionUpadte" class-name="vertical-center-modal" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
-          <div>
+          <a @click="modalData.default = Number(optionKey)">
+            <div v-if="modalData.default === Number(optionKey)" class="checked">
+              <Icon type="checkmark-circled"></Icon>
+            </div>
             <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
             <p v-if="typeof option === 'object'">
               <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'">【{{option[0]}}】</a>
               <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'">{{option[2]}}</a>
             </p>
-            <p v-else="">{{option.substring(option.search('】')+1)}}</p>
-          </div>
+            <p v-else>{{option.substring(option.search('】')+1)}}</p>
+          </a>
         </Card>
       </div>
     </Modal>
@@ -38,6 +41,9 @@
 // import isotope from 'isotope-layout'
 import isotope from 'vueisotope'
 import shipBox from '../components/shipbox.vue'
+import JSZip from 'jszip'
+import FileSaver from 'file-saver'
+
 export default {
   data() {
     return {
@@ -48,6 +54,7 @@ export default {
       optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
       nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
+      selectedOption: {},
       isotopeOption: {
         layoutMode: 'masonry',
         getFilterData: {
@@ -118,17 +125,92 @@ export default {
           let nationShips = Object.values(shipObject[nationKey])
           nationShips.forEach(ship => {
             this.shipData.push(ship)
-            let id = ship.id
+            this.selectedOption[ship.id] = ship.default
           })
         })
       })
       .catch(error => {
         console.log(error.message)
       })
+
+    this.$bus.on('downloadFile', () => {
+      this.download()
+    })
   },
   methods: {
     filter: function(filterKey) {
       this.$refs.isotope.filter(filterKey)
+    },
+    optionUpadte: function() {
+      let id = this.modalData.id
+      this.selectedOption[id] = this.modalData.default
+    },
+    download: function() {
+      const zip = new JSZip()
+      const cache = {}
+      const promises = []
+
+      // init file paths
+      let shipPreviews = []
+      let shipPreviewsDS = []
+      let selectedOption = this.selectedOption
+      Object.keys(selectedOption).map(key => {
+        shipPreviews.push(`../src/assets/images/ship_previews/${key}-${selectedOption[key]}.png`)
+        shipPreviewsDS.push(`../src/assets/images/ship_previews_ds/${key}-${selectedOption[key]}.png`)
+      })
+
+      // get file function
+      const getFile = url => {
+        return new Promise((resolve, reject) => {
+          axios({
+            method: 'get',
+            url,
+            responseType: 'arraybuffer'
+          })
+            .then(res => {
+              resolve(res.data)
+            })
+            .catch(error => {
+              reject(error.toString())
+            })
+        })
+      }
+
+      // add files into zip
+      this.$Loading.start()
+      let filePaths = [shipPreviews, shipPreviewsDS]
+      let folderName = ['ship_previews', 'ship_previews_ds']
+      for (let index = 0; index < filePaths.length; index++) {
+        const filePath = filePaths[index]
+        filePath.forEach(item => {
+          const promise = getFile(item)
+            .then(response => {
+              const nameArray = item.split('/')
+              const nameOption = nameArray[nameArray.length - 1]
+              const fileName = nameOption.split('-')[0] + '.png'
+              zip.folder(folderName[index]).file(fileName, response, { binary: true })
+              cache[fileName] = response
+            })
+            .catch(error => {
+              this.$Loading.error()
+              console.log(error.message)
+            })
+          promises.push(promise)
+        })
+      }
+      // download with filesaver
+      Promise.all(promises).then(() => {
+        zip
+          .generateAsync({ type: 'blob' })
+          .then(content => {
+            FileSaver.saveAs(content, 'res_mod.zip')
+            this.$Loading.finish()
+          })
+          .catch(error => {
+            this.$Loading.error()
+            console.log(error.message)
+          })
+      })
     }
   }
 }
@@ -169,16 +251,32 @@ export default {
     h1 {
       border-bottom: 1px solid #00000066;
       margin-bottom: 20px;
+      width: fit-content;
+      margin: 0 auto 20px;
+      padding: 0 20px;
     }
     .option-box {
       margin: 10px;
       display: inline-block;
+      a {
+        color: #495060;
+      }
       .ivu-card-head {
         padding: 5px 0;
       }
       .ivu-card-body {
         width: 214px;
         height: 126px;
+      }
+      .checked {
+        width: 214px;
+        height: 126px;
+        position: absolute;
+        top: 0;
+        background: rgba(#333, 0.4);
+        color: #fff;
+        font-size: 70px;
+        border-radius: 4px;
       }
       img {
         border-radius: 4px;
@@ -189,9 +287,6 @@ export default {
         background: #fffc;
         border-bottom-left-radius: 4px;
         border-bottom-right-radius: 4px;
-        a {
-          color: #000;
-        }
       }
     }
   }
