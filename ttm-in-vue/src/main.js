@@ -81,10 +81,11 @@ Vue.use(VueAnalytics, {
 import VueBus from 'vue-bus'
 Vue.use(VueBus)
 
-//import vue-localforage
-// import VueLocalForage from 'vue-localforage'
-// Vue.use(VueLocalForage)
-//pending on dev
+/*
+* vue-localforage
+*/
+import VueLocalForage from 'vue-localforage'
+Vue.use(VueLocalForage)
 
 /*
 * i18n

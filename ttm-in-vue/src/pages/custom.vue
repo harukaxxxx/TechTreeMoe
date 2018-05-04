@@ -9,9 +9,9 @@
         <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" @click="filter(shipType)">{{$t("global." + shipType)}}</Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Button>{{$t("custom.save")}}</Button>
-        <Button>{{$t("custom.load")}}</Button>
-        <Button>{{$t("custom.reset")}}</Button>
+        <Button @click="save">{{$t("custom.save")}}</Button>
+        <Button @click="load">{{$t("custom.load")}}</Button>
+        <Button @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
@@ -136,6 +136,7 @@ export default {
     this.$bus.on('downloadFile', () => {
       this.download()
     })
+    this.load(true)
   },
   methods: {
     filter: function(filterKey) {
@@ -145,10 +146,55 @@ export default {
       let id = this.modalData.id
       this.selectedOption[id] = this.modalData.default
     },
+    save: function() {
+      this.$setItem('selectedOptioin', this.selectedOption)
+      this.notice('已儲存您的選擇紀錄！', 'success')
+    },
+    load: function(status) {
+      this.$getItem('selectedOptioin').then(res => {
+        if (res === null) {
+          if (!status) {
+            this.notice('查無選擇紀錄！', 'error')
+          }
+        } else {
+          this.shipData.forEach(data => {
+            let id = data.id
+            data.default = res[id]
+          })
+          this.selectedOption = res
+          this.notice('已載入您的選擇紀錄！', 'success')
+        }
+      })
+    },
+    reset: function() {
+      this.$removeItem('selectedOptioin')
+      this.$router.push({
+        path: '/empty'
+      })
+      this.$router.go(-1)
+      this.notice('已回復預設選項！', 'success')
+    },
+    notice(message, status) {
+      switch (status) {
+        case 'warning':
+          this.$Message.warning({ content: message, duration: 3 })
+          break
+        case 'success':
+          this.$Message.success({ content: message, duration: 3 })
+          break
+        case 'error':
+          this.$Message.error({ content: message, duration: 3 })
+          break
+        default:
+          this.$Message.info({ content: message, duration: 3 })
+          break
+      }
+    },
     download: function() {
       const zip = new JSZip()
       const cache = {}
       const promises = []
+      this.save()
 
       // init file paths
       let shipPreviews = []

@@ -33,6 +33,7 @@
     "vue-bus": "^1.1.0",
     "vue-echarts": "^3.0.7",
     "vue-i18n": "^7.6.0",
+    "vue-localforage": "^0.2.5",
     "vue-router": "^3.0.1",
     "vue-schart": "^0.1.4",
     "vue-threejs": "0.0.4",
