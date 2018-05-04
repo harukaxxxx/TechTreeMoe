@@ -1,12 +1,6 @@
 import Vue from 'vue'
 
 /*
-* vuex
-*/
-import Vuex from 'vuex'
-Vue.use(Vuex)
-
-/*
 * vue-router
 */
 import VueRouter from 'vue-router'
