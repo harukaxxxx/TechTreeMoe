@@ -1,0 +1,14 @@
+{
+    "id": "PGSB109",
+    "name": "F. der Große",
+    "tier": "Ⅸ",
+    "nation": "germany",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Hidenburg"
+    }
+}

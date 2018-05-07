@@ -1,0 +1,15 @@
+{
+    "id": "PBSB527",
+    "name": "Duke of York",
+    "tier": "Ⅶ",
+    "nation": "uk",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Duke of York",
+        "2": "【戰艦少女】Duke of York 騎士之禮Ver."
+    }
+}

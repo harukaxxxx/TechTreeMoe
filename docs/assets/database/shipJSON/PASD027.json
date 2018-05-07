@@ -1,0 +1,18 @@
+{
+    "id": "PASD027",
+    "name": "Wickes",
+    "tier": "Ⅲ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 6,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "2": "【戰艦少女】William.D.Porter",
+        "3": "【戰艦少女】William.D.Porter William the Joker Ver.",
+        "4": "【戰艦少女】Dyson",
+        "5": "【戰艦少女】Dyson 星之所在Ver.",
+        "6": "【戰艦少女】Claxton"
+    }
+}

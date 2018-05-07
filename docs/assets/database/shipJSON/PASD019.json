@@ -1,0 +1,14 @@
+{
+    "id": "PASD019",
+    "name": "Clemson",
+    "tier": "Ⅳ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "November": {
+        "1": "【November】Edsall"
+    }
+}

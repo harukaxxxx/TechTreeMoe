@@ -1,0 +1,17 @@
+{
+    "id": "PASB006",
+    "name": "New York",
+    "tier": "Ⅴ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "November": {
+        "1": "【November】Pennsylvania"
+    },
+    "碧藍航線": {
+        "2": "【碧藍航線】Pennsylvania"
+    }
+}

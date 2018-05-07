@@ -1,0 +1,29 @@
+{
+    "id": "PBSB517",
+    "name": "Nelson",
+    "tier": "Ⅶ",
+    "nation": "uk",
+    "type": "battleship",
+    "default": 10,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Nelson",
+        "2": "【戰艦少女】Nelson 改",
+        "3": "【戰艦少女】Nelson HMS VICTORY Ver.",
+        "4": "【戰艦少女】Rodney",
+        "5": "【戰艦少女】Rodney 改",
+        "6": "【戰艦少女】Rodney 蘿莉Ver.",
+        "7": "【戰艦少女】Rodney 羅德油Ver."
+    },
+    "鋼鐵少女": {
+        "8": "【鋼鐵少女】Nelson",
+        "9": "【鋼鐵少女】Nelson 泳裝Ver."
+    },
+    "碧藍航線": {
+        "10": "【碧藍航線】Nelson",
+        "11": "【碧藍航線】Rodney",
+        "12": "【碧藍航線】Rodney 未來的海濱上將Ver."
+    }
+}

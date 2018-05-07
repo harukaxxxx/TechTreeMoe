@@ -1,0 +1,17 @@
+{
+    "id": "PBSB109",
+    "name": "Lion",
+    "tier": "Ⅸ",
+    "nation": "uk",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Lion"
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Lion"
+    }
+}

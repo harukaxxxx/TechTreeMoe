@@ -1,0 +1,14 @@
+{
+    "id": "PASD002",
+    "name": "Sampson",
+    "tier": "Ⅱ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "November": {
+        "1": "【November】Narwhal"
+    }
+}

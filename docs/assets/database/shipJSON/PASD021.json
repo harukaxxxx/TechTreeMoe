@@ -1,0 +1,31 @@
+{
+    "id": "PASD021",
+    "name": "Fletcher",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 5,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Fletcher",
+        "4": "【戰艦少女】Fletcher 改",
+        "9": "【戰艦少女】Johnston",
+        "10": "【戰艦少女】Anthony",
+        "11": "【戰艦少女】Thatcher",
+        "12": "【戰艦少女】Thatcher 聖誕華服Ver."
+    },
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】Fletcher",
+        "5": "【鋼鐵少女】Fletcher 改二",
+        "6": "【鋼鐵少女】Fletcher 夏日泳裝Ver."
+    },
+    "碧藍航線": {
+        "3": "【碧藍航線】Fletcher"
+    },
+    "最終戰艦": {
+        "7": "【最終戰艦】Fletcher",
+        "8": "【最終戰艦】Fletcher 泳裝Ver."
+    }
+}

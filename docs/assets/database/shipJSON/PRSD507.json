@@ -1,0 +1,14 @@
+{
+    "id": "PRSD507",
+    "name": "Leningrad",
+    "tier": "Ⅶ",
+    "nation": "ussr",
+    "type": "destroyer",
+    "default": "1",
+    "change": false,
+    "premium": true,
+    "arp": false,
+    "Victory_Belles": {
+        "1": "【Victory Belles】Leningrad"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "id": "PBSC105",
+    "name": "Emerald",
+    "tier": "Ⅴ",
+    "nation": "uk",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Emerald"
+    }
+}

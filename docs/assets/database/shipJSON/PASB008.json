@@ -1,0 +1,27 @@
+{
+    "id": "PASB008",
+    "name": "Colorado",
+    "tier": "Ⅶ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 2,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Colorado",
+        "2": "【戰艦少女】Colorado 改",
+        "4": "【戰艦少女】Maryland",
+        "5": "【戰艦少女】Maryland 改",
+        "6": "【戰艦少女】West Virginia",
+        "7": "【戰艦少女】West Virginia 改",
+        "8": "【戰艦少女】Maryland 試驗型改良艦裝Ver."
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Maryland"
+    },
+    "November": {
+        "9": "【November】Maryland",
+        "10": "【November】West Virginia"
+    }
+}

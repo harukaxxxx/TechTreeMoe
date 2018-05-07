@@ -1,0 +1,15 @@
+{
+    "id": "PASD014",
+    "name": "Nicholas",
+    "tier": "Ⅴ",
+    "nation": "usa",
+    "type": "destroyer",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】O'Bannon",
+        "2": "【戰艦少女】O'Bannon 花間少女Ver."
+    }
+}

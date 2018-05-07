@@ -1,0 +1,17 @@
+{
+    "id": "PRSC001",
+    "name": "Aurora",
+    "tier": "Ⅲ",
+    "nation": "ussr",
+    "type": "cruiser",
+    "default": 2,
+    "change": true,
+    "premium": true,
+    "arp": false,
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】Aurora"
+    },
+    "碧藍航線": {
+        "2": "【碧藍航線】Aurora"
+    }
+}

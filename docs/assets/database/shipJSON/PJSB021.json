@@ -1,0 +1,25 @@
+{
+    "id": "PJSB021",
+    "name": "出雲",
+    "tier": "Ⅸ",
+    "nation": "japan",
+    "type": "battleship",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "同人作品": {
+        "1": [
+            "安佐川",
+            "https://twitter.com/asaka142",
+            "出雲",
+            ""
+        ],
+        "2": [
+            "安佐川",
+            "https://twitter.com/asaka142",
+            "磐手",
+            "https://twitter.com/asaka142/status/639032260058984448"
+        ]
+    }
+}

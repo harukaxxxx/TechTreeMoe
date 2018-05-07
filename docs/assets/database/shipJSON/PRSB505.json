@@ -1,0 +1,16 @@
+{
+    "id": "PRSB505",
+    "name": "Okt. Revolutsiya",
+    "tier": "Ⅴ",
+    "nation": "ussr",
+    "type": "battleship",
+    "default": "1",
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】Гангут",
+        "2": "【艦隊收藏】Октябрьская революция",
+        "3": "【艦隊收藏】Гангут два"
+    }
+}

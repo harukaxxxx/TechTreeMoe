@@ -1,0 +1,18 @@
+{
+    "id": "PASB508",
+    "name": "Alabama",
+    "tier": "Ⅷ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "2": "【戰艦少女】South Dakota",
+        "3": "【戰艦少女】South Dakota 歸鄉的少女Ver."
+    },
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】Alabama 改"
+    }
+}

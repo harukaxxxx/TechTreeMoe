@@ -1,0 +1,18 @@
+{
+    "id": "PASB018",
+    "name": "Iowa",
+    "tier": "Ⅸ",
+    "nation": "usa",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "艦隊收藏": {
+        "1": "【艦隊收藏】Iowa",
+        "3": "【艦隊收藏】Iowa 晴れ着Ver."
+    },
+    "November": {
+        "2": "【November】Iowa"
+    }
+}

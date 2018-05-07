@@ -1,0 +1,14 @@
+{
+    "id": "PFSC506",
+    "name": "De Grasse",
+    "tier": "Ⅳ",
+    "nation": "france",
+    "type": "cruiser",
+    "default": 1,
+    "change": false,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】De Grasse"
+    }
+}

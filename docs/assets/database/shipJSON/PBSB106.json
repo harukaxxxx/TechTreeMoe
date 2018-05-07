@@ -1,0 +1,18 @@
+{
+    "id": "PBSB106",
+    "name": "Queen Elizabeth",
+    "tier": "Ⅵ",
+    "nation": "uk",
+    "type": "battleship",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "戰艦少女": {
+        "1": "【戰艦少女】Queen Elizabeth",
+        "2": "【戰艦少女】Queen Elizabeth 街頭美食家Ver."
+    },
+    "鋼鐵少女": {
+        "3": "【鋼鐵少女】Queen Elizabeth"
+    }
+}

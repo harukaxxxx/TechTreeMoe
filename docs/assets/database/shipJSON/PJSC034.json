@@ -1,0 +1,22 @@
+{
+    "id": "PJSC034",
+    "name": "蔵王",
+    "tier": "Ⅹ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "鋼鐵少女": {
+        "2": "【鋼鐵少女】黑姬"
+    },
+    "同人作品": {
+        "1": [
+            "司马闹腾",
+            "http:\/\/www.pixiv.net\/member.php?id=7933104",
+            "蔵王",
+            "http:\/\/www.pixiv.net\/member_illust.php?mode=medium&illust_id=59507584"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "id": "PJSC012",
+    "name": "伊吹",
+    "tier": "Ⅸ",
+    "nation": "japan",
+    "type": "cruiser",
+    "default": 1,
+    "change": true,
+    "premium": false,
+    "arp": false,
+    "鋼鐵少女": {
+        "1": "【鋼鐵少女】伊吹",
+        "2": "【鋼鐵少女】伊吹 改"
+    }
+}
