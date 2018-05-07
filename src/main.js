@@ -42,7 +42,6 @@ const router = new VueRouter({
 */
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
-import '../src/assets/style/index.less'
 Vue.use(iView)
 
 // page loading bar
