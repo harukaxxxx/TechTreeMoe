@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/harukaxxxx/TechTreeMoe/blob/master/assets/images/readme_logo.png?raw=true" alt="Alt text"></p>
+<p align="center"><img src="https://github.com/harukaxxxx/TechTreeMoe/raw/master/src/assets/images/readme_logo.jpg" alt="Alt text"></p>
 <h1 align="center">TechTreeMoe - War of War Ships Tech Tree Mod</h1>
 <p align="center"><a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="Standard - JavaScript Style Guide"></a><br>
 War of Warship tech tree icon mod with battleship girls.</p>
