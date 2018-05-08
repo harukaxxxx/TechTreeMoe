@@ -99,6 +99,10 @@ import appFooter from './components/footer.vue'
 */
 const routes = [
   {
+    path: '*',
+    redirect: '/'
+  },
+  {
     path: '/',
     component: App
   },
