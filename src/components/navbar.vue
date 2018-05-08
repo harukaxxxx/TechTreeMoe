@@ -1,37 +1,37 @@
 <template>
-  <Menu mode="horizontal" theme="light" :active-name="activeName">
+  <i-menu mode="horizontal" theme="light" :active-name="activeName">
     <router-link to="/" replace>
-      <MenuItem name="top">
+      <menu-item name="top">
       <Icon type="ios-paper"></Icon>
       TechTreeMoe
-      </MenuItem>
+      </menu-item>
     </router-link>
     <router-link to="intro" replace>
-      <MenuItem name="intro">
+      <menu-item name="intro">
       <Icon type="ios-people"></Icon>
       介紹與教學
-      </MenuItem>
+      </menu-item>
     </router-link>
     <router-link to="custom" replace>
-      <MenuItem name="custom">
+      <menu-item name="custom">
       <Icon type="ios-people"></Icon>
       客製化
-      </MenuItem>
+      </menu-item>
     </router-link>
     <router-link to="about" replace>
-      <MenuItem name="about">
+      <menu-item name="about">
       <Icon type="settings"></Icon>
       更新紀錄與詳細資訊
-      </MenuItem>
+      </menu-item>
     </router-link>
     <router-link to="charts" replace>
-      <MenuItem name="charts">
+      <menu-item name="charts">
       <Icon type="settings"></Icon>
       統計數據與萌化進度
-      </MenuItem>
+      </menu-item>
     </router-link>
     <Button v-if="this.$route.path === '/custom'" class="downloadButton" type="primary" shape="circle" icon="android-download" @click="clickEvent">下載</Button>
-  </Menu>
+  </i-menu>
 </template>
 <script>
 export default {
@@ -67,5 +67,3 @@ export default {
   margin-right: 20px;
 }
 </style>
-
-

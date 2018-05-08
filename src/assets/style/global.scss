@@ -1,8 +1,0 @@
-$viewHeight: calc(100vh - 90px);
-body {
-  overflow: hidden;
-  .main {
-    height: $viewHeight;
-    overflow-y: auto;
-  }
-}

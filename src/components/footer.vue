@@ -1,6 +1,6 @@
 <template>
   <Row class="footer" type="flex" justify="space-between" align="middle">
-    <Col span="6" class="left">
+    <i-col span="6" class="left">
     <a href="http://echarts.baidu.com" target="_blank">
       <img src="src/assets/images/vendor/echarts.png" height="18px">
     </a>
@@ -12,20 +12,20 @@
     </a>
     <a href="https://www.iviewui.com/" target="_blank">
       <img src="src/assets/images/vendor/iview.png" height="20px"></a>
-    </Col>
-    <Col span="6" class="center">
+    </i-col>
+    <i-col span="6" class="center">
     <p>Designed by © 2010
       <a href="http://makinoworks.com" target="_blank">MakinoWorks</a>
     </p>
-    </Col>
-    <Col span="6" class="right">
+    </i-col>
+    <i-col span="6" class="right">
     <p>
       <a href="javascript:void(0)" @click="changeLang('tw')">繁</a>｜
       <a href="javascript:void(0)" @click="changeLang('cn')">简</a>｜
       <a href="javascript:void(0)" @click="changeLang('en')">EN</a>｜
       <a href="javascript:void(0)" @click="changeLang('jp')">あ</a>
     </p>
-    </Col>
+    </i-col>
   </Row>
 </template>
 <script>

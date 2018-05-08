@@ -6,52 +6,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    component: App
-  },
-  {
-    path: '/intro',
-    component: intro
-  },
-  {
-    path: '/preview',
-    component: preview
-  },
-  {
-    path: '/custom',
-    component: custom
-  },
-  {
-    path: '/about',
-    component: about
-  },
-  {
-    path: '/charts',
-    component: charts
-  }
-]
-
-const router = new VueRouter({
-  routes
-})
-
 /*
 * iview
 */
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 Vue.use(iView)
-
-// page loading bar
-router.beforeEach((to, from, next) => {
-  iView.LoadingBar.start()
-  next()
-})
-router.afterEach(route => {
-  iView.LoadingBar.finish()
-})
 
 /*
 * google analytics
@@ -86,7 +46,6 @@ Vue.use(VueLocalForage)
 import VueI18n from 'vue-i18n'
 Vue.use(VueI18n)
 
-//i18n setting
 import en from './lang/en.json'
 import tw from './lang/tw.json'
 import cn from './lang/cn.json'
@@ -120,13 +79,13 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 window.axios = axios
 
 /*
-* pages
+* router pages
 */
 import App from './App.vue'
-import intro from './pages/intro.vue'
-import custom from './pages/custom.vue'
-import about from './pages/about.vue'
-import charts from './pages/charts.vue'
+import intro from './router/intro.vue'
+import custom from './router/custom.vue'
+import about from './router/about.vue'
+import charts from './router/charts.vue'
 
 /*
 * components
@@ -136,13 +95,39 @@ import preview from './components/preview.vue'
 import appFooter from './components/footer.vue'
 
 /*
-* styles
-*/
-import './assets/style/global.scss'
-
-/*
 * new vue
 */
+const routes = [
+  {
+    path: '/',
+    component: App
+  },
+  {
+    path: '/intro',
+    component: intro
+  },
+  {
+    path: '/preview',
+    component: preview
+  },
+  {
+    path: '/custom',
+    component: custom
+  },
+  {
+    path: '/about',
+    component: about
+  },
+  {
+    path: '/charts',
+    component: charts
+  }
+]
+
+const router = new VueRouter({
+  routes
+})
+
 new Vue({
   el: '#app',
   router,
@@ -151,4 +136,13 @@ new Vue({
     appHeader,
     appFooter
   }
+})
+
+// page loading bar
+router.beforeEach((to, from, next) => {
+  iView.LoadingBar.start()
+  next()
+})
+router.afterEach(route => {
+  iView.LoadingBar.finish()
 })

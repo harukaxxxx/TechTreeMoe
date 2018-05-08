@@ -1,7 +1,7 @@
 <template>
   <div id="charts" class="main">
     <Row>
-      <Col span="8">
+      <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{ $t("charts.yesterdayDownloaded") }}
@@ -9,8 +9,8 @@
         </p>
         <p class="amount">{{yesterdayDownloaded+$t("charts.downloadUnit")}}</p>
       </Card>
-      </Col>
-      <Col span="8">
+      </i-col>
+      <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{ $t("charts.monthDownloaded") }}
@@ -18,8 +18,8 @@
         </p>
         <p class="amount">{{thisMonthDownloaded+$t("charts.downloadUnit")}}</p>
       </Card>
-      </Col>
-      <Col span="8">
+      </i-col>
+      <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{ $t("charts.totalDownloaded") }}
@@ -27,53 +27,53 @@
         </p>
         <p class="amount">{{totalDownload+$t("charts.downloadUnit")}}</p>
       </Card>
-      </Col>
+      </i-col>
     </Row>
     <Row>
-      <Col span="24">
+      <i-col span="24">
       <Card>
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{ $t("charts.totalProgress") }}
         </p>
         <Progress :percent="Math.floor(globalProgress.total/globalProgress.progress*100)" status="active"></Progress>
       </Card>
-      </Col>
+      </i-col>
     </Row>
     <Row>
-      <Col span="24">
+      <i-col span="24">
       <Card class="nationCircle">
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{ $t("charts.nationProgress") }}
         </p>
         <Row type="flex" justify="center">
-          <Col span="4" v-for="nation in nationList" :key="nationList.indexOf(nation)">
+          <i-col span="4" v-for="nation in nationList" :key="nationList.indexOf(nation)">
           <i-circle :class="nation" :size="150" :percent="completeData[nation].total/completeData[nation].progress*100" :stroke-color="circleStrokeColor(completeData[nation].total/completeData[nation].progress*100)">
             <h1>{{$t('global.'+nation)}}</h1>
             <p>{{(completeData[nation].total/completeData[nation].progress*100).toFixed(1)}}%</p>
             <span>{{completeData[nation].total}} / {{completeData[nation].progress}}</span>
           </i-circle>
-          </Col>
+          </i-col>
         </Row>
       </Card>
-      </Col>
+      </i-col>
     </Row>
     <Row>
-      <Col span="24">
+      <i-col span="24">
       <Card>
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>{{$t('charts.lineChart')}}
         </p>
         <ve-line :data="downloadChart" :settings="chartSettings" :colors="colors" :data-zoom="dataZoom" :grid="grid" :legend-visible="false"></ve-line>
       </Card>
-      </Col>
+      </i-col>
     </Row>
     <Row v-if="!productionMode">
-      <Col span="24" style="color:#fff;text-align:center;">
+      <i-col span="24" style="color:#fff;text-align:center;">
       <a :href="gaAuthorizeUrl" style="color:#fff">
         Get Authorize Code |
       </a>
       Refresh Token : {{gaRefreshToken}}
-      </Col>
+      </i-col>
     </Row>
   </div>
 </template>
@@ -241,7 +241,7 @@ export default {
     let appCompleteData = this.completeData
     let appGlobalProgress = this.globalProgress
 
-    //complete progress setup
+    // complete progress setup
     this.nationList.forEach(function(nation, index) {
       axios
         .get('src/assets/database/nationShips/' + nation + '.json')
@@ -272,7 +272,7 @@ export default {
         return '#ff9900'
       } else if (progress > 70 && progress < 100) {
         return '#2d8cf0'
-      } else if (progress == 100) {
+      } else if (progress === 100) {
         return '#19be6b'
       } else {
         return '#bbbec4'
@@ -328,7 +328,10 @@ export default {
         .then(response => {
           let downloadData = this.downloadChart.rows
           response.data.rows.forEach(function(data, index) {
-            downloadData.push({ date: `${data[0].substring(0, 4)}/${data[0].substring(4, 6)}/${data[0].substring(6, 8)}`, value: data[1] })
+            downloadData.push({
+              date: `${data[0].substring(0, 4)}/${data[0].substring(4, 6)}/${data[0].substring(6, 8)}`,
+              value: data[1]
+            })
           })
         })
         .catch(error => {

@@ -5,14 +5,14 @@
         <p slot="title">
           <Icon type="ios-film-outline"></Icon>特別感謝
         </p>
-        <Collapse v-model="value2" accordion>
+        <i-collapse v-model="value2" accordion>
           <Panel name="1">
             立繪提供
             <p slot="content">
               <a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>
             </p>
           </Panel>
-        </Collapse>
+        </i-collapse>
         <div>
           <ul>
             <li>
@@ -50,7 +50,7 @@
         </div>
       </Card> -->
 
-      <Col class="update" span="12" offset="12">
+      <i-col class="update" span="12" offset="12">
       <Card>
         <p slot="title">
           <Icon type="social-github"></Icon> {{$t('about.contact')}}
@@ -68,7 +68,7 @@
           </TimelineItem>
         </Timeline>
       </Card>
-      </Col>
+      </i-col>
     </Row>
   </div>
 </template>

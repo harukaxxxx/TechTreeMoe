@@ -1,10 +1,10 @@
 <template>
   <div id="intro" class="main">
     <Row>
-      <Col span="12">
+      <i-col span="12">
       <Card>
         <p slot="title">
-          <Icon type="pound"></Icon> 介紹</h3>
+          <Icon type="pound"></Icon> 介紹
         </p>
         <Steps :current="4" direction="vertical">
           <Step title="客製化" content="艦娘圖標百百種，挑選中意的圖標來萌化科技樹" icon="wand"></Step>
@@ -15,7 +15,7 @@
       </Card>
       <Card>
         <p slot="title">
-          <Icon type="android-list"></Icon> 教學</h3>
+          <Icon type="android-list"></Icon> 教學
         </p>
         <Steps :current="4" direction="vertical">
           <Step title="挑選" icon="heart" content="艦船圖片下的下拉選單可選取並預覽想使用的圖標"></Step>
@@ -24,7 +24,7 @@
           <Step title="安裝" icon="ios-copy" content="將gui資料夾複製到res_mods/__版本號__/裡即可"></Step>
         </Steps>
       </Card>
-      </Col>
+      </i-col>
     </Row>
     <p class="bg-source">
       <a :href="backgroundSourceURL">Background Source: 40382972</a>
