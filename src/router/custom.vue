@@ -1,17 +1,17 @@
 <template>
   <div id="custom" class="main">
     <div class="filter-container">
-      <Button @click="filter('all')">{{$t("custom.all")}}</Button>
+      <Button type="info" @click="filter('all')">{{$t("custom.all")}}</Button>
       <ButtonGroup>
-        <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" @click="filter(shipNation)">{{$t("global." + shipNation)}}</Button>
+        <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">{{$t("global." + shipNation)}}</Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" @click="filter(shipType)">{{$t("global." + shipType)}}</Button>
+        <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" type="info" @click="filter(shipType)">{{$t("global." + shipType)}}</Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Button @click="save">{{$t("custom.save")}}</Button>
-        <Button @click="load">{{$t("custom.load")}}</Button>
-        <Button @click="reset">{{$t("custom.reset")}}</Button>
+        <Button type="info" @click="save">{{$t("custom.save")}}</Button>
+        <Button type="info" @click="load">{{$t("custom.load")}}</Button>
+        <Button type="info" @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
@@ -25,7 +25,7 @@
             <div v-if="modalData.default === Number(optionKey)" class="checked">
               <Icon type="checkmark-circled"></Icon>
             </div>
-            <img :src="`../src/assets/images/ship_previews/${modalData.id}-${optionKey}.png`">
+            <img :src="`/static/images/ship_previews/${modalData.id}-${optionKey}.png`">
             <p v-if="typeof option === 'object'">
               <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'">【{{option[0]}}】</a>
               <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'">{{option[2]}}</a>
@@ -118,7 +118,7 @@ export default {
   },
   beforeMount() {
     axios
-      .get('../src/assets/database/shipData.json')
+      .get('/static/database/shipData.json')
       .then(res => {
         let shipObject = res.data
         Object.keys(shipObject).map((nationKey, nationIndex) => {
@@ -201,8 +201,8 @@ export default {
       let shipPreviewsDS = []
       let selectedOption = this.selectedOption
       Object.keys(selectedOption).map(key => {
-        shipPreviews.push(`../src/assets/images/ship_previews/${key}-${selectedOption[key]}.png`)
-        shipPreviewsDS.push(`../src/assets/images/ship_previews_ds/${key}-${selectedOption[key]}.png`)
+        shipPreviews.push(`/static/images/ship_previews/${key}-${selectedOption[key]}.png`)
+        shipPreviewsDS.push(`/static/images/ship_previews_ds/${key}-${selectedOption[key]}.png`)
       })
 
       // get file function
@@ -265,7 +265,7 @@ export default {
 <style lang="scss">
 #custom {
   background: {
-    image: url(../assets/images/custom_bg.jpg);
+    image: url('/static/images/custom_bg.jpg');
     repeat: no-repeat;
     position: center;
     size: cover;
@@ -294,6 +294,7 @@ export default {
   .ivu-modal-body {
     height: calc(100vh - 120px);
     overflow-y: auto;
+    background-color: #f3f3f3;
     h1 {
       border-bottom: 1px solid #00000066;
       margin-bottom: 20px;

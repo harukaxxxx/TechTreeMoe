@@ -244,7 +244,7 @@ export default {
     // complete progress setup
     this.nationList.forEach(function(nation, index) {
       axios
-        .get('src/assets/database/nationShips/' + nation + '.json')
+        .get('/static/database/nationShips/' + nation + '.json')
         .then(function(response) {
           appCompleteData[nation].progress = Object.keys(response.data).length
           appGlobalProgress.progress += Object.keys(response.data).length
@@ -254,7 +254,7 @@ export default {
         })
 
       axios
-        .get('src/assets/database/shipData.json')
+        .get('/static/database/shipData.json')
         .then(function(response) {
           appCompleteData[nation].total = Object.keys(response.data[nation]).length
           appGlobalProgress.total += Object.keys(response.data[nation]).length

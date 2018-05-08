@@ -1,7 +1,7 @@
 <template>
     <div id="preview" class="main">
         <Carousel v-model="carouselIndex" loop>
-            <CarouselItem class="previewImage" :on-change="changeCarousel(carouselIndex)" v-for="nation in nations" :key="nation.index" :style="{background: 'url(src/assets/images/preview/' + nation.code + '.jpg) center no-repeat', 'background-size': 'contain', height: 'calc(100vh - 90px)'}">
+            <CarouselItem class="previewImage" :on-change="changeCarousel(carouselIndex)" v-for="nation in nations" :key="nation.index" :style="{background: 'url(/static/images/preview/' + nation.code + '.jpg) center no-repeat', 'background-size': 'contain', height: 'calc(100vh - 90px)'}">
                 <router-link to="/">
                     <Icon type="close" size="20"></Icon>
                 </router-link>

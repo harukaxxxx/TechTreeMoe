@@ -2,9 +2,9 @@
   <div id="top" class="main">
     <h1 class="top-title">{{appTitle}}</h1>
     <p>{{appDescription}}</p>
-    <Button type="success" shape="circle">
-      <router-link to="preview">效果預覽</router-link>
-    </Button>
+    <router-link to="preview">
+      <Button shape="circle" long>效果預覽</Button>
+    </router-link>
   </div>
 </template>
 <script>
@@ -26,7 +26,7 @@ export default {
 <style lang="scss">
 #top {
   background: {
-    image: url('assets/images/hero_bg.png');
+    image: url('/static/images/hero_bg.png');
     color: #1e5b94;
     size: contain;
     position: center center;
@@ -35,11 +35,17 @@ export default {
   color: #fff;
   text-align: center;
   .top-title {
-    margin-top: calc(30vh - 40px);
-    font-size: 200%;
+    margin-top: calc(40vh - 80px);
+    font-size: xx-large;
     border: 2px solid #fff;
     padding: 20px;
     display: inline-block;
+  }
+  p {
+    margin: 15px 0;
+  }
+  button {
+    width: 30%;
   }
 }
 </style>

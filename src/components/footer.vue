@@ -2,16 +2,16 @@
   <Row class="footer" type="flex" justify="space-between" align="middle">
     <i-col span="6" class="left">
     <a href="http://echarts.baidu.com" target="_blank">
-      <img src="src/assets/images/vendor/echarts.png" height="18px">
+      <img src="/static/images/vendor/echarts.png" height="18px">
     </a>
     <a href="https://analytics.google.com" target="_blank">
-      <img src="src/assets/images/vendor/ga.png" height="20px">
+      <img src="/static/images/vendor/ga.png" height="20px">
     </a>
     <a href="https://github.com/harukaxxxx/TechTreeMoe" target="_blank">
       <Icon type="social-github" size="18"></Icon>
     </a>
     <a href="https://www.iviewui.com/" target="_blank">
-      <img src="src/assets/images/vendor/iview.png" height="20px"></a>
+      <img src="/static/images/vendor/iview.png" height="20px"></a>
     </i-col>
     <i-col span="6" class="center">
     <p>Designed by © 2010

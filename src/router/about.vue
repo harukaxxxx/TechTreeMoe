@@ -113,7 +113,7 @@ export default {
     },
     updateData(data) {
       axios
-        .get('src/assets/database/update.json')
+        .get('/static/database/update.json')
         .then(function(response) {
           data.updates = response.data
         })
@@ -127,7 +127,7 @@ export default {
 <style lang="scss">
 #about {
   background: {
-    image: url('../assets/images/about_bg.jpg');
+    image: url('/static/images/about_bg.jpg');
     color: #fff;
     size: contain;
     position: left bottom;
