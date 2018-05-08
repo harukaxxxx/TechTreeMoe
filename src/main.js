@@ -52,14 +52,27 @@ import cn from './lang/cn.json'
 import jp from './lang/jp.json'
 
 const locales = {
-  en: en,
-  tw: tw,
-  jp: jp,
-  cn: cn
+  'en-US': en,
+  'zh-TW': tw,
+  ja: jp,
+  'zh-CN': cn
+}
+
+// init language
+const languages = navigator.languages
+const languageList = ['zh-TW', 'zh-CN', 'en-US', 'ja']
+for (let index = 0; index < languages.length; index++) {
+  const language = languages[index]
+  if (languageList.indexOf(language) >= 0) {
+    var locale = languages[index]
+    break
+  } else {
+    var locale = 'en'
+  }
 }
 
 const i18n = new VueI18n({
-  locale: 'tw',
+  locale: locale,
   messages: locales
 })
 
