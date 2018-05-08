@@ -9,28 +9,28 @@
     <router-link to="intro" replace>
       <menu-item name="intro">
       <Icon type="ios-people"></Icon>
-      介紹與教學
+      {{$t("navbar.intro")}}
       </menu-item>
     </router-link>
     <router-link to="custom" replace>
       <menu-item name="custom">
       <Icon type="ios-people"></Icon>
-      客製化
+      {{$t("navbar.custom")}}
       </menu-item>
     </router-link>
     <router-link to="about" replace>
       <menu-item name="about">
       <Icon type="settings"></Icon>
-      更新紀錄與詳細資訊
+      {{$t("navbar.about")}}
       </menu-item>
     </router-link>
     <router-link to="charts" replace>
       <menu-item name="charts">
       <Icon type="settings"></Icon>
-      統計數據與萌化進度
+      {{$t("navbar.charts")}}
       </menu-item>
     </router-link>
-    <Button v-if="this.$route.path === '/custom'" class="downloadButton" type="primary" shape="circle" icon="android-download" @click="clickEvent">下載</Button>
+    <Button v-if="this.$route.path === '/custom'" class="downloadButton" type="primary" shape="circle" icon="android-download" @click="clickEvent">{{$t("navbar.download")}}</Button>
   </i-menu>
 </template>
 <script>

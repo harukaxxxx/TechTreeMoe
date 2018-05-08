@@ -15,6 +15,44 @@
     "battleship": "Battleship",
     "aircarrier": "Aircraft Carrier"
   },
+  "navbar": {
+    "intro": "Intro and Tutorial",
+    "custom": "Custom",
+    "about": "Update logs and Details",
+    "charts": "Statistics and Progress",
+    "download": "Download"
+  },
+  "top": {
+    "title": "TechTreeMoe - War of War Ships Tech Tree Moe",
+    "description": "Integrate 艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、最終戰艦、Victory Belles and fanworks to let tech tree being moemoe!",
+    "preview": "Preview"
+  },
+  "intro": {
+    "intro": {
+      "title": "Intro",
+      "custom": "Custom",
+      "customContent": "There is lots of warship girls icons, choose your favorite and let your tech tree being moemoe.",
+      "convenient": "Convenience",
+      "convenientContent": "Using changeable button to find changeable item quickly",
+      "savable": "Savable",
+      "savableContent": "Your choose will save when press download button, also can manually click the Save/Load button.",
+      "quick": "Rapid",
+      "quickContent": "Click the download button directly to download the default package",
+      "attention": "Attention",
+      "attentionContent": "Nation background and ship type icon isn't include in this mod."
+    },
+    "tutorial": {
+      "title": "Tutorial",
+      "choose": "Choose",
+      "chooseContent": "Click on the brush icon in the lower right corner of the ship image to open the selection page and select the desired icon",
+      "download": "Download",
+      "downloadContent": "After choose, click download button on the top right to download mod.",
+      "unzip": "Unzip",
+      "unzipContent": "Patiently waiting for download complete",
+      "install": "Install",
+      "installContent": "After unzip, put gui folder into res_mods/x.x.x/ and enjoy!"
+    }
+  },
   "custom": {
     "all": "All",
     "change": "Changeable",

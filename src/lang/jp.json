@@ -15,6 +15,44 @@
     "battleship": "戦艦",
     "aircarrier": "航空母艦"
   },
+  "navbar": {
+    "intro": "紹介とチュートリアル",
+    "custom": "カスタム",
+    "about": "更新レコードと詳細情報",
+    "charts": "統計と進捗状況",
+    "download": "ダウンロード"
+  },
+  "top": {
+    "title": "TechTreeMoe - 戦艦世界技術ツリー",
+    "description": "艦隊コレクション、戦艦少女、鋼鐵少女、碧藍航線、最終戦艦、Victory Belles、同人作品と合わせてあなたの戦艦世界技術ツリーを萌えさせてよ！",
+    "preview": "プレビュー"
+  },
+  "intro": {
+    "intro": {
+      "title": "紹介",
+      "custom": "カスタム",
+      "customContent": "艦娘のアイコンはたくさんあります。好きの選んであなたの戦艦世界技術ツリーを萌えさせてよ！",
+      "convenient": "便利",
+      "convenientContent": "置き換えボタンを利用して、置き換えできるのアイテムがクイック検索ができます。",
+      "savable": "保存",
+      "savableContent": "レコードはダウンロード時に保存され、保存/読み込みボタンも手動でクリックできます",
+      "quick": "速い",
+      "quickContent": "ダウンロードボタンを直接クリックすると、デフォルトのアイコンパッケージがダウンロードされます。",
+      "attention": "注意",
+      "attentionContent": "このＭＯＤは国旗と船タイプアイコンが含まれていません。"
+    },
+    "tutorial": {
+      "title": "チュートリアル",
+      "choose": "選択",
+      "chooseContent": "船の画像の右下隅にあるブラシアイコンをクリックして、選択ページを開き、気に入ったアイコンを選択します",
+      "download": "ダウンロード",
+      "downloadContent": "選択後、右上のダウンロードボタンをクリックしてダウンロードしてください",
+      "unzip": "解凍",
+      "unzipContent": "選んた後に右上のダウンロードボタンをクリックして、ダウンロードが始めます。",
+      "install": "インストール",
+      "installContent": "解凍後のguiフォルダをコピーして<code>res_mods/x.x.x/</code>にペーストしましょ！"
+    }
+  },
   "custom": {
     "all": "すべて",
     "change": "置き換える",

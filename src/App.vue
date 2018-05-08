@@ -1,21 +1,15 @@
 <template>
   <div id="top" class="main">
-    <h1 class="top-title">{{appTitle}}</h1>
-    <p>{{appDescription}}</p>
+    <h1 class="top-title">{{$t("top.title")}}</h1>
+    <p>{{$t("top.description")}}</p>
     <router-link to="preview">
-      <Button shape="circle" long>效果預覽</Button>
+      <Button shape="circle" long>{{$t("top.preview")}}</Button>
     </router-link>
   </div>
 </template>
 <script>
 export default {
   name: 'top',
-  data() {
-    return {
-      appTitle: 'TechTreeMoe - 戰艦世界科技樹萌化',
-      appDescription: '結合艦隊收藏、戰艦少女、鋼鐵少女、碧藍航線、最終戰艦、Victory Belles以及同人作品，讓科技樹萌起來吧！'
-    }
-  },
   beforeMount() {
     if (window.location.search && process.env.NODE_ENV !== 'production') {
       window.location.href = window.location.origin + '#/charts' + window.location.search

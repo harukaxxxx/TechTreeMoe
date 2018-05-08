@@ -4,25 +4,25 @@
       <i-col span="12">
       <Card>
         <p slot="title">
-          <Icon type="pound"></Icon> 介紹
+          <Icon type="pound"></Icon> {{$t("intro.intro.title")}}
         </p>
         <Steps :current="4" direction="vertical">
-          <Step title="客製化" content="艦娘圖標百百種，挑選中意的圖標來萌化科技樹" icon="wand"></Step>
-          <Step title="方便" content="利用可更替按鈕可快速尋找可以替換的項目" icon="star"></Step>
-          <Step title="保存" content="下載時將儲存紀錄，亦可手動點選儲存/載入按鈕" icon="ios-box"></Step>
-          <Step title="便捷" content="直接點擊下載按鈕來下載預設圖標包" icon="flash"></Step>
-          <Step title="注意" content="此模組不包含背景國旗及艦型小圖標" icon="alert"></Step>
+          <Step :title="$t('intro.intro.custom')" :content="$t('intro.intro.customContent')" icon="wand"></Step>
+          <Step :title="$t('intro.intro.convenient')" :content="$t('intro.intro.convenientContent')" icon="star"></Step>
+          <Step :title="$t('intro.intro.savable')" :content="$t('intro.intro.savableContent')" icon="ios-box"></Step>
+          <Step :title="$t('intro.intro.quick')" :content="$t('intro.intro.quickContent')" icon="flash"></Step>
+          <Step :title="$t('intro.intro.attention')" :content="$t('intro.intro.attentionContent')" icon="alert"></Step>
         </Steps>
       </Card>
       <Card>
         <p slot="title">
-          <Icon type="android-list"></Icon> 教學
+          <Icon type="android-list"></Icon> {{$t("intro.tutorial.title")}}
         </p>
         <Steps :current="4" direction="vertical">
-          <Step title="挑選" icon="heart" content="點擊艦船圖片右下角的筆刷圖標開啟選擇頁面選取想使用的圖標"></Step>
-          <Step title="下載" icon="android-download" content="挑選完畢後再點擊右上的下載按鈕進行下載"></Step>
-          <Step title="解壓" icon="android-archive" content="耐心等待下載完成並解壓縮"></Step>
-          <Step title="安裝" icon="ios-copy" content="將gui資料夾複製到res_mods/__版本號__/內即可"></Step>
+          <Step :title="$t('intro.tutorial.choose')" icon="heart" :content="$t('intro.tutorial.chooseContent')"></Step>
+          <Step :title="$t('intro.tutorial.download')" icon="android-download" :content="$t('intro.tutorial.downloadContent')"></Step>
+          <Step :title="$t('intro.tutorial.unzip')" icon="android-archive" :content="$t('intro.tutorial.unzipContent')"></Step>
+          <Step :title="$t('intro.tutorial.install')" icon="ios-copy" :content="$t('intro.tutorial.installContent')"></Step>
         </Steps>
       </Card>
       </i-col>

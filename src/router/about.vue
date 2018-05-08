@@ -1,55 +1,6 @@
 <template>
   <div id="about" class="main">
     <Row type="flex" justify="space-around">
-      <!-- <Card>
-        <p slot="title">
-          <Icon type="ios-film-outline"></Icon>特別感謝
-        </p>
-        <i-collapse v-model="value2" accordion>
-          <Panel name="1">
-            立繪提供
-            <p slot="content">
-              <a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>
-            </p>
-          </Panel>
-        </i-collapse>
-        <div>
-          <ul>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="https://home.gamer.com.tw/homeindex.php?owner=kakushi03004">紙龜萌萌雪</a>】- 碧藍航線立繪提</li>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="http://blog.sina.com.cn/u/3027377595">bluekiller</a>】- 碧藍航線立繪提供</li>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="https://home.gamer.com.tw/homeindex.php?owner=kkkkking12">阿爽</a>】- 鋼鐵少女立繪提供</li>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="https://home.gamer.com.tw/homeindex.php?owner=ae033179">Adam Richter</a>】- 鋼鐵少女立繪提供</li>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="https://home.gamer.com.tw/homeindex.php?owner=roderichlind">Blomkavist</a>】- 新船資訊提供</li>
-            <li>
-              <Icon type="ribbon-b"></Icon>【
-              <a href="http://srarithmetic.com/">Nacht</a>】- 更新紀錄與詳細資訊背景圖提供
-              <a href="https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460">
-                <i class="am-icon-external-link"></i>
-              </a>
-            </li>
-            <li>
-              <Icon type="ribbon-a"></Icon>【
-              <a href="https://victorybelles.tumblr.com/">Victory Belles</a>】- Victory Belles立繪提供</li>
-            <li>
-              <Icon type="ribbon-a"></Icon>【
-              <a href="http://fleet.diablohu.com/">是誰呼叫艦隊</a>】- 艦隊收藏立繪提供</li>
-            <li>
-              <Icon type="ribbon-a"></Icon>【
-              <a href="https://www.zjsnrwiki.com/wiki">艦R百科</a>】- 戰艦少女立繪提供</li>
-          </ul>
-        </div>
-      </Card> -->
-
       <i-col class="update" span="12" offset="12">
       <Card>
         <p slot="title">
