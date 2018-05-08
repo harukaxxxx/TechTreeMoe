@@ -220,7 +220,12 @@ export default {
     },
     totalDownload: function() {
       let downloadData = this.downloadChart.rows
-      let totalDownload = 0
+
+      /*
+      * 2017/09/04 to 2018/01/10 total downloaded 827 times
+      * reset when 2020/10/06
+      */
+      let totalDownload = 827
       downloadData.forEach(function(data) {
         totalDownload += Number(data.value)
       })
