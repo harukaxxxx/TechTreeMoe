@@ -20,10 +20,10 @@
     </i-col>
     <i-col span="6" class="right">
     <p>
-      <a href="javascript:void(0)" @click="changeLang('tw')">繁</a>｜
-      <a href="javascript:void(0)" @click="changeLang('cn')">简</a>｜
-      <a href="javascript:void(0)" @click="changeLang('en')">EN</a>｜
-      <a href="javascript:void(0)" @click="changeLang('jp')">あ</a>
+      <a href="javascript:void(0)" @click="changeLang('zh-TW')">繁</a>｜
+      <a href="javascript:void(0)" @click="changeLang('zh-CN')">简</a>｜
+      <a href="javascript:void(0)" @click="changeLang('en-US')">EN</a>｜
+      <a href="javascript:void(0)" @click="changeLang('ja')">あ</a>
     </p>
     </i-col>
   </Row>
