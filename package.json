@@ -11,7 +11,9 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "prepublish": "node build/build.js",
+    "publish": "vue-cli-ghpages --repo=https://github.com/harukaxxxx/TechTreeMoe.git --message='Update' --CNAME=techtreemoe.makinoworks.com"
   },
   "dependencies": {
     "axios": "^0.18.0",
@@ -106,9 +108,5 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
 }
