@@ -145,6 +145,11 @@ export default {
     optionUpadte: function() {
       let id = this.modalData.id
       this.selectedOption[id] = this.modalData.default
+      this.$ga.event({
+        eventCategory: 'optionsSelect',
+        eventAction: 'confirm',
+        eventLabel: id + '-' + this.selectedOption[id]
+      })
     },
     save: function() {
       this.$setItem('selectedOptioin', this.selectedOption)

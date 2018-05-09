@@ -325,9 +325,15 @@ export default {
         })
     },
     getData() {
-      let QueryURI = `https://www.googleapis.com/analytics/v3/data/ga?ids=ga%3A128322664&start-date=2018-01-10&end-date=yesterday&metrics=ga%3AtotalEvents&dimensions=ga%3Adate&access_token=${
-        this.gaAccessToken
-      }`
+      let QueryURI =
+        'https://www.googleapis.com/analytics/v3/data/ga?' +
+        'ids=ga%3A128322664&' +
+        'start-date=2018-01-10&' +
+        'end-date=yesterday&' +
+        'metrics=ga%3AtotalEvents&' +
+        'dimensions=ga%3Adate&' +
+        'filters=ga%3AeventCategory%3D%3DclickCount&' +
+        `access_token=${this.gaAccessToken}`
       axios
         .get(QueryURI)
         .then(response => {
