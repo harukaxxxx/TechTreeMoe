@@ -988,7 +988,7 @@
       "nation": "japan",
       "type": "battleship",
       "default": 1,
-      "change": false,
+      "change": true,
       "premium": false,
       "arp": false,
       "同人作品": {
@@ -2029,7 +2029,7 @@
       "nation": "uk",
       "type": "destroyer",
       "default": 2,
-      "change": false,
+      "change": true,
       "premium": false,
       "arp": false,
       "戰艦少女": {
@@ -2104,7 +2104,7 @@
       "nation": "uk",
       "type": "cruiser",
       "default": 1,
-      "change": false,
+      "change": true,
       "premium": false,
       "arp": false,
       "碧藍航線": {
@@ -2127,7 +2127,7 @@
       "nation": "uk",
       "type": "destroyer",
       "default": 1,
-      "change": false,
+      "change": true,
       "premium": false,
       "arp": false,
       "戰艦少女": {
@@ -3127,7 +3127,7 @@
       "nation": "ussr",
       "type": "cruiser",
       "default": 1,
-      "change": false,
+      "change": true,
       "premium": false,
       "arp": false,
       "戰艦少女": {
