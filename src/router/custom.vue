@@ -146,8 +146,8 @@ export default {
       let id = this.modalData.id
       this.selectedOption[id] = this.modalData.default
       this.$ga.event({
-        eventCategory: 'optionsSelect',
-        eventAction: 'confirm',
+        eventCategory: 'optionSelect',
+        eventAction: id,
         eventLabel: id + '-' + this.selectedOption[id]
       })
     },
