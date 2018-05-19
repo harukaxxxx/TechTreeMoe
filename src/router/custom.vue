@@ -17,7 +17,7 @@
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
       <shipBox v-for="data in shipData" :key="data.id" :data="data" />
     </isotope>
-    <Modal :title="modalData.name" v-model="modal" @on-ok="optionUpadte" class-name="vertical-center-modal" width="80">
+    <Modal :title="modalData.name" v-model="modal" @on-ok="optionUpadte" class-name="vertical-center-modal" width="80" :closable="false" :mask-closable="false">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
