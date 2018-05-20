@@ -6,7 +6,7 @@
       <a v-if="data.change" @click="openModal">
         <span class="change icon-change"></span>
       </a>
-      <img :src="`/static/images/ship_previews/${data.id}-${data.default}.png`" :alt="data.name + ' image'">
+      <img :src="`/static/images/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
     </div>
     <p class="shipName">
       <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
@@ -27,8 +27,14 @@ export default {
       this.$parent.$parent.modalData = this.data
     }
   },
-  data() {
-    return {}
+  computed: {
+    defaultOption: function() {
+      if (this.data.default === undefined) {
+        return 1
+      } else {
+        return this.data.default
+      }
+    }
   }
 }
 </script>
