@@ -163,7 +163,10 @@ export default {
           }
         } else {
           this.shipData.forEach(data => {
-            let id = data.id
+            const id = data.id
+            if (res[id] === undefined) {
+              res[id] = data.default
+            }
             data.default = res[id]
           })
           this.selectedOption = res
