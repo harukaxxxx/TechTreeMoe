@@ -91,7 +91,20 @@
         "3": "【Victory Belles】Algérie"
       }
     },
-
+    "PFSC109": {
+      "id": "PFSC109",
+      "name": "Saint-Louis",
+      "tier": "Ⅸ",
+      "nation": "france",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "arp": false,
+      "碧蘭航線": {
+        "1": "【碧蘭航線】Saint-Louis"
+      }
+    },
     "PFSC506": {
       "id": "PFSC506",
       "name": "De Grasse",
@@ -2714,9 +2727,6 @@
       },
       "戰艦少女": {
         "2": "【戰艦少女】St. Louis"
-      },
-      "碧藍航線": {
-        "3": "【碧藍航線】St. Louis"
       }
     },
     "PASC005": {
