@@ -154,6 +154,20 @@
         "4": "【碧藍航線】Karlsruhe"
       }
     },
+    "PGSC109": {
+      "id": "PGSC109",
+      "name": "Roon",
+      "tier": "Ⅸ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "arp": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Roon"
+      }
+    },
     "PGSB002": {
       "id": "PGSB002",
       "name": "Tirpitz",
@@ -791,10 +805,13 @@
       "tier": "Ⅱ",
       "nation": "japan",
       "type": "battleship",
-      "default": 1,
+      "default": 3,
       "change": true,
       "premium": true,
       "arp": false,
+      "碧藍航線": {
+        "3": "【碧藍航線】三笠"
+      },
       "同人作品": {
         "1": ["紀奈", "https://twitter.com/kinona", "三笠", "http://seiga.nicovideo.jp/seiga/im4181804"],
         "2": ["紀奈", "https://twitter.com/kinona", "三笠 浴衣Ver.", "http://seiga.nicovideo.jp/seiga/im5177431"]
@@ -987,10 +1004,13 @@
       "tier": "Ⅸ",
       "nation": "japan",
       "type": "battleship",
-      "default": 1,
+      "default": 3,
       "change": true,
       "premium": false,
       "arp": false,
+      "碧藍航線": {
+        "3": "【碧藍航線】出雲"
+      },
       "同人作品": {
         "1": ["安佐川", "https://twitter.com/asaka142", "出雲", ""],
         "2": ["安佐川", "https://twitter.com/asaka142", "磐手", "https://twitter.com/asaka142/status/639032260058984448"]
@@ -1226,10 +1246,13 @@
       "tier": "Ⅸ",
       "nation": "japan",
       "type": "cruiser",
-      "default": 1,
+      "default": 3,
       "change": true,
       "premium": false,
       "arp": false,
+      "碧藍航線": {
+        "3": "【碧藍航線】伊吹"
+      },
       "鋼鐵少女": {
         "1": "【鋼鐵少女】伊吹",
         "2": "【鋼鐵少女】伊吹 改"
@@ -1914,24 +1937,6 @@
   },
   "poland": {},
   "uk": {
-    "PBSB106": {
-      "id": "PBSB106",
-      "name": "Queen Elizabeth",
-      "tier": "Ⅵ",
-      "nation": "uk",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "arp": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Queen Elizabeth",
-        "2": "【戰艦少女】Queen Elizabeth 街頭美食家Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Queen Elizabeth"
-      }
-    },
     "PBSB002": {
       "id": "PBSB002",
       "name": "Warspite",
@@ -1958,6 +1963,24 @@
         "5": "【碧藍航線】Warspite"
       }
     },
+    "PBSB106": {
+      "id": "PBSB106",
+      "name": "Queen Elizabeth",
+      "tier": "Ⅵ",
+      "nation": "uk",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "arp": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Queen Elizabeth",
+        "2": "【戰艦少女】Queen Elizabeth 街頭美食家Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Queen Elizabeth"
+      }
+    },
     "PBSB107": {
       "id": "PBSB107",
       "name": "King George V",
@@ -1980,6 +2003,20 @@
       "最終戰艦": {
         "6": "【最終戰艦】King George V",
         "7": "【最終戰艦】King George V 泳裝Ver."
+      }
+    },
+    "PBSB108": {
+      "id": "PBSB108",
+      "name": "Monarch",
+      "tier": "Ⅷ",
+      "nation": "uk",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "arp": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Monarch"
       }
     },
     "PBSB109": {
@@ -2120,21 +2157,6 @@
         "6": "【最終戰艦】Ajax 泳裝Ver."
       }
     },
-    "PBSD605": {
-      "id": "PBSD605",
-      "name": "Anthony",
-      "tier": "Ⅴ",
-      "nation": "uk",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "arp": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Acasta",
-        "2": "【戰艦少女】Ardent"
-      }
-    },
     "PBSC108": {
       "id": "PBSC108",
       "name": "Edinburgh",
@@ -2151,6 +2173,20 @@
       "鋼鐵少女": {
         "2": "【鋼鐵少女】Edinburgh",
         "3": "【鋼鐵少女】Edinburgh 改"
+      }
+    },
+    "PBSC109": {
+      "id": "PBSC109",
+      "name": "Neptune",
+      "tier": "Ⅸ",
+      "nation": "uk",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "arp": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Neptune"
       }
     },
     "PBSC507": {
@@ -2172,6 +2208,21 @@
       },
       "Victory_Belles": {
         "2": "【Victory Belles】Belfast"
+      }
+    },
+    "PBSD605": {
+      "id": "PBSD605",
+      "name": "Anthony",
+      "tier": "Ⅴ",
+      "nation": "uk",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "arp": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Acasta",
+        "2": "【戰艦少女】Ardent"
       }
     }
   },
@@ -2662,9 +2713,10 @@
         "1": "【November】St. Louis"
       },
       "戰艦少女": {
-        "2": "【戰艦少女】St. Louis",
-        "8": "【戰艦少女】Brooklyn",
-        "9": "【戰艦少女】Brooklyn 改"
+        "2": "【戰艦少女】St. Louis"
+      },
+      "碧藍航線": {
+        "3": "【碧藍航線】St. Louis"
       }
     },
     "PASC005": {
@@ -2850,6 +2902,26 @@
       "arp": false,
       "November": {
         "1": "【November】Marblehead"
+      }
+    },
+    "PASC207": {
+      "id": "PASC207",
+      "name": "Helena",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "arp": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Helena",
+        "2": "【戰艦少女】Helena 改",
+        "3": "【戰艦少女】Helena 暗影突襲Ver.",
+        "4": "【戰艦少女】Helena The Little Mermaid Ver."
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Helena"
       }
     },
     "PASC507": {
@@ -3111,10 +3183,13 @@
       "tier": "Ⅸ",
       "nation": "ussr",
       "type": "destroyer",
-      "default": 1,
+      "default": 3,
       "change": true,
       "premium": false,
       "arp": false,
+      "艦隊收藏": {
+        "3": "【艦隊收藏】Ташкент"
+      },
       "戰艦少女": {
         "1": "【戰艦少女】Tashkent",
         "2": "【戰艦少女】Tashkent 冬日暖潮"

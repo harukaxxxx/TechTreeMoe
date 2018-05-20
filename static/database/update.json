@@ -1,5 +1,34 @@
 [
   {
+    "time": "2018/05/20",
+    "level": "NEW",
+    "event": ["新艦船登場：", "Neptune", "Monarch", "Helena"]
+  },
+  {
+    "time": "2018/05/20",
+    "level": "UPDATE",
+    "event": [
+      "新圖標上架：",
+      "【艦隊收藏】Ташкент",
+      "【碧藍航線】出雲",
+      "【碧藍航線】伊吹",
+      "【碧藍航線】三笠",
+      "【碧藍航線】Neptune",
+      "【碧藍航線】Monarch",
+      "【碧藍航線】St. Louis",
+      "【戰艦少女】Helena",
+      "【戰艦少女】Helena 改",
+      "【戰艦少女】Helena 暗影突襲Ver.",
+      "【戰艦少女】Helena The Little Mermaid Ver.",
+      "【碧藍航線】Helena"
+    ]
+  },
+  {
+    "time": "2018/02/20",
+    "level": "FIX",
+    "event": ["從St. Louis移除【戰艦少女】Brooklyn、【戰艦少女】Brooklyn 改"]
+  },
+  {
     "time": "2018/05/08",
     "level": "IMPORTANT",
     "event": [
