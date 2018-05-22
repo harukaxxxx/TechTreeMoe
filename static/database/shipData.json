@@ -1903,6 +1903,22 @@
         "17": "【艦隊收藏】藤波 秋の私服Ver."
       }
     },
+    "PJSD518": {
+      "id": "PJSD518",
+      "name": "朝潮",
+      "tier": "Ⅷ",
+      "nation": "japan",
+      "type": "destroyer",
+      "default": 2,
+      "change": true,
+      "premium": true,
+      "arp": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】朝潮",
+        "2": "【艦隊收藏】朝潮 改二",
+        "3": "【艦隊收藏】朝潮 改二丁"
+      }
+    },
     "PJSD708": {
       "id": "PJSD708",
       "name": "HSF 晴風",
