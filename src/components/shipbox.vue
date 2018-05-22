@@ -1,8 +1,8 @@
 <template>
   <Card :id="data.id" :padding="0">
-    <div class="shipImage" :style="`background-image:url('/static/images/nation_flag/flag_${data.nation}.png')`">
+    <div class="shipImage" :style="flag(data.nation,data.special,data.id)">
       <span v-if="data.premium" class="addon icon-premium"></span>
-      <span v-if="data.arp" class="addon icon-arp"></span>
+      <span v-if="data.special === 'arp'" class="addon icon-arp"></span>
       <a v-if="data.change" @click="openModal">
         <span class="change icon-change"></span>
       </a>
@@ -19,12 +19,19 @@ export default {
   props: {
     data: Object
   },
-  beforeMount() {},
-  computed: {},
   methods: {
     openModal: function() {
       this.$parent.$parent.modal = true
       this.$parent.$parent.modalData = this.data
+    },
+    flag: function(nation, special, id) {
+      if (special === 'arp') {
+        return `background-image:url(/static/images/nation_flag/flag_${id}.png)`
+      } else if (special === 'haifuri') {
+        return 'background-image:url(/static/images/nation_flag/flag_haifuri.png)'
+      } else {
+        return `background-image:url(/static/images/nation_flag/flag_${nation}.png)`
+      }
     }
   },
   computed: {

@@ -9,7 +9,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Perth"
       }
@@ -23,7 +22,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Vampire"
       },
@@ -43,7 +41,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Richelieu",
         "2": "【艦隊收藏】Richelieu 秋の私服Ver.",
@@ -64,7 +61,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "3": "【戰艦少女】Dunkerque"
       },
@@ -82,7 +78,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Algérie",
         "2": "【鋼鐵少女】Algérie 改"
@@ -100,7 +95,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Saint-Louis"
       }
@@ -114,7 +108,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】De Grasse"
       }
@@ -130,7 +123,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Graf Zeppelin 改"
       },
@@ -155,7 +147,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Karlsruhe",
         "2": "【戰艦少女】Karlsruhe 改"
@@ -176,7 +167,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Roon"
       }
@@ -190,7 +180,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Tirpitz",
         "2": "【戰艦少女】Tirpitz 改",
@@ -211,7 +200,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Königsberg",
         "2": "【戰艦少女】Königsberg 改",
@@ -236,7 +224,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Gneisenau"
       },
@@ -254,7 +241,6 @@
       "default": 8,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Bismarck",
         "2": "【艦隊收藏】Bismarck 改",
@@ -288,7 +274,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Leipzig",
         "6": "【戰艦少女】Nürnberg"
@@ -312,7 +297,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Hidenburg"
       }
@@ -326,7 +310,6 @@
       "default": 3,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Scharnhorst",
         "2": "【戰艦少女】Scharnhorst 我到河北省來Ver."
@@ -352,7 +335,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】M計畫"
       }
@@ -366,7 +348,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Hipper",
         "2": "【戰艦少女】Hipper 改"
@@ -384,7 +365,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Emden",
         "2": "【戰艦少女】Emden 溫馨情人Ver."
@@ -399,7 +379,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Graf Spee",
         "4": "【戰艦少女】Graf Spee 出遊禮裝Ver."
@@ -422,7 +401,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Prinz Eugen",
         "2": "【艦隊收藏】Prinz Eugen 改"
@@ -456,7 +434,7 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
+      "special": "haifuri",
       "高校艦隊": {
         "1": "【高校艦隊】ヴィルヘルミーナ・ブラウンシュヴァイク・インゲノール・フリーデブルク"
       }
@@ -470,7 +448,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Z3 zwei",
         "2": "【艦隊收藏】Z3 夏季限定(2016)Ver."
@@ -488,7 +465,6 @@
       "default": 4,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Z1 zwei",
         "2": "【艦隊收藏】Z1 秋季限定Ver.",
@@ -518,7 +494,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Z24",
         "2": "【戰艦少女】Z28"
@@ -540,7 +515,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】Z46"
       },
@@ -559,7 +533,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Roma 改",
         "2": "【艦隊收藏】Roma 秋季限定Ver.",
@@ -590,7 +563,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Duca d'Aosta",
         "2": "【鋼鐵少女】Duca d'Aosta 改"
@@ -607,7 +579,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】鳳翔",
         "2": "【艦隊收藏】鳳翔 新春Ver."
@@ -625,7 +596,6 @@
       "default": 20,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】扶桑 改",
         "2": "【艦隊收藏】扶桑 新年の晴れ着mode",
@@ -666,7 +636,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】瑞鳳",
         "2": "【艦隊收藏】瑞鳳 改",
@@ -693,7 +662,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】龍驤",
         "2": "【艦隊收藏】龍驤 改",
@@ -721,7 +689,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】飛龍",
         "2": "【艦隊收藏】飛龍 改二",
@@ -753,7 +720,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】長門",
         "5": "【艦隊收藏】長門 改二"
@@ -781,7 +747,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】金剛",
         "2": "【艦隊收藏】金剛 改二",
@@ -821,7 +786,6 @@
       "default": 3,
       "change": true,
       "premium": true,
-      "arp": false,
       "碧藍航線": {
         "3": "【碧藍航線】三笠"
       },
@@ -839,7 +803,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】翔鶴",
         "2": "【艦隊收藏】翔鶴 改二",
@@ -876,7 +839,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】大鳳",
         "2": "【艦隊收藏】大鳳 改"
@@ -898,7 +860,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "同人作品": {
         "1": [
           "司马闹腾",
@@ -924,7 +885,6 @@
       "default": 6,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】加賀"
       },
@@ -950,7 +910,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】天城",
         "2": "【艦隊收藏】天城 改",
@@ -970,7 +929,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】大和",
         "4": "【艦隊收藏】大和 夏季限定(2016)Ver.",
@@ -999,7 +957,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】陸奧",
         "2": "【艦隊收藏】陸奧 鎮守府秋祭りVer."
@@ -1020,7 +977,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "3": "【碧藍航線】出雲"
       },
@@ -1038,7 +994,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】紀伊 改"
       }
@@ -1052,7 +1007,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】コンゴウ"
       }
@@ -1066,7 +1021,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】キリシマ"
       }
@@ -1080,7 +1035,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】ハルナ"
       }
@@ -1094,7 +1049,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】ヒエイ"
       }
@@ -1108,7 +1063,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】夕張",
         "2": "【艦隊收藏】夕張 梅雨限定Ver."
@@ -1131,7 +1085,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】古鷹",
         "2": "【艦隊收藏】古鷹 改二",
@@ -1162,7 +1115,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】青葉",
         "6": "【艦隊收藏】衣笠",
@@ -1190,7 +1142,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】妙高",
         "2": "【艦隊收藏】妙高 改二",
@@ -1222,7 +1173,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】最上",
         "2": "【艦隊收藏】最上 梅雨限定Ver.",
@@ -1262,7 +1212,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "3": "【碧藍航線】伊吹"
       },
@@ -1280,7 +1229,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】球磨",
         "2": "【艦隊收藏】球磨 秋季限定Ver.",
@@ -1304,7 +1252,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】北上",
         "2": "【艦隊收藏】北上 改二",
@@ -1333,7 +1280,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】天龍",
         "2": "【艦隊收藏】天龍 夏季限定Ver."
@@ -1353,7 +1299,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】利根",
         "2": "【艦隊收藏】利根 改二",
@@ -1372,7 +1317,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "鋼鐵少女": {
         "2": "【鋼鐵少女】黑姬"
       },
@@ -1389,7 +1333,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】築摩",
         "2": "【艦隊收藏】築摩 改二",
@@ -1408,7 +1351,6 @@
       "default": 20,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】愛宕",
         "4": "【艦隊收藏】高雄",
@@ -1450,7 +1392,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】香取",
         "2": "【艦隊收藏】香取 新春の晴れ着mode",
@@ -1473,7 +1414,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】ミョウコウ"
       }
@@ -1487,7 +1428,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】アシガラ"
       }
@@ -1501,7 +1442,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】タカオ"
       }
@@ -1515,7 +1456,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】ハグロ"
       }
@@ -1529,7 +1470,7 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": true,
+      "special": "arp",
       "蒼藍鋼鐵戰艦": {
         "1": "【蒼藍鋼鐵戰艦】ナチ"
       }
@@ -1543,7 +1484,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】海風",
         "2": "【艦隊收藏】五月雨",
@@ -1562,7 +1502,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】磯風",
         "2": "【艦隊收藏】磯風 秋季限定Ver."
@@ -1580,7 +1519,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】峯風"
       }
@@ -1594,7 +1532,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】島風"
       },
@@ -1615,7 +1552,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】神風",
         "2": "【艦隊收藏】旗風"
@@ -1630,7 +1566,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】神風",
         "2": "【艦隊收藏】旗風"
@@ -1645,7 +1580,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】睦月",
         "2": "【艦隊收藏】睦月 改二",
@@ -1668,7 +1602,6 @@
       "default": 4,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】吹雪",
         "2": "【艦隊收藏】吹雪 改二",
@@ -1709,7 +1642,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】曉",
         "2": "【艦隊收藏】曉 改二",
@@ -1742,7 +1674,6 @@
       "default": 7,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】秋月",
         "2": "【艦隊收藏】秋月 鎮守府秋祭りVer."
@@ -1785,7 +1716,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】初春",
         "2": "【艦隊收藏】初春 改二"
@@ -1800,7 +1730,6 @@
       "default": 14,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】白露",
         "2": "【艦隊收藏】白露 改",
@@ -1853,7 +1782,6 @@
       "default": 8,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】陽炎",
         "3": "【艦隊收藏】野分",
@@ -1883,7 +1811,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】夕雲",
         "2": "【艦隊收藏】夕雲 年始(2016年)Ver.",
@@ -1912,7 +1839,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】朝潮",
         "2": "【艦隊收藏】朝潮 改二",
@@ -1928,7 +1854,7 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
+      "special": "haifuri",
       "高校艦隊": {
         "1": "【高校艦隊】岬 明乃"
       }
@@ -1944,7 +1870,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【鋼鐵少女】鞍山"
       }
@@ -1958,7 +1883,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【鋼鐵少女】洛陽"
       }
@@ -1975,7 +1899,6 @@
       "default": 5,
       "change": true,
       "premium": true,
-      "arp": false,
       "艦隊收藏": {
         "3": "【艦隊收藏】Warspite",
         "6": "【艦隊收藏】Warspite 晴れ着Ver."
@@ -2001,7 +1924,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Queen Elizabeth",
         "2": "【戰艦少女】Queen Elizabeth 街頭美食家Ver."
@@ -2019,7 +1941,6 @@
       "default": 4,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Prince of Wales",
         "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝",
@@ -2043,7 +1964,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Monarch"
       }
@@ -2057,7 +1977,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Lion"
       },
@@ -2074,7 +1993,6 @@
       "default": 5,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Hood",
         "2": "【戰艦少女】Hood 小愛神的獻禮ver."
@@ -2097,7 +2015,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Glowworm",
         "2": "【戰艦少女】Glowworm 改",
@@ -2114,7 +2031,6 @@
       "default": 10,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Nelson",
         "2": "【戰艦少女】Nelson 改",
@@ -2143,7 +2059,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Duke of York",
         "2": "【戰艦少女】Duke of York 騎士之禮Ver."
@@ -2158,7 +2073,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Emerald"
       }
@@ -2172,7 +2086,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Leander",
         "2": "【碧藍航線】Ajax",
@@ -2195,7 +2108,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Edinburgh"
       },
@@ -2213,7 +2125,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Neptune"
       }
@@ -2227,7 +2138,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Belfast"
       },
@@ -2248,7 +2158,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Acasta",
         "2": "【戰艦少女】Ardent"
@@ -2265,7 +2174,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "碧藍航線": {
         "1": "【碧藍航線】Sims"
       }
@@ -2279,7 +2187,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】The Sullivans",
         "2": "【戰艦少女】The Sullivans 改",
@@ -2298,7 +2205,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Cassin Young",
         "2": "【戰艦少女】Heermann",
@@ -2318,7 +2224,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Arizona"
       }
@@ -2332,7 +2237,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Bogue"
       },
@@ -2349,7 +2253,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Pennsylvania"
       },
@@ -2366,7 +2269,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Princeton",
         "2": "【戰艦少女】Princeton Bikino魔術師Ver."
@@ -2386,7 +2288,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Ranger",
         "2": "【戰艦少女】Ranger 改",
@@ -2408,7 +2309,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Langley",
         "4": "【戰艦少女】Langley 改"
@@ -2430,7 +2330,6 @@
       "default": 20,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "6": "【艦隊收藏】Saratoga",
         "8": "【艦隊收藏】Saratoga 改",
@@ -2473,7 +2372,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Colorado",
         "2": "【戰艦少女】Colorado 改",
@@ -2500,7 +2398,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Essex"
       },
@@ -2523,7 +2420,6 @@
       "default": 4,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】Enterprise",
         "3": "【戰艦少女】Enterprise 白色惡魔Ver.",
@@ -2556,7 +2452,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Maryland"
       }
@@ -2570,7 +2465,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】N. Carolina",
         "3": "【戰艦少女】Washington",
@@ -2594,7 +2488,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Montana"
       }
@@ -2608,7 +2501,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Iowa",
         "3": "【艦隊收藏】Iowa 晴れ着Ver."
@@ -2626,7 +2518,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Wisconsin"
       }
@@ -2640,7 +2531,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "November": {
         "1": "【November】Arizona"
       },
@@ -2657,7 +2547,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】South Dakota",
         "3": "【戰艦少女】South Dakota 歸鄉的少女Ver."
@@ -2675,7 +2564,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Missouri",
         "4": "【戰艦少女】Missouri 正宗京味ㄦVer.",
@@ -2705,7 +2593,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Alabama 改"
       }
@@ -2719,7 +2606,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Chester"
       },
@@ -2737,7 +2623,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】St. Louis"
       },
@@ -2754,7 +2639,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Omaha",
         "2": "【戰艦少女】Omaha 改"
@@ -2772,7 +2656,6 @@
       "default": 3,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Atlanta",
         "2": "【戰艦少女】Atlanta 改"
@@ -2793,7 +2676,6 @@
       "default": 7,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】Houston",
         "3": "【戰艦少女】Houston 改",
@@ -2820,7 +2702,6 @@
       "default": 4,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Pensacola",
         "2": "【戰艦少女】Salt Lake City",
@@ -2839,7 +2720,6 @@
       "default": 8,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】New Orleans",
         "2": "【戰艦少女】New Orleans 改",
@@ -2865,7 +2745,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Baltimore"
       }
@@ -2879,7 +2758,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Des Moines"
       }
@@ -2894,7 +2772,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Phoenix"
       },
@@ -2911,7 +2788,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "November": {
         "1": "【November】Marblehead"
       }
@@ -2925,7 +2801,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "November": {
         "1": "【November】Marblehead"
       }
@@ -2939,7 +2814,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Helena",
         "2": "【戰艦少女】Helena 改",
@@ -2959,7 +2833,6 @@
       "default": 1,
       "change": true,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Indianapolis"
       },
@@ -2984,7 +2857,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Narwhal"
       }
@@ -2998,7 +2870,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "最終戰艦": {
         "1": "【最終戰艦】Farragut",
         "2": "【最終戰艦】Farragut 泳裝Ver.",
@@ -3014,7 +2885,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Mahan",
         "4": "【戰艦少女】Mahan 愚人節裝扮Ver.",
@@ -3037,7 +2907,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "4": "【戰艦少女】Laffey"
       },
@@ -3063,7 +2932,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Gearing",
         "2": "【戰艦少女】Gearing 改",
@@ -3082,7 +2950,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】O'Bannon",
         "2": "【戰艦少女】O'Bannon 花間少女Ver."
@@ -3097,7 +2964,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "November": {
         "1": "【November】Edsall"
       }
@@ -3111,7 +2977,6 @@
       "default": 5,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Fletcher",
         "4": "【戰艦少女】Fletcher 改",
@@ -3142,7 +3007,6 @@
       "default": 6,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "2": "【戰艦少女】William.D.Porter",
         "3": "【戰艦少女】William.D.Porter William the Joker Ver.",
@@ -3162,7 +3026,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Гангут",
         "2": "【艦隊收藏】Октябрьская революция",
@@ -3178,7 +3041,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "1": "【艦隊收藏】Верный"
       },
@@ -3195,7 +3057,6 @@
       "default": 2,
       "change": true,
       "premium": true,
-      "arp": false,
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Aurora"
       },
@@ -3212,7 +3073,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "艦隊收藏": {
         "3": "【艦隊收藏】Ташкент"
       },
@@ -3230,7 +3090,6 @@
       "default": 1,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Murmansk"
       },
@@ -3247,7 +3106,6 @@
       "default": 2,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Kirov"
       },
@@ -3269,7 +3127,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "Victory_Belles": {
         "1": "【Victory Belles】Leningrad"
       }
@@ -3284,7 +3141,6 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Gremyashchy"
       }
@@ -3299,7 +3155,6 @@
       "default": 3,
       "change": true,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Решительный",
         "2": "【戰艦少女】Решительный 四季長春Ver.",
@@ -3319,7 +3174,6 @@
       "default": 1,
       "change": false,
       "premium": false,
-      "arp": false,
       "戰艦少女": {
         "1": "【戰艦少女】Minsk"
       }
