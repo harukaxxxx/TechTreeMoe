@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 .ivu-card {
   margin: 10px;
-  width: 214px;
+  width: 216px;
   background: #ffffff99;
   display: inline-block;
   .shipName {
