@@ -21,6 +21,9 @@
       </Card>
       </i-col>
     </Row>
+    <p class="bg-source">
+      <a target="_blank" :href="backgroundSourceURL">Background Source: 51816460</a>
+    </p>
   </div>
 </template>
 <script>
@@ -29,7 +32,8 @@ export default {
   data() {
     return {
       updates: Array,
-      logHeight: Number
+      logHeight: Number,
+      backgroundSourceURL: 'https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460'
     }
   },
   beforeMount() {
@@ -96,6 +100,15 @@ export default {
     }
     .content {
       padding-left: 5px;
+    }
+  }
+  .bg-source {
+    position: fixed;
+    left: 85px;
+    bottom: 30px;
+    a {
+      color: #fff;
+      text-shadow: 0px 0px 3px #000;
     }
   }
 }

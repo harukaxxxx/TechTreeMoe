@@ -28,7 +28,7 @@
       </i-col>
     </Row>
     <p class="bg-source">
-      <a :href="backgroundSourceURL">Background Source: 40382972</a>
+      <a target="_blank" :href="backgroundSourceURL">Background Source: 40382972</a>
     </p>
   </div>
 </template>
