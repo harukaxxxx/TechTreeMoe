@@ -1,12 +1,18 @@
 <template>
   <div id="custom" class="main">
     <div class="filter-container">
-      <Button type="info" @click="filter('all')">{{$t("custom.all")}}</Button>
+      <Button type="info" @click="filter('all')">
+        <Icon v-if="filterAll" type="checkmark"></Icon> {{$t("custom.all")}}
+      </Button>
       <ButtonGroup>
-        <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">{{$t("global." + shipNation)}}</Button>
+        <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">
+          <Icon v-if="filterStats.nation === shipNation" type="checkmark"></Icon> {{$t("global." + shipNation)}}
+        </Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" type="info" @click="filter(shipType)">{{$t("global." + shipType)}}</Button>
+        <Button v-for="(shipType, shipTypeKey) in typeArray" :key="shipTypeKey" type="info" @click="filter(shipType)">
+          <Icon v-if="filterStats.type === shipType" type="checkmark"></Icon> {{$t("global." + shipType)}}
+        </Button>
       </ButtonGroup>
       <ButtonGroup>
         <Button type="info" @click="save">{{$t("custom.save")}}</Button>
@@ -55,50 +61,26 @@ export default {
       nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
       selectedOption: {},
+      filterStats: {
+        nation: '',
+        type: ''
+      },
       isotopeOption: {
         layoutMode: 'masonry',
         getFilterData: {
           all: function() {
             return true
           },
-          japan: function(ship) {
-            return ship.nation === 'japan'
-          },
-          usa: function(ship) {
-            return ship.nation === 'usa'
-          },
-          ussr: function(ship) {
-            return ship.nation === 'ussr'
-          },
-          germany: function(ship) {
-            return ship.nation === 'germany'
-          },
-          uk: function(ship) {
-            return ship.nation === 'uk'
-          },
-          pan_asia: function(ship) {
-            return ship.nation === 'pan_asia'
-          },
-          france: function(ship) {
-            return ship.nation === 'france'
-          },
-          italia: function(ship) {
-            return ship.nation === 'italia'
-          },
-          commonwealth: function(ship) {
-            return ship.nation === 'commonwealth'
-          },
-          destroyer: function(ship) {
-            return ship.type === 'destroyer'
-          },
-          cruiser: function(ship) {
-            return ship.type === 'cruiser'
-          },
-          battleship: function(ship) {
-            return ship.type === 'battleship'
-          },
-          aircarrier: function(ship) {
-            return ship.type === 'aircarrier'
+          multi: ship => {
+            let nation = this.filterStats.nation
+            let type = this.filterStats.type
+            if (nation !== '' && type !== '') {
+              return ship.nation === nation && ship.type === type
+            } else if (nation !== '') {
+              return ship.nation === nation
+            } else if (type !== '') {
+              return ship.type === type
+            }
           }
         },
         hiddenStyle: {
@@ -115,6 +97,11 @@ export default {
   components: {
     isotope,
     shipBox
+  },
+  computed: {
+    filterAll: function() {
+      return this.filterStats.nation === '' && this.filterStats.type === ''
+    }
   },
   beforeMount() {
     axios
@@ -140,7 +127,20 @@ export default {
   },
   methods: {
     filter: function(filterKey) {
-      this.$refs.isotope.filter(filterKey)
+      let filterStat = this.filterStats
+      if (filterKey == 'all') {
+        filterStat.nation = ''
+        filterStat.type = ''
+        filterStat.changeable = false
+        this.$refs.isotope.filter('all')
+      } else {
+        if (this.nationArray.indexOf(filterKey) >= 0) {
+          filterStat.nation = filterKey
+        } else if (this.typeArray.indexOf(filterKey) >= 0) {
+          filterStat.type = filterKey
+        }
+        this.$refs.isotope.filter('multi')
+      }
     },
     optionUpadte: function() {
       let id = this.modalData.id
