@@ -1,571 +1,855 @@
 {
-  "commonwealth": {
-    "PUSC506": {
-      "id": "PUSC506",
-      "name": "Perth",
-      "tier": "Ⅵ",
-      "nation": "commonwealth",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": true,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Perth"
+  "usa": {
+    "PASA002": {
+      "id": "PASA002",
+      "name": "Bogue",
+      "tier": "Ⅴ",
+      "nation": "usa",
+      "type": "aircarrier",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Bogue"
+      },
+      "碧藍航線": {
+        "2": "【碧藍航線】Bogue"
       }
     },
-    "PUSD503": {
-      "id": "PUSD503",
-      "name": "Vampire",
-      "tier": "Ⅲ",
-      "nation": "commonwealth",
-      "type": "destroyer",
+    "PASA004": {
+      "id": "PASA004",
+      "name": "Langley",
+      "tier": "Ⅳ",
+      "nation": "usa",
+      "type": "aircarrier",
       "default": 3,
       "change": true,
       "premium": false,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Vampire"
+      "戰艦少女": {
+        "1": "【戰艦少女】Langley",
+        "4": "【戰艦少女】Langley 改"
       },
       "碧藍航線": {
-        "2": "【碧藍航線】Vampire",
-        "3": "【碧藍航線】Vampire 誓約Ver."
-      }
-    }
-  },
-  "france": {
-    "PFSB108": {
-      "id": "PFSB108",
-      "name": "Richelieu",
-      "tier": "Ⅷ",
-      "nation": "france",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Richelieu",
-        "2": "【艦隊收藏】Richelieu 秋の私服Ver.",
-        "3": "【艦隊收藏】Richelieu 晴れ着Ver."
+        "3": "【碧藍航線】Langley",
+        "5": "【碧藍航線】Langley 改"
       },
-      "戰艦少女": {
-        "4": "【戰艦少女】Richelieu",
-        "5": "【戰艦少女】Richelieu 改",
-        "6": "【戰艦少女】Richelieu 漫步於香榭麗舍Ver."
+      "November": {
+        "2": "【November】Langley"
       }
     },
-    "PFSB506": {
-      "id": "PFSB506",
-      "name": "Dunkerque",
+    "PASA006": {
+      "id": "PASA006",
+      "name": "Independence",
       "tier": "Ⅵ",
-      "nation": "france",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": true,
-      "戰艦少女": {
-        "3": "【戰艦少女】Dunkerque"
-      },
-      "最終戰艦": {
-        "1": "【最終戰艦】Dunkerque",
-        "2": "【最終戰艦】Dunkerque 泳裝Ver."
-      }
-    },
-    "PFSC107": {
-      "id": "PFSC107",
-      "name": "Algérie",
-      "tier": "Ⅶ",
-      "nation": "france",
-      "type": "cruiser",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Algérie",
-        "2": "【鋼鐵少女】Algérie 改"
-      },
-      "Victory_Belles": {
-        "3": "【Victory Belles】Algérie"
-      }
-    },
-    "PFSC109": {
-      "id": "PFSC109",
-      "name": "Saint-Louis",
-      "tier": "Ⅸ",
-      "nation": "france",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "碧藍航線": {
-        "1": "【碧藍航線】Saint-Louis"
-      }
-    },
-    "PFSC506": {
-      "id": "PFSC506",
-      "name": "De Grasse",
-      "tier": "Ⅳ",
-      "nation": "france",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】De Grasse"
-      }
-    }
-  },
-  "germany": {
-    "PGSA508": {
-      "id": "PGSA508",
-      "name": "Graf Zeppelin",
-      "tier": "Ⅷ",
-      "nation": "germany",
+      "nation": "usa",
       "type": "aircarrier",
       "default": 1,
       "change": true,
-      "premium": true,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Graf Zeppelin 改"
-      },
+      "premium": false,
       "戰艦少女": {
-        "2": "【戰艦少女】Graf Zeppelin"
+        "1": "【戰艦少女】Princeton",
+        "2": "【戰艦少女】Princeton Bikino魔術師Ver."
       },
       "鋼鐵少女": {
-        "3": "【鋼鐵少女】Graf Zeppelin",
-        "4": "【鋼鐵少女】Graf Zeppelin 改"
-      },
-      "最終戰艦": {
-        "5": "【最終戰艦】Graf Zeppelin",
-        "6": "【最終戰艦】Graf Zeppelin 泳裝Ver."
+        "3": "【鋼鐵少女】Belleau Wood",
+        "4": "【鋼鐵少女】Cabot",
+        "5": "【鋼鐵少女】Cabot 改"
       }
     },
-    "PGSC104": {
-      "id": "PGSC104",
-      "name": "Karlsruhe",
+    "PASA010": {
+      "id": "PASA010",
+      "name": "Ranger",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "aircarrier",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Ranger",
+        "2": "【戰艦少女】Ranger 改",
+        "3": "【戰艦少女】Ranger HeartCatchRabbitVer."
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】Ranger"
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Ranger"
+      }
+    },
+    "PASA012": {
+      "id": "PASA012",
+      "name": "Lexington",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "aircarrier",
+      "default": 20,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "6": "【艦隊收藏】Saratoga",
+        "8": "【艦隊收藏】Saratoga 改",
+        "20": "【艦隊收藏】Saratoga Mk.II",
+        "21": "【艦隊收藏】Saratoga Mk.II Mod.2"
+      },
+      "戰艦少女": {
+        "1": "【戰艦少女】Lexington",
+        "2": "【戰艦少女】Lexington 改",
+        "3": "【戰艦少女】Lexington LoveBlue Ver.",
+        "4": "【戰艦少女】Lexington Strap bikini Ver.",
+        "11": "【戰艦少女】Saratoga",
+        "12": "【戰艦少女】Saratoga 改",
+        "13": "【戰艦少女】Saratoga Love Butterfly Ver.",
+        "15": "【戰艦少女】Saratoga 清涼的夏日旅行Ver."
+      },
+      "鋼鐵少女": {
+        "14": "【鋼鐵少女】Saratoga 改",
+        "16": "【鋼鐵少女】Lexington"
+      },
+      "碧藍航線": {
+        "9": "【碧藍航線】Lexington",
+        "10": "【碧藍航線】Saratoga",
+        "19": "【碧藍航線】Saratoga 七海的憩日Ver."
+      },
+      "November": {
+        "5": "【November】Lexington"
+      },
+      "最終戰艦": {
+        "17": "【最終戰艦】Lexington",
+        "18": "【最終戰艦】Lexington 泳裝Ver."
+      }
+    },
+    "PASA013": {
+      "id": "PASA013",
+      "name": "Essex",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "aircarrier",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Essex"
+      },
+      "鋼鐵少女": {
+        "5": "【鋼鐵少女】Bunker Hill",
+        "6": "【鋼鐵少女】Bunker Hill 改"
+      },
+      "最終戰艦": {
+        "2": "【最終戰艦】Essex",
+        "3": "【最終戰艦】Essex 泳裝Ver.",
+        "4": "【最終戰艦】Essex 花嫁Ver."
+      }
+    },
+    "PASA508": {
+      "id": "PASA508",
+      "name": "Enterprise",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "aircarrier",
+      "default": 4,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】Enterprise",
+        "3": "【戰艦少女】Enterprise 白色惡魔Ver.",
+        "12": "【戰艦少女】Enterprise 甜蜜聖誕Ver."
+      },
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Enterprise",
+        "10": "【鋼鐵少女】Yorktown",
+        "11": "【鋼鐵少女】Hornet"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Enterprise"
+      },
+      "November": {
+        "9": "【November】Enterprise"
+      },
+      "最終戰艦": {
+        "5": "【最終戰艦】Enterprise",
+        "6": "【最終戰艦】Enterprise 泳裝Ver.",
+        "7": "【最終戰艦】Enterprise 花嫁Ver.",
+        "8": "【最終戰艦】Enterprise 警服Ver."
+      }
+    },
+    "PASB001": {
+      "id": "PASB001",
+      "name": "S. Carolina",
+      "tier": "Ⅲ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "November": {
+        "1": "【November】Maryland"
+      }
+    },
+    "PASB004": {
+      "id": "PASB004",
+      "name": "Wyoming",
       "tier": "Ⅳ",
-      "nation": "germany",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "November": {
+        "1": "【November】Arizona"
+      }
+    },
+    "PASB006": {
+      "id": "PASB006",
+      "name": "New York",
+      "tier": "Ⅴ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "November": {
+        "1": "【November】Pennsylvania"
+      },
+      "碧藍航線": {
+        "2": "【碧藍航線】Pennsylvania"
+      }
+    },
+    "PASB008": {
+      "id": "PASB008",
+      "name": "Colorado",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Colorado",
+        "2": "【戰艦少女】Colorado 改",
+        "4": "【戰艦少女】Maryland",
+        "5": "【戰艦少女】Maryland 改",
+        "6": "【戰艦少女】West Virginia",
+        "7": "【戰艦少女】West Virginia 改",
+        "8": "【戰艦少女】Maryland 試驗型改良艦裝Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Maryland"
+      },
+      "November": {
+        "9": "【November】Maryland",
+        "10": "【November】West Virginia"
+      }
+    },
+    "PASB012": {
+      "id": "PASB012",
+      "name": "N. Carolina",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】N. Carolina",
+        "3": "【戰艦少女】Washington",
+        "6": "【戰艦少女】Washington 兒童節Ver."
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】Washington",
+        "5": "【鋼鐵少女】Washington 改"
+      },
+      "最終戰艦": {
+        "7": "【最終戰艦】Washington",
+        "8": "【最終戰艦】Washington 泳裝Ver."
+      }
+    },
+    "PASB017": {
+      "id": "PASB017",
+      "name": "Montana",
+      "tier": "Ⅹ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Montana"
+      }
+    },
+    "PASB018": {
+      "id": "PASB018",
+      "name": "Iowa",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Iowa",
+        "3": "【艦隊收藏】Iowa 晴れ着Ver."
+      },
+      "November": {
+        "2": "【November】Iowa"
+      }
+    },
+    "PASB034": {
+      "id": "PASB034",
+      "name": "New Mexico",
+      "tier": "Ⅵ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "November": {
+        "1": "【November】Wisconsin"
+      }
+    },
+    "PASB506": {
+      "id": "PASB506",
+      "name": "Arizona",
+      "tier": "Ⅵ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": true,
+      "November": {
+        "1": "【November】Arizona"
+      },
+      "碧藍航線": {
+        "2": "【碧藍航線】Arizona"
+      }
+    },
+    "PASB508": {
+      "id": "PASB508",
+      "name": "Alabama",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】South Dakota",
+        "3": "【戰艦少女】South Dakota 歸鄉的少女Ver."
+      },
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Alabama 改"
+      }
+    },
+    "PASB509": {
+      "id": "PASB509",
+      "name": "Missouri",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Missouri",
+        "4": "【戰艦少女】Missouri 正宗京味ㄦVer.",
+        "6": "【戰艦少女】Missouri 私人訂製Ver.",
+        "7": "【戰艦少女】Missouri 輕鬆一夏Ver."
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Missouri",
+        "3": "【鋼鐵少女】Missouri 改"
+      },
+      "November": {
+        "5": "【November】Missouri"
+      },
+      "最終戰艦": {
+        "8": "【最終戰艦】Missouri",
+        "9": "【最終戰艦】Missouri 泳裝Ver.",
+        "10": "【最終戰艦】Missouri 花嫁Ver.",
+        "11": "【最終戰艦】Missouri 兔女郎Ver."
+      }
+    },
+    "PASB708": {
+      "id": "PASB708",
+      "name": "Alabama ST",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Alabama 改"
+      }
+    },
+    "PASC002": {
+      "id": "PASC002",
+      "name": "Chester",
+      "tier": "Ⅱ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "November": {
+        "1": "【November】Chester"
+      },
+      "最終戰艦": {
+        "2": "【最終戰艦】Augusta",
+        "3": "【最終戰艦】Augusta 泳裝Ver."
+      }
+    },
+    "PASC004": {
+      "id": "PASC004",
+      "name": "St. Louis",
+      "tier": "Ⅲ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "November": {
+        "1": "【November】St. Louis"
+      },
+      "戰艦少女": {
+        "2": "【戰艦少女】St. Louis"
+      }
+    },
+    "PASC005": {
+      "id": "PASC005",
+      "name": "Omaha",
+      "tier": "Ⅴ",
+      "nation": "usa",
       "type": "cruiser",
       "default": 2,
       "change": true,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Karlsruhe",
-        "2": "【戰艦少女】Karlsruhe 改"
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Karlsruhe"
+        "1": "【戰艦少女】Omaha",
+        "2": "【戰艦少女】Omaha 改"
       },
       "碧藍航線": {
-        "4": "【碧藍航線】Karlsruhe"
+        "3": "【碧藍航線】Omaha"
       }
     },
-    "PGSC109": {
-      "id": "PGSC109",
-      "name": "Roon",
+    "PASC006": {
+      "id": "PASC006",
+      "name": "Atlanta",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 3,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Atlanta",
+        "2": "【戰艦少女】Atlanta 改"
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】Atlanta"
+      },
+      "碧藍航線": {
+        "3": "【碧藍航線】Atlanta"
+      }
+    },
+    "PASC007": {
+      "id": "PASC007",
+      "name": "Cleveland",
+      "tier": "Ⅵ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 7,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】Houston",
+        "3": "【戰艦少女】Houston 改",
+        "8": "【戰艦少女】Cleveland"
+      },
+      "鋼鐵少女": {
+        "6": "【鋼鐵少女】Cleveland 改"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Northampton",
+        "5": "【碧藍航線】Houston",
+        "7": "【碧藍航線】Cleveland"
+      },
+      "November": {
+        "1": "【November】Northampton"
+      }
+    },
+    "PASC012": {
+      "id": "PASC012",
+      "name": "Pensacola",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 4,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Pensacola",
+        "2": "【戰艦少女】Salt Lake City",
+        "4": "【戰艦少女】Pensacola 改"
+      },
+      "Victory_Belles": {
+        "3": "【Victory Belles】Salt Lake City"
+      }
+    },
+    "PASC014": {
+      "id": "PASC014",
+      "name": "New Orleans",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 8,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】New Orleans",
+        "2": "【戰艦少女】New Orleans 改",
+        "4": "【戰艦少女】Quincy",
+        "5": "【戰艦少女】Quincy 改",
+        "6": "【戰艦少女】Quincy SapphireVer.",
+        "8": "【戰艦少女】New Orleans 甜蜜之旅Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】New Orleans"
+      },
+      "Victory_Belles": {
+        "7": "【Victory Belles】New Orleans"
+      }
+    },
+    "PASC017": {
+      "id": "PASC017",
+      "name": "Baltimore",
       "tier": "Ⅸ",
-      "nation": "germany",
+      "nation": "usa",
       "type": "cruiser",
       "default": 1,
       "change": false,
       "premium": false,
-      "碧藍航線": {
-        "1": "【碧藍航線】Roon"
-      }
-    },
-    "PGSB002": {
-      "id": "PGSB002",
-      "name": "Tirpitz",
-      "tier": "Ⅷ",
-      "nation": "germany",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": true,
       "戰艦少女": {
-        "1": "【戰艦少女】Tirpitz",
-        "2": "【戰艦少女】Tirpitz 改",
-        "3": "【戰艦少女】Tirpitz 兒童節Ver.",
-        "5": "【戰艦少女】Tirpitz 小小的奇幻冒險Ver."
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】Tirpitz",
-        "6": "【鋼鐵少女】Tirpitz 紅心王后Ver."
+        "1": "【戰艦少女】Baltimore"
       }
     },
-    "PGSC105": {
-      "id": "PGSC105",
-      "name": "Königsberg",
-      "tier": "Ⅴ",
-      "nation": "germany",
+    "PASC020": {
+      "id": "PASC020",
+      "name": "Des Moines",
+      "tier": "Ⅹ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Des Moines"
+      }
+    },
+    "PASC024": {
+      "id": "PASC024",
+      "name": "Phoenix",
+      "tier": "Ⅳ",
+      "nation": "usa",
       "type": "cruiser",
       "default": 2,
       "change": true,
       "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Königsberg",
-        "2": "【戰艦少女】Königsberg 改",
-        "5": "【戰艦少女】Köln",
-        "6": "【戰艦少女】Köln 改"
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Königsberg",
-        "7": "【鋼鐵少女】Köln",
-        "8": "【鋼鐵少女】Köln 改"
+      "November": {
+        "1": "【November】Phoenix"
       },
       "碧藍航線": {
-        "4": "【碧藍航線】Königsberg"
+        "2": "【碧藍航線】Phoenix"
       }
     },
-    "PGSB107": {
-      "id": "PGSB107",
-      "name": "Gneisenau",
-      "tier": "Ⅶ",
-      "nation": "germany",
-      "type": "battleship",
+    "PASC044": {
+      "id": "PASC044",
+      "name": "Marblehead",
+      "tier": "Ⅴ",
+      "nation": "usa",
+      "type": "cruiser",
       "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Gneisenau"
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Gneisenau",
-        "3": "【鋼鐵少女】Gneisenau 聖．尼古拉Ver."
+      "change": false,
+      "premium": true,
+      "November": {
+        "1": "【November】Marblehead"
       }
     },
-    "PGSB108": {
-      "id": "PGSB108",
-      "name": "Bismarck",
-      "tier": "Ⅷ",
-      "nation": "germany",
-      "type": "battleship",
-      "default": 8,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Bismarck",
-        "2": "【艦隊收藏】Bismarck 改",
-        "3": "【艦隊收藏】Bismarck zwei",
-        "4": "【艦隊收藏】Bismarck drei"
-      },
-      "戰艦少女": {
-        "5": "【戰艦少女】Bismarck",
-        "6": "【戰艦少女】Bismarck 改",
-        "9": "【戰艦少女】Bismarck 奇貓博士Ver."
-      },
-      "鋼鐵少女": {
-        "7": "【鋼鐵少女】Bismarck"
-      },
-      "碧藍航線": {
-        "8": "【碧藍航線】Bismarck"
-      },
-      "最終戰艦": {
-        "10": "【最終戰艦】Bismarck",
-        "11": "【最終戰艦】Bismarck 泳裝Ver.",
-        "12": "【最終戰艦】Bismarck 花嫁Ver.",
-        "13": "【最終戰艦】Bismarck 護士Ver."
+    "PASC045": {
+      "id": "PASC045",
+      "name": "Marblehead L",
+      "tier": "Ⅴ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "November": {
+        "1": "【November】Marblehead"
       }
     },
-    "PGSC106": {
-      "id": "PGSC106",
-      "name": "Nürnberg",
-      "tier": "Ⅵ",
-      "nation": "germany",
+    "PASC207": {
+      "id": "PASC207",
+      "name": "Helena",
+      "tier": "Ⅶ",
+      "nation": "usa",
       "type": "cruiser",
       "default": 5,
       "change": true,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Leipzig",
-        "6": "【戰艦少女】Nürnberg"
+        "1": "【戰艦少女】Helena",
+        "2": "【戰艦少女】Helena 改",
+        "3": "【戰艦少女】Helena 暗影突襲Ver.",
+        "4": "【戰艦少女】Helena The Little Mermaid Ver."
       },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Nürnberg",
-        "4": "【鋼鐵少女】Nürnberg 改",
-        "5": "【鋼鐵少女】Leipzig"
-      },
-      "Victory_Belles": {
-        "2": "【Victory Belles】Nürnberg"
+      "碧藍航線": {
+        "5": "【碧藍航線】Helena"
       }
     },
-
-    "PGSB109": {
-      "id": "PGSB109",
-      "name": "F. der Große",
-      "tier": "Ⅸ",
-      "nation": "germany",
-      "type": "battleship",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Hidenburg"
-      }
-    },
-    "PGSB507": {
-      "id": "PGSB507",
-      "name": "Scharnhorst",
+    "PASC507": {
+      "id": "PASC507",
+      "name": "Indianapolis",
       "tier": "Ⅶ",
-      "nation": "germany",
-      "type": "battleship",
-      "default": 3,
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 1,
       "change": true,
       "premium": true,
       "戰艦少女": {
-        "1": "【戰艦少女】Scharnhorst",
-        "2": "【戰艦少女】Scharnhorst 我到河北省來Ver."
+        "1": "【戰艦少女】Indianapolis"
       },
       "鋼鐵少女": {
-        "3": "【鋼鐵少女】Scharnhorst",
-        "5": "【鋼鐵少女】Scharnhorst 萬聖伯爵Ver."
+        "2": "【鋼鐵少女】Indianapolis",
+        "3": "【鋼鐵少女】Portland"
       },
-      "Victory_Belles": {
-        "4": "【Victory Belles】Scharnhorst"
+      "碧藍航線": {
+        "4": "【碧藍航線】Indianapolis",
+        "5": "【碧藍航線】Portland"
       },
       "同人作品": {
-        "6": ["トム猫", "http://www.pixiv.net/member.php?id=1368840", "Scharnhorst", "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=36560930"]
+        "6": [
+          "紫瑟",
+          "http://www.weibo.com/u/2193276854",
+          "Indianapolis 35號球員Ver.",
+          "http://www.weibo.com/2193276854/Dca0Yz2yY"
+        ]
       }
     },
-
-    "PGSC107": {
-      "id": "PGSC107",
-      "name": "Yorck",
+    "PASD002": {
+      "id": "PASD002",
+      "name": "Sampson",
+      "tier": "Ⅱ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "November": {
+        "1": "【November】Narwhal"
+      }
+    },
+    "PASD005": {
+      "id": "PASD005",
+      "name": "Farragut",
+      "tier": "Ⅵ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "最終戰艦": {
+        "1": "【最終戰艦】Farragut",
+        "2": "【最終戰艦】Farragut 泳裝Ver.",
+        "3": "【最終戰艦】Farragut 睡衣Ver."
+      }
+    },
+    "PASD006": {
+      "id": "PASD006",
+      "name": "Mahan",
       "tier": "Ⅶ",
-      "nation": "germany",
-      "type": "cruiser",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Mahan",
+        "4": "【戰艦少女】Mahan 愚人節裝扮Ver.",
+        "5": "【戰艦少女】Mahan 夏日出遊Ver."
+      },
+      "November": {
+        "2": "【November】Mahan"
+      },
+      "Victory_Belles": {
+        "3": "【Victory Belles】Mahan"
+      }
+    },
+    "PASD008": {
+      "id": "PASD008",
+      "name": "Benson",
+      "tier": "Ⅷ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "4": "【戰艦少女】Laffey"
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Benson",
+        "3": "【鋼鐵少女】Benson 改"
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Benson",
+        "6": "【碧藍航線】Laffey",
+        "7": "【碧藍航線】Laffey 33娘Ver."
+      },
+      "November": {
+        "1": "【November】Benson"
+      }
+    },
+    "PASD013": {
+      "id": "PASD013",
+      "name": "Gearing",
+      "tier": "Ⅹ",
+      "nation": "usa",
+      "type": "destroyer",
       "default": 2,
       "change": true,
       "premium": false,
       "戰艦少女": {
-        "2": "【戰艦少女】M計畫"
+        "1": "【戰艦少女】Gearing",
+        "2": "【戰艦少女】Gearing 改",
+        "3": "【戰艦少女】Gearing 海上漂流套装Ver."
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】德陽"
       }
     },
-    "PGSC108": {
-      "id": "PGSC108",
-      "name": "Hipper",
+    "PASD014": {
+      "id": "PASD014",
+      "name": "Nicholas",
+      "tier": "Ⅴ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】O'Bannon",
+        "2": "【戰艦少女】O'Bannon 花間少女Ver."
+      }
+    },
+    "PASD019": {
+      "id": "PASD019",
+      "name": "Clemson",
+      "tier": "Ⅳ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "November": {
+        "1": "【November】Edsall"
+      }
+    },
+    "PASD021": {
+      "id": "PASD021",
+      "name": "Fletcher",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Fletcher",
+        "4": "【戰艦少女】Fletcher 改",
+        "9": "【戰艦少女】Johnston",
+        "10": "【戰艦少女】Anthony",
+        "11": "【戰艦少女】Thatcher",
+        "12": "【戰艦少女】Thatcher 聖誕華服Ver."
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Fletcher",
+        "5": "【鋼鐵少女】Fletcher 改二",
+        "6": "【鋼鐵少女】Fletcher 夏日泳裝Ver."
+      },
+      "碧藍航線": {
+        "3": "【碧藍航線】Fletcher"
+      },
+      "最終戰艦": {
+        "7": "【最終戰艦】Fletcher",
+        "8": "【最終戰艦】Fletcher 泳裝Ver."
+      }
+    },
+    "PASD027": {
+      "id": "PASD027",
+      "name": "Wickes",
+      "tier": "Ⅲ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 6,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】William.D.Porter",
+        "3": "【戰艦少女】William.D.Porter William the Joker Ver.",
+        "4": "【戰艦少女】Dyson",
+        "5": "【戰艦少女】Dyson 星之所在Ver.",
+        "6": "【戰艦少女】Claxton"
+      }
+    },
+    "PASD029": {
+      "id": "PASD029",
+      "name": "Sims",
+      "tier": "Ⅶ",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Sims"
+      }
+    },
+    "PASD508": {
+      "id": "PASD508",
+      "name": "Kidd",
       "tier": "Ⅷ",
-      "nation": "germany",
-      "type": "cruiser",
+      "nation": "usa",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】The Sullivans",
+        "2": "【戰艦少女】The Sullivans 改",
+        "3": "【戰艦少女】The Sullivans 給英雄的贈禮Ver.",
+        "4": "【戰艦少女】Sigsbee",
+        "5": "【戰艦少女】Sigsbee 藍色情人Ver.",
+        "6": "【戰艦少女】Hoel"
+      }
+    },
+    "PASD709": {
+      "id": "PASD709",
+      "name": "Black",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "destroyer",
       "default": 3,
       "change": true,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Hipper",
-        "2": "【戰艦少女】Hipper 改"
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Hipper"
-      }
-    },
-    "PGSC502": {
-      "id": "PGSC502",
-      "name": "Emden",
-      "tier": "Ⅱ",
-      "nation": "germany",
-      "type": "cruiser",
-      "default": 1,
-      "change": true,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【戰艦少女】Emden",
-        "2": "【戰艦少女】Emden 溫馨情人Ver."
-      }
-    },
-    "PGSC506": {
-      "id": "PGSC506",
-      "name": "Graf Spee",
-      "tier": "Ⅷ",
-      "nation": "germany",
-      "type": "cruiser",
-      "default": 1,
-      "change": true,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【戰艦少女】Graf Spee",
-        "4": "【戰艦少女】Graf Spee 出遊禮裝Ver."
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Graf Spee",
-        "5": "【鋼鐵少女】Graf Spee 改"
-      },
-      "Victory_Belles": {
-        "3": "【Victory Belles】Graf Spee"
-      }
-    },
-
-    "PGSC508": {
-      "id": "PGSC508",
-      "name": "Prinz Eugen",
-      "tier": "Ⅵ",
-      "nation": "germany",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": true,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Prinz Eugen",
-        "2": "【艦隊收藏】Prinz Eugen 改"
-      },
-      "戰艦少女": {
-        "5": "【戰艦少女】Prinz Eugen",
-        "6": "【戰艦少女】Prinz Eugen 改",
-        "7": "【戰艦少女】Prinz Eugen 聖誕裝Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Prinz Eugen",
-        "8": "【鋼鐵少女】Prinz Eugen 改二"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】Prinz Eugen",
-        "13": "【碧藍航線】Prinz Eugen 永不褪色的笑容Ver."
-      },
-      "最終戰艦": {
-        "9": "【最終戰艦】Prinz Eugen",
-        "10": "【最終戰艦】Prinz Eugen 泳裝Ver.",
-        "11": "【最終戰艦】Prinz Eugen 花嫁Ver.",
-        "12": "【最終戰艦】Prinz Eugen 和服Ver."
-      }
-    },
-    "PGSC706": {
-      "id": "PGSC706",
-      "name": "HSF Graf Spee",
-      "tier": "Ⅵ",
-      "nation": "germany",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": true,
-      "special": "haifuri",
-      "高校艦隊": {
-        "1": "【高校艦隊】ヴィルヘルミーナ・ブラウンシュヴァイク・インゲノール・フリーデブルク"
-      }
-    },
-    "PGSD106": {
-      "id": "PGSD106",
-      "name": "Ernst Gaede",
-      "tier": "Ⅵ",
-      "nation": "germany",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Z3 zwei",
-        "2": "【艦隊收藏】Z3 夏季限定(2016)Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Z3 改"
-      }
-    },
-    "PGSD107": {
-      "id": "PGSD107",
-      "name": "Leberecht Maass",
-      "tier": "Ⅶ",
-      "nation": "germany",
-      "type": "destroyer",
-      "default": 4,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Z1 zwei",
-        "2": "【艦隊收藏】Z1 秋季限定Ver.",
-        "7": "【艦隊收藏】Z1 水着Ver."
-      },
-      "戰艦少女": {
-        "3": "【戰艦少女】Z1",
-        "4": "【戰艦少女】Z1 改"
-      },
-      "鋼鐵少女": {
-        "6": "【鋼鐵少女】Z1 改"
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】Z1"
-      },
-      "最終戰艦": {
-        "8": "【最終戰艦】Z1",
-        "9": "【最終戰艦】Z1 泳裝Ver."
-      }
-    },
-    "PGSD108": {
-      "id": "PGSD108",
-      "name": "Z23",
-      "tier": "Ⅷ",
-      "nation": "germany",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Z24",
-        "2": "【戰艦少女】Z28"
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Z25 改"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】Z23",
-        "5": "【碧藍航線】Z23 哲學講師Ver."
-      }
-    },
-    "PGSD109": {
-      "id": "PGSD109",
-      "name": "Z46",
-      "tier": "Ⅸ",
-      "nation": "germany",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "2": "【戰艦少女】Z46"
-      },
-      "碧藍航線": {
-        "1": "【碧藍航線】Z46"
-      }
-    }
-  },
-  "italia": {
-    "PISB508": {
-      "id": "PISB508",
-      "name": "Roma",
-      "tier": "Ⅷ",
-      "nation": "italia",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Roma 改",
-        "2": "【艦隊收藏】Roma 秋季限定Ver.",
-        "3": "【艦隊收藏】Roma なか卯コラボVer.",
-        "4": "【艦隊收藏】Littorio",
-        "5": "【艦隊收藏】Italia",
-        "6": "【艦隊收藏】Italia 夏季限定Ver.",
-        "7": "【艦隊收藏】Italia クリスマスVer."
-      },
-      "戰艦少女": {
-        "9": "【戰艦少女】Vittorio Veneto",
-        "10": "【戰艦少女】Vittorio Veneto 改",
-        "11": "【戰艦少女】Vittorio Veneto Bikini della cingcia Ver.",
-        "12": "【戰艦少女】Vittorio Veneto 米蘭風情Ver.",
-        "13": "【戰艦少女】Vittorio Veneto 合身的衣服Ver.",
-        "14": "【戰艦少女】Roma"
-      },
-      "鋼鐵少女": {
-        "8": "【鋼鐵少女】Roma"
-      }
-    },
-    "PISC506": {
-      "id": "PISC506",
-      "name": "Duca d'Aosta",
-      "tier": "Ⅵ",
-      "nation": "italia",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": true,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Duca d'Aosta",
-        "2": "【鋼鐵少女】Duca d'Aosta 改"
+        "1": "【戰艦少女】Cassin Young",
+        "2": "【戰艦少女】Heermann",
+        "3": "【戰艦少女】Heermann 聖夜唱詩班Ver.",
+        "4": "【戰艦少女】Braine",
+        "5": "【戰艦少女】Converse",
+        "6": "【戰艦少女】Converse 愚人節限時彩蛋Ver.",
+        "7": "【戰艦少女】Converse 星之夢Ver."
       }
     }
   },
@@ -585,46 +869,6 @@
       },
       "戰艦少女": {
         "3": "【戰艦少女】鳳翔"
-      }
-    },
-    "PJSB006": {
-      "id": "PJSB006",
-      "name": "扶桑",
-      "tier": "Ⅵ",
-      "nation": "japan",
-      "type": "battleship",
-      "default": 20,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】扶桑 改",
-        "2": "【艦隊收藏】扶桑 新年の晴れ着mode",
-        "5": "【艦隊收藏】扶桑 夏季限定(2016)Ver.",
-        "6": "【艦隊收藏】扶桑 鎮守府秋の秋刀魚祭りmode",
-        "7": "【艦隊收藏】山城",
-        "8": "【艦隊收藏】山城 改二",
-        "9": "【艦隊收藏】山城 新年の晴れ着Ver.",
-        "10": "【艦隊收藏】山城 夏季限定Ver.",
-        "11": "【艦隊收藏】山城 なか卯コラボVer.",
-        "13": "【艦隊收藏】扶桑",
-        "14": "【艦隊收藏】扶桑 改二",
-        "15": "【艦隊收藏】扶桑 梅雨Ver.",
-        "17": "【艦隊收藏】扶桑 瑞雲Ver.",
-        "18": "【艦隊收藏】山城 瑞雲Ver."
-      },
-      "戰艦少女": {
-        "3": "【戰艦少女】扶桑",
-        "12": "【戰艦少女】山城",
-        "16": "【戰艦少女】扶桑 春之霓裳Ver."
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】扶桑"
-      },
-      "碧藍航線": {
-        "19": "【碧藍航線】扶桑",
-        "20": "【碧藍航線】山城",
-        "21": "【碧藍航線】山城 改",
-        "22": "【碧藍航線】山城 夏季攻勢Ver."
       }
     },
     "PJSA006": {
@@ -711,89 +955,6 @@
         "5": "【Victory Belles】飛龍"
       }
     },
-    "PJSB010": {
-      "id": "PJSB010",
-      "name": "長門",
-      "tier": "Ⅶ",
-      "nation": "japan",
-      "type": "battleship",
-      "default": 5,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】長門",
-        "5": "【艦隊收藏】長門 改二"
-      },
-      "戰艦少女": {
-        "2": "【戰艦少女】長門"
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】長門"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】長門"
-      },
-      "最終戰艦": {
-        "6": "【最終戰艦】長門",
-        "7": "【最終戰艦】長門 泳裝Ver."
-      }
-    },
-    "PJSB007": {
-      "id": "PJSB007",
-      "name": "金剛",
-      "tier": "Ⅴ",
-      "nation": "japan",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】金剛",
-        "2": "【艦隊收藏】金剛 改二",
-        "4": "【艦隊收藏】金剛 なか卯コラボVer.",
-        "6": "【艦隊收藏】比叡",
-        "7": "【艦隊收藏】比叡 改二",
-        "8": "【艦隊收藏】霧島",
-        "9": "【艦隊收藏】霧島 改二",
-        "10": "【艦隊收藏】榛名",
-        "11": "【艦隊收藏】榛名 改二",
-        "12": "【艦隊收藏】榛名 夏季限定Ver."
-      },
-      "戰艦少女": {
-        "3": "【戰艦少女】金剛",
-        "16": "【戰艦少女】比叡",
-        "17": "【戰艦少女】霧島",
-        "18": "【戰艦少女】金剛 永恆誓約Ver.",
-        "20": "【戰艦少女】金剛 夏日大作戰Ver.",
-        "21": "【戰艦少女】榛名"
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】金剛",
-        "13": "【碧藍航線】比叡",
-        "14": "【碧藍航線】霧島",
-        "15": "【碧藍航線】榛名"
-      },
-      "鋼鐵少女": {
-        "19": "【鋼鐵少女】霧島"
-      }
-    },
-    "PJSB011": {
-      "id": "PJSB011",
-      "name": "三笠",
-      "tier": "Ⅱ",
-      "nation": "japan",
-      "type": "battleship",
-      "default": 3,
-      "change": true,
-      "premium": true,
-      "碧藍航線": {
-        "3": "【碧藍航線】三笠"
-      },
-      "同人作品": {
-        "1": ["紀奈", "https://twitter.com/kinona", "三笠", "http://seiga.nicovideo.jp/seiga/im4181804"],
-        "2": ["紀奈", "https://twitter.com/kinona", "三笠 浴衣Ver.", "http://seiga.nicovideo.jp/seiga/im5177431"]
-      }
-    },
     "PJSA012": {
       "id": "PJSA012",
       "name": "翔鶴",
@@ -867,7 +1028,12 @@
           "白龍 裝甲Ver.",
           "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629"
         ],
-        "2": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "白龍", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"],
+        "2": [
+          "司马闹腾",
+          "http://www.pixiv.net/member.php?id=7933104",
+          "白龍",
+          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"
+        ],
         "3": [
           "司马闹腾",
           "http://www.pixiv.net/member.php?id=7933104",
@@ -899,6 +1065,139 @@
       "碧藍航線": {
         "6": "【碧藍航線】加賀",
         "7": "【碧藍航線】加賀 常夏的殺生石Ver."
+      }
+    },
+    "PJSB006": {
+      "id": "PJSB006",
+      "name": "扶桑",
+      "tier": "Ⅵ",
+      "nation": "japan",
+      "type": "battleship",
+      "default": 20,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】扶桑 改",
+        "2": "【艦隊收藏】扶桑 新年の晴れ着mode",
+        "5": "【艦隊收藏】扶桑 夏季限定(2016)Ver.",
+        "6": "【艦隊收藏】扶桑 鎮守府秋の秋刀魚祭りmode",
+        "7": "【艦隊收藏】山城",
+        "8": "【艦隊收藏】山城 改二",
+        "9": "【艦隊收藏】山城 新年の晴れ着Ver.",
+        "10": "【艦隊收藏】山城 夏季限定Ver.",
+        "11": "【艦隊收藏】山城 なか卯コラボVer.",
+        "13": "【艦隊收藏】扶桑",
+        "14": "【艦隊收藏】扶桑 改二",
+        "15": "【艦隊收藏】扶桑 梅雨Ver.",
+        "17": "【艦隊收藏】扶桑 瑞雲Ver.",
+        "18": "【艦隊收藏】山城 瑞雲Ver."
+      },
+      "戰艦少女": {
+        "3": "【戰艦少女】扶桑",
+        "12": "【戰艦少女】山城",
+        "16": "【戰艦少女】扶桑 春之霓裳Ver."
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】扶桑"
+      },
+      "碧藍航線": {
+        "19": "【碧藍航線】扶桑",
+        "20": "【碧藍航線】山城",
+        "21": "【碧藍航線】山城 改",
+        "22": "【碧藍航線】山城 夏季攻勢Ver."
+      }
+    },
+    "PJSB007": {
+      "id": "PJSB007",
+      "name": "金剛",
+      "tier": "Ⅴ",
+      "nation": "japan",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】金剛",
+        "2": "【艦隊收藏】金剛 改二",
+        "4": "【艦隊收藏】金剛 なか卯コラボVer.",
+        "6": "【艦隊收藏】比叡",
+        "7": "【艦隊收藏】比叡 改二",
+        "8": "【艦隊收藏】霧島",
+        "9": "【艦隊收藏】霧島 改二",
+        "10": "【艦隊收藏】榛名",
+        "11": "【艦隊收藏】榛名 改二",
+        "12": "【艦隊收藏】榛名 夏季限定Ver."
+      },
+      "戰艦少女": {
+        "3": "【戰艦少女】金剛",
+        "16": "【戰艦少女】比叡",
+        "17": "【戰艦少女】霧島",
+        "18": "【戰艦少女】金剛 永恆誓約Ver.",
+        "20": "【戰艦少女】金剛 夏日大作戰Ver.",
+        "21": "【戰艦少女】榛名"
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】金剛",
+        "13": "【碧藍航線】比叡",
+        "14": "【碧藍航線】霧島",
+        "15": "【碧藍航線】榛名"
+      },
+      "鋼鐵少女": {
+        "19": "【鋼鐵少女】霧島"
+      }
+    },
+    "PJSB010": {
+      "id": "PJSB010",
+      "name": "長門",
+      "tier": "Ⅶ",
+      "nation": "japan",
+      "type": "battleship",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】長門",
+        "5": "【艦隊收藏】長門 改二"
+      },
+      "戰艦少女": {
+        "2": "【戰艦少女】長門"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】長門"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】長門"
+      },
+      "最終戰艦": {
+        "6": "【最終戰艦】長門",
+        "7": "【最終戰艦】長門 泳裝Ver."
+      }
+    },
+    "PJSB011": {
+      "id": "PJSB011",
+      "name": "三笠",
+      "tier": "Ⅱ",
+      "nation": "japan",
+      "type": "battleship",
+      "default": 3,
+      "change": true,
+      "premium": true,
+      "碧藍航線": {
+        "3": "【碧藍航線】三笠"
+      },
+      "同人作品": {
+        "1": [
+          "紀奈",
+          "https://twitter.com/kinona",
+          "三笠",
+          "http://seiga.nicovideo.jp/seiga/im4181804"
+        ],
+        "2": [
+          "紀奈",
+          "https://twitter.com/kinona",
+          "三笠 浴衣Ver.",
+          "http://seiga.nicovideo.jp/seiga/im5177431"
+        ]
       }
     },
     "PJSB013": {
@@ -945,7 +1244,39 @@
         "9": "【最終戰艦】大和 居家襯衫Ver."
       },
       "同人作品": {
-        "2": ["しずま", "http://www.pixiv.net/member.php?id=141206", "大和", ""]
+        "2": [
+          "しずま",
+          "http://www.pixiv.net/member.php?id=141206",
+          "大和",
+          ""
+        ]
+      }
+    },
+    "PJSB021": {
+      "id": "PJSB021",
+      "name": "出雲",
+      "tier": "Ⅸ",
+      "nation": "japan",
+      "type": "battleship",
+      "default": 3,
+      "change": true,
+      "premium": false,
+      "碧藍航線": {
+        "3": "【碧藍航線】出雲"
+      },
+      "同人作品": {
+        "1": [
+          "安佐川",
+          "https://twitter.com/asaka142",
+          "出雲",
+          ""
+        ],
+        "2": [
+          "安佐川",
+          "https://twitter.com/asaka142",
+          "磐手",
+          "https://twitter.com/asaka142/status/639032260058984448"
+        ]
       }
     },
     "PJSB506": {
@@ -966,23 +1297,6 @@
       },
       "鋼鐵少女": {
         "4": "【鋼鐵少女】陸奧"
-      }
-    },
-    "PJSB021": {
-      "id": "PJSB021",
-      "name": "出雲",
-      "tier": "Ⅸ",
-      "nation": "japan",
-      "type": "battleship",
-      "default": 3,
-      "change": true,
-      "premium": false,
-      "碧藍航線": {
-        "3": "【碧藍航線】出雲"
-      },
-      "同人作品": {
-        "1": ["安佐川", "https://twitter.com/asaka142", "出雲", ""],
-        "2": ["安佐川", "https://twitter.com/asaka142", "磐手", "https://twitter.com/asaka142/status/639032260058984448"]
       }
     },
     "PJSB508": {
@@ -1321,7 +1635,12 @@
         "2": "【鋼鐵少女】黑姬"
       },
       "同人作品": {
-        "1": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "蔵王", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584"]
+        "1": [
+          "司马闹腾",
+          "http://www.pixiv.net/member.php?id=7933104",
+          "蔵王",
+          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584"
+        ]
       }
     },
     "PJSC035": {
@@ -1540,7 +1859,12 @@
         "4": "【戰艦少女】島風 大正淑女Ver."
       },
       "同人作品": {
-        "2": ["しずま", "http://www.pixiv.net/member.php?id=141206", "零之島風", ""]
+        "2": [
+          "しずま",
+          "http://www.pixiv.net/member.php?id=141206",
+          "零之島風",
+          ""
+        ]
       }
     },
     "PJSD025": {
@@ -1684,9 +2008,24 @@
         "11": "【戰艦少女】秋月 新春祈願Ver."
       },
       "同人作品": {
-        "4": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "秋月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
-        "5": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "照月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
-        "6": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "初月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
+        "4": [
+          "konnyaku",
+          "http://www.pixiv.net/member.php?id=1391461",
+          "秋月",
+          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
+        "5": [
+          "konnyaku",
+          "http://www.pixiv.net/member.php?id=1391461",
+          "照月",
+          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
+        "6": [
+          "konnyaku",
+          "http://www.pixiv.net/member.php?id=1391461",
+          "初月",
+          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
+        ],
         "7": [
           "konnyaku",
           "http://www.pixiv.net/member.php?id=1391461",
@@ -1860,35 +2199,578 @@
       }
     }
   },
-  "pan_asia": {
-    "PZSD506": {
-      "id": "PZSD506",
-      "name": "鞍山",
-      "tier": "Ⅵ",
-      "nation": "pan_asia",
-      "type": "destroyer",
+  "ussr": {
+    "PRSB505": {
+      "id": "PRSB505",
+      "name": "Okt. Revolutsiya",
+      "tier": "Ⅴ",
+      "nation": "ussr",
+      "type": "battleship",
       "default": 1,
-      "change": false,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【鋼鐵少女】鞍山"
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Гангут",
+        "2": "【艦隊收藏】Октябрьская революция",
+        "3": "【艦隊收藏】Гангут два"
       }
     },
-    "PZSD508": {
-      "id": "PZSD508",
-      "name": "洛陽",
-      "tier": "Ⅷ",
-      "nation": "pan_asia",
+    "PRSC001": {
+      "id": "PRSC001",
+      "name": "Aurora",
+      "tier": "Ⅲ",
+      "nation": "ussr",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": true,
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Aurora"
+      },
+      "碧藍航線": {
+        "2": "【碧藍航線】Aurora"
+      }
+    },
+    "PRSC003": {
+      "id": "PRSC003",
+      "name": "Murmansk",
+      "tier": "Ⅴ",
+      "nation": "ussr",
+      "type": "cruiser",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Murmansk"
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Murmansk"
+      }
+    },
+    "PRSC105": {
+      "id": "PRSC105",
+      "name": "Kirov",
+      "tier": "Ⅴ",
+      "nation": "ussr",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Kirov"
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Kirov",
+        "3": "【鋼鐵少女】Kirov 夏日泳裝Ver."
+      },
+      "Victory_Belles": {
+        "4": "【Victory Belles】Kirov"
+      }
+    },
+    "PRSD001": {
+      "id": "PRSD001",
+      "name": "Gremyashchy",
+      "tier": "Ⅴ",
+      "nation": "ussr",
       "type": "destroyer",
       "default": 1,
       "change": false,
       "premium": true,
       "戰艦少女": {
-        "1": "【鋼鐵少女】洛陽"
+        "1": "【戰艦少女】Gremyashchy"
+      }
+    },
+    "PRSD206": {
+      "id": "PRSD206",
+      "name": "Gnevny",
+      "tier": "Ⅵ",
+      "nation": "ussr",
+      "type": "destroyer",
+      "default": 3,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Решительный",
+        "2": "【戰艦少女】Решительный 四季長春Ver.",
+        "3": "【戰艦少女】Решительный 長春Ver.",
+        "4": "【戰艦少女】Решительный 同予者何人Ver."
+      },
+      "鋼鐵少女": {
+        "5": "【鋼鐵少女】Решительный"
+      }
+    },
+    "PRSD207": {
+      "id": "PRSD207",
+      "name": "Minsk",
+      "tier": "Ⅶ",
+      "nation": "ussr",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Minsk"
+      }
+    },
+    "PRSD308": {
+      "id": "PRSD308",
+      "name": "Kiev",
+      "tier": "Ⅶ",
+      "nation": "ussr",
+      "type": "destroyer",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Верный"
+      },
+      "戰艦少女": {
+        "2": "【戰艦少女】Kiev"
+      }
+    },
+    "PRSD409": {
+      "id": "PRSD409",
+      "name": "Tashkent",
+      "tier": "Ⅸ",
+      "nation": "ussr",
+      "type": "destroyer",
+      "default": 3,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "3": "【艦隊收藏】Ташкент"
+      },
+      "戰艦少女": {
+        "1": "【戰艦少女】Tashkent",
+        "2": "【戰艦少女】Tashkent 冬日暖潮"
+      }
+    },
+    "PRSD507": {
+      "id": "PRSD507",
+      "name": "Leningrad",
+      "tier": "Ⅶ",
+      "nation": "ussr",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "Victory_Belles": {
+        "1": "【Victory Belles】Leningrad"
       }
     }
   },
-  "poland": {},
+  "germany": {
+    "PGSA508": {
+      "id": "PGSA508",
+      "name": "Graf Zeppelin",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "aircarrier",
+      "default": 1,
+      "change": true,
+      "premium": true,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Graf Zeppelin 改"
+      },
+      "戰艦少女": {
+        "2": "【戰艦少女】Graf Zeppelin"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Graf Zeppelin",
+        "4": "【鋼鐵少女】Graf Zeppelin 改"
+      },
+      "最終戰艦": {
+        "5": "【最終戰艦】Graf Zeppelin",
+        "6": "【最終戰艦】Graf Zeppelin 泳裝Ver."
+      }
+    },
+    "PGSB002": {
+      "id": "PGSB002",
+      "name": "Tirpitz",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "battleship",
+      "default": 2,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Tirpitz",
+        "2": "【戰艦少女】Tirpitz 改",
+        "3": "【戰艦少女】Tirpitz 兒童節Ver.",
+        "5": "【戰艦少女】Tirpitz 小小的奇幻冒險Ver."
+      },
+      "鋼鐵少女": {
+        "4": "【鋼鐵少女】Tirpitz",
+        "6": "【鋼鐵少女】Tirpitz 紅心王后Ver."
+      }
+    },
+    "PGSB107": {
+      "id": "PGSB107",
+      "name": "Gneisenau",
+      "tier": "Ⅶ",
+      "nation": "germany",
+      "type": "battleship",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Gneisenau"
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Gneisenau",
+        "3": "【鋼鐵少女】Gneisenau 聖．尼古拉Ver."
+      }
+    },
+    "PGSB108": {
+      "id": "PGSB108",
+      "name": "Bismarck",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "battleship",
+      "default": 8,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Bismarck",
+        "2": "【艦隊收藏】Bismarck 改",
+        "3": "【艦隊收藏】Bismarck zwei",
+        "4": "【艦隊收藏】Bismarck drei"
+      },
+      "戰艦少女": {
+        "5": "【戰艦少女】Bismarck",
+        "6": "【戰艦少女】Bismarck 改",
+        "9": "【戰艦少女】Bismarck 奇貓博士Ver."
+      },
+      "鋼鐵少女": {
+        "7": "【鋼鐵少女】Bismarck"
+      },
+      "碧藍航線": {
+        "8": "【碧藍航線】Bismarck"
+      },
+      "最終戰艦": {
+        "10": "【最終戰艦】Bismarck",
+        "11": "【最終戰艦】Bismarck 泳裝Ver.",
+        "12": "【最終戰艦】Bismarck 花嫁Ver.",
+        "13": "【最終戰艦】Bismarck 護士Ver."
+      }
+    },
+    "PGSB109": {
+      "id": "PGSB109",
+      "name": "F. der Große",
+      "tier": "Ⅸ",
+      "nation": "germany",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Hidenburg"
+      }
+    },
+    "PGSB507": {
+      "id": "PGSB507",
+      "name": "Scharnhorst",
+      "tier": "Ⅶ",
+      "nation": "germany",
+      "type": "battleship",
+      "default": 3,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Scharnhorst",
+        "2": "【戰艦少女】Scharnhorst 我到河北省來Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Scharnhorst",
+        "5": "【鋼鐵少女】Scharnhorst 萬聖伯爵Ver."
+      },
+      "Victory_Belles": {
+        "4": "【Victory Belles】Scharnhorst"
+      },
+      "同人作品": {
+        "6": [
+          "トム猫",
+          "http://www.pixiv.net/member.php?id=1368840",
+          "Scharnhorst",
+          "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=36560930"
+        ]
+      }
+    },
+    "PGSC104": {
+      "id": "PGSC104",
+      "name": "Karlsruhe",
+      "tier": "Ⅳ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Karlsruhe",
+        "2": "【戰艦少女】Karlsruhe 改"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Karlsruhe"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Karlsruhe"
+      }
+    },
+    "PGSC105": {
+      "id": "PGSC105",
+      "name": "Königsberg",
+      "tier": "Ⅴ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Königsberg",
+        "2": "【戰艦少女】Königsberg 改",
+        "5": "【戰艦少女】Köln",
+        "6": "【戰艦少女】Köln 改"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Königsberg",
+        "7": "【鋼鐵少女】Köln",
+        "8": "【鋼鐵少女】Köln 改"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Königsberg"
+      }
+    },
+    "PGSC106": {
+      "id": "PGSC106",
+      "name": "Nürnberg",
+      "tier": "Ⅵ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 5,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Leipzig",
+        "6": "【戰艦少女】Nürnberg"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Nürnberg",
+        "4": "【鋼鐵少女】Nürnberg 改",
+        "5": "【鋼鐵少女】Leipzig"
+      },
+      "Victory_Belles": {
+        "2": "【Victory Belles】Nürnberg"
+      }
+    },
+    "PGSC107": {
+      "id": "PGSC107",
+      "name": "Yorck",
+      "tier": "Ⅶ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】M計畫"
+      }
+    },
+    "PGSC108": {
+      "id": "PGSC108",
+      "name": "Hipper",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 3,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Hipper",
+        "2": "【戰艦少女】Hipper 改"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Hipper"
+      }
+    },
+    "PGSC109": {
+      "id": "PGSC109",
+      "name": "Roon",
+      "tier": "Ⅸ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Roon"
+      }
+    },
+    "PGSC502": {
+      "id": "PGSC502",
+      "name": "Emden",
+      "tier": "Ⅱ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 1,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Emden",
+        "2": "【戰艦少女】Emden 溫馨情人Ver."
+      }
+    },
+    "PGSC506": {
+      "id": "PGSC506",
+      "name": "Graf Spee",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 1,
+      "change": true,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【戰艦少女】Graf Spee",
+        "4": "【戰艦少女】Graf Spee 出遊禮裝Ver."
+      },
+      "鋼鐵少女": {
+        "2": "【鋼鐵少女】Graf Spee",
+        "5": "【鋼鐵少女】Graf Spee 改"
+      },
+      "Victory_Belles": {
+        "3": "【Victory Belles】Graf Spee"
+      }
+    },
+    "PGSC508": {
+      "id": "PGSC508",
+      "name": "Prinz Eugen",
+      "tier": "Ⅵ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 2,
+      "change": true,
+      "premium": true,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Prinz Eugen",
+        "2": "【艦隊收藏】Prinz Eugen 改"
+      },
+      "戰艦少女": {
+        "5": "【戰艦少女】Prinz Eugen",
+        "6": "【戰艦少女】Prinz Eugen 改",
+        "7": "【戰艦少女】Prinz Eugen 聖誕裝Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Prinz Eugen",
+        "8": "【鋼鐵少女】Prinz Eugen 改二"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Prinz Eugen",
+        "13": "【碧藍航線】Prinz Eugen 永不褪色的笑容Ver."
+      },
+      "最終戰艦": {
+        "9": "【最終戰艦】Prinz Eugen",
+        "10": "【最終戰艦】Prinz Eugen 泳裝Ver.",
+        "11": "【最終戰艦】Prinz Eugen 花嫁Ver.",
+        "12": "【最終戰艦】Prinz Eugen 和服Ver."
+      }
+    },
+    "PGSC706": {
+      "id": "PGSC706",
+      "name": "HSF Graf Spee",
+      "tier": "Ⅵ",
+      "nation": "germany",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "special": "haifuri",
+      "高校艦隊": {
+        "1": "【高校艦隊】ヴィルヘルミーナ・ブラウンシュヴァイク・インゲノール・フリーデブルク"
+      }
+    },
+    "PGSD106": {
+      "id": "PGSD106",
+      "name": "Ernst Gaede",
+      "tier": "Ⅵ",
+      "nation": "germany",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Z3 zwei",
+        "2": "【艦隊收藏】Z3 夏季限定(2016)Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Z3 改"
+      }
+    },
+    "PGSD107": {
+      "id": "PGSD107",
+      "name": "Leberecht Maass",
+      "tier": "Ⅶ",
+      "nation": "germany",
+      "type": "destroyer",
+      "default": 4,
+      "change": true,
+      "premium": false,
+      "艦隊收藏": {
+        "1": "【艦隊收藏】Z1 zwei",
+        "2": "【艦隊收藏】Z1 秋季限定Ver.",
+        "7": "【艦隊收藏】Z1 水着Ver."
+      },
+      "戰艦少女": {
+        "3": "【戰艦少女】Z1",
+        "4": "【戰艦少女】Z1 改"
+      },
+      "鋼鐵少女": {
+        "6": "【鋼鐵少女】Z1 改"
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Z1"
+      },
+      "最終戰艦": {
+        "8": "【最終戰艦】Z1",
+        "9": "【最終戰艦】Z1 泳裝Ver."
+      }
+    },
+    "PGSD108": {
+      "id": "PGSD108",
+      "name": "Z23",
+      "tier": "Ⅷ",
+      "nation": "germany",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Z24",
+        "2": "【戰艦少女】Z28"
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Z25 改"
+      },
+      "碧藍航線": {
+        "4": "【碧藍航線】Z23",
+        "5": "【碧藍航線】Z23 哲學講師Ver."
+      }
+    },
+    "PGSD109": {
+      "id": "PGSD109",
+      "name": "Z46",
+      "tier": "Ⅸ",
+      "nation": "germany",
+      "type": "destroyer",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "戰艦少女": {
+        "2": "【戰艦少女】Z46"
+      },
+      "碧藍航線": {
+        "1": "【碧藍航線】Z46"
+      }
+    }
+  },
   "uk": {
     "PBSB002": {
       "id": "PBSB002",
@@ -2164,1019 +3046,193 @@
       }
     }
   },
-  "usa": {
-    "PASD029": {
-      "id": "PASD029",
-      "name": "Sims",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "碧藍航線": {
-        "1": "【碧藍航線】Sims"
-      }
-    },
-    "PASD508": {
-      "id": "PASD508",
-      "name": "Kidd",
+  "france": {
+    "PFSB108": {
+      "id": "PFSB108",
+      "name": "Richelieu",
       "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】The Sullivans",
-        "2": "【戰艦少女】The Sullivans 改",
-        "3": "【戰艦少女】The Sullivans 給英雄的贈禮Ver.",
-        "4": "【戰艦少女】Sigsbee",
-        "5": "【戰艦少女】Sigsbee 藍色情人Ver.",
-        "6": "【戰艦少女】Hoel"
-      }
-    },
-    "PASD709": {
-      "id": "PASD709",
-      "name": "Black",
-      "tier": "Ⅸ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 3,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Cassin Young",
-        "2": "【戰艦少女】Heermann",
-        "3": "【戰艦少女】Heermann 聖夜唱詩班Ver.",
-        "4": "【戰艦少女】Braine",
-        "5": "【戰艦少女】Converse",
-        "6": "【戰艦少女】Converse 愚人節限時彩蛋Ver.",
-        "7": "【戰艦少女】Converse 星之夢Ver."
-      }
-    },
-    "PASB004": {
-      "id": "PASB004",
-      "name": "Wyoming",
-      "tier": "Ⅳ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "November": {
-        "1": "【November】Arizona"
-      }
-    },
-    "PASA002": {
-      "id": "PASA002",
-      "name": "Bogue",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Bogue"
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Bogue"
-      }
-    },
-    "PASB006": {
-      "id": "PASB006",
-      "name": "New York",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "November": {
-        "1": "【November】Pennsylvania"
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Pennsylvania"
-      }
-    },
-    "PASA006": {
-      "id": "PASA006",
-      "name": "Independence",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Princeton",
-        "2": "【戰艦少女】Princeton Bikino魔術師Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Belleau Wood",
-        "4": "【鋼鐵少女】Cabot",
-        "5": "【鋼鐵少女】Cabot 改"
-      }
-    },
-    "PASA010": {
-      "id": "PASA010",
-      "name": "Ranger",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 5,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Ranger",
-        "2": "【戰艦少女】Ranger 改",
-        "3": "【戰艦少女】Ranger HeartCatchRabbitVer."
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】Ranger"
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】Ranger"
-      }
-    },
-    "PASA004": {
-      "id": "PASA004",
-      "name": "Langley",
-      "tier": "Ⅳ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 3,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Langley",
-        "4": "【戰艦少女】Langley 改"
-      },
-      "碧藍航線": {
-        "3": "【碧藍航線】Langley",
-        "5": "【碧藍航線】Langley 改"
-      },
-      "November": {
-        "2": "【November】Langley"
-      }
-    },
-    "PASA012": {
-      "id": "PASA012",
-      "name": "Lexington",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 20,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "6": "【艦隊收藏】Saratoga",
-        "8": "【艦隊收藏】Saratoga 改",
-        "20": "【艦隊收藏】Saratoga Mk.II",
-        "21": "【艦隊收藏】Saratoga Mk.II Mod.2"
-      },
-      "戰艦少女": {
-        "1": "【戰艦少女】Lexington",
-        "2": "【戰艦少女】Lexington 改",
-        "3": "【戰艦少女】Lexington LoveBlue Ver.",
-        "4": "【戰艦少女】Lexington Strap bikini Ver.",
-        "11": "【戰艦少女】Saratoga",
-        "12": "【戰艦少女】Saratoga 改",
-        "13": "【戰艦少女】Saratoga Love Butterfly Ver.",
-        "15": "【戰艦少女】Saratoga 清涼的夏日旅行Ver."
-      },
-      "鋼鐵少女": {
-        "14": "【鋼鐵少女】Saratoga 改",
-        "16": "【鋼鐵少女】Lexington"
-      },
-      "碧藍航線": {
-        "9": "【碧藍航線】Lexington",
-        "10": "【碧藍航線】Saratoga",
-        "19": "【碧藍航線】Saratoga 七海的憩日Ver."
-      },
-      "November": {
-        "5": "【November】Lexington"
-      },
-      "最終戰艦": {
-        "17": "【最終戰艦】Lexington",
-        "18": "【最終戰艦】Lexington 泳裝Ver."
-      }
-    },
-    "PASB008": {
-      "id": "PASB008",
-      "name": "Colorado",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Colorado",
-        "2": "【戰艦少女】Colorado 改",
-        "4": "【戰艦少女】Maryland",
-        "5": "【戰艦少女】Maryland 改",
-        "6": "【戰艦少女】West Virginia",
-        "7": "【戰艦少女】West Virginia 改",
-        "8": "【戰艦少女】Maryland 試驗型改良艦裝Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Maryland"
-      },
-      "November": {
-        "9": "【November】Maryland",
-        "10": "【November】West Virginia"
-      }
-    },
-    "PASA013": {
-      "id": "PASA013",
-      "name": "Essex",
-      "tier": "Ⅸ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Essex"
-      },
-      "鋼鐵少女": {
-        "5": "【鋼鐵少女】Bunker Hill",
-        "6": "【鋼鐵少女】Bunker Hill 改"
-      },
-      "最終戰艦": {
-        "2": "【最終戰艦】Essex",
-        "3": "【最終戰艦】Essex 泳裝Ver.",
-        "4": "【最終戰艦】Essex 花嫁Ver."
-      }
-    },
-    "PASA508": {
-      "id": "PASA508",
-      "name": "Enterprise",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 4,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "2": "【戰艦少女】Enterprise",
-        "3": "【戰艦少女】Enterprise 白色惡魔Ver.",
-        "12": "【戰艦少女】Enterprise 甜蜜聖誕Ver."
-      },
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Enterprise",
-        "10": "【鋼鐵少女】Yorktown",
-        "11": "【鋼鐵少女】Hornet"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】Enterprise"
-      },
-      "November": {
-        "9": "【November】Enterprise"
-      },
-      "最終戰艦": {
-        "5": "【最終戰艦】Enterprise",
-        "6": "【最終戰艦】Enterprise 泳裝Ver.",
-        "7": "【最終戰艦】Enterprise 花嫁Ver.",
-        "8": "【最終戰艦】Enterprise 警服Ver."
-      }
-    },
-    "PASB001": {
-      "id": "PASB001",
-      "name": "S. Carolina",
-      "tier": "Ⅲ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "November": {
-        "1": "【November】Maryland"
-      }
-    },
-    "PASB012": {
-      "id": "PASB012",
-      "name": "N. Carolina",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "2": "【戰艦少女】N. Carolina",
-        "3": "【戰艦少女】Washington",
-        "6": "【戰艦少女】Washington 兒童節Ver."
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】Washington",
-        "5": "【鋼鐵少女】Washington 改"
-      },
-      "最終戰艦": {
-        "7": "【最終戰艦】Washington",
-        "8": "【最終戰艦】Washington 泳裝Ver."
-      }
-    },
-    "PASB017": {
-      "id": "PASB017",
-      "name": "Montana",
-      "tier": "Ⅹ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Montana"
-      }
-    },
-    "PASB018": {
-      "id": "PASB018",
-      "name": "Iowa",
-      "tier": "Ⅸ",
-      "nation": "usa",
+      "nation": "france",
       "type": "battleship",
       "default": 1,
       "change": true,
       "premium": false,
       "艦隊收藏": {
-        "1": "【艦隊收藏】Iowa",
-        "3": "【艦隊收藏】Iowa 晴れ着Ver."
+        "1": "【艦隊收藏】Richelieu",
+        "2": "【艦隊收藏】Richelieu 秋の私服Ver.",
+        "3": "【艦隊收藏】Richelieu 晴れ着Ver."
       },
-      "November": {
-        "2": "【November】Iowa"
-      }
-    },
-    "PASB034": {
-      "id": "PASB034",
-      "name": "New Mexico",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "November": {
-        "1": "【November】Wisconsin"
-      }
-    },
-    "PASB506": {
-      "id": "PASB506",
-      "name": "Arizona",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 2,
-      "change": true,
-      "premium": true,
-      "November": {
-        "1": "【November】Arizona"
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Arizona"
-      }
-    },
-    "PASB508": {
-      "id": "PASB508",
-      "name": "Alabama",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": true,
-      "premium": false,
       "戰艦少女": {
-        "2": "【戰艦少女】South Dakota",
-        "3": "【戰艦少女】South Dakota 歸鄉的少女Ver."
-      },
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Alabama 改"
+        "4": "【戰艦少女】Richelieu",
+        "5": "【戰艦少女】Richelieu 改",
+        "6": "【戰艦少女】Richelieu 漫步於香榭麗舍Ver."
       }
     },
-    "PASB509": {
-      "id": "PASB509",
-      "name": "Missouri",
-      "tier": "Ⅸ",
-      "nation": "usa",
+    "PFSB506": {
+      "id": "PFSB506",
+      "name": "Dunkerque",
+      "tier": "Ⅵ",
+      "nation": "france",
       "type": "battleship",
       "default": 1,
       "change": true,
       "premium": true,
       "戰艦少女": {
-        "1": "【戰艦少女】Missouri",
-        "4": "【戰艦少女】Missouri 正宗京味ㄦVer.",
-        "6": "【戰艦少女】Missouri 私人訂製Ver.",
-        "7": "【戰艦少女】Missouri 輕鬆一夏Ver."
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Missouri",
-        "3": "【鋼鐵少女】Missouri 改"
-      },
-      "November": {
-        "5": "【November】Missouri"
+        "3": "【戰艦少女】Dunkerque"
       },
       "最終戰艦": {
-        "8": "【最終戰艦】Missouri",
-        "9": "【最終戰艦】Missouri 泳裝Ver.",
-        "10": "【最終戰艦】Missouri 花嫁Ver.",
-        "11": "【最終戰艦】Missouri 兔女郎Ver."
+        "1": "【最終戰艦】Dunkerque",
+        "2": "【最終戰艦】Dunkerque 泳裝Ver."
       }
     },
-    "PASB708": {
-      "id": "PASB708",
-      "name": "Alabama ST",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "battleship",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Alabama 改"
-      }
-    },
-    "PASC002": {
-      "id": "PASC002",
-      "name": "Chester",
-      "tier": "Ⅱ",
-      "nation": "usa",
+    "PFSC107": {
+      "id": "PFSC107",
+      "name": "Algérie",
+      "tier": "Ⅶ",
+      "nation": "france",
       "type": "cruiser",
       "default": 1,
       "change": true,
       "premium": false,
-      "November": {
-        "1": "【November】Chester"
-      },
-      "最終戰艦": {
-        "2": "【最終戰艦】Augusta",
-        "3": "【最終戰艦】Augusta 泳裝Ver."
-      }
-    },
-    "PASC004": {
-      "id": "PASC004",
-      "name": "St. Louis",
-      "tier": "Ⅲ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "November": {
-        "1": "【November】St. Louis"
-      },
-      "戰艦少女": {
-        "2": "【戰艦少女】St. Louis"
-      }
-    },
-    "PASC005": {
-      "id": "PASC005",
-      "name": "Omaha",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Omaha",
-        "2": "【戰艦少女】Omaha 改"
-      },
-      "碧藍航線": {
-        "3": "【碧藍航線】Omaha"
-      }
-    },
-    "PASC006": {
-      "id": "PASC006",
-      "name": "Atlanta",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 3,
-      "change": true,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【戰艦少女】Atlanta",
-        "2": "【戰艦少女】Atlanta 改"
-      },
       "鋼鐵少女": {
-        "4": "【鋼鐵少女】Atlanta"
-      },
-      "碧藍航線": {
-        "3": "【碧藍航線】Atlanta"
-      }
-    },
-    "PASC007": {
-      "id": "PASC007",
-      "name": "Cleveland",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 7,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "2": "【戰艦少女】Houston",
-        "3": "【戰艦少女】Houston 改",
-        "8": "【戰艦少女】Cleveland"
-      },
-      "鋼鐵少女": {
-        "6": "【鋼鐵少女】Cleveland 改"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】Northampton",
-        "5": "【碧藍航線】Houston",
-        "7": "【碧藍航線】Cleveland"
-      },
-      "November": {
-        "1": "【November】Northampton"
-      }
-    },
-    "PASC012": {
-      "id": "PASC012",
-      "name": "Pensacola",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 4,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Pensacola",
-        "2": "【戰艦少女】Salt Lake City",
-        "4": "【戰艦少女】Pensacola 改"
+        "1": "【鋼鐵少女】Algérie",
+        "2": "【鋼鐵少女】Algérie 改"
       },
       "Victory_Belles": {
-        "3": "【Victory Belles】Salt Lake City"
+        "3": "【Victory Belles】Algérie"
       }
     },
-    "PASC014": {
-      "id": "PASC014",
-      "name": "New Orleans",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 8,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】New Orleans",
-        "2": "【戰艦少女】New Orleans 改",
-        "4": "【戰艦少女】Quincy",
-        "5": "【戰艦少女】Quincy 改",
-        "6": "【戰艦少女】Quincy SapphireVer.",
-        "8": "【戰艦少女】New Orleans 甜蜜之旅Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】New Orleans"
-      },
-      "Victory_Belles": {
-        "7": "【Victory Belles】New Orleans"
-      }
-    },
-
-    "PASC017": {
-      "id": "PASC017",
-      "name": "Baltimore",
+    "PFSC109": {
+      "id": "PFSC109",
+      "name": "Saint-Louis",
       "tier": "Ⅸ",
-      "nation": "usa",
+      "nation": "france",
       "type": "cruiser",
       "default": 1,
       "change": false,
       "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Baltimore"
+      "碧藍航線": {
+        "1": "【碧藍航線】Saint-Louis"
       }
     },
-    "PASC020": {
-      "id": "PASC020",
-      "name": "Des Moines",
-      "tier": "Ⅹ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Des Moines"
-      }
-    },
-
-    "PASC024": {
-      "id": "PASC024",
-      "name": "Phoenix",
+    "PFSC506": {
+      "id": "PFSC506",
+      "name": "De Grasse",
       "tier": "Ⅳ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "November": {
-        "1": "【November】Phoenix"
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Phoenix"
-      }
-    },
-    "PASC044": {
-      "id": "PASC044",
-      "name": "Marblehead",
-      "tier": "Ⅴ",
-      "nation": "usa",
+      "nation": "france",
       "type": "cruiser",
       "default": 1,
       "change": false,
-      "premium": true,
-      "November": {
-        "1": "【November】Marblehead"
-      }
-    },
-    "PASC045": {
-      "id": "PASC045",
-      "name": "Marblehead L",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 1,
-      "change": false,
-      "premium": true,
-      "November": {
-        "1": "【November】Marblehead"
-      }
-    },
-    "PASC207": {
-      "id": "PASC207",
-      "name": "Helena",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 5,
-      "change": true,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Helena",
-        "2": "【戰艦少女】Helena 改",
-        "3": "【戰艦少女】Helena 暗影突襲Ver.",
-        "4": "【戰艦少女】Helena The Little Mermaid Ver."
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】Helena"
-      }
-    },
-    "PASC507": {
-      "id": "PASC507",
-      "name": "Indianapolis",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "cruiser",
-      "default": 1,
-      "change": true,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【戰艦少女】Indianapolis"
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Indianapolis",
-        "3": "【鋼鐵少女】Portland"
-      },
-      "碧藍航線": {
-        "4": "【碧藍航線】Indianapolis",
-        "5": "【碧藍航線】Portland"
-      },
-      "同人作品": {
-        "6": ["紫瑟", "http://www.weibo.com/u/2193276854", "Indianapolis 35號球員Ver.", "http://www.weibo.com/2193276854/Dca0Yz2yY"]
-      }
-    },
-    "PASD002": {
-      "id": "PASD002",
-      "name": "Sampson",
-      "tier": "Ⅱ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "November": {
-        "1": "【November】Narwhal"
-      }
-    },
-    "PASD005": {
-      "id": "PASD005",
-      "name": "Farragut",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "最終戰艦": {
-        "1": "【最終戰艦】Farragut",
-        "2": "【最終戰艦】Farragut 泳裝Ver.",
-        "3": "【最終戰艦】Farragut 睡衣Ver."
-      }
-    },
-    "PASD006": {
-      "id": "PASD006",
-      "name": "Mahan",
-      "tier": "Ⅶ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Mahan",
-        "4": "【戰艦少女】Mahan 愚人節裝扮Ver.",
-        "5": "【戰艦少女】Mahan 夏日出遊Ver."
-      },
-      "November": {
-        "2": "【November】Mahan"
-      },
-      "Victory_Belles": {
-        "3": "【Victory Belles】Mahan"
-      }
-    },
-
-    "PASD008": {
-      "id": "PASD008",
-      "name": "Benson",
-      "tier": "Ⅷ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 5,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "4": "【戰艦少女】Laffey"
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Benson",
-        "3": "【鋼鐵少女】Benson 改"
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】Benson",
-        "6": "【碧藍航線】Laffey",
-        "7": "【碧藍航線】Laffey 33娘Ver."
-      },
-      "November": {
-        "1": "【November】Benson"
-      }
-    },
-    "PASD013": {
-      "id": "PASD013",
-      "name": "Gearing",
-      "tier": "Ⅹ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Gearing",
-        "2": "【戰艦少女】Gearing 改",
-        "3": "【戰艦少女】Gearing 海上漂流套装Ver."
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】德陽"
-      }
-    },
-    "PASD014": {
-      "id": "PASD014",
-      "name": "Nicholas",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】O'Bannon",
-        "2": "【戰艦少女】O'Bannon 花間少女Ver."
-      }
-    },
-    "PASD019": {
-      "id": "PASD019",
-      "name": "Clemson",
-      "tier": "Ⅳ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "November": {
-        "1": "【November】Edsall"
-      }
-    },
-    "PASD021": {
-      "id": "PASD021",
-      "name": "Fletcher",
-      "tier": "Ⅸ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 5,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Fletcher",
-        "4": "【戰艦少女】Fletcher 改",
-        "9": "【戰艦少女】Johnston",
-        "10": "【戰艦少女】Anthony",
-        "11": "【戰艦少女】Thatcher",
-        "12": "【戰艦少女】Thatcher 聖誕華服Ver."
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Fletcher",
-        "5": "【鋼鐵少女】Fletcher 改二",
-        "6": "【鋼鐵少女】Fletcher 夏日泳裝Ver."
-      },
-      "碧藍航線": {
-        "3": "【碧藍航線】Fletcher"
-      },
-      "最終戰艦": {
-        "7": "【最終戰艦】Fletcher",
-        "8": "【最終戰艦】Fletcher 泳裝Ver."
-      }
-    },
-    "PASD027": {
-      "id": "PASD027",
-      "name": "Wickes",
-      "tier": "Ⅲ",
-      "nation": "usa",
-      "type": "destroyer",
-      "default": 6,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "2": "【戰艦少女】William.D.Porter",
-        "3": "【戰艦少女】William.D.Porter William the Joker Ver.",
-        "4": "【戰艦少女】Dyson",
-        "5": "【戰艦少女】Dyson 星之所在Ver.",
-        "6": "【戰艦少女】Claxton"
+        "1": "【戰艦少女】De Grasse"
       }
     }
   },
-  "ussr": {
-    "PRSB505": {
-      "id": "PRSB505",
-      "name": "Okt. Revolutsiya",
-      "tier": "Ⅴ",
-      "nation": "ussr",
+  "italia": {
+    "PISB508": {
+      "id": "PISB508",
+      "name": "Roma",
+      "tier": "Ⅷ",
+      "nation": "italia",
       "type": "battleship",
       "default": 1,
       "change": true,
       "premium": false,
       "艦隊收藏": {
-        "1": "【艦隊收藏】Гангут",
-        "2": "【艦隊收藏】Октябрьская революция",
-        "3": "【艦隊收藏】Гангут два"
-      }
-    },
-    "PRSD308": {
-      "id": "PRSD308",
-      "name": "Kiev",
-      "tier": "Ⅶ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】Верный"
+        "1": "【艦隊收藏】Roma 改",
+        "2": "【艦隊收藏】Roma 秋季限定Ver.",
+        "3": "【艦隊收藏】Roma なか卯コラボVer.",
+        "4": "【艦隊收藏】Littorio",
+        "5": "【艦隊收藏】Italia",
+        "6": "【艦隊收藏】Italia 夏季限定Ver.",
+        "7": "【艦隊收藏】Italia クリスマスVer."
       },
       "戰艦少女": {
-        "2": "【戰艦少女】Kiev"
-      }
-    },
-    "PRSC001": {
-      "id": "PRSC001",
-      "name": "Aurora",
-      "tier": "Ⅲ",
-      "nation": "ussr",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": true,
-      "鋼鐵少女": {
-        "1": "【鋼鐵少女】Aurora"
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Aurora"
-      }
-    },
-    "PRSD409": {
-      "id": "PRSD409",
-      "name": "Tashkent",
-      "tier": "Ⅸ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 3,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "3": "【艦隊收藏】Ташкент"
-      },
-      "戰艦少女": {
-        "1": "【戰艦少女】Tashkent",
-        "2": "【戰艦少女】Tashkent 冬日暖潮"
-      }
-    },
-    "PRSC003": {
-      "id": "PRSC003",
-      "name": "Murmansk",
-      "tier": "Ⅴ",
-      "nation": "ussr",
-      "type": "cruiser",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Murmansk"
+        "9": "【戰艦少女】Vittorio Veneto",
+        "10": "【戰艦少女】Vittorio Veneto 改",
+        "11": "【戰艦少女】Vittorio Veneto Bikini della cingcia Ver.",
+        "12": "【戰艦少女】Vittorio Veneto 米蘭風情Ver.",
+        "13": "【戰艦少女】Vittorio Veneto 合身的衣服Ver.",
+        "14": "【戰艦少女】Roma"
       },
       "鋼鐵少女": {
-        "2": "【鋼鐵少女】Murmansk"
+        "8": "【鋼鐵少女】Roma"
       }
     },
-    "PRSC105": {
-      "id": "PRSC105",
-      "name": "Kirov",
-      "tier": "Ⅴ",
-      "nation": "ussr",
-      "type": "cruiser",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Kirov"
-      },
-      "鋼鐵少女": {
-        "2": "【鋼鐵少女】Kirov",
-        "3": "【鋼鐵少女】Kirov 夏日泳裝Ver."
-      },
-      "Victory_Belles": {
-        "4": "【Victory Belles】Kirov"
-      }
-    },
-
-    "PRSD507": {
-      "id": "PRSD507",
-      "name": "Leningrad",
-      "tier": "Ⅶ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 1,
-      "change": false,
-      "premium": true,
-      "Victory_Belles": {
-        "1": "【Victory Belles】Leningrad"
-      }
-    },
-
-    "PRSD001": {
-      "id": "PRSD001",
-      "name": "Gremyashchy",
-      "tier": "Ⅴ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 1,
-      "change": false,
-      "premium": true,
-      "戰艦少女": {
-        "1": "【戰艦少女】Gremyashchy"
-      }
-    },
-
-    "PRSD206": {
-      "id": "PRSD206",
-      "name": "Gnevny",
+    "PISC506": {
+      "id": "PISC506",
+      "name": "Duca d'Aosta",
       "tier": "Ⅵ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 3,
+      "nation": "italia",
+      "type": "cruiser",
+      "default": 2,
       "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Решительный",
-        "2": "【戰艦少女】Решительный 四季長春Ver.",
-        "3": "【戰艦少女】Решительный 長春Ver.",
-        "4": "【戰艦少女】Решительный 同予者何人Ver."
-      },
+      "premium": true,
       "鋼鐵少女": {
-        "5": "【鋼鐵少女】Решительный"
-      }
-    },
-    "PRSD207": {
-      "id": "PRSD207",
-      "name": "Minsk",
-      "tier": "Ⅶ",
-      "nation": "ussr",
-      "type": "destroyer",
-      "default": 1,
-      "change": false,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Minsk"
+        "1": "【鋼鐵少女】Duca d'Aosta",
+        "2": "【鋼鐵少女】Duca d'Aosta 改"
       }
     }
-  }
+  },
+  "pan_asia": {
+    "PZSD506": {
+      "id": "PZSD506",
+      "name": "鞍山",
+      "tier": "Ⅵ",
+      "nation": "pan_asia",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【鋼鐵少女】鞍山"
+      }
+    },
+    "PZSD508": {
+      "id": "PZSD508",
+      "name": "洛陽",
+      "tier": "Ⅷ",
+      "nation": "pan_asia",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "戰艦少女": {
+        "1": "【鋼鐵少女】洛陽"
+      }
+    }
+  },
+  "commonwealth": {
+    "PUSC506": {
+      "id": "PUSC506",
+      "name": "Perth",
+      "tier": "Ⅵ",
+      "nation": "commonwealth",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Perth"
+      }
+    },
+    "PUSD503": {
+      "id": "PUSD503",
+      "name": "Vampire",
+      "tier": "Ⅲ",
+      "nation": "commonwealth",
+      "type": "destroyer",
+      "default": 3,
+      "change": true,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": "【鋼鐵少女】Vampire"
+      },
+      "碧藍航線": {
+        "2": "【碧藍航線】Vampire",
+        "3": "【碧藍航線】Vampire 誓約Ver."
+      }
+    }
+  },
+  "poland": {}
 }
