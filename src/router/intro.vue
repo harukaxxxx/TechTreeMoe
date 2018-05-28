@@ -4,26 +4,86 @@
       <i-col span="12">
       <Card>
         <p slot="title">
-          <Icon type="pound"></Icon> {{$t("intro.intro.title")}}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-bofangyelanmujianjie-"></use>
+          </svg>
+          {{$t("intro.intro.title")}}
         </p>
-        <Steps :current="4" direction="vertical">
-          <Step :title="$t('intro.intro.custom')" :content="$t('intro.intro.customContent')" icon="wand"></Step>
-          <Step :title="$t('intro.intro.convenient')" :content="$t('intro.intro.convenientContent')" icon="star"></Step>
-          <Step :title="$t('intro.intro.savable')" :content="$t('intro.intro.savableContent')" icon="ios-box"></Step>
-          <Step :title="$t('intro.intro.quick')" :content="$t('intro.intro.quickContent')" icon="flash"></Step>
-          <Step :title="$t('intro.intro.attention')" :content="$t('intro.intro.attentionContent')" icon="alert"></Step>
-        </Steps>
+        <Timeline>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-custom"></use>
+            </svg>
+            <span class="title">{{$t('intro.intro.custom')}}</span>
+            <p class="content">{{$t('intro.intro.customContent')}}</p>
+          </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-quick"></use>
+            </svg>
+            <span class="title">{{$t('intro.intro.convenient')}}</span>
+            <p class="content">{{$t('intro.intro.convenientContent')}}</p>
+          </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-save"></use>
+            </svg>
+            <span class="title">{{$t('intro.intro.savable')}}</span>
+            <p class="content">{{$t('intro.intro.savableContent')}}</p>
+            </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-quick1"></use>
+            </svg>
+            <span class="title">{{$t('intro.intro.quick')}}</span>
+            <p class="content">{{$t('intro.intro.quickContent')}}</p>
+          </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-attention"></use>
+            </svg>
+            <span class="title">{{$t('intro.intro.attention')}}</span>
+            <p class="content">{{$t('intro.intro.attentionContent')}}</p>
+          </TimelineItem>
+        </Timeline>
       </Card>
       <Card>
         <p slot="title">
-          <Icon type="android-list"></Icon> {{$t("intro.tutorial.title")}}
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-tutor-copy"></use>
+        </svg>
+        {{$t("intro.tutorial.title")}}
         </p>
-        <Steps :current="4" direction="vertical">
-          <Step :title="$t('intro.tutorial.choose')" icon="heart" :content="$t('intro.tutorial.chooseContent')"></Step>
-          <Step :title="$t('intro.tutorial.download')" icon="android-download" :content="$t('intro.tutorial.downloadContent')"></Step>
-          <Step :title="$t('intro.tutorial.unzip')" icon="android-archive" :content="$t('intro.tutorial.unzipContent')"></Step>
-          <Step :title="$t('intro.tutorial.install')" icon="ios-copy" :content="$t('intro.tutorial.installContent')"></Step>
-        </Steps>
+        <Timeline>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-love"></use>
+            </svg>
+            <span class="title">{{$t('intro.tutorial.choose')}}</span>
+            <p class="content">{{$t('intro.tutorial.chooseContent')}}</p>
+          </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-download"></use>
+            </svg>
+            <span class="title">{{$t('intro.tutorial.download')}}</span>
+            <p class="content">{{$t('intro.tutorial.downloadContent')}}</p>
+          </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-unarchive"></use>
+            </svg>
+            <span class="title">{{$t('intro.tutorial.unzip')}}</span>
+            <p class="content">{{$t('intro.tutorial.unzipContent')}}</p>
+            </TimelineItem>
+          <TimelineItem>
+            <svg slot="dot" class="icon" aria-hidden="true">
+              <use xlink:href="#icon-anzhuangbao"></use>
+            </svg>
+            <span class="title">{{$t('intro.tutorial.install')}}</span>
+            <p class="content">{{$t('intro.tutorial.installContent')}}</p>
+          </TimelineItem>
+        </Timeline>
       </Card>
       </i-col>
     </Row>
@@ -33,6 +93,7 @@
   </div>
 </template>
 <script>
+import iconfont from '../main.js'
 export default {
   data() {
     return {
@@ -54,20 +115,24 @@ export default {
   .ivu-card {
     margin: 20px;
     background: #ffffffe6;
-  }
-  .ivu-steps-icon {
-    color: #495060;
-  }
-  .ivu-steps-title,
-  .ivu-steps-content {
-    color: #1c2438;
-    background: transparent;
-  }
-  .ivu-steps-head {
-    background: transparent;
-  }
-  .ivu-steps-tail i:after {
-    background: #495060;
+    .ivu-timeline {
+      margin-left: 10px;
+      .ivu-timeline-item-tail {
+        border: none;
+      }
+      .ivu-timeline-item-head-blue {
+        color: #495060;
+        background: transparent;
+        .icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
   }
   .bg-source {
     position: fixed;

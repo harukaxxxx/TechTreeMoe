@@ -4,7 +4,10 @@
       <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{ $t("charts.yesterdayDownloaded") }}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-download1"></use>
+          </svg>
+          {{ $t("charts.yesterdayDownloaded") }}
           <small>{{ $t('charts.yesterdayDownloadedTime', {year:yesterday[0],month:yesterday[1],day:yesterday[2]}) }}</small>
         </p>
         <p class="amount">{{yesterdayDownloaded+$t("charts.downloadUnit")}}</p>
@@ -13,7 +16,10 @@
       <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{ $t("charts.monthDownloaded") }}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-download1"></use>
+          </svg>
+          {{ $t("charts.monthDownloaded") }}
           <small>{{ $t('charts.monthDownloadedTime', {year:today[0],month:today[1]}) }}</small>
         </p>
         <p class="amount">{{thisMonthDownloaded+$t("charts.downloadUnit")}}</p>
@@ -22,7 +28,10 @@
       <i-col span="8">
       <Card class="downloadAmount">
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{ $t("charts.totalDownloaded") }}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-download1"></use>
+          </svg>
+          {{ $t("charts.totalDownloaded") }}
           <small>{{$t('charts.totalDownloadedTime')}}</small>
         </p>
         <p class="amount">{{totalDownload+$t("charts.downloadUnit")}}</p>
@@ -33,7 +42,10 @@
       <i-col span="24">
       <Card>
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{ $t("charts.totalProgress") }}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-amy-ui-progressbar"></use>
+          </svg>
+          {{ $t("charts.totalProgress") }}
         </p>
         <Progress :percent="Math.floor(globalProgress.total/globalProgress.progress*100)" status="active"></Progress>
       </Card>
@@ -43,7 +55,10 @@
       <i-col span="24">
       <Card class="nationCircle">
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{ $t("charts.nationProgress") }}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-amy-ui-progressbar"></use>
+          </svg>
+          {{ $t("charts.nationProgress") }}
         </p>
         <Row type="flex" justify="center">
           <i-col span="4" v-for="nation in nationList" :key="nationList.indexOf(nation)">
@@ -61,7 +76,10 @@
       <i-col span="24">
       <Card>
         <p slot="title">
-          <Icon type="ios-film-outline"></Icon>{{$t('charts.lineChart')}}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-chartareaspline"></use>
+          </svg>
+          {{$t('charts.lineChart')}}
         </p>
         <ve-line :data="downloadChart" :settings="chartSettings" :colors="colors" :data-zoom="dataZoom" :grid="grid" :legend-visible="false"></ve-line>
       </Card>
@@ -78,6 +96,7 @@
   </div>
 </template>
 <script>
+import iconfont from '../main.js'
 export default {
   data() {
     return {

@@ -4,13 +4,19 @@
       <i-col class="update" span="12" offset="12">
       <Card>
         <p slot="title">
-          <Icon type="social-github"></Icon> {{$t('about.contact')}}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+          </svg>
+          {{$t('about.contact')}}
         </p>
         <p v-html="$t('about.contactContent')"></p>
       </Card>
       <Card>
         <p slot="title">
-          <Icon type="ios-list"></Icon> {{$t('about.update')}}
+          <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-log"></use>
+          </svg>
+          {{$t('about.update')}}
         </p>
         <Timeline :style="{ height:logHeight + 'px' }">
           <TimelineItem v-for="update in updates" :key="update.index" :name="update.index" :color="updateLevel(update.level)">
@@ -27,6 +33,7 @@
   </div>
 </template>
 <script>
+import iconfont from '../main.js'
 export default {
   name: 'about',
   data() {

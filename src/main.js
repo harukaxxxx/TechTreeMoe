@@ -14,6 +14,11 @@ import 'iview/dist/styles/iview.css'
 Vue.use(iView)
 
 /*
+* iconfont
+*/
+import iconfont from '../src/iconfont.js'
+
+/*
 * google analytics
 */
 const isProd = process.env.NODE_ENV === 'production'
