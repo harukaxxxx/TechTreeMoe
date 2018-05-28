@@ -8,7 +8,9 @@
       <img src="/static/images/vendor/ga.png" height="20px">
     </a>
     <a href="https://github.com/harukaxxxx/TechTreeMoe" target="_blank">
-      <Icon type="social-github" size="18"></Icon>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-github"></use>
+      </svg>
     </a>
     <a href="https://www.iviewui.com/" target="_blank">
       <img src="/static/images/vendor/iview.png" height="20px"></a>
@@ -29,6 +31,7 @@
   </Row>
 </template>
 <script>
+import iconfont from '../main.js'
 export default {
   data() {
     return {
