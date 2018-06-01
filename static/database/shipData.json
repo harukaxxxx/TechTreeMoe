@@ -452,8 +452,8 @@
         "3": "【碧藍航線】Atlanta"
       }
     },
-    "PASC007": {
-      "id": "PASC007",
+    "PASC208": {
+      "id": "PASC208",
       "name": "Cleveland",
       "tier": "Ⅵ",
       "nation": "usa",
@@ -478,8 +478,8 @@
         "1": "【November】Northampton"
       }
     },
-    "PASC012": {
-      "id": "PASC012",
+    "PASC106": {
+      "id": "PASC106",
       "name": "Pensacola",
       "tier": "Ⅶ",
       "nation": "usa",
@@ -496,8 +496,8 @@
         "3": "【Victory Belles】Salt Lake City"
       }
     },
-    "PASC014": {
-      "id": "PASC014",
+    "PASC107": {
+      "id": "PASC107",
       "name": "New Orleans",
       "tier": "Ⅷ",
       "nation": "usa",
@@ -520,8 +520,8 @@
         "7": "【Victory Belles】New Orleans"
       }
     },
-    "PASC017": {
-      "id": "PASC017",
+    "PASC108": {
+      "id": "PASC108",
       "name": "Baltimore",
       "tier": "Ⅸ",
       "nation": "usa",
