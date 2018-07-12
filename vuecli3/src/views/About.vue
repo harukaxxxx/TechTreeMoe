@@ -18,7 +18,7 @@
           </svg>
           {{$t('about.update')}}
         </p>
-        <Timeline :style="{ height:logHeight + 'px' }">
+        <Timeline>
           <TimelineItem v-for="update in updates" :key="update.index" :name="update.index" :color="updateLevel(update.level)">
             <p class="time">{{update.time}}</p>
             <p class="content" v-for="event in update.event" :key="event.index">{{event}}</p>
@@ -34,24 +34,15 @@
 </template>
 <script>
 import iconfont from '../main.js'
+import update from '../assets/update.json'
+
 export default {
   name: 'about',
   data() {
     return {
-      updates: Array,
-      logHeight: Number,
+      updates: update,
       backgroundSourceURL: 'https://www.pixiv.net/member_illust.php?mode=medium&illust_id=51816460'
     }
-  },
-  beforeMount() {
-    this.updateData(this)
-  },
-  mounted() {
-    let headerHeight = document.querySelector('header').offsetHeight
-    let footerHeight = document.querySelector('footer').offsetHeight
-    let contactHeight = document.querySelector('.update div:nth-child(1)').offsetHeight + 40
-    let updateTitleHeight = document.querySelector('.update div:nth-child(2) div').offsetHeight + 60
-    this.logHeight = window.innerHeight - (headerHeight + footerHeight + contactHeight + updateTitleHeight)
   },
   methods: {
     updateLevel(level) {
@@ -72,24 +63,16 @@ export default {
           return 'black'
           break
       }
-    },
-    updateData(data) {
-      axios
-        .get('/static/database/update.json')
-        .then(function(response) {
-          data.updates = response.data
-        })
-        .catch(error => {
-          console.error(error.message)
-        })
     }
   }
 }
 </script>
 <style lang="scss">
 #about {
+  height: calc(100vh - 94px);
+  overflow-y: auto;
   background: {
-    image: url('/static/images/about_bg.jpg');
+    image: url('../assets/about_bg.jpg');
     color: #fff;
     size: contain;
     position: left bottom;
@@ -100,7 +83,6 @@ export default {
     background: #ffffffe6;
   }
   .update ul {
-    overflow-y: scroll;
     .time {
       font-size: 14px;
       font-weight: bold;
