@@ -104,8 +104,10 @@ export default {
 </script>
 <style lang="scss">
 #intro {
+  height: calc(100vh - 94px);
+  overflow-y: auto;
   background: {
-    image: url('/static/images/intro_bg.png');
+    image: url('../assets/intro_bg.png');
     // id=40382972
     color: #fff;
     size: cover;

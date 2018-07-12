@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Layout>
-      <Header :style="{background:'#1e5b94'}">
+      <Header :style="{background:navBackground}">
         <app-header />
       </Header>
       <Content>
@@ -22,6 +22,19 @@ export default {
   components: {
     appHeader,
     appFooter
+  },
+  computed: {
+    navBackground: function() {
+      switch (this.$route.name) {
+        case 'home':
+        case 'charts':
+          return '#1e5b94'
+        case 'intro':
+        case 'custom':
+        case 'about':
+          return '#fff'
+      }
+    }
   }
 }
 </script>
@@ -36,12 +49,12 @@ export default {
 </style>
 
 <style scoped>
-body {
-  /* overflow: hidden; */
+/* body {
+  overflow: hidden;
 }
-/* 
+
 .ivu-layout-content {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 94px);
   overflow-y: auto;
 } */
 .ivu-layout-header {
