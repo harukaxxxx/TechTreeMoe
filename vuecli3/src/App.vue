@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Layout>
-      <Header>
+      <Header :style="{background:'#1e5b94'}">
         <app-header />
       </Header>
       <Content>
@@ -26,21 +26,19 @@ export default {
 }
 </script>
 
-<style>
-.icon {
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.15em;
-  fill: currentColor;
-  overflow: hidden;
-}
-
+<style scoped>
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
-
-#app {
+/* 
+.ivu-layout-content {
   height: calc(100vh - 90px);
   overflow-y: auto;
+} */
+.ivu-layout-header {
+  padding: 0;
+}
+.ivu-layout-footer {
+  padding: 0;
 }
 </style>
