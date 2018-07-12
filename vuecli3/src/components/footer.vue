@@ -2,10 +2,10 @@
   <Row class="footer" type="flex" justify="space-between" align="middle">
     <i-col span="6" class="left">
     <a href="http://echarts.baidu.com" target="_blank">
-      <img src="/static/images/vendor/echarts.png" height="18px">
+      <img src="../assets/vendor/echarts.png" height="18px">
     </a>
     <a href="https://analytics.google.com" target="_blank">
-      <img src="/static/images/vendor/ga.png" height="20px">
+      <img src="../assets/vendor/ga.png" height="20px">
     </a>
     <a href="https://github.com/harukaxxxx/TechTreeMoe" target="_blank">
       <svg class="icon" aria-hidden="true">
@@ -13,7 +13,7 @@
       </svg>
     </a>
     <a href="https://www.iviewui.com/" target="_blank">
-      <img src="/static/images/vendor/iview.png" height="20px"></a>
+      <img src="../assets/vendor/iview.png" height="20px"></a>
     </i-col>
     <i-col span="6" class="center">
     <p>Designed by © 2010
@@ -31,13 +31,9 @@
   </Row>
 </template>
 <script>
-import iconfont from '../main.js'
+import iconfont from '@/iconfont.js'
+
 export default {
-  data() {
-    return {
-      sContent: 'This is custom components'
-    }
-  },
   methods: {
     changeLang(lang) {
       this.$i18n.locale = lang
