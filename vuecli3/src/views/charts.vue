@@ -47,7 +47,7 @@
           </svg>
           {{ $t("charts.totalProgress") }}
         </p>
-        <Progress :percent="Math.floor(globalProgress.total/globalProgress.progress*100)" status="active"></Progress>
+        <Progress :percent="Math.floor(globalProgress.progress/globalProgress.total*100)" status="active"></Progress>
       </Card>
       </i-col>
     </Row>
@@ -62,10 +62,10 @@
         </p>
         <Row type="flex" justify="center">
           <i-col span="4" v-for="nation in nationList" :key="nationList.indexOf(nation)">
-          <i-circle :class="nation" :size="150" :percent="completeData[nation].total/completeData[nation].progress*100" :stroke-color="circleStrokeColor(completeData[nation].total/completeData[nation].progress*100)">
+          <i-circle :class="nation" :size="150" :percent="completeData[nation].progress/completeData[nation].total*100" :stroke-color="circleStrokeColor(completeData[nation].progress/completeData[nation].total*100)">
             <h1>{{$t('global.'+nation)}}</h1>
-            <p>{{(completeData[nation].total/completeData[nation].progress*100).toFixed(1)}}%</p>
-            <span>{{completeData[nation].total}} / {{completeData[nation].progress}}</span>
+            <p>{{(completeData[nation].progress/completeData[nation].total*100).toFixed(1)}}%</p>
+            <span>{{completeData[nation].progress}} / {{completeData[nation].total}}</span>
           </i-circle>
           </i-col>
         </Row>
@@ -97,12 +97,18 @@
 </template>
 <script>
 import iconfont from '../main.js'
+import axios from 'axios'
+import { mapGetters } from 'vuex'
+import VeLine from 'v-charts/lib/line'
+import 'echarts/lib/component/dataZoom'
+import 'echarts/lib/component/visualMap'
+
 export default {
   data() {
     return {
       name: 'charts',
       productionMode: false,
-      nationList: ['japan', 'usa', 'germany', 'ussr', 'uk', 'poland', 'pan_asia', 'france', 'commonwealth', 'italia'],
+      nationList: ['japan', 'usa', 'germany', 'ussr', 'uk', 'poland', 'pan_asia', 'france', 'commonwealth', 'italia', 'pan_america'],
       completeData: {
         commonwealth: { progress: 0, total: 0 },
         france: { progress: 0, total: 0 },
@@ -113,7 +119,8 @@ export default {
         poland: { progress: 0, total: 0 },
         uk: { progress: 0, total: 0 },
         usa: { progress: 0, total: 0 },
-        ussr: { progress: 0, total: 0 }
+        ussr: { progress: 0, total: 0 },
+        pan_america: { progress: 0, total: 0 }
       },
       globalProgress: { progress: 0, total: 0 },
       gaAuthorizeUrl:
@@ -362,7 +369,8 @@ export default {
         totalDownload += Number(data.value)
       })
       return totalDownload
-    }
+    },
+    ...mapGetters(['shipData', 'shipDatabase'])
   },
   beforeMount() {
     this.productionMode = process.env.NODE_ENV === 'production'
@@ -375,30 +383,25 @@ export default {
     this.getLastMonth()
   },
   mounted() {
+    this.$store.commit('addDatabase')
+
     let appCompleteData = this.completeData
     let appGlobalProgress = this.globalProgress
-
-    // complete progress setup
-    this.nationList.forEach(function(nation, index) {
-      axios
-        .get('/static/database/nationShips/' + nation + '.json')
-        .then(function(response) {
-          appCompleteData[nation].progress = Object.keys(response.data).length
-          appGlobalProgress.progress += Object.keys(response.data).length
-        })
-        .catch(function(error) {
-          console.log(error)
-        })
-
-      axios
-        .get('/static/database/shipData.json')
-        .then(function(response) {
-          appCompleteData[nation].total = Object.keys(response.data[nation]).length
-          appGlobalProgress.total += Object.keys(response.data[nation]).length
-        })
-        .catch(error => {
-          console.log(error)
-        })
+    Object.keys(this.shipDatabase).map(ship => {
+      const name = this.shipDatabase[ship].name
+      if (name.substr(0, 1) !== '[') {
+        const nation = this.shipDatabase[ship].nation
+        if (nation == 'italy') {
+          appCompleteData.italia.total++
+        } else {
+          appCompleteData[nation].total++
+        }
+        appGlobalProgress.total++
+      }
+    })
+    Object.keys(this.shipData).map(nation => {
+      appCompleteData[nation].progress = Object.keys(this.shipData[nation]).length
+      appGlobalProgress.progress += Object.keys(this.shipData[nation]).length
     })
   },
   methods: {
@@ -482,12 +485,17 @@ export default {
           this.getAccessToken()
         })
     }
+  },
+  components: {
+    VeLine
   }
 }
 </script>
 
 <style lang="scss" scoped>
 #charts {
+  height: calc(100vh - 94px);
+  overflow-y: auto;
   background-color: #1e5b94;
   .ivu-card {
     margin: 10px 20px;
