@@ -14,6 +14,7 @@
   </div>
 </template>
 <script>
+import iconfont from '@/iconfont.js'
 import appHeader from '@/components/navbar.vue'
 import appFooter from '@/components/footer.vue'
 
@@ -21,7 +22,8 @@ export default {
   name: 'app',
   components: {
     appHeader,
-    appFooter
+    appFooter,
+    iconfont
   },
   computed: {
     navBackground: function() {
@@ -49,14 +51,6 @@ export default {
 </style>
 
 <style scoped>
-/* body {
-  overflow: hidden;
-}
-
-.ivu-layout-content {
-  height: calc(100vh - 94px);
-  overflow-y: auto;
-} */
 .ivu-layout-header {
   padding: 0;
 }

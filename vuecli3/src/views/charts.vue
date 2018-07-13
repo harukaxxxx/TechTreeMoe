@@ -96,7 +96,6 @@
   </div>
 </template>
 <script>
-import iconfont from '../main.js'
 import axios from 'axios'
 import { mapGetters } from 'vuex'
 import VeLine from 'v-charts/lib/line'
@@ -439,10 +438,18 @@ export default {
         )
         .then(response => {
           this.gaRefreshToken = response.data.refresh_token
-          console.log(response.data.refresh_token)
+          this.$Message.info({
+            content: response.data.refresh_token,
+            duration: 0,
+            closable: true
+          })
         })
         .catch(error => {
-          console.log(error.message, 'Check network console for more info.')
+          this.$Message.error({
+            content: error.message,
+            duration: 0,
+            closable: true
+          })
         })
     },
     getAccessToken() {
@@ -456,7 +463,11 @@ export default {
           this.getData()
         })
         .catch(error => {
-          console.error(error.message)
+          this.$Message.error({
+            content: error.message,
+            duration: 0,
+            closable: true
+          })
         })
     },
     getData() {
@@ -473,7 +484,7 @@ export default {
         .get(QueryURI)
         .then(response => {
           let downloadData = this.downloadChart.rows
-          response.data.rows.forEach(function(data, index) {
+          response.data.rows.forEach(function(data) {
             downloadData.push({
               date: `${data[0].substring(0, 4)}/${data[0].substring(4, 6)}/${data[0].substring(6, 8)}`,
               value: data[1]
@@ -481,7 +492,11 @@ export default {
           })
         })
         .catch(error => {
-          console.log(error.message)
+          this.$Message.error({
+            content: error.message,
+            duration: 0,
+            closable: true
+          })
           this.getAccessToken()
         })
     }

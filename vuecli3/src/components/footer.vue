@@ -31,8 +31,6 @@
   </Row>
 </template>
 <script>
-import iconfont from '@/iconfont.js'
-
 export default {
   methods: {
     changeLang(lang) {

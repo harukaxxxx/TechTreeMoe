@@ -44,7 +44,6 @@
   </i-menu>
 </template>
 <script>
-import iconfont from '../main.js'
 export default {
   data() {
     return {

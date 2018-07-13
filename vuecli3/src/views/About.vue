@@ -33,7 +33,6 @@
   </div>
 </template>
 <script>
-import iconfont from '../main.js'
 import update from '../assets/update.json'
 
 export default {
@@ -49,19 +48,14 @@ export default {
       switch (level) {
         case 'IMPORTANT':
           return 'red'
-          break
         case 'FIX':
           return 'orange'
-          break
         case 'UPDATE':
           return 'green'
-          break
         case 'NEW':
           return 'blue'
-          break
         default:
           return 'black'
-          break
       }
     }
   }
