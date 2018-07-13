@@ -16,7 +16,19 @@ function loadLocaleMessages() {
   return messages
 }
 
+const languages = navigator.languages
+const languageList = ['zh-TW', 'zh-CN', 'en-US', 'ja']
+for (let index = 0; index < languages.length; index++) {
+  const language = languages[index]
+  if (languageList.indexOf(language) >= 0) {
+    var locale = languages[index].replace('zh-', '').replace('-US', '')
+    break
+  } else {
+    var locale = 'en'
+  }
+}
+
 export default new VueI18n({
-  locale: localeLang || process.env.VUE_APP_I18N_LOCALE || 'en',
+  locale,
   messages: loadLocaleMessages()
 })
