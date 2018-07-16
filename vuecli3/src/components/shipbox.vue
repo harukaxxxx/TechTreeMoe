@@ -6,7 +6,7 @@
       <a v-if="data.change" @click="openModal">
         <span class="change icon-change"></span>
       </a>
-      <img :src="`/static/images/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
+      <img :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
     </div>
     <p class="shipName">
       <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
@@ -26,11 +26,11 @@ export default {
     },
     flag: function(nation, special, id) {
       if (special === 'arp') {
-        return `background-image:url(/static/images/nation_flag/flag_${id}.png)`
+        return `background-image:url(img/nation_flag/flag_${id}.png)`
       } else if (special === 'haifuri') {
-        return 'background-image:url(/static/images/nation_flag/flag_haifuri.png)'
+        return 'background-image:url(img/nation_flag/flag_haifuri.png)'
       } else {
-        return `background-image:url(/static/images/nation_flag/flag_${nation}.png)`
+        return `background-image:url(img/nation_flag/flag_${nation}.png)`
       }
     }
   },
@@ -88,49 +88,49 @@ export default {
 .icon-aircarrier {
   width: 20px;
   height: 11px;
-  background: url('/static/images/icons.png') -39px -38px;
+  background: url('../assets/icons.png') -39px -38px;
   display: inline-block;
 }
 
 .icon-arp {
   width: 32px;
   height: 32px;
-  background: url('/static/images/icons.png') -2px -2px;
+  background: url('../assets/icons.png') -2px -2px;
   display: inline-block;
 }
 
 .icon-battleship {
   width: 20px;
   height: 11px;
-  background: url('/static/images/icons.png') -72px -2px;
+  background: url('../assets/icons.png') -72px -2px;
   display: inline-block;
 }
 
 .icon-change {
   width: 30px;
   height: 30px;
-  background: url('/static/images/icons.png') -38px -2px;
+  background: url('../assets/icons.png') -38px -2px;
   display: inline-block;
 }
 
 .icon-cruiser {
   width: 20px;
   height: 11px;
-  background: url('/static/images/icons.png') -72px -17px;
+  background: url('../assets/icons.png') -72px -17px;
   display: inline-block;
 }
 
 .icon-destroyer {
   width: 15px;
   height: 11px;
-  background: url('/static/images/icons.png') -72px -32px;
+  background: url('../assets/icons.png') -72px -32px;
   display: inline-block;
 }
 
 .icon-premium {
   width: 33px;
   height: 25px;
-  background: url('/static/images/icons.png') -2px -38px;
+  background: url('../assets/icons.png') -2px -38px;
   display: inline-block;
 }
 </style>

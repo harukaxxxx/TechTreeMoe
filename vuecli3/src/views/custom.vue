@@ -20,8 +20,8 @@
         <Button type="info" @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
-    <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipData">
-      <shipBox v-for="data in shipData" :key="data.id" :data="data" />
+    <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDatas">
+      <shipBox v-for="data in shipDatas" :key="data.id" :data="data" />
     </isotope>
     <Modal :title="modalData.name" v-model="modal" @on-ok="optionUpadte" class-name="vertical-center-modal" width="80" :closable="false" :mask-closable="false">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
@@ -31,7 +31,7 @@
             <div v-if="modalData.default === Number(optionKey)" class="checked">
               <Icon type="checkmark-circled"></Icon>
             </div>
-            <img :src="`/static/images/ship_previews/${modalData.id}-${optionKey}.png`">
+            <img :src="`img/ship_previews/${modalData.id}-${optionKey}.png`">
             <p v-if="typeof option === 'object'">
               <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'">【{{option[0]}}】</a>
               <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'">{{option[2]}}</a>
@@ -44,9 +44,10 @@
   </div>
 </template>
 <script>
-// import isotope from 'isotope-layout'
+import axios from 'axios'
 import isotope from 'vueisotope'
 import shipBox from '../components/shipbox.vue'
+import { mapGetters } from 'vuex'
 import JSZip from 'jszip'
 import FileSaver from 'file-saver'
 
@@ -54,7 +55,7 @@ export default {
   data() {
     return {
       name: 'custom',
-      shipData: [],
+      shipDatas: [],
       modal: false,
       modalData: Object,
       optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
@@ -101,24 +102,18 @@ export default {
   computed: {
     filterAll: function() {
       return this.filterStats.nation === '' && this.filterStats.type === ''
-    }
+    },
+    ...mapGetters(['shipData', 'shipDatabase'])
   },
   beforeMount() {
-    axios
-      .get('/static/database/shipData.json')
-      .then(res => {
-        let shipObject = res.data
-        Object.keys(shipObject).map((nationKey, nationIndex) => {
-          let nationShips = Object.values(shipObject[nationKey])
-          nationShips.forEach(ship => {
-            this.shipData.push(ship)
-            this.selectedOption[ship.id] = ship.default
-          })
-        })
+    let shipObject = this.shipData
+    Object.keys(shipObject).map(nationKey => {
+      let nationShips = Object.values(shipObject[nationKey])
+      nationShips.forEach(ship => {
+        this.shipDatas.push(ship)
+        this.selectedOption[ship.id] = ship.default
       })
-      .catch(error => {
-        console.log(error.message)
-      })
+    })
 
     this.$bus.on('downloadFile', () => {
       this.download()
@@ -162,7 +157,7 @@ export default {
             this.notice('查無選擇紀錄！', 'error')
           }
         } else {
-          this.shipData.forEach(data => {
+          this.shipDatas.forEach(data => {
             const id = data.id
             if (res[id] === undefined) {
               res[id] = data.default
@@ -209,8 +204,8 @@ export default {
       let shipPreviewsDS = []
       let selectedOption = this.selectedOption
       Object.keys(selectedOption).map(key => {
-        shipPreviews.push(`/static/images/ship_previews/${key}-${selectedOption[key]}.png`)
-        shipPreviewsDS.push(`/static/images/ship_previews_ds/${key}-${selectedOption[key]}.png`)
+        shipPreviews.push(`img/ship_previews/${key}-${selectedOption[key]}.png`)
+        shipPreviewsDS.push(`img/ship_previews_ds/${key}-${selectedOption[key]}.png`)
       })
 
       // get file function
@@ -247,7 +242,11 @@ export default {
             })
             .catch(error => {
               this.$Loading.error()
-              console.log(error.message)
+              this.$Message.error({
+                content: error.message,
+                duration: 0,
+                closable: true
+              })
             })
           promises.push(promise)
         })
@@ -262,7 +261,11 @@ export default {
           })
           .catch(error => {
             this.$Loading.error()
-            console.log(error.message)
+            this.$Message.error({
+              content: error.message,
+              duration: 0,
+              closable: true
+            })
           })
       })
     }
@@ -272,8 +275,10 @@ export default {
 
 <style lang="scss">
 #custom {
+  height: calc(100vh - 94px);
+  overflow-y: auto;
   background: {
-    image: url('/static/images/custom_bg.jpg');
+    image: url('../assets/custom_bg.jpg');
     repeat: no-repeat;
     position: center;
     size: cover;
