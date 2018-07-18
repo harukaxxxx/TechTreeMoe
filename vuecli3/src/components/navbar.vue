@@ -65,7 +65,7 @@ export default {
         eventAction: 'click',
         eventLabel: 'downloadZIP'
       })
-      this.$bus.emit('downloadFile')
+      // this.$bus.emit('downloadFile')
     }
   }
 }

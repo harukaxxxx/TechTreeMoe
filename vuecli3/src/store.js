@@ -4,10 +4,24 @@ import axios from 'axios'
 import shipData from './assets/shipData.json'
 Vue.use(Vuex)
 
+let shipDataArray = []
+let selectedOption = {}
+Object.keys(shipData).map(nationKey => {
+  let nationShips = Object.values(shipData[nationKey])
+  nationShips.forEach(ship => {
+    selectedOption[ship.id] = ship.default
+    shipDataArray.push(ship)
+  })
+})
+
 export default new Vuex.Store({
   state: {
     shipData,
-    shipDatabase: {}
+    shipDataArray,
+    selectedOption,
+    shipDatabase: {},
+    customModal: false,
+    modalData: {}
   },
   mutations: {
     addDatabase(state) {
@@ -49,6 +63,15 @@ export default new Vuex.Store({
           })
         )
       }
+    },
+    modalControl(state, payload) {
+      state.customModal = payload
+    },
+    modalData(state, payload) {
+      state.modalData = payload
+    },
+    updateOption(state, payload) {
+      state.selectedOption[payload[0]] = payload[1]
     }
   },
   actions: {},
@@ -58,6 +81,18 @@ export default new Vuex.Store({
     },
     shipDatabase: state => {
       return state.shipDatabase
+    },
+    customModal: state => {
+      return state.customModal
+    },
+    shipDataArray: state => {
+      return state.shipDataArray
+    },
+    selectedOption: state => {
+      return state.selectedOption
+    },
+    modalData: state => {
+      return state.modalData
     }
   }
 })

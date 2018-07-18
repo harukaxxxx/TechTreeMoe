@@ -21,8 +21,8 @@ export default {
   },
   methods: {
     openModal: function() {
-      this.$parent.$parent.modal = true
-      this.$parent.$parent.modalData = this.data
+      this.$store.commit('modalControl', true)
+      this.$store.commit('modalData', this.data)
     },
     flag: function(nation, special, id) {
       if (special === 'arp') {

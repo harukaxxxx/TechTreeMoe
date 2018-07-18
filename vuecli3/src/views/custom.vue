@@ -20,10 +20,10 @@
         <Button type="info" @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
-    <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDatas">
-      <shipBox v-for="data in shipDatas" :key="data.id" :data="data" />
+    <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDataArray">
+      <shipBox v-for="data in shipDataArray" :key="data.id" :data="data" />
     </isotope>
-    <Modal :title="modalData.name" v-model="modal" @on-ok="optionUpadte" class-name="vertical-center-modal" width="80" :closable="false" :mask-closable="false">
+    <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" @on-ok="optionUpadte" @on-cancel="closeModal" width="80" :closable="false" :mask-closable="false">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
@@ -55,13 +55,9 @@ export default {
   data() {
     return {
       name: 'custom',
-      shipDatas: [],
-      modal: false,
-      modalData: Object,
       optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
       nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
-      selectedOption: {},
       filterStats: {
         nation: '',
         type: ''
@@ -103,21 +99,20 @@ export default {
     filterAll: function() {
       return this.filterStats.nation === '' && this.filterStats.type === ''
     },
-    ...mapGetters(['shipData', 'shipDatabase'])
+    customModal: {
+      get() {
+        return this.$store.state.customModal
+      },
+      set(value) {
+        this.$store.commit('modalControl', value)
+      }
+    },
+    ...mapGetters(['shipData', 'shipDatabase', 'shipDataArray', 'modalData', 'selectedOption'])
   },
   beforeMount() {
-    let shipObject = this.shipData
-    Object.keys(shipObject).map(nationKey => {
-      let nationShips = Object.values(shipObject[nationKey])
-      nationShips.forEach(ship => {
-        this.shipDatas.push(ship)
-        this.selectedOption[ship.id] = ship.default
-      })
-    })
-
-    this.$bus.on('downloadFile', () => {
+    /* this.$bus.on('downloadFile', () => {
       this.download()
-    })
+    }) */
     this.load(true)
   },
   methods: {
@@ -137,27 +132,31 @@ export default {
         this.$refs.isotope.filter('multi')
       }
     },
+    closeModal: function() {
+      this.$store.commit('modalControl', false)
+    },
     optionUpadte: function() {
       let id = this.modalData.id
-      this.selectedOption[id] = this.modalData.default
-      this.$ga.event({
+      this.$store.commit('updateOption', [id, this.modalData.default])
+      /* this.$ga.event({
         eventCategory: 'optionSelect',
         eventAction: id,
         eventLabel: id + '-' + this.selectedOption[id]
-      })
+      }) */
+      this.closeModal
     },
     save: function() {
-      this.$setItem('selectedOptioin', this.selectedOption)
+      // this.$setItem('selectedOptioin', this.selectedOption)
       this.notice('已儲存您的選擇紀錄！', 'success')
     },
     load: function(status) {
-      this.$getItem('selectedOptioin').then(res => {
+      /* this.$getItem('selectedOptioin').then(res => {
         if (res === null) {
           if (!status) {
             this.notice('查無選擇紀錄！', 'error')
           }
         } else {
-          this.shipDatas.forEach(data => {
+          this.shipDataArray.forEach(data => {
             const id = data.id
             if (res[id] === undefined) {
               res[id] = data.default
@@ -167,30 +166,26 @@ export default {
           this.selectedOption = res
           this.notice('已載入您的選擇紀錄！', 'success')
         }
-      })
+      }) */
     },
     reset: function() {
-      this.$removeItem('selectedOptioin')
-      this.$router.push({
+      // this.$removeItem('selectedOptioin')
+      /* this.$router.push({
         path: '/empty'
       })
-      this.$router.go(-1)
+      this.$router.go(-1) */
       this.notice('已回復預設選項！', 'success')
     },
     notice(message, status) {
       switch (status) {
         case 'warning':
           this.$Message.warning({ content: message, duration: 3 })
-          break
         case 'success':
           this.$Message.success({ content: message, duration: 3 })
-          break
         case 'error':
           this.$Message.error({ content: message, duration: 3 })
-          break
         default:
           this.$Message.info({ content: message, duration: 3 })
-          break
       }
     },
     download: function() {
