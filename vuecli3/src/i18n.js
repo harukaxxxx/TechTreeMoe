@@ -24,7 +24,7 @@ for (let index = 0; index < languages.length; index++) {
     var locale = languages[index].replace('zh-', '').replace('-US', '')
     break
   } else {
-    var locale = 'en'
+    locale = 'en'
   }
 }
 

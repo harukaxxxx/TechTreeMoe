@@ -37,9 +37,10 @@ export default {
   computed: {
     defaultOption: function() {
       if (this.data.default === undefined) {
-        this.data.default = 1
+        return 1
+      } else {
+        return this.data.default
       }
-      return this.data.default
     }
   }
 }

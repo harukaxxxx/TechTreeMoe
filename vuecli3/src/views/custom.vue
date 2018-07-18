@@ -149,8 +149,8 @@ export default {
       // this.$setItem('selectedOptioin', this.selectedOption)
       this.notice('已儲存您的選擇紀錄！', 'success')
     },
-    load: function(status) {
-      /* this.$getItem('selectedOptioin').then(res => {
+    /* load: function(status) {
+      this.$getItem('selectedOptioin').then(res => {
         if (res === null) {
           if (!status) {
             this.notice('查無選擇紀錄！', 'error')
@@ -166,8 +166,8 @@ export default {
           this.selectedOption = res
           this.notice('已載入您的選擇紀錄！', 'success')
         }
-      }) */
-    },
+      })
+    }, */
     reset: function() {
       // this.$removeItem('selectedOptioin')
       /* this.$router.push({
@@ -180,10 +180,13 @@ export default {
       switch (status) {
         case 'warning':
           this.$Message.warning({ content: message, duration: 3 })
+          break
         case 'success':
           this.$Message.success({ content: message, duration: 3 })
+          break
         case 'error':
           this.$Message.error({ content: message, duration: 3 })
+          break
         default:
           this.$Message.info({ content: message, duration: 3 })
       }
