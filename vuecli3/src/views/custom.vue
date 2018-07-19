@@ -25,7 +25,7 @@
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDataArray">
       <shipBox v-for="data in shipDataArray" :key="data.id" :data="data" />
     </isotope>
-    <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" @on-ok="optionUpadte" width="80">
+    <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
@@ -41,6 +41,10 @@
             <p v-else>{{option.substring(option.search('】')+1)}}</p>
           </a>
         </Card>
+      </div>
+      <div class="option-box-note" slot="footer">
+        <p>選擇喜歡的圖標後出現 <Icon type="checkmark-circled"></Icon> 即代表已選定！</p>
+        <p>點擊右上角X、點擊對話框外暗色區域或使用Esc鍵退出。</p>
       </div>
     </Modal>
   </div>
@@ -317,6 +321,9 @@ export default {
         border-bottom-right-radius: 4px;
       }
     }
+  }
+  .option-box-note {
+    text-align: center;
   }
 }
 </style>
