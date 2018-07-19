@@ -31,7 +31,8 @@
     "vue-i18n": "^7.6.0",
     "vue-localforage": "^0.2.5",
     "vue-router": "^3.0.1",
-    "vueisotope": "^3.1.2"
+    "vueisotope": "^3.1.2",
+    "vuex-persistedstate": "^2.5.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -108,5 +109,9 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
