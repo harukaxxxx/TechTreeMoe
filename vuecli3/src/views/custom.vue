@@ -1,9 +1,11 @@
 <template>
   <div id="custom" class="main">
     <div class="filter-container">
+      <ButtonGroup>
       <Button type="info" @click="filter('all')">
         <Icon v-if="filterAll" type="checkmark"></Icon> {{$t("custom.all")}}
       </Button>
+      </ButtonGroup>
       <ButtonGroup>
         <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">
           <Icon v-if="filterStats.nation === shipNation" type="checkmark"></Icon> {{$t("global." + shipNation)}}
@@ -15,20 +17,20 @@
         </Button>
       </ButtonGroup>
       <ButtonGroup>
-        <Button type="info" @click="save">{{$t("custom.save")}}</Button>
-        <Button type="info" @click="load">{{$t("custom.load")}}</Button>
+        <!-- <Button type="info" @click="save">{{$t("custom.save")}}</Button>
+        <Button type="info" @click="load">{{$t("custom.load")}}</Button> -->
         <Button type="info" @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDataArray">
       <shipBox v-for="data in shipDataArray" :key="data.id" :data="data" />
     </isotope>
-    <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" @on-ok="optionUpadte" @on-cancel="closeModal" width="80" :closable="false" :mask-closable="false">
+    <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" @on-ok="optionUpadte" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
         <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
-          <a @click="modalData.default = Number(optionKey)">
-            <div v-if="modalData.default === Number(optionKey)" class="checked">
+          <a @click="optionUpadte(modalData.id,Number(optionKey))">
+            <div v-if="selectedOption[modalData.id] === Number(optionKey)" class="checked">
               <Icon type="checkmark-circled"></Icon>
             </div>
             <img :src="`img/ship_previews/${modalData.id}-${optionKey}.png`">
@@ -110,10 +112,7 @@ export default {
     ...mapGetters(['shipData', 'shipDatabase', 'shipDataArray', 'modalData', 'selectedOption'])
   },
   beforeMount() {
-    /* this.$bus.on('downloadFile', () => {
-      this.download()
-    }) */
-    this.load(true)
+    this.$store.commit('dataInit')
   },
   methods: {
     filter: function(filterKey) {
@@ -132,48 +131,16 @@ export default {
         this.$refs.isotope.filter('multi')
       }
     },
-    closeModal: function() {
-      this.$store.commit('modalControl', false)
-    },
-    optionUpadte: function() {
-      let id = this.modalData.id
-      this.$store.commit('updateOption', [id, this.modalData.default])
+    optionUpadte: function(id, option) {
+      this.$store.commit('updateOption', [id, option])
       /* this.$ga.event({
         eventCategory: 'optionSelect',
         eventAction: id,
-        eventLabel: id + '-' + this.selectedOption[id]
+        eventLabel: id + '-' + option
       }) */
-      this.closeModal
     },
-    save: function() {
-      // this.$setItem('selectedOptioin', this.selectedOption)
-      this.notice('已儲存您的選擇紀錄！', 'success')
-    },
-    /* load: function(status) {
-      this.$getItem('selectedOptioin').then(res => {
-        if (res === null) {
-          if (!status) {
-            this.notice('查無選擇紀錄！', 'error')
-          }
-        } else {
-          this.shipDataArray.forEach(data => {
-            const id = data.id
-            if (res[id] === undefined) {
-              res[id] = data.default
-            }
-            data.default = res[id]
-          })
-          this.selectedOption = res
-          this.notice('已載入您的選擇紀錄！', 'success')
-        }
-      })
-    }, */
     reset: function() {
-      // this.$removeItem('selectedOptioin')
-      /* this.$router.push({
-        path: '/empty'
-      })
-      this.$router.go(-1) */
+      this.$store.commit('reset')
       this.notice('已回復預設選項！', 'success')
     },
     notice(message, status) {
@@ -285,6 +252,9 @@ export default {
 .filter-container {
   text-align: center;
   margin: 20px 0;
+  .ivu-btn-group {
+    margin: 0 5px;
+  }
 }
 .isotope-container {
   max-width: 1200px;

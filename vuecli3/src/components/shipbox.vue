@@ -14,6 +14,8 @@
   </Card>
 </template>
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
   name: 'shipbox',
   props: {
@@ -39,9 +41,10 @@ export default {
       if (this.data.default === undefined) {
         return 1
       } else {
-        return this.data.default
+        return this.selectedOption[this.data.id]
       }
-    }
+    },
+    ...mapGetters(['selectedOption'])
   }
 }
 </script>
