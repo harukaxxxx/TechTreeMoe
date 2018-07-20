@@ -108,20 +108,6 @@ export default {
       name: 'charts',
       productionMode: false,
       nationList: ['japan', 'usa', 'germany', 'ussr', 'uk', 'poland', 'pan_asia', 'france', 'commonwealth', 'italia', 'pan_america'],
-      completeData: {
-        commonwealth: { progress: 0, total: 0 },
-        france: { progress: 0, total: 0 },
-        germany: { progress: 0, total: 0 },
-        italia: { progress: 0, total: 0 },
-        japan: { progress: 0, total: 0 },
-        pan_asia: { progress: 0, total: 0 },
-        poland: { progress: 0, total: 0 },
-        uk: { progress: 0, total: 0 },
-        usa: { progress: 0, total: 0 },
-        ussr: { progress: 0, total: 0 },
-        pan_america: { progress: 0, total: 0 }
-      },
-      globalProgress: { progress: 0, total: 0 },
       gaAuthorizeUrl:
         'https://accounts.google.com/o/oauth2/auth?scope=https://www.googleapis.com/auth/analytics.readonly&response_type=code&client_id=84771301340-kj0vn6hmsg1sskovhnk5homgfntrhhbi.apps.googleusercontent.com&redirect_uri=http://localhost&approval_prompt=force&access_type=offline',
       gaAuthorizeCode: '',
@@ -369,9 +355,12 @@ export default {
       })
       return totalDownload
     },
-    ...mapGetters(['shipData', 'shipDatabase'])
+    ...mapGetters(['shipData', 'shipDatabase', 'completeData', 'globalProgress'])
   },
   beforeMount() {
+    const date = this.today.join('')
+    this.$store.commit('database', date)
+
     this.productionMode = process.env.NODE_ENV === 'production'
 
     if (!this.productionMode && window.location.hash.split('=')[1]) {
@@ -380,28 +369,6 @@ export default {
     }
     this.getAccessToken()
     this.getLastMonth()
-  },
-  mounted() {
-    this.$store.commit('addDatabase')
-
-    let appCompleteData = this.completeData
-    let appGlobalProgress = this.globalProgress
-    Object.keys(this.shipDatabase).map(ship => {
-      const name = this.shipDatabase[ship].name
-      if (name.substr(0, 1) !== '[') {
-        const nation = this.shipDatabase[ship].nation
-        if (nation == 'italy') {
-          appCompleteData.italia.total++
-        } else {
-          appCompleteData[nation].total++
-        }
-        appGlobalProgress.total++
-      }
-    })
-    Object.keys(this.shipData).map(nation => {
-      appCompleteData[nation].progress = Object.keys(this.shipData[nation]).length
-      appGlobalProgress.progress += Object.keys(this.shipData[nation]).length
-    })
   },
   methods: {
     circleStrokeColor(progress) {
