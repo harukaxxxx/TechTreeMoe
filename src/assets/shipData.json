@@ -10,7 +10,8 @@
       "change": true,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Bogue"
+        "1": "【戰艦少女】Bogue",
+        "3": "【戰艦少女】Bogue 改"
       },
       "碧藍航線": {
         "2": "【碧藍航線】Bogue"
@@ -628,12 +629,7 @@
         "5": "【碧藍航線】Portland"
       },
       "同人作品": {
-        "6": [
-          "紫瑟",
-          "http://www.weibo.com/u/2193276854",
-          "Indianapolis 35號球員Ver.",
-          "http://www.weibo.com/2193276854/Dca0Yz2yY"
-        ]
+        "6": ["紫瑟", "http://www.weibo.com/u/2193276854", "Indianapolis 35號球員Ver.", "http://www.weibo.com/2193276854/Dca0Yz2yY"]
       }
     },
     "PASD002": {
@@ -1028,12 +1024,7 @@
           "白龍 裝甲Ver.",
           "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=50899629"
         ],
-        "2": [
-          "司马闹腾",
-          "http://www.pixiv.net/member.php?id=7933104",
-          "白龍",
-          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"
-        ],
+        "2": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "白龍", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59527800"],
         "3": [
           "司马闹腾",
           "http://www.pixiv.net/member.php?id=7933104",
@@ -1186,18 +1177,8 @@
         "3": "【碧藍航線】三笠"
       },
       "同人作品": {
-        "1": [
-          "紀奈",
-          "https://twitter.com/kinona",
-          "三笠",
-          "http://seiga.nicovideo.jp/seiga/im4181804"
-        ],
-        "2": [
-          "紀奈",
-          "https://twitter.com/kinona",
-          "三笠 浴衣Ver.",
-          "http://seiga.nicovideo.jp/seiga/im5177431"
-        ]
+        "1": ["紀奈", "https://twitter.com/kinona", "三笠", "http://seiga.nicovideo.jp/seiga/im4181804"],
+        "2": ["紀奈", "https://twitter.com/kinona", "三笠 浴衣Ver.", "http://seiga.nicovideo.jp/seiga/im5177431"]
       }
     },
     "PJSB013": {
@@ -1244,12 +1225,7 @@
         "9": "【最終戰艦】大和 居家襯衫Ver."
       },
       "同人作品": {
-        "2": [
-          "しずま",
-          "http://www.pixiv.net/member.php?id=141206",
-          "大和",
-          ""
-        ]
+        "2": ["しずま", "http://www.pixiv.net/member.php?id=141206", "大和", ""]
       }
     },
     "PJSB021": {
@@ -1265,18 +1241,8 @@
         "3": "【碧藍航線】出雲"
       },
       "同人作品": {
-        "1": [
-          "安佐川",
-          "https://twitter.com/asaka142",
-          "出雲",
-          ""
-        ],
-        "2": [
-          "安佐川",
-          "https://twitter.com/asaka142",
-          "磐手",
-          "https://twitter.com/asaka142/status/639032260058984448"
-        ]
+        "1": ["安佐川", "https://twitter.com/asaka142", "出雲", ""],
+        "2": ["安佐川", "https://twitter.com/asaka142", "磐手", "https://twitter.com/asaka142/status/639032260058984448"]
       }
     },
     "PJSB506": {
@@ -1438,6 +1404,7 @@
       },
       "戰艦少女": {
         "2": "【戰艦少女】青葉",
+        "12": "【戰艦少女】青葉 改",
         "3": "【戰艦少女】青葉 紅白偶像Ver.",
         "4": "【戰艦少女】青葉 日系學校泳裝Ver.",
         "10": "【戰艦少女】衣笠"
@@ -1635,12 +1602,7 @@
         "2": "【鋼鐵少女】黑姬"
       },
       "同人作品": {
-        "1": [
-          "司马闹腾",
-          "http://www.pixiv.net/member.php?id=7933104",
-          "蔵王",
-          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584"
-        ]
+        "1": ["司马闹腾", "http://www.pixiv.net/member.php?id=7933104", "蔵王", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59507584"]
       }
     },
     "PJSC035": {
@@ -1859,12 +1821,7 @@
         "4": "【戰艦少女】島風 大正淑女Ver."
       },
       "同人作品": {
-        "2": [
-          "しずま",
-          "http://www.pixiv.net/member.php?id=141206",
-          "零之島風",
-          ""
-        ]
+        "2": ["しずま", "http://www.pixiv.net/member.php?id=141206", "零之島風", ""]
       }
     },
     "PJSD025": {
@@ -2008,24 +1965,9 @@
         "11": "【戰艦少女】秋月 新春祈願Ver."
       },
       "同人作品": {
-        "4": [
-          "konnyaku",
-          "http://www.pixiv.net/member.php?id=1391461",
-          "秋月",
-          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
-        ],
-        "5": [
-          "konnyaku",
-          "http://www.pixiv.net/member.php?id=1391461",
-          "照月",
-          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
-        ],
-        "6": [
-          "konnyaku",
-          "http://www.pixiv.net/member.php?id=1391461",
-          "初月",
-          "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"
-        ],
+        "4": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "秋月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
+        "5": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "照月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
+        "6": ["konnyaku", "http://www.pixiv.net/member.php?id=1391461", "初月", "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=59938117"],
         "7": [
           "konnyaku",
           "http://www.pixiv.net/member.php?id=1391461",
@@ -2267,6 +2209,19 @@
         "4": "【Victory Belles】Kirov"
       }
     },
+    "PRSC110": {
+      "id": "PRSC110",
+      "name": "Moskva",
+      "tier": "Ⅹ",
+      "nation": "ussr",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "戰艦少女": {
+        "1": "【戰艦少女】Moskva"
+      }
+    },
     "PRSD001": {
       "id": "PRSD001",
       "name": "Gremyashchy",
@@ -2342,7 +2297,9 @@
       },
       "戰艦少女": {
         "1": "【戰艦少女】Tashkent",
-        "2": "【戰艦少女】Tashkent 冬日暖潮"
+        "4": "【戰艦少女】Tashkent 改",
+        "2": "【戰艦少女】Tashkent 冬日暖潮Ver.",
+        "5": "【戰艦少女】Tashkent 檔案管理員Ver."
       }
     },
     "PRSD507": {
@@ -2488,12 +2445,7 @@
         "4": "【Victory Belles】Scharnhorst"
       },
       "同人作品": {
-        "6": [
-          "トム猫",
-          "http://www.pixiv.net/member.php?id=1368840",
-          "Scharnhorst",
-          "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=36560930"
-        ]
+        "6": ["トム猫", "http://www.pixiv.net/member.php?id=1368840", "Scharnhorst", "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=36560930"]
       }
     },
     "PGSC104": {
@@ -2700,6 +2652,9 @@
         "1": "【艦隊收藏】Z3 zwei",
         "2": "【艦隊收藏】Z3 夏季限定(2016)Ver."
       },
+      "戰艦少女": {
+        "4": "【戰艦少女】Z3"
+      },
       "鋼鐵少女": {
         "3": "【鋼鐵少女】Z3 改"
       }
@@ -2824,6 +2779,7 @@
       "change": true,
       "premium": false,
       "戰艦少女": {
+        "8": "【戰艦少女】King George V",
         "1": "【戰艦少女】Prince of Wales",
         "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝",
         "3": "【戰艦少女】Duke of York"
@@ -3184,7 +3140,7 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "戰艦少女": {
+      "鋼鐵少女": {
         "1": "【鋼鐵少女】鞍山"
       }
     },
@@ -3197,7 +3153,7 @@
       "default": 1,
       "change": false,
       "premium": true,
-      "戰艦少女": {
+      "鋼鐵少女": {
         "1": "【鋼鐵少女】洛陽"
       }
     }
@@ -3225,6 +3181,9 @@
       "default": 3,
       "change": true,
       "premium": false,
+      "戰艦少女": {
+        "4": "【戰艦少女】Vampire"
+      },
       "鋼鐵少女": {
         "1": "【鋼鐵少女】Vampire"
       },
