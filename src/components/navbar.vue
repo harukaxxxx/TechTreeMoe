@@ -40,11 +40,12 @@
       {{$t("navbar.charts")}}
       </menu-item>
     </router-link>
-    <Button v-if="this.$route.path === '/custom'" class="downloadButton" type="primary" shape="circle" icon="android-download" @click="clickEvent">{{$t("navbar.download")}}</Button>
+    <Button v-if="this.$route.path === '/custom'" class="downloadButton" type="primary" shape="circle" icon="android-download" :loading="loading" @click="download">{{$t("navbar.download")}}</Button>
   </i-menu>
 </template>
 <script>
-import iconfont from '../main.js'
+import { mapGetters } from 'vuex'
+
 export default {
   data() {
     return {
@@ -66,8 +67,15 @@ export default {
         eventAction: 'click',
         eventLabel: 'downloadZIP'
       })
-      this.$bus.emit('downloadFile')
+      // this.$bus.emit('downloadFile')
+    },
+    download() {
+      this.$store.commit('loading', true)
+      this.$store.commit('download')
     }
+  },
+  computed: {
+    ...mapGetters(['loading'])
   }
 }
 </script>
