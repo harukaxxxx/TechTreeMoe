@@ -134,11 +134,11 @@ export default {
     },
     optionUpadte: function(id, option) {
       this.$store.commit('updateOption', [id, option])
-      /* this.$ga.event({
+      this.$ga.event({
         eventCategory: 'optionSelect',
         eventAction: id,
         eventLabel: id + '-' + option
-      }) */
+      })
     },
     reset: function() {
       this.$store.commit('reset')
