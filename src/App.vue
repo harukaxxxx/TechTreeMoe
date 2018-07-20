@@ -1,45 +1,60 @@
 <template>
-  <div id="top" class="main">
-    <h1 class="top-title">{{$t("top.title")}}</h1>
-    <p>{{$t("top.description")}}</p>
-    <router-link to="preview">
-      <Button shape="circle" long>{{$t("top.preview")}}</Button>
-    </router-link>
+  <div id="app">
+    <Layout>
+      <Header :style="{background:navBackground}">
+        <app-header />
+      </Header>
+      <Content>
+        <router-view></router-view>
+      </Content>
+      <Footer>
+        <app-footer />
+      </Footer>
+    </Layout>
   </div>
 </template>
 <script>
+import iconfont from '@/iconfont.js'
+import appHeader from '@/components/navbar.vue'
+import appFooter from '@/components/footer.vue'
+
 export default {
-  name: 'top',
-  beforeMount() {
-    if (window.location.search && process.env.NODE_ENV !== 'production') {
-      window.location.href = window.location.origin + '#/charts' + window.location.search
+  name: 'app',
+  components: {
+    appHeader,
+    appFooter,
+    iconfont
+  },
+  computed: {
+    navBackground: function() {
+      switch (this.$route.name) {
+        case 'home':
+        case 'charts':
+          return '#1e5b94'
+        case 'intro':
+        case 'custom':
+        case 'about':
+          return '#fff'
+      }
     }
   }
 }
 </script>
-<style lang="scss">
-#top {
-  background: {
-    image: url('/static/images/hero_bg.png');
-    color: #1e5b94;
-    size: contain;
-    position: center center;
-    repeat: no-repeat;
-  }
-  color: #fff;
-  text-align: center;
-  .top-title {
-    margin-top: calc(40vh - 80px);
-    font-size: xx-large;
-    border: 2px solid #fff;
-    padding: 20px;
-    display: inline-block;
-  }
-  p {
-    margin: 15px 0;
-  }
-  button {
-    width: 30%;
-  }
+<style>
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+</style>
+
+<style scoped>
+.ivu-layout-header {
+  padding: 0;
+}
+.ivu-layout-footer {
+  padding: 0;
 }
 </style>
