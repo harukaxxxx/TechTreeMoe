@@ -35,7 +35,7 @@
       "convenient": "Convenience",
       "convenientContent": "Using changeable button to find changeable item quickly",
       "savable": "Savable",
-      "savableContent": "Your choose will save when press download button, also can manually click the Save/Load button.",
+      "savableContent": "Using Local Storage to save your option instantly.",
       "quick": "Rapid",
       "quickContent": "Click the download button directly to download the default package",
       "attention": "Attention",
@@ -57,8 +57,6 @@
     "all": "All",
     "change": "Changeable",
     "premium": "Premium",
-    "save": "Save",
-    "load": "Load",
     "reset": "Reset"
   },
   "about": {

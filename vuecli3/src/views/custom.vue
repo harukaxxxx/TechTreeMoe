@@ -50,7 +50,6 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
 import isotope from 'vueisotope'
 import shipBox from '../components/shipbox.vue'
 import { mapGetters } from 'vuex'

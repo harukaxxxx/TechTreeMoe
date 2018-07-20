@@ -35,7 +35,7 @@
       "convenient": "方便",
       "convenientContent": "利用可更替按钮可快速寻找可以替换的项目",
       "savable": "保存",
-      "savableContent": "下载时将储存纪录，亦可手动点选储存/载入按钮",
+      "savableContent": "利用Local Storage即时储存您的选择",
       "quick": "便捷",
       "quickContent": "直接点击下载按钮来下载预设图标包",
       "attention": "注意",
@@ -57,8 +57,6 @@
     "all": "全部显示",
     "change": "可更替",
     "premium": "加值舰",
-    "save": "储存",
-    "load": "载入",
     "reset": "回复预设"
   },
   "about": {

@@ -35,7 +35,7 @@
       "convenient": "方便",
       "convenientContent": "利用可更替按鈕可快速尋找可以替換的項目",
       "savable": "保存",
-      "savableContent": "下載時將儲存紀錄，亦可手動點選儲存/載入按鈕",
+      "savableContent": "利用Local Storage即時儲存您的選擇",
       "quick": "便捷",
       "quickContent": "直接點擊下載按鈕來下載預設圖標包",
       "attention": "注意",
@@ -57,8 +57,6 @@
     "all": "全部顯示",
     "change": "可更替",
     "premium": "加值艦",
-    "save": "儲存",
-    "load": "載入",
     "reset": "回復預設"
   },
   "about": {

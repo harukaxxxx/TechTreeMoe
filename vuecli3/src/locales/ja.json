@@ -35,7 +35,7 @@
       "convenient": "便利",
       "convenientContent": "置き換えボタンを利用して、置き換えできるのアイテムがクイック検索ができます。",
       "savable": "保存",
-      "savableContent": "レコードはダウンロード時に保存され、保存/読み込みボタンも手動でクリックできます",
+      "savableContent": "Local Storageで、選択内容を即時保存しま。",
       "quick": "速い",
       "quickContent": "ダウンロードボタンを直接クリックすると、デフォルトのアイコンパッケージがダウンロードされます。",
       "attention": "注意",
@@ -57,8 +57,6 @@
     "all": "すべて",
     "change": "置き換える",
     "premium": "プレミアム",
-    "save": "セーブ",
-    "load": "ロード",
     "reset": "リセット"
   },
   "about": {
