@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import JSZip from 'jszip'
+import FileSaver from 'file-saver'
 import shipData from './assets/shipData.json'
 import createPersistedState from 'vuex-persistedstate'
 Vue.use(Vuex)
@@ -12,7 +14,8 @@ export default new Vuex.Store({
     selectedOption: {},
     shipDatabase: {},
     modalData: {},
-    customModal: false
+    customModal: false,
+    loading: false
   },
   plugins: [createPersistedState()],
   mutations: {
@@ -55,6 +58,60 @@ export default new Vuex.Store({
         })
       )
     },
+    download: state => {
+      const zip = new JSZip()
+      const cache = {}
+      const promises = []
+
+      // init file paths
+      let shipPreviews = []
+      let shipPreviewsDS = []
+      Object.keys(state.selectedOption).map(key => {
+        shipPreviews.push(`img/ship_previews/${key}-${state.selectedOption[key]}.png`)
+        shipPreviewsDS.push(`img/ship_previews_ds/${key}-${state.selectedOption[key]}.png`)
+      })
+
+      // get file function
+      const getFile = url => {
+        return new Promise((resolve, reject) => {
+          axios({
+            method: 'get',
+            url,
+            responseType: 'arraybuffer'
+          })
+            .then(res => {
+              resolve(res.data)
+            })
+            .catch(error => {
+              reject(error.toString())
+            })
+        })
+      }
+
+      // add files into zip
+      let filePaths = [shipPreviews, shipPreviewsDS]
+      let folderName = ['ship_previews', 'ship_previews_ds']
+      for (let index = 0; index < filePaths.length; index++) {
+        const filePath = filePaths[index]
+        filePath.forEach(item => {
+          const promise = getFile(item).then(response => {
+            const nameArray = item.split('/')
+            const nameOption = nameArray[nameArray.length - 1]
+            const fileName = nameOption.split('-')[0] + '.png'
+            zip.folder(folderName[index]).file(fileName, response, { binary: true })
+            cache[fileName] = response
+          })
+          promises.push(promise)
+        })
+      }
+      // download with filesaver
+      Promise.all(promises).then(() => {
+        zip.generateAsync({ type: 'blob' }).then(content => {
+          FileSaver.saveAs(content, 'res_mod.zip')
+        })
+      })
+      state.loading = false
+    },
     dataInit: state => {
       let shipList = []
       const selectedOptionLen = Object.keys(state.selectedOption).length
@@ -83,7 +140,8 @@ export default new Vuex.Store({
     },
     modalControl: (state, payload) => (state.customModal = payload),
     modalData: (state, payload) => (state.modalData = payload),
-    updateOption: (state, payload) => (state.selectedOption[payload[0]] = payload[1])
+    updateOption: (state, payload) => (state.selectedOption[payload[0]] = payload[1]),
+    loading: (state, payload) => (state.loading = payload)
   },
   getters: {
     shipData: state => state.shipData,
@@ -91,6 +149,7 @@ export default new Vuex.Store({
     customModal: state => state.customModal,
     shipDataArray: state => state.shipDataArray,
     selectedOption: state => state.selectedOption,
-    modalData: state => state.modalData
+    modalData: state => state.modalData,
+    loading: state => state.loading
   }
 })

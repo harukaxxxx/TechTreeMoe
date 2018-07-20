@@ -54,8 +54,6 @@ import axios from 'axios'
 import isotope from 'vueisotope'
 import shipBox from '../components/shipbox.vue'
 import { mapGetters } from 'vuex'
-import JSZip from 'jszip'
-import FileSaver from 'file-saver'
 
 export default {
   data() {
@@ -161,82 +159,6 @@ export default {
         default:
           this.$Message.info({ content: message, duration: 3 })
       }
-    },
-    download: function() {
-      const zip = new JSZip()
-      const cache = {}
-      const promises = []
-      this.save()
-
-      // init file paths
-      let shipPreviews = []
-      let shipPreviewsDS = []
-      let selectedOption = this.selectedOption
-      Object.keys(selectedOption).map(key => {
-        shipPreviews.push(`img/ship_previews/${key}-${selectedOption[key]}.png`)
-        shipPreviewsDS.push(`img/ship_previews_ds/${key}-${selectedOption[key]}.png`)
-      })
-
-      // get file function
-      const getFile = url => {
-        return new Promise((resolve, reject) => {
-          axios({
-            method: 'get',
-            url,
-            responseType: 'arraybuffer'
-          })
-            .then(res => {
-              resolve(res.data)
-            })
-            .catch(error => {
-              reject(error.toString())
-            })
-        })
-      }
-
-      // add files into zip
-      this.$Loading.start()
-      let filePaths = [shipPreviews, shipPreviewsDS]
-      let folderName = ['ship_previews', 'ship_previews_ds']
-      for (let index = 0; index < filePaths.length; index++) {
-        const filePath = filePaths[index]
-        filePath.forEach(item => {
-          const promise = getFile(item)
-            .then(response => {
-              const nameArray = item.split('/')
-              const nameOption = nameArray[nameArray.length - 1]
-              const fileName = nameOption.split('-')[0] + '.png'
-              zip.folder(folderName[index]).file(fileName, response, { binary: true })
-              cache[fileName] = response
-            })
-            .catch(error => {
-              this.$Loading.error()
-              this.$Message.error({
-                content: error.message,
-                duration: 0,
-                closable: true
-              })
-            })
-          promises.push(promise)
-        })
-      }
-      // download with filesaver
-      Promise.all(promises).then(() => {
-        zip
-          .generateAsync({ type: 'blob' })
-          .then(content => {
-            FileSaver.saveAs(content, 'res_mod.zip')
-            this.$Loading.finish()
-          })
-          .catch(error => {
-            this.$Loading.error()
-            this.$Message.error({
-              content: error.message,
-              duration: 0,
-              closable: true
-            })
-          })
-      })
     }
   }
 }
