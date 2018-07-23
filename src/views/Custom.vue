@@ -55,6 +55,7 @@
 import isotope from 'vueisotope'
 import update from '../assets/update.json'
 import shipBox from '../components/shipbox.vue'
+import shipDatas from '../assets/shipData.json'
 import { mapGetters } from 'vuex'
 
 export default {
@@ -122,6 +123,7 @@ export default {
   },
   beforeMount() {
     this.$store.commit('dataInit')
+    this.$store.commit('shipData', shipDatas)
   },
   methods: {
     filter: function(filterKey) {
