@@ -1,8 +1,9 @@
 <template>
   <Card :id="data.id" :padding="0">
+    <div v-if="newTag===newTagDate" class="ribbon"><span>New</span></div>
     <div class="shipImage" :style="flag(data.nation,data.special,data.id)">
-      <span v-if="data.premium" class="addon icon-premium"></span>
-      <span v-if="data.special === 'arp'" class="addon icon-arp"></span>
+      <span v-if="data.premium" :class="'addon icon-premium ' + premiumNewTag"></span>
+      <span v-if="data.special === 'arp'" :class="'addon icon-arp ' + premiumNewTag"></span>
       <a v-if="data.change" @click="openModal">
         <span class="change icon-change"></span>
       </a>
@@ -19,7 +20,8 @@ import { mapGetters } from 'vuex'
 export default {
   name: 'shipbox',
   props: {
-    data: Object
+    data: Object,
+    newTagDate: String
   },
   methods: {
     openModal: function() {
@@ -42,6 +44,26 @@ export default {
         return 1
       } else {
         return this.selectedOption[this.data.id]
+      }
+    },
+    newTag: function() {
+      const optionArray = this.$parent.$parent.optionArray
+      let itemDate = ''
+      optionArray.forEach(option => {
+        const item = this.data[option]
+        if (option !== '同人作品' && item) {
+          Object.keys(item).map(index => {
+            if (typeof item[index] === 'object') {
+              itemDate = item[index][1]
+            }
+          })
+        }
+      })
+      return itemDate
+    },
+    premiumNewTag: function() {
+      if (this.newTag === this.newTagDate) {
+        return 'premiumNewTag'
       }
     },
     ...mapGetters(['selectedOption'])
@@ -77,6 +99,9 @@ export default {
       right: 5px;
       top: 5px;
     }
+    .premiumNewTag {
+      top: 75px;
+    }
     .change {
       position: absolute;
       right: 5px;
@@ -86,6 +111,31 @@ export default {
     img {
       border-radius: 4px;
     }
+  }
+}
+.ribbon {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  text-align: right;
+  span {
+    font-size: 8px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 14px;
+    transform: rotate(45deg);
+    width: 80px;
+    display: block;
+    background: #d01f1f;
+    position: absolute;
+    top: 10px;
+    right: -22px;
   }
 }
 
