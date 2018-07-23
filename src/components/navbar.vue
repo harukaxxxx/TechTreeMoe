@@ -45,6 +45,7 @@
 </template>
 <script>
 import { mapGetters } from 'vuex'
+import shipData from '../assets/shipData.json'
 
 export default {
   data() {
@@ -59,6 +60,7 @@ export default {
     } else {
       this.activeName = routePath
     }
+    this.$store.commit('shipData', shipData)
   },
   methods: {
     clickEvent() {
@@ -67,7 +69,6 @@ export default {
         eventAction: 'click',
         eventLabel: 'downloadZIP'
       })
-      // this.$bus.emit('downloadFile')
     },
     download() {
       this.$store.commit('loading', true)

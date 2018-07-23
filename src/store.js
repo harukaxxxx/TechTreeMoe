@@ -3,13 +3,12 @@ import Vuex from 'vuex'
 import axios from 'axios'
 import JSZip from 'jszip'
 import FileSaver from 'file-saver'
-import shipData from './assets/shipData.json'
 import createPersistedState from 'vuex-persistedstate'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    shipData,
+    shipData: {},
     shipDataArray: [],
     selectedOption: {},
     shipDatabase: {},
@@ -176,6 +175,7 @@ export default new Vuex.Store({
         })
       })
     },
+    shipData: (state, payload) => (state.shipData = payload),
     modalControl: (state, payload) => (state.customModal = payload),
     modalData: (state, payload) => (state.modalData = payload),
     updateOption: (state, payload) => (state.selectedOption[payload[0]] = payload[1]),
