@@ -105,8 +105,10 @@ export default new Vuex.Store({
       let shipPreviews = []
       let shipPreviewsDS = []
       Object.keys(state.selectedOption).map(key => {
-        shipPreviews.push(`img/ship_previews/${key}-${state.selectedOption[key]}.png`)
-        shipPreviewsDS.push(`img/ship_previews_ds/${key}-${state.selectedOption[key]}.png`)
+        if (state.selectedOption[key] !== 0) {
+          shipPreviews.push(`img/ship_previews/${key}-${state.selectedOption[key]}.png`)
+          shipPreviewsDS.push(`img/ship_previews_ds/${key}-${state.selectedOption[key]}.png`)
+        }
       })
 
       // get file function

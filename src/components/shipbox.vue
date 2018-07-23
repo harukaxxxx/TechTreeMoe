@@ -7,7 +7,8 @@
       <a v-if="data.change" @click="openModal">
         <span class="change icon-change"></span>
       </a>
-      <img :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
+      <img v-if="defaultOption===0" :src="`img/ship_previews_origin/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
+      <img v-else :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
     </div>
     <p class="shipName">
       <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
