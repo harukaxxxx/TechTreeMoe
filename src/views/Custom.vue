@@ -17,27 +17,29 @@
         </Button>
       </ButtonGroup>
       <ButtonGroup>
-        <!-- <Button type="info" @click="save">{{$t("custom.save")}}</Button>
-        <Button type="info" @click="load">{{$t("custom.load")}}</Button> -->
         <Button type="info" @click="reset">{{$t("custom.reset")}}</Button>
       </ButtonGroup>
     </div>
     <isotope ref="isotope" class="isotope-container" :options='isotopeOption' :list="shipDataArray">
-      <shipBox v-for="data in shipDataArray" :key="data.id" :data="data" />
+      <shipBox v-for="data in shipDataArray" :key="data.id" :data="data" :newTagDate="newTagDate"/>
     </isotope>
     <Modal class-name="vertical-center-modal" :title="modalData.name" v-model="customModal" width="80">
       <div v-if="modalData[options]" v-for="(options, optionsKey) in optionArray" :key="optionsKey">
         <h1>{{options}}</h1>
-        <Card v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0" class="option-box">
+        <Card class="option-box" v-if="modalData[options]" v-for="(option, optionKey) in modalData[options]" :key="optionKey" :padding="0">
           <a @click="optionUpadte(modalData.id,Number(optionKey))">
+            <div class="new-badge" v-if="options!=='同人作品' && typeof option === 'object' && option[1]===newTagDate">
+              <span>New</span>
+              </div>
             <div v-if="selectedOption[modalData.id] === Number(optionKey)" class="checked">
               <Icon type="checkmark-circled"></Icon>
             </div>
             <img :src="`img/ship_previews/${modalData.id}-${optionKey}.png`">
-            <p v-if="typeof option === 'object'">
-              <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'">【{{option[0]}}】</a>
-              <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'">{{option[2]}}</a>
+            <p v-if="options === '同人作品'">
+              <a :href="option[1] !== '' ? option[1] : 'javascrupt:void(0);'" :target="option[1] !== '' ? '_blank' : '_self'">【{{option[0]}}】</a>
+              <a :href="option[3] !== '' ? option[3] : 'javascrupt:void(0);'" :target="option[3] !== '' ? '_blank' : '_self'">{{option[2]}}</a>
             </p>
+            <p v-else-if="typeof option === 'object'">{{option[0].substring(option[0].search('】')+1)}}</p>
             <p v-else>{{option.substring(option.search('】')+1)}}</p>
           </a>
         </Card>
@@ -51,6 +53,7 @@
 </template>
 <script>
 import isotope from 'vueisotope'
+import update from '../assets/update.json'
 import shipBox from '../components/shipbox.vue'
 import { mapGetters } from 'vuex'
 
@@ -65,6 +68,7 @@ export default {
         nation: '',
         type: ''
       },
+      update,
       isotopeOption: {
         layoutMode: 'masonry',
         getFilterData: {
@@ -109,6 +113,10 @@ export default {
       set(value) {
         this.$store.commit('modalControl', value)
       }
+    },
+    newTagDate: function() {
+      let updates = this.update.filter(log => log.level === 'UPDATE')
+      return updates[0].time
     },
     ...mapGetters(['shipData', 'shipDatabase', 'shipDataArray', 'modalData', 'selectedOption'])
   },
@@ -230,6 +238,54 @@ export default {
         color: #fff;
         font-size: 70px;
         border-radius: 4px;
+      }
+      .new-badge {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        z-index: 1;
+        overflow: hidden;
+        width: 75px;
+        height: 75px;
+        text-align: right;
+        span {
+          font-size: 10px;
+          font-weight: bold;
+          color: #fff;
+          text-transform: uppercase;
+          text-align: center;
+          line-height: 20px;
+          transform: rotate(45deg);
+          width: 80px;
+          display: block;
+          background: #c91818;
+          box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+          position: absolute;
+          top: 12px;
+          right: -18px;
+          &:before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid #8f0808;
+            border-right: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8f0808;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            right: 0px;
+            top: 100%;
+            z-index: -1;
+            border-left: 3px solid transparent;
+            border-right: 3px solid #8f0808;
+            border-bottom: 3px solid transparent;
+            border-top: 3px solid #8f0808;
+          }
+        }
       }
       img {
         border-radius: 4px;
