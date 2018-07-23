@@ -153,14 +153,13 @@ export default new Vuex.Store({
     },
     dataInit: state => {
       let shipList = []
-      const selectedOptionLen = Object.keys(state.selectedOption).length
       Object.keys(state.shipData).map(nationKey => {
         let nationShips = Object.values(state.shipData[nationKey])
         nationShips.forEach(ship => {
           //Push ship data in to temp array
           shipList.push(ship)
-          //Fill default value if selectedOption is empty
-          if (selectedOptionLen === 0) {
+          //Fill default value if ship not in selectedOption
+          if (state.selectedOption[ship.id] === undefined) {
             state.selectedOption[ship.id] = ship.default
           }
         })
