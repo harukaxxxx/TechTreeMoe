@@ -44,6 +44,18 @@
           </a>
         </Card>
       </div>
+      <div>
+        <h1>戰艦世界</h1>
+        <Card class="option-box" :padding="0">
+          <a @click="optionUpadte(modalData.id,0)">
+            <div v-if="selectedOption[modalData.id] === 0" class="checked">
+              <Icon type="checkmark-circled"></Icon>
+            </div>
+            <img :src="`img/ship_previews_origin/${modalData.id}-0.png`">
+            <p>{{modalData.name}}</p>
+          </a>
+        </Card>
+      </div>
       <div class="option-box-note" slot="footer">
         <p>選擇喜歡的圖標後出現 <Icon type="checkmark-circled"></Icon> 即代表已選定！</p>
         <p>點擊右上角X、點擊對話框外暗色區域或使用Esc鍵退出。</p>
