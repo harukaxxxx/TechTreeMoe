@@ -1,5 +1,36 @@
 [
   {
+    "time": "2018/07/24",
+    "level": "NEW",
+    "event": ["新艦船登場：", "Nueve de Julio"]
+  },
+  {
+    "time": "2017/07/24",
+    "level": "FIX",
+    "event": ["從大和移除【艦隊收藏】武蔵"]
+  },
+  {
+    "time": "2018/07/24",
+    "level": "UPDATE",
+    "event": [
+      "新圖標上架：",
+      "【鋼鐵少女】Milwaukee",
+      "【鋼鐵少女】Helena",
+      "【鋼鐵少女】Helena 改二",
+      "【戰艦少女】Brooklyn",
+      "【戰艦少女】Brooklyn 改",
+      "【碧藍航線】Brooklyn",
+      "【鋼鐵少女】Brooklyn",
+      "【艦隊收藏】武蔵",
+      "【艦隊收藏】武蔵 改二"
+    ]
+  },
+  {
+    "time": "2018/07/23",
+    "level": "IMPORTANT",
+    "event": ["新功能：", "現在可以選擇原版戰艦世界圖標。", "選擇原版圖標即可不下載該艦船圖標！"]
+  },
+  {
     "time": "2018/07/23",
     "level": "UPDATE",
     "event": [
