@@ -69,6 +69,7 @@ export default {
       })
     },
     download() {
+      this.clickEvent()
       this.$store.commit('loading', true)
       this.$store.commit('download')
     }
