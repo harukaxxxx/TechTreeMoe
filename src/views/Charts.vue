@@ -101,6 +101,7 @@ import { mapGetters } from 'vuex'
 import VeLine from 'v-charts/lib/line'
 import 'echarts/lib/component/dataZoom'
 import 'echarts/lib/component/visualMap'
+import shipDatas from '../assets/shipData.json'
 
 export default {
   data() {
@@ -358,8 +359,11 @@ export default {
     ...mapGetters(['shipData', 'shipDatabase', 'completeData', 'globalProgress'])
   },
   beforeMount() {
-    const date = this.today.join('')
-    this.$store.commit('database', date)
+    if (Object.keys(this.shipData).length === 0) {
+      this.$store.commit('dataInit')
+      this.$store.commit('shipData', shipDatas)
+    }
+    this.$store.commit('database')
 
     this.productionMode = process.env.NODE_ENV === 'production'
 
