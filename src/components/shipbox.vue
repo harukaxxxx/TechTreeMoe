@@ -4,11 +4,11 @@
     <div class="shipImage" :style="flag(data.nation,data.special,data.id)">
       <span v-if="data.premium" :class="'addon icon-premium ' + premiumNewTag"></span>
       <span v-if="data.special === 'arp'" :class="'addon icon-arp ' + premiumNewTag"></span>
-      <a v-if="data.change" @click="openModal">
-        <span class="change icon-change"></span>
+      <span v-if="data.change" class="change icon-change"></span>
+      <a @click="openModal">
+        <img v-if="defaultOption===0" :src="`img/ship_previews_origin/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
+        <img v-else :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
       </a>
-      <img v-if="defaultOption===0" :src="`img/ship_previews_origin/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
-      <img v-else :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
     </div>
     <p class="shipName">
       <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
