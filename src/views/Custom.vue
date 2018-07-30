@@ -51,7 +51,7 @@
             <div v-if="selectedOption[modalData.id] === 0" class="checked">
               <Icon type="checkmark-circled"></Icon>
             </div>
-            <img :src="`img/ship_previews_origin/${modalData.id}-0.png`">
+            <img :src="`http://glossary-asia-static.gcdn.co/icons/wows/current/vehicle/small/${modalData.id}.png`">
             <p>{{modalData.name}}</p>
           </a>
         </Card>
