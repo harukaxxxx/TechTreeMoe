@@ -2833,8 +2833,7 @@
         "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝"
       },
       "鋼鐵少女": {
-        "4": "【鋼鐵少女】King George V",
-        "5": "【鋼鐵少女】Prince of Wales"
+        "4": "【鋼鐵少女】King George V"
       },
       "最終戰艦": {
         "6": "【最終戰艦】King George V",
@@ -2948,6 +2947,9 @@
       "戰艦少女": {
         "1": "【戰艦少女】Duke of York",
         "2": "【戰艦少女】Duke of York 騎士之禮Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Prince of Wales 改"
       }
     },
     "PBSC105": {
