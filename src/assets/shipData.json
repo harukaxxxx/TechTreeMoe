@@ -2975,6 +2975,19 @@
         "6": "【最終戰艦】Ajax 泳裝Ver."
       }
     },
+    "PBSC107": {
+      "id": "PBSC107",
+      "name": "Fiji",
+      "tier": "Ⅶ",
+      "nation": "uk",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "碧藍航線": {
+        "1": ["【碧藍航線】Fiji","2018/08/09"]
+      }
+    },
     "PBSC108": {
       "id": "PBSC108",
       "name": "Edinburgh",
@@ -3042,12 +3055,12 @@
       "change": false,
       "premium": false,
       "碧藍航線": {
-        "1": "【碧藍航線】Acasta",
-        "2": "【碧藍航線】Acasta 改",
-        "3": "【碧藍航線】Acasta 外出模式Ver."
+        "1":[ "【碧藍航線】Acasta","2018/08/09"],
+        "2": ["【碧藍航線】Acasta 改","2018/08/09"],
+        "3": ["【碧藍航線】Acasta 外出模式Ver.","2018/08/09"]
       },
       "戰艦少女": {
-        "4": "【戰艦少女】Acasta"
+        "4": ["【戰艦少女】Acasta","2018/08/09"]
       }
     },
     "PBSD506": {
