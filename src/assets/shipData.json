@@ -162,7 +162,9 @@
         "11": "【鋼鐵少女】Hornet"
       },
       "碧藍航線": {
-        "4": "【碧藍航線】Enterprise"
+        "4": "【碧藍航線】Enterprise",
+        "13": "【碧藍航線】Enterprise 誓約Ver.",
+        "14": "【碧藍航線】Enterprise 馴鹿之主Ver."
       },
       "November": {
         "9": "【November】Enterprise"
@@ -2743,7 +2745,7 @@
       "tier": "Ⅷ",
       "nation": "germany",
       "type": "destroyer",
-      "default": 1,
+      "default": 6,
       "change": true,
       "premium": false,
       "戰艦少女": {
@@ -2755,7 +2757,8 @@
       },
       "碧藍航線": {
         "4": "【碧藍航線】Z23",
-        "5": "【碧藍航線】Z23 哲學講師Ver."
+        "5": "【碧藍航線】Z23 哲學講師Ver.",
+        "6": "【碧藍航線】Z23 改"
       }
     },
     "PGSD109": {
@@ -2771,7 +2774,8 @@
         "2": "【戰艦少女】Z46"
       },
       "碧藍航線": {
-        "1": "【碧藍航線】Z46"
+        "1": "【碧藍航線】Z46",
+        "3": "【碧藍航線】Z46 夏之初體驗Ver."
       }
     }
   },
@@ -2830,12 +2834,10 @@
       "戰艦少女": {
         "8": ["【戰艦少女】King George V", "2018/07/20"],
         "1": "【戰艦少女】Prince of Wales",
-        "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝",
-        "3": "【戰艦少女】Duke of York"
+        "2": "【戰艦少女】Prince of Wales 威爾斯的訂製泳裝"
       },
       "鋼鐵少女": {
-        "4": "【鋼鐵少女】King George V",
-        "5": "【鋼鐵少女】Prince of Wales"
+        "4": "【鋼鐵少女】King George V"
       },
       "最終戰艦": {
         "6": "【最終戰艦】King George V",
@@ -2902,6 +2904,14 @@
       "default": 2,
       "change": true,
       "premium": false,
+      "鋼鐵少女": {
+        "6": "【鋼鐵少女】Glowworm 改",
+        "7": "【鋼鐵少女】Glowworm 改二",
+        "8": "【鋼鐵少女】Glowworm 春季野餐Ver."
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Glowworm"
+      },
       "戰艦少女": {
         "1": "【戰艦少女】Glowworm",
         "2": "【戰艦少女】Glowworm 改",
@@ -2949,6 +2959,9 @@
       "戰艦少女": {
         "1": "【戰艦少女】Duke of York",
         "2": "【戰艦少女】Duke of York 騎士之禮Ver."
+      },
+      "鋼鐵少女": {
+        "3": "【鋼鐵少女】Prince of Wales 改"
       }
     },
     "PBSC105": {
@@ -3085,15 +3098,46 @@
       "tier": "Ⅵ",
       "nation": "france",
       "type": "battleship",
-      "default": 1,
+      "default": 4,
       "change": true,
       "premium": true,
-      "戰艦少女": {
-        "3": "【戰艦少女】Dunkerque"
+      "碧藍航線": {
+        "4": "【碧藍航線】Dunkerque",
+        "5": "【碧藍航線】Dunkerque “甜蜜”夏日Ver."
       },
       "最終戰艦": {
         "1": "【最終戰艦】Dunkerque",
         "2": "【最終戰艦】Dunkerque 泳裝Ver."
+      },
+      "戰艦少女": {
+        "3": "【戰艦少女】Dunkerque"
+      }
+    },
+    "PFSB518": {
+      "id": "PFSB518",
+      "name": "Jean Bart",
+      "tier": "Ⅸ",
+      "nation": "france",
+      "type": "battleship",
+      "default": 1,
+      "change": false,
+      "premium": true,
+      "碧藍航線": {
+        "1": "【碧藍航線】Jean Bart"
+      }
+    },
+    "PFSC105": {
+      "id": "PFSC105",
+      "name": "Émile Bertin",
+      "tier": "Ⅴ",
+      "nation": "france",
+      "type": "cruiser",
+      "default": 1,
+      "change": true,
+      "premium": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Émile Bertin",
+        "2": "【碧藍航線】Émile Bertin 藍色海岸Ver."
       }
     },
     "PFSC107": {
@@ -3187,15 +3231,31 @@
     }
   },
   "pan_asia": {
+    "PZSD106": {
+      "id": "PZSD106",
+      "name": "撫順",
+      "tier": "Ⅵ",
+      "nation": "pan_asia",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】撫順"
+      }
+    },
     "PZSD506": {
       "id": "PZSD506",
       "name": "鞍山",
       "tier": "Ⅵ",
       "nation": "pan_asia",
       "type": "destroyer",
-      "default": 1,
-      "change": false,
+      "default": 2,
+      "change": true,
       "premium": true,
+      "碧藍航線": {
+        "2": "【碧藍航線】鞍山"
+      },
       "鋼鐵少女": {
         "1": "【鋼鐵少女】鞍山"
       }
