@@ -1,5 +1,10 @@
 [
   {
+    "time": "2017/08/08",
+    "level": "FIX",
+    "event": ["從King George V移除【戰艦少女】Duke of York"]
+  },
+  {
     "time": "2018/07/26",
     "level": "IMPORTANT",
     "event": ["現在可以直接點擊艦船圖標訪問選擇頁面，即使該艦船沒有多個可選圖標！"]
