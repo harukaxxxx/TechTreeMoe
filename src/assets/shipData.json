@@ -2895,30 +2895,6 @@
         "6": "【碧藍航線】Hood 照耀太陽的淑女Ver."
       }
     },
-    "PBSD506": {
-      "id": "PBSD506",
-      "name": "Gallant",
-      "tier": "Ⅵ",
-      "nation": "uk",
-      "type": "destroyer",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "鋼鐵少女": {
-        "6": "【鋼鐵少女】Glowworm 改",
-        "7": "【鋼鐵少女】Glowworm 改二",
-        "8": "【鋼鐵少女】Glowworm 春季野餐Ver."
-      },
-      "碧藍航線": {
-        "5": "【碧藍航線】Glowworm"
-      },
-      "戰艦少女": {
-        "1": "【戰艦少女】Glowworm",
-        "2": "【戰艦少女】Glowworm 改",
-        "3": "【戰艦少女】Glowworm 冬季作戰服Ver.",
-        "4": "【戰艦少女】Glowworm 萬聖·司夜女巫Ver."
-      }
-    },
     "PBSB517": {
       "id": "PBSB517",
       "name": "Nelson",
@@ -3056,6 +3032,48 @@
         "2": "【Victory Belles】Belfast"
       }
     },
+    "PBSD105": {
+      "id": "PBSD105",
+      "name": "Acasta",
+      "tier": "Ⅴ",
+      "nation": "uk",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "碧藍航線": {
+        "1": "【碧藍航線】Acasta",
+        "2": "【碧藍航線】Acasta 改",
+        "3": "【碧藍航線】Acasta 外出模式Ver."
+      },
+      "戰艦少女": {
+        "4": "【戰艦少女】Acasta"
+      }
+    },
+    "PBSD506": {
+      "id": "PBSD506",
+      "name": "Gallant",
+      "tier": "Ⅵ",
+      "nation": "uk",
+      "type": "destroyer",
+      "default": 2,
+      "change": true,
+      "premium": false,
+      "鋼鐵少女": {
+        "6": "【鋼鐵少女】Glowworm 改",
+        "7": "【鋼鐵少女】Glowworm 改二",
+        "8": "【鋼鐵少女】Glowworm 春季野餐Ver."
+      },
+      "碧藍航線": {
+        "5": "【碧藍航線】Glowworm"
+      },
+      "戰艦少女": {
+        "1": "【戰艦少女】Glowworm",
+        "2": "【戰艦少女】Glowworm 改",
+        "3": "【戰艦少女】Glowworm 冬季作戰服Ver.",
+        "4": "【戰艦少女】Glowworm 萬聖·司夜女巫Ver."
+      }
+    },
     "PBSD605": {
       "id": "PBSD605",
       "name": "Anthony",
@@ -3063,11 +3081,10 @@
       "nation": "uk",
       "type": "destroyer",
       "default": 1,
-      "change": true,
+      "change": false,
       "premium": false,
       "戰艦少女": {
-        "1": "【戰艦少女】Acasta",
-        "2": "【戰艦少女】Ardent"
+        "1": "【戰艦少女】Ardent"
       }
     }
   },

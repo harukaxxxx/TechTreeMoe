@@ -2,12 +2,16 @@
   {
     "time": "2017/08/09",
     "level": "FIX",
-    "event": ["從King George V移除【戰艦少女】Duke of York", "從King George V將【鋼鐵少女】Prince of Wales移至Duke of York"]
+    "event": [
+      "從King George V移除【戰艦少女】Duke of York",
+      "從King George V將【鋼鐵少女】Prince of Wales移至Duke of York",
+      "從Anthony將【戰艦少女】Acasta移至Acasta"
+    ]
   },
   {
     "time": "2018/08/09",
     "level": "NEW",
-    "event": ["新艦船登場：", "Jean Bart", "Émile Bertin", "撫順"]
+    "event": ["新艦船登場：", "Jean Bart", "Émile Bertin", "撫順", "Acasta"]
   },
   {
     "time": "2018/08/09",
@@ -28,7 +32,11 @@
       "【碧藍航線】Z23 改",
       "【碧藍航線】Z46 夏之初體驗Ver.",
       "【碧藍航線】Enterprise 誓約Ver.",
-      "【碧藍航線】Enterprise 馴鹿之主Ver."
+      "【碧藍航線】Enterprise 馴鹿之主Ver.",
+      "【碧藍航線】Acasta",
+      "【碧藍航線】Acasta 改",
+      "【碧藍航線】Acasta 外出模式Ver.",
+      "【戰艦少女】Acasta"
     ]
   },
   {
