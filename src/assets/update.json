@@ -1,5 +1,41 @@
 [
   {
+    "time": "2018/08/15",
+    "level": "NEW",
+    "event": ["新艦船登場：", "Massachusetts"]
+  },
+  {
+    "time": "2018/08/15",
+    "level": "UPDATE",
+    "event": [
+      "新圖標上架：",
+      "【艦隊收藏】無畏",
+      "【碧藍航線】Belfast 誓約Ver.",
+      "【碧藍航線】Duke of York",
+      "【碧藍航線】Prince of Wales",
+      "【碧藍航線】Prince of Wales 陽光照耀著溫莎Ver.",
+      "【碧藍航線】Queen Elizabeth",
+      "【碧藍航線】Massachusetts",
+      "【碧藍航線】Nicholas",
+      "【碧藍航線】Nicholas 改",
+      "【碧藍航線】Nicholas 尼古納斯Ver.",
+      "【碧藍航線】N. Carolina",
+      "【碧藍航線】Portland 改",
+      "【碧藍航線】Bogue 改",
+      "【碧藍航線】Ranger 改",
+      "【碧藍航線】金剛",
+      "【碧藍航線】比叡",
+      "【碧藍航線】霧島",
+      "【碧藍航線】霧島 放學後的炮擊時間Ver.",
+      "【碧藍航線】榛名",
+      "【碧藍航線】榛名 授課前的自由時間Ver.",
+      "【碧藍航線】古鷹 改",
+      "【碧藍航線】加古 改",
+      "【碧藍航線】扶桑 改",
+      "【碧藍航線】扶桑 春之祝Ver."
+    ]
+  },
+  {
     "time": "2018/08/09",
     "level": "FIX",
     "event": [
