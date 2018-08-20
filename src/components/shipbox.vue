@@ -6,7 +6,7 @@
       <span v-if="data.special === 'arp'" :class="'addon icon-arp ' + premiumNewTag"></span>
       <span v-if="data.change" class="change icon-change"></span>
       <a @click="openModal">
-        <img v-if="defaultOption===0" :src="`img/ship_previews_origin/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
+        <img v-if="defaultOption===0" :src="`http://glossary-asia-static.gcdn.co/icons/wows/current/vehicle/small/${data.id}.png`" :alt="data.name + ' image'">
         <img v-else :src="`img/ship_previews/${data.id}-${defaultOption}.png`" :alt="data.name + ' image'">
       </a>
     </div>
