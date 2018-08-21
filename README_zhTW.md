@@ -43,7 +43,7 @@ TechTreeMoe 是一個粉絲向戰艦世界模組，所以我決定不在網站�
 **4. 同人作品**  
 同人作品其實並不屬於上述的規則，但是這也不是選擇素材時優先選擇的項目。<br>
 同人作品會在我無法從艦娘遊戲中找到合適素材時使用，我會盡量使用優質的同人作品來製作。（依照我的觀感）<br>
-我也提供一些同人作品素材給已經擁有正選素材的艦船，所以使用者可以投其所好來做選擇。
+我也提供一些同人作品素材給已經擁有正選素材的艦船，所以使用者可以投其所好來做選擇。<br>
 ![pjsc034-1](https://raw.githubusercontent.com/harukaxxxx/TechTreeMoe/master/public/img/ship_previews/PJSC034-1.png)
 
 ## 艦船圖標指南
@@ -58,7 +58,7 @@ TechTreeMoe 是一個粉絲向戰艦世界模組，所以我決定不在網站�
 ![pgsc105-2](https://raw.githubusercontent.com/harukaxxxx/TechTreeMoe/master/public/img/ship_previews/PGSC105-2.png)  
 戰艦少女的 Königsberg 就是面向右側但姿勢卻向左側，在這種情況下我會嘗試以角色構圖方向來決定是否需要水平鏡射。
 
-**3. Equipment set**  
+**3. 儀裝**  
 有時艦娘擁有非常巨大且獨特的儀裝。<br>
 ![pgsa508-1](https://raw.githubusercontent.com/harukaxxxx/TechTreeMoe/master/public/img/ship_previews/PGSA508-1.png)  
 以艦隊收藏的 Graf Zeppelin 來說就是如此，所以我決定使用原圖而不水平鏡射，即使這導致角色面向左側。
