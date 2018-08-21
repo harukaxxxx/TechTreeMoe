@@ -75,7 +75,7 @@ export default {
     return {
       name: 'custom',
       optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
-      nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
+      nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia', 'pan_america'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
       filterStats: {
         nation: '',
