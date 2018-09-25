@@ -11,7 +11,7 @@
       </a>
     </div>
     <p class="shipName">
-      <span :class="`icon-${data.type}`"></span> {{data.tier}} {{data.name}}
+      <span :class="`icon-${data.type}`"></span>{{data.tier}} {{data.name}}
     </p>
   </Card>
 </template>
@@ -55,7 +55,11 @@ export default {
         if (option !== '同人作品' && item) {
           Object.keys(item).map(index => {
             if (typeof item[index] === 'object') {
-              itemDate = item[index][1]
+              let preDate = itemDate.split('/').join('')
+              let currentDate = item[index][1].split('/').join('')
+              if (preDate < currentDate) {
+                itemDate = item[index][1]
+              }
             }
           })
         }

@@ -108,7 +108,11 @@ export default {
               if (ship[brand]) {
                 Object.keys(ship[brand]).map(value => {
                   if (brand !== '同人作品' && Array.isArray(ship[brand][value])) {
-                    newTag = ship[brand][value][1]
+                    let preDate = newTag.split('/').join('')
+                    let currentDate = ship[brand][value][1].split('/').join('')
+                    if (preDate < currentDate) {
+                      newTag = ship[brand][value][1]
+                    }
                   }
                 })
               }
