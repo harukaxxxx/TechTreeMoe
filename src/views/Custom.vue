@@ -7,6 +7,9 @@
       </Button>
       </ButtonGroup>
       <ButtonGroup>
+        <Button type="info" @click="filter('new')">NEW</Button>
+      </ButtonGroup>
+      <ButtonGroup>
         <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">
           <Icon v-if="filterStats.nation === shipNation" type="checkmark"></Icon> {{$t("global." + shipNation)}}
         </Button>
@@ -98,6 +101,19 @@ export default {
             } else if (type !== '') {
               return ship.type === type
             }
+          },
+          new: ship => {
+            let newTag = ''
+            this.optionArray.forEach(brand => {
+              if (ship[brand]) {
+                Object.keys(ship[brand]).map(value => {
+                  if (brand !== '同人作品' && Array.isArray(ship[brand][value])) {
+                    newTag = ship[brand][value][1]
+                  }
+                })
+              }
+            })
+            return this.newTagDate === newTag
           }
         },
         hiddenStyle: {
@@ -145,6 +161,11 @@ export default {
         filterStat.type = ''
         filterStat.changeable = false
         this.$refs.isotope.filter('all')
+      } else if (filterKey == 'new') {
+        filterStat.nation = ''
+        filterStat.type = ''
+        filterStat.changeable = false
+        this.$refs.isotope.filter('new')
       } else {
         if (this.nationArray.indexOf(filterKey) >= 0) {
           filterStat.nation = filterKey
