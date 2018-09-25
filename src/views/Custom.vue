@@ -7,6 +7,9 @@
       </Button>
       </ButtonGroup>
       <ButtonGroup>
+        <Button type="info" @click="filter('new')">NEW</Button>
+      </ButtonGroup>
+      <ButtonGroup>
         <Button v-for="(shipNation, shipNationKey) in nationArray" :key="shipNationKey" type="info" @click="filter(shipNation)">
           <Icon v-if="filterStats.nation === shipNation" type="checkmark"></Icon> {{$t("global." + shipNation)}}
         </Button>
@@ -75,7 +78,7 @@ export default {
     return {
       name: 'custom',
       optionArray: ['艦隊收藏', '戰艦少女', '鋼鐵少女', '碧藍航線', '高校艦隊', '最終戰艦', 'November', '蒼藍鋼鐵戰艦', 'Victory_Belles', '同人作品'],
-      nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia'],
+      nationArray: ['japan', 'usa', 'germany', 'ussr', 'uk', 'pan_asia', 'france', 'commonwealth', 'italia', 'pan_america'],
       typeArray: ['destroyer', 'cruiser', 'battleship', 'aircarrier'],
       filterStats: {
         nation: '',
@@ -98,6 +101,23 @@ export default {
             } else if (type !== '') {
               return ship.type === type
             }
+          },
+          new: ship => {
+            let newTag = ''
+            this.optionArray.forEach(brand => {
+              if (ship[brand]) {
+                Object.keys(ship[brand]).map(value => {
+                  if (brand !== '同人作品' && Array.isArray(ship[brand][value])) {
+                    let preDate = newTag.split('/').join('')
+                    let currentDate = ship[brand][value][1].split('/').join('')
+                    if (preDate < currentDate) {
+                      newTag = ship[brand][value][1]
+                    }
+                  }
+                })
+              }
+            })
+            return this.newTagDate === newTag
           }
         },
         hiddenStyle: {
@@ -145,6 +165,11 @@ export default {
         filterStat.type = ''
         filterStat.changeable = false
         this.$refs.isotope.filter('all')
+      } else if (filterKey == 'new') {
+        filterStat.nation = ''
+        filterStat.type = ''
+        filterStat.changeable = false
+        this.$refs.isotope.filter('new')
       } else {
         if (this.nationArray.indexOf(filterKey) >= 0) {
           filterStat.nation = filterKey
