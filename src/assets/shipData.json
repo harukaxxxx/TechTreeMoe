@@ -666,6 +666,19 @@
         "6": ["紫瑟", "http://www.weibo.com/u/2193276854", "Indianapolis 35號球員Ver.", "http://www.weibo.com/2193276854/Dca0Yz2yY"]
       }
     },
+    "PASC510": {
+      "id": "PASC510",
+      "name": "Alaska",
+      "tier": "Ⅸ",
+      "nation": "usa",
+      "type": "cruiser",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": ["【鋼鐵少女】Alaska", "2018/09/25"]
+      }
+    },
     "PASD002": {
       "id": "PASD002",
       "name": "Sampson",
@@ -3117,6 +3130,9 @@
       },
       "戰艦少女": {
         "4": ["【戰艦少女】Acasta", "2018/08/09"]
+      },
+      "鋼鐵少女": {
+        "5": ["【鋼鐵少女】Acasta", "2018/09/25"]
       }
     },
     "PBSD506": {
@@ -3141,6 +3157,19 @@
         "2": "【戰艦少女】Glowworm 改",
         "3": "【戰艦少女】Glowworm 冬季作戰服Ver.",
         "4": "【戰艦少女】Glowworm 萬聖·司夜女巫Ver."
+      }
+    },
+    "PBSD517": {
+      "id": "PBSD517",
+      "name": "Cossack",
+      "tier": "Ⅷ",
+      "nation": "uk",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": ["【鋼鐵少女】Cossack", "2018/09/25"]
       }
     },
     "PBSD605": {
@@ -3268,6 +3297,19 @@
       "戰艦少女": {
         "1": "【戰艦少女】De Grasse"
       }
+    },
+    "PFSD508": {
+      "id": "PFSD508",
+      "name": "Le Terrible",
+      "tier": "Ⅷ",
+      "nation": "france",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": ["【鋼鐵少女】Le Terrible", "2018/09/25"]
+      }
     }
   },
   "italia": {
@@ -3392,6 +3434,19 @@
       "碧藍航線": {
         "2": "【碧藍航線】Vampire",
         "3": "【碧藍航線】Vampire 誓約Ver."
+      }
+    },
+    "PUSD507": {
+      "id": "PUSD507",
+      "name": "Haida",
+      "tier": "Ⅶ",
+      "nation": "commonwealth",
+      "type": "destroyer",
+      "default": 1,
+      "change": false,
+      "premium": false,
+      "鋼鐵少女": {
+        "1": ["【鋼鐵少女】Haida","2018/09/25"]
       }
     }
   },
