@@ -14,7 +14,7 @@ So I decide do not put any ad in website.<br>
 If any content infringement your copyright, please contact me.
 
 Because of there's so many warship girls based game and fan art, I can't managed it by myself.<br>
-So if you want to help this mod, feel free to join us in [Discord Server](https://discord.gg/9jE7eP9) (Chinese, English, Japanese)
+So if you want to help this mod, feel free to join us in [Discord Server](https://discord.gg/fXaaegG) (Chinese, English, Japanese)
 
 Also if you have any site bug, ship request, material provide, function request etc, feel free to open issues.
 
