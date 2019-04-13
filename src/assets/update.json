@@ -1,5 +1,27 @@
 [
   {
+    "time": "2019/04/13",
+    "level": "IMPORTANT",
+    "event": [
+      "航母改版異動：",
+      "移除Bogue",
+      "移除Independence",
+      "移除Essex",
+      "移除瑞鳳",
+      "移除飛龍",
+      "移除大鳳",
+      "Langley由PASA004改為PASA104",
+      "Ranger由PASA010改為PASA106",
+      "Lexington由PASA012改為PASA108",
+      "Enterprise由PASA508改為PASA518",
+      "鳳翔由PASA002改為PASA104",
+      "龍驤由PASA009改為PASA106",
+      "翔鶴由PASA012改為PASA108",
+      "白龍由PASA012改為PASA110",
+      "加賀由PASA507改為PASA518"
+    ]
+  },
+  {
     "time": "2018/09/26",
     "level": "UPDATE",
     "event": [
