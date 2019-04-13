@@ -1,25 +1,7 @@
 {
   "usa": {
-    "PASA002": {
-      "id": "PASA002",
-      "name": "Bogue",
-      "tier": "Ⅴ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Bogue",
-        "3": ["【戰艦少女】Bogue 改", "2018/07/20"]
-      },
-      "碧藍航線": {
-        "2": "【碧藍航線】Bogue",
-        "4": ["【碧藍航線】Bogue 改", "2018/08/20"]
-      }
-    },
-    "PASA004": {
-      "id": "PASA004",
+    "PASA104": {
+      "id": "PASA104",
       "name": "Langley",
       "tier": "Ⅳ",
       "nation": "usa",
@@ -39,29 +21,10 @@
         "2": "【November】Langley"
       }
     },
-    "PASA006": {
-      "id": "PASA006",
-      "name": "Independence",
-      "tier": "Ⅵ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "戰艦少女": {
-        "1": "【戰艦少女】Princeton",
-        "2": "【戰艦少女】Princeton Bikino魔術師Ver."
-      },
-      "鋼鐵少女": {
-        "3": "【鋼鐵少女】Belleau Wood",
-        "4": "【鋼鐵少女】Cabot",
-        "5": "【鋼鐵少女】Cabot 改"
-      }
-    },
-    "PASA010": {
-      "id": "PASA010",
+    "PASA106": {
+      "id": "PASA106",
       "name": "Ranger",
-      "tier": "Ⅶ",
+      "tier": "Ⅵ",
       "nation": "usa",
       "type": "aircarrier",
       "default": 5,
@@ -80,8 +43,8 @@
         "6": ["【碧藍航線】Ranger 改", "2018/08/20"]
       }
     },
-    "PASA012": {
-      "id": "PASA012",
+    "PASA108": {
+      "id": "PASA108",
       "name": "Lexington",
       "tier": "Ⅷ",
       "nation": "usa",
@@ -122,36 +85,8 @@
         "18": "【最終戰艦】Lexington 泳裝Ver."
       }
     },
-    "PASA013": {
-      "id": "PASA013",
-      "name": "Essex",
-      "tier": "Ⅸ",
-      "nation": "usa",
-      "type": "aircarrier",
-      "default": 8,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "7": ["【艦隊收藏】無畏", "2018/08/20"]
-      },
-      "碧藍航線": {
-        "8": ["【碧藍航線】Essex", "2018/09/26"]
-      },
-      "戰艦少女": {
-        "1": "【戰艦少女】Essex"
-      },
-      "鋼鐵少女": {
-        "5": "【鋼鐵少女】Bunker Hill",
-        "6": "【鋼鐵少女】Bunker Hill 改"
-      },
-      "最終戰艦": {
-        "2": "【最終戰艦】Essex",
-        "3": "【最終戰艦】Essex 泳裝Ver.",
-        "4": "【最終戰艦】Essex 花嫁Ver."
-      }
-    },
-    "PASA508": {
-      "id": "PASA508",
+    "PASA518": {
+      "id": "PASA518",
       "name": "Enterprise",
       "tier": "Ⅷ",
       "nation": "usa",
@@ -909,8 +844,8 @@
     }
   },
   "japan": {
-    "PJSA002": {
-      "id": "PJSA002",
+    "PJSA104": {
+      "id": "PJSA104",
       "name": "鳳翔",
       "tier": "Ⅳ",
       "nation": "japan",
@@ -926,34 +861,8 @@
         "3": "【戰艦少女】鳳翔"
       }
     },
-    "PJSA006": {
-      "id": "PJSA006",
-      "name": "瑞鳳",
-      "tier": "Ⅴ",
-      "nation": "japan",
-      "type": "aircarrier",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】瑞鳳",
-        "2": "【艦隊收藏】瑞鳳 改",
-        "3": "【艦隊收藏】瑞鳳 晴れ着Ver.",
-        "7": "【艦隊收藏】祥鳳",
-        "8": "【艦隊收藏】祥鳳 改",
-        "9": "【艦隊收藏】祥鳳 梅雨Ver."
-      },
-      "戰艦少女": {
-        "4": "【戰艦少女】瑞鳳",
-        "10": "【戰艦少女】祥鳳"
-      },
-      "鋼鐵少女": {
-        "5": "【鋼鐵少女】瑞鳳",
-        "6": "【鋼鐵少女】瑞鳳 改"
-      }
-    },
-    "PJSA009": {
-      "id": "PJSA009",
+    "PJSA106": {
+      "id": "PJSA106",
       "name": "龍驤",
       "tier": "Ⅵ",
       "nation": "japan",
@@ -979,39 +888,8 @@
         "9": "【鋼鐵少女】龍驤"
       }
     },
-    "PJSA011": {
-      "id": "PJSA011",
-      "name": "飛龍",
-      "tier": "Ⅶ",
-      "nation": "japan",
-      "type": "aircarrier",
-      "default": 2,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】飛龍",
-        "2": "【艦隊收藏】飛龍 改二",
-        "8": "【艦隊收藏】蒼龍",
-        "9": "【艦隊收藏】蒼龍 改二",
-        "11": "【艦隊收藏】蒼龍 秋の私服Ver."
-      },
-      "戰艦少女": {
-        "3": "【戰艦少女】飛龍",
-        "10": "【戰艦少女】蒼龍"
-      },
-      "鋼鐵少女": {
-        "4": "【鋼鐵少女】飛龍"
-      },
-      "碧藍航線": {
-        "6": "【碧藍航線】飛龍",
-        "7": "【碧藍航線】蒼龍"
-      },
-      "Victory_Belles": {
-        "5": "【Victory Belles】飛龍"
-      }
-    },
-    "PJSA012": {
-      "id": "PJSA012",
+    "PJSA108": {
+      "id": "PJSA108",
       "name": "翔鶴",
       "tier": "Ⅷ",
       "nation": "japan",
@@ -1049,33 +927,8 @@
         "15": "【最終戰艦】瑞鶴 泳裝Ver."
       }
     },
-    "PJSA015": {
-      "id": "PJSA015",
-      "name": "大鳳",
-      "tier": "Ⅸ",
-      "nation": "japan",
-      "type": "aircarrier",
-      "default": 1,
-      "change": true,
-      "premium": false,
-      "艦隊收藏": {
-        "1": "【艦隊收藏】大鳳",
-        "2": "【艦隊收藏】大鳳 改"
-      },
-      "戰艦少女": {
-        "3": "【戰艦少女】大鳳",
-        "4": "【戰艦少女】大鳳 改"
-      },
-      "碧藍航線": {
-        "6": ["【碧藍航線】大鳳", "2018/09/26"],
-        "7": ["【碧藍航線】大鳳 毒蘋果Ver.", "2018/09/26"]
-      },
-      "鋼鐵少女": {
-        "5": "【鋼鐵少女】大鳳"
-      }
-    },
-    "PJSA017": {
-      "id": "PJSA017",
+    "PJSA110": {
+      "id": "PJSA110",
       "name": "白龍",
       "tier": "Ⅹ",
       "nation": "japan",
@@ -1099,10 +952,10 @@
         ]
       }
     },
-    "PJSA507": {
-      "id": "PJSA507",
+    "PJSA518": {
+      "id": "PJSA518",
       "name": "加賀",
-      "tier": "Ⅶ",
+      "tier": "Ⅷ",
       "nation": "japan",
       "type": "aircarrier",
       "default": 6,
