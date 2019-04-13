@@ -50,33 +50,8 @@ export default {
         },
         {
           index: 6,
-          code: 'italia',
-          local: '義大利'
-        },
-        {
-          index: 7,
-          code: 'commonwealth',
-          local: '聯邦'
-        },
-        {
-          index: 8,
           code: 'pan_asia',
           local: '泛亞'
-        },
-        {
-          index: 9,
-          code: 'poland',
-          local: '波蘭'
-        },
-        {
-          index: 10,
-          code: 'arp',
-          local: '蒼藍鋼鐵戰艦'
-        },
-        {
-          index: 11,
-          code: 'haifuri',
-          local: '高校艦隊'
         }
       ]
     }
