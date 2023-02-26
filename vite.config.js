@@ -5,6 +5,7 @@ import vue from "@vitejs/plugin-vue";
 
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
+import { createSvgIconsPlugin } from "vite-plugin-svg-icons";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -19,10 +20,14 @@ export default defineConfig({
       include: [/\.vue$/, /\.vue\?vue/],
       dts: "src/auto-components.js",
     }),
+    createSvgIconsPlugin({
+      iconDirs: [path.resolve(process.cwd(), "src/assets/svg")],
+      symbolId: "[dir]/[name]",
+    }),
   ],
   resolve: {
     alias: {
-      '@/': `${path.resolve(__dirname, 'src')}/`,
+      "@/": `${path.resolve(__dirname, "src")}/`,
     },
   },
 });
