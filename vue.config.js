@@ -1,5 +1,6 @@
 module.exports = {
-  outputDir: 'docs',
+  outputDir: 'dist',
+  publicPath: './',
 
   pluginOptions: {
     enableInSFC: true

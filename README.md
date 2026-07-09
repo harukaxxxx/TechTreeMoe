@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/harukaxxxx/TechTreeMoe/blob/master/public/img/readme_logo.png?raw=true"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/harukaxxxx/TechTreeMoe/refs/heads/main/public/img/readme_logo.png"></p>
 <h1 align="center">TechTreeMoe - World of War Ships Tech Tree Mod</h1>
 <p align="center">World of Warship tech tree icon mod with battleship girls.<br>
 Integrate warship girls game arts and fanarts to let tech tree being moemoe!</p>

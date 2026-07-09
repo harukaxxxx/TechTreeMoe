@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/harukaxxxx/TechTreeMoe/blob/master/public/img/readme_logo.png?raw=true"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/harukaxxxx/TechTreeMoe/refs/heads/main/public/img/readme_logo.png"></p>
 <h1 align="center">TechTreeMoe - 戰艦世界科技樹模組</h1>
 <p align="center">戰艦世界科技術艦娘萌化圖標<br>
 結合艦娘遊戲立繪與同人作品讓科技樹萌起來吧！</p>
